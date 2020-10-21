@@ -1,12 +1,12 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Tabela disponível apenas em redes de Ethereum."
+    "message": "Tabela disponível apenas em redes de Wanchain."
   },
   "contractInteraction": {
     "message": "Interação do Contrato"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "WanchainMask",
     "description": "The name of the application"
   },
   "reject": {
@@ -76,13 +76,13 @@
     "message": "Adicionar Tokens Sugeridos"
   },
   "addAcquiredTokens": {
-    "message": "Adicione os tokens que você adquiriu usando o MetaMask"
+    "message": "Adicione os tokens que você adquiriu usando o WanchainMask"
   },
   "amount": {
     "message": "Valor"
   },
   "appDescription": {
-    "message": "Uma Carteira Ethereum no seu Navegador",
+    "message": "Uma Carteira Wanchain no seu Navegador",
     "description": "The description of the application"
   },
   "approve": {
@@ -110,7 +110,7 @@
     "message": "Temporizador de Logout Automático (minutos)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Defina o tempo de inatividade em minutos antes de o MetaMask fazer logout automaticamente"
+    "message": "Defina o tempo de inatividade em minutos antes de o WanchainMask fazer logout automaticamente"
   },
   "average": {
     "message": "Média"
@@ -125,7 +125,7 @@
     "message": "Faça backup de seu Código Secreto de Recuperação para manter sua carteira e seus fundos em segurança."
   },
   "backupApprovalInfo": {
-    "message": "Esse código secreto é necessário para recuperar sua carteira, caso você perca seu dispositivo, esqueça sua senha, precise reinstalar o MetaMask ou queira acessar sua carteira em outro dispositivo."
+    "message": "Esse código secreto é necessário para recuperar sua carteira, caso você perca seu dispositivo, esqueça sua senha, precise reinstalar o WanchainMask ou queira acessar sua carteira em outro dispositivo."
   },
   "backupNow": {
     "message": "Fazer backup agora"
@@ -150,13 +150,13 @@
     "message": "Seu navegador não é compatível..."
   },
   "builtInCalifornia": {
-    "message": "O MetaMask foi projetado e desenvolvido na Califórnia."
+    "message": "O WanchainMask foi projetado e desenvolvido na Califórnia."
   },
   "buyWithWyre": {
-    "message": "Comprar ETH com Wyre"
+    "message": "Comprar WAN com Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "O Wyre permite que você utilize um cartão de crédito para depositar ETH direto na sua conta do MetaMask."
+    "message": "O Wyre permite que você utilize um cartão de crédito para depositar WAN direto na sua conta do WanchainMask."
   },
   "buyCoinSwitch": {
     "message": "Compre no CoinSwitch"
@@ -198,7 +198,7 @@
     "message": "Fechar"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Você precisa usar o MetaMask no Google Chrome para se conectar à sua Carteira de Hardware."
+    "message": "Você precisa usar o WanchainMask no Google Chrome para se conectar à sua Carteira de Hardware."
   },
   "confirm": {
     "message": "Confirmar"
@@ -230,8 +230,8 @@
   "connectingToMainnet": {
     "message": "Conectando à rede principal Etherum"
   },
-  "connectingToRopsten": {
-    "message": "Conectando à Rede de Testes Ropsten"
+  "connectingToTestnet": {
+    "message": "Conectando à Rede de Testes Testnet"
   },
   "connectingToRinkeby": {
     "message": "Conectando-se à rede de teste Rinkeby"
@@ -306,7 +306,7 @@
     "message": "Decimais de precisão"
   },
   "defaultNetwork": {
-    "message": "A rede-padrão para transações de Ether é a Rede Principal."
+    "message": "A rede-padrão para transações de Wan Coin é a Rede Principal."
   },
   "delete": {
     "message": "Excluir"
@@ -318,16 +318,16 @@
     "message": "Depósito"
   },
   "depositEther": {
-    "message": "Depositar Ether"
+    "message": "Depositar Wan Coin"
   },
   "details": {
     "message": "Detalhes"
   },
   "directDepositEther": {
-    "message": "Depositar Ether Diretamente"
+    "message": "Depositar Wan Coin Diretamente"
   },
   "directDepositEtherExplainer": {
-    "message": "Se você já tem Ether, a forma mais rápida de colocá-lo em sua nova carteira é o depósito direto."
+    "message": "Se você já tem Wan Coin, a forma mais rápida de colocá-lo em sua nova carteira é o depósito direto."
   },
   "done": {
     "message": "Concluído"
@@ -366,7 +366,7 @@
     "message": "Nunca compartilhe a frase com ninguém."
   },
   "endOfFlowMessage5": {
-    "message": "Cuidado com o phishing! O MetaMask nunca solicitará espontaneamente sua frase semente."
+    "message": "Cuidado com o phishing! O WanchainMask nunca solicitará espontaneamente sua frase semente."
   },
   "endOfFlowMessage6": {
     "message": "Se precisar fazer backup de sua frase-semente de novo, acesse Configurações -> Segurança."
@@ -375,7 +375,7 @@
     "message": "Caso você tenha alguma dúvida ou veja algo suspeito, envie um e-mail para support@metamask.io."
   },
   "endOfFlowMessage8": {
-    "message": "O MetaMask não pode recuperar sua frase semente. Saiba mais."
+    "message": "O WanchainMask não pode recuperar sua frase semente. Saiba mais."
   },
   "endOfFlowMessage9": {
     "message": "Saiba mais."
@@ -387,7 +387,7 @@
     "message": "Erro ao registrar nome de ENS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nome de ENS não encontrado na rede atual. Experimente alternar para a Rede Principal de Ethereum."
+    "message": "Nome de ENS não encontrado na rede atual. Experimente alternar para a Rede Principal de Wanchain."
   },
   "enterAnAlias": {
     "message": "Digite um pseudônimo"
@@ -399,10 +399,10 @@
     "message": "Insira a senha para continuar"
   },
   "ethereumPublicAddress": {
-    "message": "Endereço Público do Ethereum"
+    "message": "Endereço Público do Wanchain"
   },
   "etherscanView": {
-    "message": "Ver conta no Etherscan"
+    "message": "Ver conta no Wanscan"
   },
   "estimatedProcessingTimes": {
     "message": "Tempos de Processamento Estimados"
@@ -458,7 +458,7 @@
     "message": "Preço de Gas extremamente baixo"
   },
   "gasPriceInfoModalContent": {
-    "message": "O preço do gás especifica a quantidade de Ether que você está disposto a pagar por cada unidade de gás."
+    "message": "O preço do gás especifica a quantidade de Wan Coin que você está disposto a pagar por cada unidade de gás."
   },
   "gasPriceNoDenom": {
     "message": "Preço do Gás"
@@ -470,11 +470,11 @@
     "message": "Conversão de moeda, moeda primária, idioma, identicon de blocos"
   },
   "getEther": {
-    "message": "Obter Ether"
+    "message": "Obter Wan Coin"
   },
   "getEtherFromFaucet": {
-    "message": "Obtenha Ether em uma torneira para $1",
-    "description": "Displays network name for Ether faucet"
+    "message": "Obtenha Wan Coin em uma torneira para $1",
+    "description": "Displays network name for Wan Coin faucet"
   },
   "getHelp": {
     "message": "Obtenha Ajuda."
@@ -495,7 +495,7 @@
     "message": "Conecte uma carteira física"
   },
   "hardwareWalletsMsg": {
-    "message": "Selecione um hardware que gostaria de utilizar com o MetaMask"
+    "message": "Selecione um hardware que gostaria de utilizar com o WanchainMask"
   },
   "havingTroubleConnecting": {
     "message": "Está tendo dificuldade para se conectar?"
@@ -524,7 +524,7 @@
     "message": "Importar Conta"
   },
   "importAccountMsg": {
-    "message": "As contas importadas não serão associadas à sua frase-semente da conta MetaMask criada originalmente. Saiba mais sobre contas importadas"
+    "message": "As contas importadas não serão associadas à sua frase-semente da conta WanchainMask criada originalmente. Saiba mais sobre contas importadas"
   },
   "importAccountSeedPhrase": {
     "message": "Importar uma Conta com Frase-semente"
@@ -567,7 +567,7 @@
     "message": "Endereço do contrato conhecido."
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Se não for rede ETH, defina para minúsculas"
+    "message": "Se não for rede WAN, defina para minúsculas"
   },
   "invalidInput": {
     "message": "Entrada inválida."
@@ -619,7 +619,7 @@
     "message": "Sair"
   },
   "mainnet": {
-    "message": "Rede Ethereum Principal"
+    "message": "Rede Wanchain Principal"
   },
   "memorizePhrase": {
     "message": "Memorize esta frase."
@@ -631,10 +631,10 @@
     "message": "Mensagem"
   },
   "metamaskDescription": {
-    "message": "Conectando você ao Ethereum e à Web Descentralizada."
+    "message": "Conectando você ao Wanchain e à Web Descentralizada."
   },
   "metamaskVersion": {
-    "message": "Versão do MetaMask"
+    "message": "Versão do WanchainMask"
   },
   "mobileSyncText": {
     "message": "Insira sua senha para confirmar que é você!"
@@ -646,20 +646,20 @@
     "message": "Contas da Minha Carteira"
   },
   "myWalletAccountsDescription": {
-    "message": "Todas as suas contas criadas no MetaMask serão automaticamente adicionadas a esta seção."
+    "message": "Todas as suas contas criadas no WanchainMask serão automaticamente adicionadas a esta seção."
   },
   "mustSelectOne": {
     "message": "É preciso selecionar pelo menos 1 token."
   },
   "needEtherInWallet": {
-    "message": "Para interagir com aplicações descentralizadas usando o MetaMask, você precisará de Ether na sua carteira."
+    "message": "Para interagir com aplicações descentralizadas usando o WanchainMask, você precisará de Wan Coin na sua carteira."
   },
   "needImportFile": {
     "message": "Você deve selecionar um arquivo para importar.",
     "description": "User is important an account and needs to add a file to continue"
   },
-  "negativeETH": {
-    "message": "Não é possível enviar quantias negativas de ETH."
+  "negativeWAN": {
+    "message": "Não é possível enviar quantias negativas de WAN."
   },
   "networkName": {
     "message": "Nome da Rede"
@@ -696,7 +696,7 @@
     "message": "Nova Rede"
   },
   "newToMetaMask": {
-    "message": "Novo no MetaMask?"
+    "message": "Novo no WanchainMask?"
   },
   "noAlreadyHaveSeed": {
     "message": "Não, eu já tenho uma frase semente"
@@ -705,7 +705,7 @@
     "message": "Proteja as suas chaves!"
   },
   "protectYourKeysMessage1": {
-    "message": "Tome cuidado com sua frase semente — houve relatos de sites que tentam imitar o MetaMask. O MetaMask nunca pedirá sua frase semente!"
+    "message": "Tome cuidado com sua frase semente — houve relatos de sites que tentam imitar o WanchainMask. O WanchainMask nunca pedirá sua frase semente!"
   },
   "protectYourKeysMessage2": {
     "message": "Mantenha a sua frase segura. Se você vir algo esquisito ou está inseguro quanto a um site, envie um e-mail para support@metamask.io"
@@ -762,7 +762,7 @@
     "message": "Participar do MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Participe do MetaMetrics para nos ajudar a tornar o MetaMask melhor"
+    "message": "Participe do MetaMetrics para nos ajudar a tornar o WanchainMask melhor"
   },
   "password": {
     "message": "Senha"
@@ -790,7 +790,7 @@
     "message": "Moeda Principal"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Selecione \"Nativa\" para priorizar a exibição de valores na moeda nativa da cadeia (por exemplo, ETH). Selecione \"Fiat\" para priorizar a exibição de valores na moeda fiduciária selecionada."
+    "message": "Selecione \"Nativa\" para priorizar a exibição de valores na moeda nativa da cadeia (por exemplo, WAN). Selecione \"Fiat\" para priorizar a exibição de valores na moeda fiduciária selecionada."
   },
   "privacyMsg": {
     "message": "Política de Privacidade"
@@ -895,8 +895,8 @@
   "rinkeby": {
     "message": "Rede de Testes Rinkeby"
   },
-  "ropsten": {
-    "message": "Rede de Testes Ropsten"
+  "testnet": {
+    "message": "Rede de Testes Testnet"
   },
   "goerli": {
     "message": "Rede de teste Goerli"
@@ -932,7 +932,7 @@
     "message": "Sua frase de backup secreta facilita o backup e a restauração de sua conta."
   },
   "secretBackupPhraseWarning": {
-    "message": "ATENÇÃO: Nunca revele sua frase de backup a ninguém. Qualquer pessoa com essa frase pode obter seu Ether para sempre."
+    "message": "ATENÇÃO: Nunca revele sua frase de backup a ninguém. Qualquer pessoa com essa frase pode obter seu Wan Coin para sempre."
   },
   "secretPhrase": {
     "message": "Digite sua frase secreta de doze palavras aqui para restaurar seu cofre."
@@ -968,7 +968,7 @@
     "message": "Enviar Quantia"
   },
   "sendETH": {
-    "message": "Enviar ETH"
+    "message": "Enviar WAN"
   },
   "sendTokens": {
     "message": "Enviar Tokens"
@@ -989,7 +989,7 @@
     "message": "Selecione uma Conta"
   },
   "selectAnAccountHelp": {
-    "message": "Selecione a conta para ver no MetaMask"
+    "message": "Selecione a conta para ver no WanchainMask"
   },
   "selectAHigherGasFee": {
     "message": "Selecione uma taxa de gás mais alta para acelerar o processamento de sua transação.*"
@@ -1079,7 +1079,7 @@
     "message": "3. Comece a usar dApps e muito mais!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Use sua conta física como faria com qualquer conta de Ethereum. Faça login em dApps, envie Eth, compre e guarde tokens ERC20 e Tokens Não Fungíveis, como CryptoKitties."
+    "message": "Use sua conta física como faria com qualquer conta de Wanchain. Faça login em dApps, envie Wan, compre e guarde tokens ERC20 e Tokens Não Fungíveis, como CryptoKitties."
   },
   "storePhrase": {
     "message": "Guarde esta frase em um gerenciador de senhas como o 1Password."
@@ -1103,19 +1103,19 @@
     "message": "Sincronizar com o celular"
   },
   "syncWithMobileDesc": {
-    "message": "Você pode sincronizar suas contas e informações com seu dispositivo móvel. Abra o aplicativo móvel MetaMask, vá em \"Configurações\" e toque em \"Sincronizar da Extensão do Navegador\""
+    "message": "Você pode sincronizar suas contas e informações com seu dispositivo móvel. Abra o aplicativo móvel WanchainMask, vá em \"Configurações\" e toque em \"Sincronizar da Extensão do Navegador\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Se você acabou de abrir o aplicativo MetaMask Mobile pela primeira vez, basta seguir os passos no seu telefone."
+    "message": "Se você acabou de abrir o aplicativo WanchainMask Mobile pela primeira vez, basta seguir os passos no seu telefone."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Digitalize este código com o seu app móvel do MetaMask"
+    "message": "Digitalize este código com o seu app móvel do WanchainMask"
   },
   "syncWithMobileBeCareful": {
     "message": "Certifique-se de que ninguém mais esteja olhando para sua tela ao digitalizar esse código"
   },
   "syncWithMobileComplete": {
-    "message": "Seus dados foram sincronizados com sucesso. Aproveite o aplicativo MetaMask!"
+    "message": "Seus dados foram sincronizados com sucesso. Aproveite o aplicativo WanchainMask!"
   },
   "terms": {
     "message": "Termos de Uso"
@@ -1200,7 +1200,7 @@
     "message": "Tentar novamente"
   },
   "typePassword": {
-    "message": "Digite sua senha do MetaMask"
+    "message": "Digite sua senha do WanchainMask"
   },
   "unapproved": {
     "message": "Desaprovado"
@@ -1254,7 +1254,7 @@
     "message": "Ver em $1"
   },
   "viewOnEtherscan": {
-    "message": "Ver no Etherscan"
+    "message": "Ver no Wanscan"
   },
   "visitWebSite": {
     "message": "Visite nosso site"
@@ -1266,7 +1266,7 @@
     "message": "Bem-vindo de volta!"
   },
   "welcome": {
-    "message": "Bem-vindo ao MetaMask"
+    "message": "Bem-vindo ao WanchainMask"
   },
   "writePhrase": {
     "message": "Escreva esta frase em um papel e guarde-o em um lugar seguro. Se quiser ainda mais segurança, anote-a em vários papéis diferentes e guarde-os em 2 ou 3 lugares diferentes."

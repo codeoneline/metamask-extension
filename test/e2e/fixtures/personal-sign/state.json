@@ -15,7 +15,7 @@
       "conversionDate": 1594348502.519,
       "conversionRate": 240.09,
       "currentCurrency": "usd",
-      "nativeCurrency": "ETH"
+      "nativeCurrency": "WAN"
     },
     "IncomingTransactionsController": {
       "incomingTransactions": {},
@@ -34,12 +34,12 @@
       "provider": {
         "nickname": "",
         "rpcTarget": "",
-        "ticker": "ETH",
+        "ticker": "WAN",
         "type": "localhost"
       },
       "network": "5777",
       "settings": {
-        "ticker": "ETH"
+        "ticker": "WAN"
       }
     },
     "OnboardingController": {
@@ -96,7 +96,7 @@
       "accountTokens": {
         "0x5cfe73b6021e818b776b421b1c4db2474086a7e1": {
           "rinkeby": [],
-          "ropsten": []
+          "testnet": []
         }
       },
       "assetImages": {},
@@ -143,7 +143,7 @@
           "permissions": [
             {
               "@context": [
-                "https://github.com/MetaMask/rpc-cap"
+                "https://github.com/WanchainMask/rpc-cap"
               ],
               "parentCapability": "eth_accounts",
               "id": "f55a1c15-ea48-4088-968e-63be474d42fa",

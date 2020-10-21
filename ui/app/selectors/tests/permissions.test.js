@@ -29,7 +29,7 @@ describe('selectors', function () {
               'permissions': [
                 {
                   '@context': [
-                    'https://github.com/MetaMask/rpc-cap',
+                    'https://github.com/WanchainMask/rpc-cap',
                   ],
                   'caveats': [
                     {
@@ -51,7 +51,7 @@ describe('selectors', function () {
               'permissions': [
                 {
                   '@context': [
-                    'https://github.com/MetaMask/rpc-cap',
+                    'https://github.com/WanchainMask/rpc-cap',
                   ],
                   'caveats': [
                     {
@@ -109,7 +109,7 @@ describe('selectors', function () {
               'permissions': [
                 {
                   '@context': [
-                    'https://github.com/MetaMask/rpc-cap',
+                    'https://github.com/WanchainMask/rpc-cap',
                   ],
                   'caveats': [
                     {
@@ -131,7 +131,7 @@ describe('selectors', function () {
               'permissions': [
                 {
                   '@context': [
-                    'https://github.com/MetaMask/rpc-cap',
+                    'https://github.com/WanchainMask/rpc-cap',
                   ],
                   'caveats': [
                     {
@@ -196,7 +196,7 @@ describe('selectors', function () {
             'permissions': [
               {
                 '@context': [
-                  'https://github.com/MetaMask/rpc-cap',
+                  'https://github.com/WanchainMask/rpc-cap',
                 ],
                 'caveats': [
                   {
@@ -222,7 +222,7 @@ describe('selectors', function () {
             'permissions': [
               {
                 '@context': [
-                  'https://github.com/MetaMask/rpc-cap',
+                  'https://github.com/WanchainMask/rpc-cap',
                 ],
                 'caveats': [
                   {
@@ -354,7 +354,7 @@ describe('selectors', function () {
             'permissions': [
               {
                 '@context': [
-                  'https://github.com/MetaMask/rpc-cap',
+                  'https://github.com/WanchainMask/rpc-cap',
                 ],
                 'caveats': [
                   {
@@ -377,7 +377,7 @@ describe('selectors', function () {
             'permissions': [
               {
                 '@context': [
-                  'https://github.com/MetaMask/rpc-cap',
+                  'https://github.com/WanchainMask/rpc-cap',
                 ],
                 'caveats': [
                   {
@@ -399,7 +399,7 @@ describe('selectors', function () {
             'permissions': [
               {
                 '@context': [
-                  'https://github.com/MetaMask/rpc-cap',
+                  'https://github.com/WanchainMask/rpc-cap',
                 ],
                 'caveats': [
                   {

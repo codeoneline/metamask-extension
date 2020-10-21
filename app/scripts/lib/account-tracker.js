@@ -15,13 +15,14 @@ import pify from 'pify'
 import Web3 from 'web3'
 import SINGLE_CALL_BALANCES_ABI from 'single-call-balance-checker-abi'
 import { bnToHex } from './util'
-import { MAINNET_NETWORK_ID, RINKEBY_NETWORK_ID, ROPSTEN_NETWORK_ID, KOVAN_NETWORK_ID } from '../controllers/network/enums'
+import { MAINNET_NETWORK_ID, TESTNET_NETWORK_ID } from '../controllers/network/enums'
 
 import {
   SINGLE_CALL_BALANCES_ADDRESS,
-  SINGLE_CALL_BALANCES_ADDRESS_RINKEBY,
-  SINGLE_CALL_BALANCES_ADDRESS_ROPSTEN,
-  SINGLE_CALL_BALANCES_ADDRESS_KOVAN,
+  // SINGLE_CALL_BALANCES_ADDRESS_RINKEBY,
+  // SINGLE_CALL_BALANCES_ADDRESS_ROPSTEN,
+  // SINGLE_CALL_BALANCES_ADDRESS_KOVAN,
+  SINGLE_CALL_BALANCES_ADDRESS_TESTNET,
 } from '../controllers/network/contract-addresses'
 
 export default class AccountTracker {
@@ -198,26 +199,31 @@ export default class AccountTracker {
     const addresses = Object.keys(accounts)
     const currentNetwork = this.network.getNetworkState()
 
-    switch (currentNetwork) {
-      case MAINNET_NETWORK_ID.toString():
-        await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS)
-        break
+    // switch (currentNetwork) {
+    //   case MAINNET_NETWORK_ID.toString():
+    //     await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS)
+    //     break
 
-      case RINKEBY_NETWORK_ID.toString():
-        await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_RINKEBY)
-        break
+    //   // case RINKEBY_NETWORK_ID.toString():
+    //   //   await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_RINKEBY)
+    //   //   break
 
-      case ROPSTEN_NETWORK_ID.toString():
-        await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_ROPSTEN)
-        break
+    //   // case ROPSTEN_NETWORK_ID.toString():
+    //   //   await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_ROPSTEN)
+    //   //   break
 
-      case KOVAN_NETWORK_ID.toString():
-        await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_KOVAN)
-        break
+    //   // case KOVAN_NETWORK_ID.toString():
+    //   //   await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_KOVAN)
+    //   //   break
 
-      default:
-        await Promise.all(addresses.map(this._updateAccount.bind(this)))
-    }
+    //   case TESTNET_NETWORK_ID.toString():
+    //     await this._updateAccountsViaBalanceChecker(addresses, SINGLE_CALL_BALANCES_ADDRESS_TESTNET)
+    //     break
+
+    //   default:
+    //     await Promise.all(addresses.map(this._updateAccount.bind(this)))
+    // }
+    await Promise.all(addresses.map(this._updateAccount.bind(this)))
   }
 
   /**
@@ -255,7 +261,7 @@ export default class AccountTracker {
 
     ethContract.balances(addresses, ethBalance, (error, result) => {
       if (error) {
-        log.warn(`MetaMask - Account Tracker single call balance fetch failed`, error)
+        log.warn(`WanchainMask - Account Tracker single call balance fetch failed`, error)
         return Promise.all(addresses.map(this._updateAccount.bind(this)))
       }
       addresses.forEach((address, index) => {

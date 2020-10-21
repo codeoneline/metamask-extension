@@ -18,13 +18,13 @@ export default function setupWeb3 (log) {
   let lastSeenNetwork
   let hasBeenWarned = false
 
-  const web3 = new Web3(window.ethereum)
+  const web3 = new Web3(window.wanchain)
   web3.setProvider = function () {
-    log.debug('MetaMask - overrode web3.setProvider')
+    log.debug('WanchainMask - overrode web3.setProvider')
   }
-  log.debug('MetaMask - injected web3')
+  log.debug('WanchainMask - injected web3')
 
-  Object.defineProperty(window.ethereum, '_web3Ref', {
+  Object.defineProperty(window.wanchain, '_web3Ref', {
     enumerable: false,
     writable: true,
     configurable: true,
@@ -39,15 +39,15 @@ export default function setupWeb3 (log) {
 
       // show warning once on web3 access
       if (!hasBeenWarned) {
-        console.warn(`MetaMask: We will stop injecting web3 in Q4 2020.\nPlease see this article for more information: https://medium.com/metamask/no-longer-injecting-web3-js-4a899ad6e59e`)
+        console.warn(`WanchainMask: We will stop injecting web3 in Q4 2020.\nPlease see this article for more information: https://medium.com/metamask/no-longer-injecting-web3-js-4a899ad6e59e`)
         hasBeenWarned = true
       }
 
       if (shouldLogUsage) {
         const name = stringifyKey(key)
-        window.ethereum.request({
+        window.wanchain.request({
           method: 'metamask_logInjectedWeb3Usage',
-          params: [{ action: 'window.web3 get', name }],
+          params: [{ action: 'window.wanWeb3 get', name }],
         })
       }
 
@@ -57,9 +57,9 @@ export default function setupWeb3 (log) {
     set: (_web3, key, value) => {
       const name = stringifyKey(key)
       if (shouldLogUsage) {
-        window.ethereum.request({
+        window.wanchain.request({
           method: 'metamask_logInjectedWeb3Usage',
-          params: [{ action: 'window.web3 set', name }],
+          params: [{ action: 'window.wanWeb3 set', name }],
         })
       }
 
@@ -68,17 +68,17 @@ export default function setupWeb3 (log) {
     },
   })
 
-  Object.defineProperty(global, 'web3', {
+  Object.defineProperty(global, 'wanWeb3', {
     enumerable: false,
     writable: true,
     configurable: true,
     value: web3Proxy,
   })
 
-  window.ethereum._publicConfigStore.subscribe((state) => {
+  window.wanchain._publicConfigStore.subscribe((state) => {
     // if the auto refresh on network change is false do not
     // do anything
-    if (!window.ethereum.autoRefreshOnNetworkChange) {
+    if (!window.wanchain.autoRefreshOnNetworkChange) {
       return
     }
 

@@ -6,17 +6,19 @@ const IncomingTransactionsController = proxyquire('../../../../app/scripts/contr
   '../lib/random-id': { default: () => 54321 },
 }).default
 
-import { ROPSTEN, RINKEBY, KOVAN, GOERLI, MAINNET } from '../../../../app/scripts/controllers/network/enums'
+// import { ROPSTEN, RINKEBY, KOVAN, GOERLI, MAINNET } from '../../../../app/scripts/controllers/network/enums'
+import { MAINNET, TESTNET } from '../../../../app/scripts/controllers/network/enums'
 
 describe('IncomingTransactionsController', function () {
   const EMPTY_INIT_STATE = {
     incomingTransactions: {},
     incomingTxLastFetchedBlocksByNetwork: {
-      [ROPSTEN]: null,
-      [RINKEBY]: null,
-      [KOVAN]: null,
-      [GOERLI]: null,
+      // [ROPSTEN]: null,
+      // [RINKEBY]: null,
+      // [KOVAN]: null,
+      // [GOERLI]: null,
       [MAINNET]: null,
+      [TESTNET]: null,
     },
   }
 
@@ -25,11 +27,12 @@ describe('IncomingTransactionsController', function () {
       '0x123456': { id: 777 },
     },
     incomingTxLastFetchedBlocksByNetwork: {
-      [ROPSTEN]: 1,
-      [RINKEBY]: 2,
-      [KOVAN]: 3,
-      [GOERLI]: 5,
-      [MAINNET]: 4,
+      // [ROPSTEN]: 1,
+      // [RINKEBY]: 2,
+      // [KOVAN]: 3,
+      // [GOERLI]: 5,
+      [MAINNET]: 1,
+      [TESTNET]: 3,
     },
   }
 
@@ -38,11 +41,13 @@ describe('IncomingTransactionsController', function () {
       '0x123456': { id: 777 },
     },
     incomingTxLastFetchedBlocksByNetwork: {
-      [ROPSTEN]: 1,
-      [RINKEBY]: 2,
-      [KOVAN]: 3,
-      [GOERLI]: 5,
-      [MAINNET]: 4,
+      // [ROPSTEN]: 1,
+      // [RINKEBY]: 2,
+      // [KOVAN]: 3,
+      // [GOERLI]: 5,
+      // [MAINNET]: 4,
+      [MAINNET]: 1,
+      [TESTNET]: 3,
       FAKE_NETWORK: 1111,
     },
   }
@@ -221,11 +226,13 @@ describe('IncomingTransactionsController', function () {
           '0x123456': { id: 777 },
         },
         currentBlocksByNetwork: {
-          [ROPSTEN]: 1,
-          [RINKEBY]: 2,
-          [KOVAN]: 3,
-          [GOERLI]: 5,
-          [MAINNET]: 4,
+          // [ROPSTEN]: 1,
+          // [RINKEBY]: 2,
+          // [KOVAN]: 3,
+          // [GOERLI]: 5,
+          // [MAINNET]: 4,
+          [MAINNET]: 1,
+          [TESTNET]: 3,
           FAKE_NETWORK: 1111,
         },
         fetchedBlockNumber: 1111,
@@ -241,11 +248,12 @@ describe('IncomingTransactionsController', function () {
         '0x123456': { id: 777, hash: '0x123456' },
       },
       currentBlocksByNetwork: {
-        [ROPSTEN]: 1,
-        [RINKEBY]: 2,
-        [KOVAN]: 3,
-        [GOERLI]: 5,
-        [MAINNET]: 4,
+        // [ROPSTEN]: 1,
+        // [RINKEBY]: 2,
+        // [KOVAN]: 3,
+        // [GOERLI]: 5,
+        [MAINNET]: 1,
+        [TESTNET]: 3,
         FAKE_NETWORK: 1111,
       },
       fetchedBlockNumber: 1111,
@@ -331,10 +339,10 @@ describe('IncomingTransactionsController', function () {
         initState: NON_EMPTY_INIT_STATE,
       })
 
-      await incomingTransactionsController._fetchTxs('0xfakeaddress', '789', ROPSTEN)
+      await incomingTransactionsController._fetchTxs('0xfakeaddress', '789', TESTNET)
 
       assert(mockFetch.calledOnce)
-      assert.equal(mockFetch.getCall(0).args[0], `https://api-${ROPSTEN}.etherscan.io/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1&startBlock=789`)
+      assert.equal(mockFetch.getCall(0).args[0], `https://api-${TESTNET}.wanscan.org/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1&startBlock=789`)
     })
 
     it('should call fetch with the expected url when passed an address, block number and MAINNET', async function () {
@@ -348,7 +356,7 @@ describe('IncomingTransactionsController', function () {
       await incomingTransactionsController._fetchTxs('0xfakeaddress', '789', MAINNET)
 
       assert(mockFetch.calledOnce)
-      assert.equal(mockFetch.getCall(0).args[0], `https://api.etherscan.io/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1&startBlock=789`)
+      assert.equal(mockFetch.getCall(0).args[0], `https://api.wanscan.org/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1&startBlock=789`)
     })
 
     it('should call fetch with the expected url when passed an address and supported network, but a falsy block number', async function () {
@@ -359,10 +367,10 @@ describe('IncomingTransactionsController', function () {
         initState: NON_EMPTY_INIT_STATE,
       })
 
-      await incomingTransactionsController._fetchTxs('0xfakeaddress', null, ROPSTEN)
+      await incomingTransactionsController._fetchTxs('0xfakeaddress', null, TESTNET)
 
       assert(mockFetch.calledOnce)
-      assert.equal(mockFetch.getCall(0).args[0], `https://api-${ROPSTEN}.etherscan.io/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1`)
+      assert.equal(mockFetch.getCall(0).args[0], `https://api-${TESTNET}.wanscan.org/api?module=account&action=txlist&address=0xfakeaddress&tag=latest&page=1`)
     })
 
     it('should not fetch and return an empty object when passed an unsported network', async function () {
@@ -387,7 +395,7 @@ describe('IncomingTransactionsController', function () {
         initState: NON_EMPTY_INIT_STATE,
       })
 
-      const result = await incomingTransactionsController._fetchTxs('0xfakeaddress', '789', ROPSTEN)
+      const result = await incomingTransactionsController._fetchTxs('0xfakeaddress', '789', TESTNET)
 
       assert(mockFetch.calledOnce)
       assert.deepEqual(result, {

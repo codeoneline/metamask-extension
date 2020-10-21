@@ -6,12 +6,12 @@ describe('Account link', function () {
     it('should return the correct block explorer url for an account', function () {
       const tests = [
         {
-          expected: 'https://etherscan.io/address/0xabcd',
+          expected: 'https://wanscan.org/address/0xabcd',
           network: 1,
           address: '0xabcd',
         },
         {
-          expected: 'https://ropsten.etherscan.io/address/0xdef0',
+          expected: 'https://testnet.wanscan.org/address/0xdef0',
           network: 3,
           address: '0xdef0',
           rpcPrefs: {},

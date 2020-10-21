@@ -6,7 +6,7 @@ import {
 } from '../../send.constants'
 
 import { isValidAddress, isEthNetwork, checkExistingAddresses } from '../../../../helpers/utils/util'
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 import contractMap from 'eth-contract-metadata'
 
 export function getToErrorObject (to, hasHexData = false, network) {

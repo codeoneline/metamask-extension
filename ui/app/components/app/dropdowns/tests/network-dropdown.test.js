@@ -66,7 +66,7 @@ describe('Network Dropdown', function () {
     })
 
     it('renders 7 DropDownMenuItems ', function () {
-      assert.equal(wrapper.find(DropdownMenuItem).length, 8)
+      assert.equal(wrapper.find(DropdownMenuItem).length, 5)
     })
 
     it('checks background color for first NetworkDropdownIcon', function () {
@@ -77,28 +77,28 @@ describe('Network Dropdown', function () {
       assert.equal(wrapper.find(NetworkDropdownIcon).at(1).prop('backgroundColor'), '#ff4a8d') // Ropsten Red
     })
 
-    it('checks background color for third NetworkDropdownIcon', function () {
-      assert.equal(wrapper.find(NetworkDropdownIcon).at(2).prop('backgroundColor'), '#7057ff') // Kovan Purple
-    })
+    // it('checks background color for third NetworkDropdownIcon', function () {
+    //   assert.equal(wrapper.find(NetworkDropdownIcon).at(2).prop('backgroundColor'), '#7057ff') // Kovan Purple
+    // })
 
-    it('checks background color for fourth NetworkDropdownIcon', function () {
-      assert.equal(wrapper.find(NetworkDropdownIcon).at(3).prop('backgroundColor'), '#f6c343') // Rinkeby Yellow
-    })
+    // it('checks background color for fourth NetworkDropdownIcon', function () {
+    //   assert.equal(wrapper.find(NetworkDropdownIcon).at(3).prop('backgroundColor'), '#f6c343') // Rinkeby Yellow
+    // })
 
-    it('checks background color for fifth NetworkDropdownIcon', function () {
-      assert.equal(wrapper.find(NetworkDropdownIcon).at(4).prop('backgroundColor'), '#3099f2') // Goerli Blue
-    })
+    // it('checks background color for fifth NetworkDropdownIcon', function () {
+    //   assert.equal(wrapper.find(NetworkDropdownIcon).at(4).prop('backgroundColor'), '#3099f2') // Goerli Blue
+    // })
 
     it('checks background color for sixth NetworkDropdownIcon', function () {
-      assert.equal(wrapper.find(NetworkDropdownIcon).at(5).prop('innerBorder'), '1px solid #9b9b9b')
+      assert.equal(wrapper.find(NetworkDropdownIcon).at(2).prop('innerBorder'), '1px solid #9b9b9b')
     })
 
     it('checks dropdown for frequestRPCList from  state ', function () {
-      assert.equal(wrapper.find(DropdownMenuItem).at(6).text(), '✓http://localhost:7545')
+      assert.equal(wrapper.find(DropdownMenuItem).at(3).text(), '✓http://localhost:7545')
     })
 
     it('checks background color for seventh NetworkDropdownIcon', function () {
-      assert.equal(wrapper.find(NetworkDropdownIcon).at(6).prop('innerBorder'), '1px solid #9b9b9b')
+      assert.equal(wrapper.find(NetworkDropdownIcon).at(3).prop('innerBorder'), '1px solid #9b9b9b')
     })
 
   })

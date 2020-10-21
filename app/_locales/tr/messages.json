@@ -21,11 +21,11 @@
     "message": "Tutar"
   },
   "appDescription": {
-    "message": "Ethereum Tarayıcı Uzantısı",
+    "message": "Wanchain Tarayıcı Uzantısı",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "WanchainMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -50,7 +50,7 @@
     "message": "Blockies Identicon kullan"
   },
   "builtInCalifornia": {
-    "message": "MetaMask California'da tasarlandı ve yaratıldı"
+    "message": "WanchainMask California'da tasarlandı ve yaratıldı"
   },
   "buyCoinSwitch": {
     "message": "CoinSwitch'de satın al"
@@ -77,10 +77,10 @@
     "message": "Kovan Test Ağına bağlanıyor"
   },
   "connectingToMainnet": {
-    "message": "Main Ethereum Ağına bağlanıyor"
+    "message": "Main Wanchain Ağına bağlanıyor"
   },
-  "connectingToRopsten": {
-    "message": "Ropsten Test Ağına bağlanıyor"
+  "connectingToTestnet": {
+    "message": "Testnet Test Ağına bağlanıyor"
   },
   "connectingToRinkeby": {
     "message": "Rinkeby Test Ağına bağlanıyor"
@@ -122,22 +122,22 @@
     "message": "Ondalık hassasiyeti"
   },
   "defaultNetwork": {
-    "message": "Ether işlemleri için varsayılan ağ Main Net."
+    "message": "Wan Coin işlemleri için varsayılan ağ Main Net."
   },
   "deposit": {
     "message": "Yatır"
   },
   "depositEther": {
-    "message": "Ether yatır"
+    "message": "Wan Coin yatır"
   },
   "details": {
     "message": "Ayrıntılar"
   },
   "directDepositEther": {
-    "message": "Direk Ether Yatırma"
+    "message": "Direk Wan Coin Yatırma"
   },
   "directDepositEtherExplainer": {
-    "message": "Eğer çoktan Etheriniz varsa, yeni hesabınıza Ether aktarmanın en kolay yolu direk yatırmadır."
+    "message": "Eğer çoktan Etheriniz varsa, yeni hesabınıza Wan Coin aktarmanın en kolay yolu direk yatırmadır."
   },
   "done": {
     "message": "Bitti"
@@ -155,7 +155,7 @@
     "message": "Parolanızı girin"
   },
   "etherscanView": {
-    "message": "Hesabı Etherscan üzerinde izle"
+    "message": "Hesabı Wanscan üzerinde izle"
   },
   "exportPrivateKey": {
     "message": "Özel anahtarı ver"
@@ -184,11 +184,11 @@
     "message": "Gas Fiyatı (GWEI)"
   },
   "getEther": {
-    "message": "Ether Al"
+    "message": "Wan Coin Al"
   },
   "getEtherFromFaucet": {
-    "message": "Musluktan $1 karşılığı Ether alın",
-    "description": "Displays network name for Ether faucet"
+    "message": "Musluktan $1 karşılığı Wan Coin alın",
+    "description": "Displays network name for Wan Coin faucet"
   },
   "here": {
     "message": "burada",
@@ -208,7 +208,7 @@
     "message": "Hesap Al"
   },
   "importAccountMsg": {
-    "message": " Alınan hesaplar orjinal kaynakifadenizle yarattığınız MetaMask hesabınızla ilişkilendirilmez. Alınan hesaplar ile ilgili daha fazla bilgi edinin "
+    "message": " Alınan hesaplar orjinal kaynakifadenizle yarattığınız WanchainMask hesabınızla ilişkilendirilmez. Alınan hesaplar ile ilgili daha fazla bilgi edinin "
   },
   "imported": {
     "message": "Alındı",
@@ -270,13 +270,13 @@
     "message": "Çıkış"
   },
   "mainnet": {
-    "message": "Main Ethereum Ağı"
+    "message": "Main Wanchain Ağı"
   },
   "message": {
     "message": "Mesaj"
   },
   "metamaskDescription": {
-    "message": "MetaMask Ethereum için güvenli bir kimlik kasasıdır."
+    "message": "WanchainMask Wanchain için güvenli bir kimlik kasasıdır."
   },
   "myAccounts": {
     "message": "Hesaplarım"
@@ -285,14 +285,14 @@
     "message": "En az bir jeton seçilmeli"
   },
   "needEtherInWallet": {
-    "message": "MetaMask kullanarak merkezi olamayan uygulamalarla etkileşmek için cüzdanınızda Ether bulunmalıdır."
+    "message": "WanchainMask kullanarak merkezi olamayan uygulamalarla etkileşmek için cüzdanınızda Wan Coin bulunmalıdır."
   },
   "needImportFile": {
     "message": "Almak için bir dosya seçmelisiniz.",
     "description": "User is important an account and needs to add a file to continue"
   },
-  "negativeETH": {
-    "message": "Negatif ETH miktarları gönderilemez."
+  "negativeWAN": {
+    "message": "Negatif WAN miktarları gönderilemez."
   },
   "networks": {
     "message": "Ağlar"
@@ -372,8 +372,8 @@
   "rinkeby": {
     "message": "Rinkeby Test Ağı"
   },
-  "ropsten": {
-    "message": "Ropsten Test Ağı"
+  "testnet": {
+    "message": "Testnet Test Ağı"
   },
   "save": {
     "message": "Kaydet"
@@ -397,7 +397,7 @@
     "message": "Gönder"
   },
   "sendETH": {
-    "message": "ETH Gönder"
+    "message": "WAN Gönder"
   },
   "sendTokens": {
     "message": "Jeton Gönder"
@@ -497,7 +497,7 @@
     "message": "Cüzdan Kaynağı"
   },
   "welcome": {
-    "message": "MetaMask'ya Hoşgeldiniz"
+    "message": "WanchainMask'ya Hoşgeldiniz"
   },
   "yourSigRequested": {
     "message": "İmzanız isteniyor"

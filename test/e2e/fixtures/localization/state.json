@@ -12,7 +12,7 @@
       "conversionDate": 1594323667.203,
       "conversionRate": 14205.88,
       "currentCurrency": "php",
-      "nativeCurrency": "ETH"
+      "nativeCurrency": "WAN"
     },
     "IncomingTransactionsController": {
       "incomingTransactions": {},
@@ -31,11 +31,11 @@
       "provider": {
         "nickname": "",
         "rpcTarget": "",
-        "ticker": "ETH",
+        "ticker": "WAN",
         "type": "localhost"
       },
       "settings": {
-        "ticker": "ETH"
+        "ticker": "WAN"
       }
     },
     "OnboardingController": {
@@ -78,7 +78,7 @@
       "accountTokens": {
         "0x5cfe73b6021e818b776b421b1c4db2474086a7e1": {
           "rinkeby": [],
-          "ropsten": []
+          "testnet": []
         }
       },
       "assetImages": {},

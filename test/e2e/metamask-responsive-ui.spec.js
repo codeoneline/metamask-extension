@@ -13,7 +13,7 @@ const enLocaleMessages = require('../../app/_locales/en/messages.json')
 
 const ganacheServer = new Ganache()
 
-describe('MetaMask', function () {
+describe('WanchainMask', function () {
   let driver
 
   const testSeedPhrase = 'phrase upgrade clock rough situate wedding elder clever doctor stamp excess tent'
@@ -167,12 +167,12 @@ describe('MetaMask', function () {
 
     it('balance renders', async function () {
       const balance = await driver.findElement(By.css('[data-testid="eth-overview__primary-currency"]'))
-      await driver.wait(until.elementTextMatches(balance, /100\s*ETH/))
+      await driver.wait(until.elementTextMatches(balance, /100\s*WAN/))
       await driver.delay(regularDelayMs)
     })
   })
 
-  describe('Send ETH from inside MetaMask', function () {
+  describe('Send WAN from inside WanchainMask', function () {
     it('starts to send a transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
       await driver.delay(regularDelayMs)
@@ -218,7 +218,7 @@ describe('MetaMask', function () {
       }, 10000)
 
       const txValues = await driver.findElement(By.css('.transaction-list-item__primary-currency'))
-      await driver.wait(until.elementTextMatches(txValues, /-1\s*ETH/), 10000)
+      await driver.wait(until.elementTextMatches(txValues, /-1\s*WAN/), 10000)
     })
   })
 })

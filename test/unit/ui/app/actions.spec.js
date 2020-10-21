@@ -392,7 +392,7 @@ describe('Actions', function () {
         .callsArgWith(2, null)
       const store = mockStore()
 
-      await store.dispatch(actions.checkHardwareStatus('ledger', `m/44'/60'/0'/0`))
+      await store.dispatch(actions.checkHardwareStatus('ledger', `m/44'/5718350'/0'/0`))
       assert.equal(checkHardwareStatusSpy.calledOnce, true)
     })
 
@@ -465,7 +465,7 @@ describe('Actions', function () {
         .callsArgWith(3, null)
       const store = mockStore()
 
-      await store.dispatch(actions.connectHardware('ledger', 0, `m/44'/60'/0'/0`))
+      await store.dispatch(actions.connectHardware('ledger', 0, `m/44'/5718350'/0'/0`))
       assert.equal(connectHardwareSpy.calledOnce, true)
 
     })
@@ -502,7 +502,7 @@ describe('Actions', function () {
         .callsArgWith(3, null)
       const store = mockStore()
 
-      await store.dispatch(actions.unlockHardwareWalletAccount('ledger', 0, `m/44'/60'/0'/0`))
+      await store.dispatch(actions.unlockHardwareWalletAccount('ledger', 0, `m/44'/5718350'/0'/0`))
       assert.equal(unlockHardwareWalletAccountSpy.calledOnce, true)
 
     })

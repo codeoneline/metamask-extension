@@ -52,7 +52,7 @@ async function start () {
   initializeUiWithTab(activeTab)
 
   function displayCriticalError (container, err) {
-    container.innerHTML = '<div class="critical-error">The MetaMask app failed to load: please open and close MetaMask again to restart.</div>'
+    container.innerHTML = '<div class="critical-error">The WanchainMask app failed to load: please open and close WanchainMask again to restart.</div>'
     container.style.height = '80px'
     log.error(err.stack)
     throw err

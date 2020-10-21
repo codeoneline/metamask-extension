@@ -1,4 +1,4 @@
-import { addHexPrefix, isValidAddress } from 'ethereumjs-util'
+import { addHexPrefix, isValidAddress } from 'wanchainjs-util'
 
 const normalizers = {
   from: (from) => addHexPrefix(from),

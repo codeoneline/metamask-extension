@@ -14,7 +14,7 @@ const enLocaleMessages = require('../../app/_locales/en/messages.json')
 
 const ganacheServer = new Ganache()
 
-describe('MetaMask', function () {
+describe('WanchainMask', function () {
   let driver
 
   const testSeedPhrase = 'forum vessel pink push lonely enact gentle tail admit parrot grunt dress'
@@ -97,7 +97,7 @@ describe('MetaMask', function () {
 
       it('balance renders', async function () {
         const balance = await driver.findElement(By.css('[data-testid="wallet-balance"] .list-item__heading'))
-        await driver.wait(until.elementTextMatches(balance, /25\s*ETH/))
+        await driver.wait(until.elementTextMatches(balance, /25\s*WAN/))
         await driver.delay(regularDelayMs)
       })
     })
@@ -203,7 +203,7 @@ describe('MetaMask', function () {
 
       it('balance renders', async function () {
         const balance = await driver2.findElement(By.css('[data-testid="wallet-balance"] .list-item__heading'))
-        await driver2.wait(until.elementTextMatches(balance, /25\s*ETH/))
+        await driver2.wait(until.elementTextMatches(balance, /25\s*WAN/))
         await driver2.delay(regularDelayMs)
       })
     })

@@ -82,7 +82,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "WanchainMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -110,7 +110,7 @@
     "message": "Automaatse väljalogimise taimer (minutites)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Seadistage jõudeolek minutites, enne kui MetaMask automaatselt välja logib"
+    "message": "Seadistage jõudeolek minutites, enne kui WanchainMask automaatselt välja logib"
   },
   "average": {
     "message": "Keskmine"
@@ -153,13 +153,13 @@
     "message": "Teie lehitsejat ei toetata..."
   },
   "builtInCalifornia": {
-    "message": "MetaMask on projekteeritud ja loodud Californias."
+    "message": "WanchainMask on projekteeritud ja loodud Californias."
   },
   "buyWithWyre": {
-    "message": "Ostke ETH-d Wyre'iga"
+    "message": "Ostke WAN-d Wyre'iga"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre võimaldab kasutada krediitkaarti, et teha ETH sissemakse otse MetaMaski kontole."
+    "message": "Wyre võimaldab kasutada krediitkaarti, et teha WAN sissemakse otse MetaMaski kontole."
   },
   "buyCoinSwitch": {
     "message": "Osta CoinSwitchil"
@@ -236,8 +236,8 @@
   "connectingToMainnet": {
     "message": "Ühenduse loomine peamise Etherumi võrguga"
   },
-  "connectingToRopsten": {
-    "message": "Ühendamine Ropsteni testvõrguga"
+  "connectingToTestnet": {
+    "message": "Ühendamine Testneti testvõrguga"
   },
   "connectingToRinkeby": {
     "message": "Ühendamine Rinkeby testvõrguga"
@@ -372,7 +372,7 @@
     "message": "Ärge jagage fraasi mitte kellegagi."
   },
   "endOfFlowMessage5": {
-    "message": "Olge ettevaatlik andmepüügi osas! MetaMask ei küsi kunagi spontaanselt teie seemnefraasi."
+    "message": "Olge ettevaatlik andmepüügi osas! WanchainMask ei küsi kunagi spontaanselt teie seemnefraasi."
   },
   "endOfFlowMessage6": {
     "message": "Kui peate oma seemnefraasi uuesti varundama, leiate selle valikust Settings (Seaded) -> Security (Turvalisus)."
@@ -381,7 +381,7 @@
     "message": "Kui teil on küsimusi või näete midagi kahtlast, kirjutage meile support@metamask.io."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask ei saa teie seemnefraasi taastada. Lisateave."
+    "message": "WanchainMask ei saa teie seemnefraasi taastada. Lisateave."
   },
   "endOfFlowMessage9": {
     "message": "Lisateave."
@@ -476,7 +476,7 @@
   },
   "getEtherFromFaucet": {
     "message": "Hankige kraanist eetrit $1eest",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Wan Coin faucet"
   },
   "getHelp": {
     "message": "Küsige abi."
@@ -569,7 +569,7 @@
     "message": "Teadaolev lepinguaadress."
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Kehtetu ETH-võrk, kasutage väiketähti"
+    "message": "Kehtetu WAN-võrk, kasutage väiketähti"
   },
   "invalidInput": {
     "message": "Vigane sisend."
@@ -660,7 +660,7 @@
     "message": "Peate importimiseks faili valima.",
     "description": "User is important an account and needs to add a file to continue"
   },
-  "negativeETH": {
+  "negativeWAN": {
     "message": "Negatiivset ETHi summat ei saa saata."
   },
   "networkName": {
@@ -707,7 +707,7 @@
     "message": "Kaitske oma võtmeid!"
   },
   "protectYourKeysMessage1": {
-    "message": "Kaitske oma seemnefraasi. Meid on teavitatud veebilehtedest, mis püüavad MetaMaski jäljendada. MetaMask ei küsi teilt kunagi teie seemnefraasi!"
+    "message": "Kaitske oma seemnefraasi. Meid on teavitatud veebilehtedest, mis püüavad MetaMaski jäljendada. WanchainMask ei küsi teilt kunagi teie seemnefraasi!"
   },
   "protectYourKeysMessage2": {
     "message": "Kaitske oma seemnefraasi. Kui näete midagi kahtlast või pole veebilehe ehtsuses kindel, saatke e-kiri aadressile support@metamask.io"
@@ -792,7 +792,7 @@
     "message": "Põhivaluuta"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Valige omavääring, et prioriseerida vääringu kuvamist ahela omavääringus (nt ETH). Valige Fiat, et prioriseerida vääringu kuvamist valitud fiat-vääringus."
+    "message": "Valige omavääring, et prioriseerida vääringu kuvamist ahela omavääringus (nt WAN). Valige Fiat, et prioriseerida vääringu kuvamist valitud fiat-vääringus."
   },
   "privacyMsg": {
     "message": "privaatsuspoliitika"
@@ -897,8 +897,8 @@
   "rinkeby": {
     "message": "Rinkeby katsevõrk"
   },
-  "ropsten": {
-    "message": "Ropsteni testvõrk"
+  "testnet": {
+    "message": "Testneti testvõrk"
   },
   "goerli": {
     "message": "Goerli testvõrk"
@@ -970,7 +970,7 @@
     "message": "Saatke kogus"
   },
   "sendETH": {
-    "message": "Saada ETH"
+    "message": "Saada WAN"
   },
   "sendTokens": {
     "message": "Saada lube"
@@ -1081,7 +1081,7 @@
     "message": "3. Hakake kasutama dAppse ja muud!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Kasutage oma riistvarakontot nagu mis tahes teist Ethereumi kontot. Logige dAppsi, saatke Eth-d, ostke ja hoiustage ERC20 lube ning asendamatuid lube nagu CryptoKitties."
+    "message": "Kasutage oma riistvarakontot nagu mis tahes teist Ethereumi kontot. Logige dAppsi, saatke Wan-d, ostke ja hoiustage ERC20 lube ning asendamatuid lube nagu CryptoKitties."
   },
   "storePhrase": {
     "message": "Salvestage see fraas paroolihaldurisse, nagu 1Password."

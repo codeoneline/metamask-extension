@@ -1,8 +1,9 @@
 const version = 39
 import { cloneDeep } from 'lodash'
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 
-const DAI_V1_CONTRACT_ADDRESS = '0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359'
+// const DAI_V1_CONTRACT_ADDRESS = '0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359'
+const DAI_V1_CONTRACT_ADDRESS = '0x89D24a6B4cCb1b6Faa2625Fe562Bdd9A23260359'
 const DAI_V1_TOKEN_SYMBOL = 'DAI'
 const SAI_TOKEN_SYMBOL = 'SAI'
 

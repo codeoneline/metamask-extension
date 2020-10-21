@@ -1,5 +1,5 @@
 import assert from 'assert'
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 import * as util from './util'
 
 describe('util', function () {
@@ -38,13 +38,13 @@ describe('util', function () {
     it('should add case-sensitive checksum', function () {
       const address = '0xfdea65c8e26263f6d9a1b5de9555d2931a33b825'
       const result = util.addressSummary(address)
-      assert.equal(result, '0xFDEa65C8...b825')
+      assert.equal(result, '0xfdeA65c8...B825')
     })
 
     it('should accept arguments for firstseg, lastseg, and keepPrefix', function () {
       const address = '0xfdea65c8e26263f6d9a1b5de9555d2931a33b825'
       const result = util.addressSummary(address, 4, 4, false)
-      assert.equal(result, 'FDEa...b825')
+      assert.equal(result, 'fdeA...B825')
     })
   })
 
@@ -74,7 +74,7 @@ describe('util', function () {
     })
 
     it('should recognize correct capitalized checksum', function () {
-      const address = '0xFDEa65C8e26263F6d9A1B5de9555D2931A33b825'
+      const address = '0xfdeA65c8E26263f6D9a1b5DE9555d2931a33B825'
       const result = util.isValidAddress(address)
       assert.ok(result)
     })
@@ -86,7 +86,8 @@ describe('util', function () {
     })
 
     it('should recognize this sample hashed address', function () {
-      const address = '0x5Fda30Bb72B8Dfe20e48A00dFc108d0915BE9Bb0'
+      // const address = '0x5Fda30Bb72B8Dfe20e48A00dFc108d0915BE9Bb0'
+      const address = '0x5fDA30bB72b8dFE20E48a00DfC108D0915be9bB0'
       const result = util.isValidAddress(address)
       const hashed = ethUtil.toChecksumAddress(address.toLowerCase())
       assert.equal(hashed, address, 'example is hashed correctly')
@@ -175,38 +176,38 @@ describe('util', function () {
       assert.equal(result, 'None', 'should return "None"')
     })
 
-    it('should return 1.0000 ETH', function () {
+    it('should return 1.0000 WAN', function () {
       const input = new ethUtil.BN(ethInWei, 10).toJSON()
       const result = util.formatBalance(input, 4)
-      assert.equal(result, '1.0000 ETH')
+      assert.equal(result, '1.0000 WAN')
     })
 
-    it('should return 0.500 ETH', function () {
+    it('should return 0.500 WAN', function () {
       const input = new ethUtil.BN(ethInWei, 10).div(new ethUtil.BN('2', 10)).toJSON()
       const result = util.formatBalance(input, 3)
-      assert.equal(result, '0.500 ETH')
+      assert.equal(result, '0.500 WAN')
     })
 
     it('should display specified decimal points', function () {
       const input = '0x128dfa6a90b28000'
       const result = util.formatBalance(input, 2)
-      assert.equal(result, '1.33 ETH')
+      assert.equal(result, '1.33 WAN')
     })
     it('should default to 3 decimal points', function () {
       const input = '0x128dfa6a90b28000'
       const result = util.formatBalance(input)
-      assert.equal(result, '1.337 ETH')
+      assert.equal(result, '1.337 WAN')
     })
     it('should show 2 significant digits for tiny balances', function () {
       const input = '0x1230fa6a90b28'
       const result = util.formatBalance(input)
-      assert.equal(result, '0.00032 ETH')
+      assert.equal(result, '0.00032 WAN')
     })
-    it('should not parse the balance and return value with 2 decimal points with ETH at the end', function () {
+    it('should not parse the balance and return value with 2 decimal points with WAN at the end', function () {
       const value = '1.2456789'
       const needsParse = false
       const result = util.formatBalance(value, 2, needsParse)
-      assert.equal(result, '1.24 ETH')
+      assert.equal(result, '1.24 WAN')
     })
   })
 

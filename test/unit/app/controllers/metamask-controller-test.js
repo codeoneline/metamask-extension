@@ -2,7 +2,7 @@ import assert from 'assert'
 import sinon from 'sinon'
 import { cloneDeep } from 'lodash'
 import nock from 'nock'
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 import { obj as createThoughStream } from 'through2'
 import firstTimeState from '../../localhostState'
 import createTxMeta from '../../../lib/createTxMeta'
@@ -84,11 +84,11 @@ describe('MetaMaskController', function () {
 
     nock('https://api.infura.io')
       .get('/v1/ticker/ethusd')
-      .reply(200, '{"base": "ETH", "quote": "USD", "bid": 288.45, "ask": 288.46, "volume": 112888.17569277, "exchange": "bitfinex", "total_volume": 272175.00106721005, "num_exchanges": 8, "timestamp": 1506444677}')
+      .reply(200, '{"base": "WAN", "quote": "USD", "bid": 288.45, "ask": 288.46, "volume": 112888.17569277, "exchange": "bitfinex", "total_volume": 272175.00106721005, "num_exchanges": 8, "timestamp": 1506444677}')
 
     nock('https://api.infura.io')
       .get('/v1/ticker/ethjpy')
-      .reply(200, '{"base": "ETH", "quote": "JPY", "bid": 32300.0, "ask": 32400.0, "volume": 247.4616071, "exchange": "kraken", "total_volume": 247.4616071, "num_exchanges": 1, "timestamp": 1506444676}')
+      .reply(200, '{"base": "WAN", "quote": "JPY", "bid": 32300.0, "ask": 32400.0, "volume": 247.4616071, "exchange": "kraken", "total_volume": 247.4616071, "num_exchanges": 1, "timestamp": 1506444676}')
 
     nock('https://api.infura.io')
       .persist()
@@ -765,7 +765,7 @@ describe('MetaMaskController', function () {
         await metamaskController.newUnsignedPersonalMessage(msgParams)
         assert.fail('should have thrown')
       } catch (error) {
-        assert.equal(error.message, 'MetaMask Message Signature: from field is required.')
+        assert.equal(error.message, 'WanchainMask Message Signature: from field is required.')
       }
     })
 

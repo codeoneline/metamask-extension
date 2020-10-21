@@ -2,14 +2,14 @@ import assert from 'assert'
 import reduceMetamask from '../../../../../ui/app/ducks/metamask/metamask'
 import * as actionConstants from '../../../../../ui/app/store/actionConstants'
 
-describe('MetaMask Reducers', function () {
+describe('WanchainMask Reducers', function () {
 
   it('init state', function () {
     const initState = reduceMetamask(undefined, {})
     assert(initState)
   })
 
-  it('locks MetaMask', function () {
+  it('locks WanchainMask', function () {
     const unlockMetaMaskState = {
       isUnlocked: true,
       selectedAddress: 'test address',

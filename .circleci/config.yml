@@ -334,7 +334,7 @@ jobs:
       - run:
           name: storybook:deploy
           command: |
-            git remote add storybook git@github.com:MetaMask/metamask-storybook.git
+            git remote add storybook git@github.com:WanchainMask/metamask-storybook.git
             yarn storybook:deploy
 
   test-unit:

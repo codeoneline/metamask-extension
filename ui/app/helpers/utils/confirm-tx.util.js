@@ -1,6 +1,6 @@
 import currencyFormatter from 'currency-formatter'
 import currencies from 'currency-formatter/currencies'
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 import BigNumber from 'bignumber.js'
 
 import {
@@ -55,7 +55,7 @@ export function addFiat (...args) {
 
 export function getValueFromWeiHex ({
   value,
-  fromCurrency = 'ETH',
+  fromCurrency = 'WAN',
   toCurrency,
   conversionRate,
   numberOfDecimals,
@@ -75,7 +75,7 @@ export function getValueFromWeiHex ({
 
 export function getTransactionFee ({
   value,
-  fromCurrency = 'ETH',
+  fromCurrency = 'WAN',
   toCurrency,
   conversionRate,
   numberOfDecimals,
@@ -101,7 +101,7 @@ export function formatCurrency (value, currencyCode) {
 
 export function convertTokenToFiat ({
   value,
-  fromCurrency = 'ETH',
+  fromCurrency = 'WAN',
   toCurrency,
   conversionRate,
   contractExchangeRate,

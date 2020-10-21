@@ -267,14 +267,14 @@ describe('App State', function () {
 
   it('sets hardware wallet default hd path', function () {
     const hdPaths = {
-      trezor: "m/44'/60'/0'/0",
-      ledger: "m/44'/60'/0'",
+      trezor: "m/44'/5718350'/0'/0",
+      ledger: "m/44'/5718350'/0'",
     }
     const state = reduceApp(metamaskState, {
       type: actions.SET_HARDWARE_WALLET_DEFAULT_HD_PATH,
       value: {
         device: 'ledger',
-        path: "m/44'/60'/0'",
+        path: "m/44'/5718350'/0'",
       },
     })
 

@@ -1,5 +1,5 @@
 import { strict as assert } from 'assert'
-import Transaction from 'ethereumjs-tx'
+import Transaction from 'wanchainjs-tx'
 import { hexToBn, bnToHex } from '../../../../../app/scripts/lib/util'
 import TxUtils from '../../../../../app/scripts/controllers/transactions/tx-gas-utils'
 
@@ -17,6 +17,7 @@ describe('txUtils', function () {
   describe('chain Id', function () {
     it('prepares a transaction with the provided chainId', function () {
       const txParams = {
+        Txtype: '0x01',
         to: '0x70ad465e0bab6504002ad58c744ed89c7da38524',
         from: '0x69ad465e0bab6504002ad58c744ed89c7da38525',
         value: '0x0',

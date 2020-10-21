@@ -459,11 +459,12 @@ describe('Send Component', function () {
     it('should warn when send to a known token contract address', function () {
       wrapper.setProps({ address: '0x888', decimals: 18, symbol: '888' })
       const instance = wrapper.instance()
-      instance.onRecipientInputChange('0x13cb85823f78Cff38f0B0E90D3e975b8CB3AAd64')
+      instance.onRecipientInputChange('0x13CB85823F78cFF38F0b0e90d3E975B8cb3aaD64')
+      // 0x13cb85823f78Cff38f0B0E90D3e975b8CB3AAd64
 
       clock.tick(1001)
       assert.deepEqual(instance.state, {
-        query: '0x13cb85823f78Cff38f0B0E90D3e975b8CB3AAd64',
+        query: '0x13CB85823F78cFF38F0b0e90d3E975B8cb3aaD64',
         toError: null,
         toWarning: 'knownAddressRecipient',
       })

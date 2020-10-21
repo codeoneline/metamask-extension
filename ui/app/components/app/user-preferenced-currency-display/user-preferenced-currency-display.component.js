@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
-import { PRIMARY, SECONDARY, ETH } from '../../../helpers/constants/common'
+import { PRIMARY, SECONDARY, WAN } from '../../../helpers/constants/common'
 import CurrencyDisplay from '../../ui/currency-display'
 import { useUserPreferencedCurrency } from '../../../hooks/useUserPreferencedCurrency'
 
@@ -17,7 +17,7 @@ export default function UserPreferencedCurrencyDisplay ({
   const { currency, numberOfDecimals } = useUserPreferencedCurrency(type, { ethNumberOfDecimals, fiatNumberOfDecimals, numberOfDecimals: propsNumberOfDecimals })
 
   const prefixComponent = useMemo(() => {
-    return currency === ETH && showEthLogo && (
+    return currency === WAN && showEthLogo && (
       <img
         src="/images/eth.svg"
         height={ethLogoHeight}

@@ -3,7 +3,7 @@ import pify from 'pify'
 import getBuyEthUrl from '../../../app/scripts/lib/buy-eth-url'
 import { checksumAddress } from '../helpers/utils/util'
 import { calcTokenBalance, estimateGas } from '../pages/send/send.utils'
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 import { fetchLocale, loadRelativeTimeFormatLocaleData } from '../helpers/utils/i18n-helper'
 import { getMethodDataAsync } from '../helpers/utils/transactions.util'
 import { fetchSymbolAndDecimals } from '../helpers/utils/token-util'
@@ -1450,7 +1450,7 @@ export function setPreviousProvider (type) {
   }
 }
 
-export function updateAndSetCustomRpc (newRpc, chainId, ticker = 'ETH', nickname, rpcPrefs) {
+export function updateAndSetCustomRpc (newRpc, chainId, ticker = 'WAN', nickname, rpcPrefs) {
   return async (dispatch) => {
     log.debug(`background.updateAndSetCustomRpc: ${newRpc} ${chainId} ${ticker} ${nickname}`)
 
@@ -1469,7 +1469,7 @@ export function updateAndSetCustomRpc (newRpc, chainId, ticker = 'ETH', nickname
   }
 }
 
-export function editRpc (oldRpc, newRpc, chainId, ticker = 'ETH', nickname, rpcPrefs) {
+export function editRpc (oldRpc, newRpc, chainId, ticker = 'WAN', nickname, rpcPrefs) {
   return async (dispatch) => {
     log.debug(`background.delRpcTarget: ${oldRpc}`)
     try {
@@ -1495,7 +1495,7 @@ export function editRpc (oldRpc, newRpc, chainId, ticker = 'ETH', nickname, rpcP
   }
 }
 
-export function setRpcTarget (newRpc, chainId, ticker = 'ETH', nickname) {
+export function setRpcTarget (newRpc, chainId, ticker = 'WAN', nickname) {
   return async (dispatch) => {
     log.debug(`background.setRpcTarget: ${newRpc} ${chainId} ${ticker} ${nickname}`)
 

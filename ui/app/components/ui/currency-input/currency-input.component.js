@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import UnitInput from '../unit-input'
 import CurrencyDisplay from '../currency-display'
 import { getValueFromWeiHex, getWeiHexFromDecimalValue } from '../../../helpers/utils/conversions.util'
-import { ETH } from '../../../helpers/constants/common'
+import { WAN } from '../../../helpers/constants/common'
 
 /**
  * Component that allows user to enter currency values as a number, and props receive a converted
  * hex value in WEI. props.value, used as a default or forced value, should be a hex value, which
- * gets converted into a decimal value depending on the currency (ETH or Fiat).
+ * gets converted into a decimal value depending on the currency (WAN or Fiat).
  */
 export default class CurrencyInput extends PureComponent {
   static contextTypes = {
@@ -59,7 +59,7 @@ export default class CurrencyInput extends PureComponent {
         value: hexValue, toCurrency: currentCurrency, conversionRate, numberOfDecimals: 2,
       })
       : getValueFromWeiHex({
-        value: hexValue, toCurrency: ETH, numberOfDecimals: 6,
+        value: hexValue, toCurrency: WAN, numberOfDecimals: 6,
       })
 
     return Number(decimalValueString) || 0
@@ -91,7 +91,7 @@ export default class CurrencyInput extends PureComponent {
         value: decimalValue, fromCurrency, conversionRate, invertConversionRate: true,
       })
       : getWeiHexFromDecimalValue({
-        value: decimalValue, fromCurrency: ETH, fromDenomination: ETH, conversionRate,
+        value: decimalValue, fromCurrency: WAN, fromDenomination: WAN, conversionRate,
       })
 
     this.setState({ hexValue, decimalValue })
@@ -112,8 +112,8 @@ export default class CurrencyInput extends PureComponent {
     }
 
     if (this.shouldUseFiat()) {
-      // Display ETH
-      currency = nativeCurrency || ETH
+      // Display WAN
+      currency = nativeCurrency || WAN
       numberOfDecimals = 6
     } else {
       // Display Fiat

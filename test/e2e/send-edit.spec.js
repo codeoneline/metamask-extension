@@ -13,7 +13,7 @@ const enLocaleMessages = require('../../app/_locales/en/messages.json')
 
 const ganacheServer = new Ganache()
 
-describe('Using MetaMask with an existing account', function () {
+describe('Using WanchainMask with an existing account', function () {
   let driver
 
   const testSeedPhrase = 'forum vessel pink push lonely enact gentle tail admit parrot grunt dress'
@@ -93,7 +93,7 @@ describe('Using MetaMask with an existing account', function () {
     })
   })
 
-  describe('Send ETH from inside MetaMask', function () {
+  describe('Send WAN from inside WanchainMask', function () {
     it('starts a send transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
       await driver.delay(regularDelayMs)
@@ -205,7 +205,7 @@ describe('Using MetaMask with an existing account', function () {
 
       const txValues = await driver.findElements(By.css('.transaction-list-item__primary-currency'))
       assert.equal(txValues.length, 1)
-      assert.ok(/-2.2\s*ETH/.test(await txValues[0].getText()))
+      assert.ok(/-2.2\s*WAN/.test(await txValues[0].getText()))
     })
   })
 })

@@ -6,11 +6,12 @@ import { bnToHex } from '../lib/util'
 import fetchWithTimeout from '../lib/fetch-with-timeout'
 
 import {
-  ROPSTEN,
-  RINKEBY,
-  KOVAN,
-  GOERLI,
+  // ROPSTEN,
+  // RINKEBY,
+  // KOVAN,
+  // GOERLI,
   MAINNET,
+  TESTNET,
   NETWORK_TYPE_TO_ID_MAP,
 } from './network/enums'
 
@@ -43,11 +44,12 @@ export default class IncomingTransactionsController {
     const initState = Object.assign({
       incomingTransactions: {},
       incomingTxLastFetchedBlocksByNetwork: {
-        [ROPSTEN]: null,
-        [RINKEBY]: null,
-        [KOVAN]: null,
-        [GOERLI]: null,
+        // [ROPSTEN]: null,
+        // [RINKEBY]: null,
+        // [KOVAN]: null,
+        // [GOERLI]: null,
         [MAINNET]: null,
+        [TESTNET]: null,
       },
     }, opts.initState)
     this.store = new ObservableStore(initState)
@@ -183,7 +185,7 @@ export default class IncomingTransactionsController {
     if (networkType !== MAINNET) {
       etherscanSubdomain = `api-${networkType}`
     }
-    const apiUrl = `https://${etherscanSubdomain}.etherscan.io`
+    const apiUrl = `https://${etherscanSubdomain}.wanscan.org`
     let url = `${apiUrl}/api?module=account&action=txlist&address=${address}&tag=latest&page=1`
 
     if (fromBlock) {

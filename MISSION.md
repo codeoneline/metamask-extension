@@ -1,4 +1,4 @@
-# MetaMask Philosophy
+# WanchainMask Philosophy
 
 ## Mission
 

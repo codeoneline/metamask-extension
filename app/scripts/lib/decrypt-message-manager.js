@@ -1,6 +1,6 @@
 import EventEmitter from 'events'
 import ObservableStore from 'obs-store'
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 import { ethErrors } from 'eth-json-rpc-errors'
 import createId from './random-id'
 import { MESSAGE_TYPE } from './enums'
@@ -16,7 +16,7 @@ import log from 'loglevel'
  * @property {number} id An id to track and identify the message object
  * @property {Object} msgParams The parameters to pass to the decryptMessage method once the decryption request is
  * approved.
- * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within MetaMask.
+ * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanchainMask.
  * @property {string} msgParams.data A hex string conversion of the raw buffer data of the decryption request
  * @property {number} time The epoch time at which the this message was created
  * @property {string} status Indicates whether the decryption request is 'unapproved', 'approved', 'decrypted' or 'rejected'
@@ -82,7 +82,7 @@ export default class DecryptMessageManager extends EventEmitter {
   addUnapprovedMessageAsync (msgParams, req) {
     return new Promise((resolve, reject) => {
       if (!msgParams.from) {
-        return reject(new Error('MetaMask Decryption: from field is required.'))
+        return reject(new Error('WanchainMask Decryption: from field is required.'))
       }
       const msgId = this.addUnapprovedMessage(msgParams, req)
       this.once(`${msgId}:finished`, (data) => {
@@ -90,11 +90,11 @@ export default class DecryptMessageManager extends EventEmitter {
           case 'decrypted':
             return resolve(data.rawData)
           case 'rejected':
-            return reject(ethErrors.provider.userRejectedRequest('MetaMask Decryption: User denied message decryption.'))
+            return reject(ethErrors.provider.userRejectedRequest('WanchainMask Decryption: User denied message decryption.'))
           case 'errored':
             return reject(new Error('This message cannot be decrypted'))
           default:
-            return reject(new Error(`MetaMask Decryption: Unknown problem: ${JSON.stringify(msgParams)}`))
+            return reject(new Error(`WanchainMask Decryption: Unknown problem: ${JSON.stringify(msgParams)}`))
         }
       })
     })
@@ -162,8 +162,8 @@ export default class DecryptMessageManager extends EventEmitter {
    * Approves a DecryptMessage. Sets the message status via a call to this.setMsgStatusApproved, and returns a promise
    * with the message params modified for proper decryption.
    *
-   * @param {Object} msgParams The msgParams to be used when eth_decryptMsg is called, plus data added by MetaMask.
-   * @param {Object} msgParams.metamaskId Added to msgParams for tracking and identification within MetaMask.
+   * @param {Object} msgParams The msgParams to be used when eth_decryptMsg is called, plus data added by WanchainMask.
+   * @param {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanchainMask.
    * @returns {Promise<object>} Promises the msgParams object with metamaskId removed.
    *
    */

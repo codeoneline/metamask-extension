@@ -1,12 +1,12 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "Grafikon je dostupan samo na mrežama Ethereum."
+    "message": "Grafikon je dostupan samo na mrežama Wanchain."
   },
   "contractInteraction": {
     "message": "Ugovorna interakcija"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "WanchainMask",
     "description": "The name of the application"
   },
   "reject": {
@@ -76,13 +76,13 @@
     "message": "Dodaj predložene tokene"
   },
   "addAcquiredTokens": {
-    "message": "Dodajte tokene koje ste kupili uslugom MetaMask"
+    "message": "Dodajte tokene koje ste kupili uslugom WanchainMask"
   },
   "amount": {
     "message": "Iznos"
   },
   "appDescription": {
-    "message": "Novčanik Ethereum u vašem pregledniku",
+    "message": "Novčanik Wanchain u vašem pregledniku",
     "description": "The description of the application"
   },
   "approve": {
@@ -110,7 +110,7 @@
     "message": "Brojač za automatsko odjavljivanje (minute)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Postavite stanje u mirovanju u minutama prije nego što se MetaMask automatski odjavi"
+    "message": "Postavite stanje u mirovanju u minutama prije nego što se WanchainMask automatski odjavi"
   },
   "average": {
     "message": "Prosječno"
@@ -125,7 +125,7 @@
     "message": "Sigurnosno kopirajte svoj sigurnosni kôd za obnavljanje kako biste zaštitili svoj novčanik i sredstva."
   },
   "backupApprovalInfo": {
-    "message": "Ovaj je sigurnosni kôd potreban za obnavljanje novčanika ako izgubite svoj uređaj, zaboravite svoju lozinku, morate ponovno instalirati MetaMask ili želite pristupiti svojem novčaniku na drugom uređaju."
+    "message": "Ovaj je sigurnosni kôd potreban za obnavljanje novčanika ako izgubite svoj uređaj, zaboravite svoju lozinku, morate ponovno instalirati WanchainMask ili želite pristupiti svojem novčaniku na drugom uređaju."
   },
   "backupNow": {
     "message": "Sigurnosno kopiraj sada"
@@ -153,13 +153,13 @@
     "message": "Vaš se preglednik ne podržava..."
   },
   "builtInCalifornia": {
-    "message": "MetaMask je osmišljen i izrađen u Kaliforniji."
+    "message": "WanchainMask je osmišljen i izrađen u Kaliforniji."
   },
   "buyWithWyre": {
-    "message": "Kupi ETH Wyerom"
+    "message": "Kupi WAN Wyerom"
   },
   "buyWithWyreDescription": {
-    "message": "Wyreom vam se omogućava korištenje kreditnom karticom za polaganje ETH-a izravno na vaš račun za MetaMask."
+    "message": "Wyreom vam se omogućava korištenje kreditnom karticom za polaganje WAN-a izravno na vaš račun za WanchainMask."
   },
   "buyCoinSwitch": {
     "message": "Kupujte na usluzi CoinSwitch"
@@ -204,7 +204,7 @@
     "message": "Zatvori"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Trebate upotrebljavati MetaMask u pregledniku Google Chrome kako biste ga povezali s vašim hardverskim novčanikom."
+    "message": "Trebate upotrebljavati WanchainMask u pregledniku Google Chrome kako biste ga povezali s vašim hardverskim novčanikom."
   },
   "confirm": {
     "message": "Potvrdi"
@@ -234,10 +234,10 @@
     "message": "Povezivanje na testnu mrežu Kovan"
   },
   "connectingToMainnet": {
-    "message": "Povezivanje na glavnu mrežu Ethereum"
+    "message": "Povezivanje na glavnu mrežu Wanchain"
   },
-  "connectingToRopsten": {
-    "message": "Povezivanje na testnu mrežu Ropsten"
+  "connectingToTestnet": {
+    "message": "Povezivanje na testnu mrežu Testnet"
   },
   "connectingToRinkeby": {
     "message": "Povezivanje na testnu mrežu Rinkeby"
@@ -312,7 +312,7 @@
     "message": "Precizni decimalni brojevi"
   },
   "defaultNetwork": {
-    "message": "Zadana je mreža za transakcije Ether glavna mreža."
+    "message": "Zadana je mreža za transakcije Wan Coin glavna mreža."
   },
   "delete": {
     "message": "Izbriši"
@@ -324,13 +324,13 @@
     "message": "Polog"
   },
   "depositEther": {
-    "message": "Položi Ether"
+    "message": "Položi Wan Coin"
   },
   "details": {
     "message": "Detalji"
   },
   "directDepositEther": {
-    "message": "Izravan polog Ether"
+    "message": "Izravan polog Wan Coin"
   },
   "directDepositEtherExplainer": {
     "message": "Ako imate nešto Ethera, najbrži je način prebacivanja Ethera u vaš novi novčanik izravan polog."
@@ -372,7 +372,7 @@
     "message": "Nikada ne dijelite rečenicu ni s kim."
   },
   "endOfFlowMessage5": {
-    "message": "Pazite na krađu identiteta! Na usluzi MetaMask nikada vas se neće pitati početna rečenica."
+    "message": "Pazite na krađu identiteta! Na usluzi WanchainMask nikada vas se neće pitati početna rečenica."
   },
   "endOfFlowMessage6": {
     "message": "Ako trebate ponovno sigurnosno kopirati svoju početnu rečenicu, možete je pronaći unutar stavke Postavke --> Sigurnost."
@@ -381,7 +381,7 @@
     "message": "Ako imate bilo kakvo pitanje ili vidite nešto što vam se čini sumnjivim, pošaljite nam elektroničku poruku na support@metamask.io."
   },
   "endOfFlowMessage8": {
-    "message": "Osoblje MetaMask ne može obnoviti vašu početnu rečenicu. Saznajte više."
+    "message": "Osoblje WanchainMask ne može obnoviti vašu početnu rečenicu. Saznajte više."
   },
   "endOfFlowMessage9": {
     "message": "Saznajte više."
@@ -393,7 +393,7 @@
     "message": "Greška u registraciji naziva ENS"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Naziv ENS nije pronađen na trenutačnoj mreži. Pokušajte prebaciti na glavnu mrežu Ethereum."
+    "message": "Naziv ENS nije pronađen na trenutačnoj mreži. Pokušajte prebaciti na glavnu mrežu Wanchain."
   },
   "enterAnAlias": {
     "message": "Upiši pseudonim"
@@ -405,7 +405,7 @@
     "message": "Upišite lozinku za nastavak"
   },
   "ethereumPublicAddress": {
-    "message": "Javna adresa Ethereum"
+    "message": "Javna adresa Wanchain"
   },
   "etherscanView": {
     "message": "Prikaži račun na Etherscanu"
@@ -460,7 +460,7 @@
     "message": "Iznimno niska cijena goriva"
   },
   "gasPriceInfoModalContent": {
-    "message": "Cijena goriva odnosi se na vrijednost Ether koju ste spremni platiti za svaku jedinicu goriva."
+    "message": "Cijena goriva odnosi se na vrijednost Wan Coin koju ste spremni platiti za svaku jedinicu goriva."
   },
   "gasPriceNoDenom": {
     "message": "Cijena goriva"
@@ -472,11 +472,11 @@
     "message": "Konverzija valuta, glavna valuta, jezik, blockies identicon"
   },
   "getEther": {
-    "message": "Dohvati Ether"
+    "message": "Dohvati Wan Coin"
   },
   "getEtherFromFaucet": {
-    "message": "Dohvati Ether iz svežnja za $1",
-    "description": "Displays network name for Ether faucet"
+    "message": "Dohvati Wan Coin iz svežnja za $1",
+    "description": "Displays network name for Wan Coin faucet"
   },
   "getHelp": {
     "message": "Potražite pomoć."
@@ -497,7 +497,7 @@
     "message": "Poveži hardverski novčanik"
   },
   "hardwareWalletsMsg": {
-    "message": "Odaberite hardverski novčanik koji biste željeli upotrebljavati s uslugom MetaMask"
+    "message": "Odaberite hardverski novčanik koji biste željeli upotrebljavati s uslugom WanchainMask"
   },
   "havingTroubleConnecting": {
     "message": "Imate poteškoća s povezivanjem?"
@@ -526,7 +526,7 @@
     "message": "Uvezi račun"
   },
   "importAccountMsg": {
-    "message": "Uvezeni se računi ne pridružuju vašoj izvorno stvorenoj početnoj rečenici za MetaMask. Saznajte više o uvezenim računima"
+    "message": "Uvezeni se računi ne pridružuju vašoj izvorno stvorenoj početnoj rečenici za WanchainMask. Saznajte više o uvezenim računima"
   },
   "importAccountSeedPhrase": {
     "message": "Uvezi račun početnom rečenicom"
@@ -569,7 +569,7 @@
     "message": "Poznata ugovorna adresa."
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Ne mreža ETH, postavite na mala slova"
+    "message": "Ne mreža WAN, postavite na mala slova"
   },
   "invalidInput": {
     "message": "Nevaljani upis."
@@ -624,7 +624,7 @@
     "message": "Odjava"
   },
   "mainnet": {
-    "message": "Glavna mreža Ethereum"
+    "message": "Glavna mreža Wanchain"
   },
   "memorizePhrase": {
     "message": "Zapamtite ovu rečenicu."
@@ -636,10 +636,10 @@
     "message": "Poruka"
   },
   "metamaskDescription": {
-    "message": "Povezujete se na Ethereum i decentralizirani internet."
+    "message": "Povezujete se na Wanchain i decentralizirani internet."
   },
   "metamaskVersion": {
-    "message": "Inačica usluge MetaMask"
+    "message": "Inačica usluge WanchainMask"
   },
   "mobileSyncText": {
     "message": "Upišite svoju lozinku kako biste potvrdili da ste to vi!"
@@ -651,20 +651,20 @@
     "message": "Moji računi za novčanik"
   },
   "myWalletAccountsDescription": {
-    "message": "Svi se vaši računi za MetaMask automatski dodaju u ovaj odjeljak."
+    "message": "Svi se vaši računi za WanchainMask automatski dodaju u ovaj odjeljak."
   },
   "mustSelectOne": {
     "message": "Mora se odabrati barem jedan token."
   },
   "needEtherInWallet": {
-    "message": "Trebate Ether u svojem novčaniku kako biste ostvarili interakciju s decentraliziranim aplikacijama uporabom usluge MetaMask. "
+    "message": "Trebate Wan Coin u svojem novčaniku kako biste ostvarili interakciju s decentraliziranim aplikacijama uporabom usluge WanchainMask. "
   },
   "needImportFile": {
     "message": "Morate odabrati datoteku za uvoz.",
     "description": "User is important an account and needs to add a file to continue"
   },
-  "negativeETH": {
-    "message": "Ne mogu se slati negativne vrijednosti ETH-a."
+  "negativeWAN": {
+    "message": "Ne mogu se slati negativne vrijednosti WAN-a."
   },
   "networkName": {
     "message": "Naziv mreže"
@@ -701,7 +701,7 @@
     "message": "Nova mreža"
   },
   "newToMetaMask": {
-    "message": "Novi korisnik usluge MetaMask?"
+    "message": "Novi korisnik usluge WanchainMask?"
   },
   "noAlreadyHaveSeed": {
     "message": "Ne, već imam početnu fazu"
@@ -710,7 +710,7 @@
     "message": "Zaštitite svoje ključeve!"
   },
   "protectYourKeysMessage1": {
-    "message": "Pazite na svoju početnu rečenicu jer smo zaprimili prijave o postojanju mrežnih mjesta koja oponašaju mrežno mjesto usluge MetaMask. Na mrežnom se mjestu MetaMask nikada ne traži vaša početna rečenica!"
+    "message": "Pazite na svoju početnu rečenicu jer smo zaprimili prijave o postojanju mrežnih mjesta koja oponašaju mrežno mjesto usluge WanchainMask. Na mrežnom se mjestu WanchainMask nikada ne traži vaša početna rečenica!"
   },
   "protectYourKeysMessage2": {
     "message": "Zaštite svoju rečenicu. Ako vam se nešto čini sumnjivim ili nemate povjerenja u mrežno mjesto, pošaljite nam elektroničku poruku na support@metamask.io"
@@ -767,7 +767,7 @@
     "message": "Sudjelujte u anketi MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Sudjelujte u anketi MetaMetrics kako biste nam pomogli poboljšati uslugu MetaMask"
+    "message": "Sudjelujte u anketi MetaMetrics kako biste nam pomogli poboljšati uslugu WanchainMask"
   },
   "password": {
     "message": "Zaporka"
@@ -795,7 +795,7 @@
     "message": "Glavna valuta"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Odaberite da se prvo prikazuju valute u osnovnoj valuti bloka (npr. ETH). Odaberite mogućnost Fiat za prikazivanje valuta u odabranoj valuti Fiat."
+    "message": "Odaberite da se prvo prikazuju valute u osnovnoj valuti bloka (npr. WAN). Odaberite mogućnost Fiat za prikazivanje valuta u odabranoj valuti Fiat."
   },
   "privacyMsg": {
     "message": "Pravilnik o zaštiti privatnosti"
@@ -900,8 +900,8 @@
   "rinkeby": {
     "message": "Testna mreža Rinkeby"
   },
-  "ropsten": {
-    "message": "Testna mreža Ropsten"
+  "testnet": {
+    "message": "Testna mreža Testnet"
   },
   "goerli": {
     "message": "Testna mreža Goerli"
@@ -937,7 +937,7 @@
     "message": "Vašom se alternativnom tajnom rečenicom jednostavno sigurnosno kopira i obnavlja vaš račun."
   },
   "secretBackupPhraseWarning": {
-    "message": "UPOZORENJE: nikada ne otkrivajte svoju alternativnu rečenicu. Bilo tko ovom rečenicom može zauvijek preuzeti vaš Ether."
+    "message": "UPOZORENJE: nikada ne otkrivajte svoju alternativnu rečenicu. Bilo tko ovom rečenicom može zauvijek preuzeti vaš Wan Coin."
   },
   "secretPhrase": {
     "message": "Ovdje upišite svoju tajnu rečenicu od 12 riječi kako biste obnovili svoj sef."
@@ -973,7 +973,7 @@
     "message": "Odaberi iznos"
   },
   "sendETH": {
-    "message": "Pošalji ETH"
+    "message": "Pošalji WAN"
   },
   "sendTokens": {
     "message": "Pošalji tokene"
@@ -994,7 +994,7 @@
     "message": "Odaberi račun"
   },
   "selectAnAccountHelp": {
-    "message": "Odaberi račun za prikaz u usluzi MetaMask"
+    "message": "Odaberi račun za prikaz u usluzi WanchainMask"
   },
   "selectAHigherGasFee": {
     "message": "Odaberite višu naknadu za gorivo kako biste ubrzali obrađivanje vaše transakcije.*"
@@ -1084,7 +1084,7 @@
     "message": "3. Započnite upotrebljavati dApps i više!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Upotrebljavajte svoj hardverski račun kako biste upotrebljavali bilo koji drugi račun Ethereum. Prijavite se u dApps, šaljite Eth, kupujte i pohranjujte ERC20 tokene i nezamjenske tokene kao CryptoKitties."
+    "message": "Upotrebljavajte svoj hardverski račun kako biste upotrebljavali bilo koji drugi račun Wanchain. Prijavite se u dApps, šaljite Wan, kupujte i pohranjujte ERC20 tokene i nezamjenske tokene kao CryptoKitties."
   },
   "storePhrase": {
     "message": "Spremite ovu rečenicu u upravitelj lozinkama poput aplikacije 1Password."
@@ -1108,19 +1108,19 @@
     "message": "Sinkroniziraj s mobilnim telefonom"
   },
   "syncWithMobileDesc": {
-    "message": "Možete sinkronizirati svoje račune i informacije s vašim mobilnim telefonom. Otvorite mobilnu aplikaciju MetaMask, idite u stavku „Postavke” i dodirnite „Sinkroniziraj iz dodatka preglednika”"
+    "message": "Možete sinkronizirati svoje račune i informacije s vašim mobilnim telefonom. Otvorite mobilnu aplikaciju WanchainMask, idite u stavku „Postavke” i dodirnite „Sinkroniziraj iz dodatka preglednika”"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Kad otvorite mobilnu aplikaciju MetaMask po prvi puta, pridržavajte se koraka koji se prikazuju na telefonu."
+    "message": "Kad otvorite mobilnu aplikaciju WanchainMask po prvi puta, pridržavajte se koraka koji se prikazuju na telefonu."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Skenirajte ovaj kôd uporabom mobilne aplikacije MetaMask"
+    "message": "Skenirajte ovaj kôd uporabom mobilne aplikacije WanchainMask"
   },
   "syncWithMobileBeCareful": {
     "message": "Pazite da nitko ne gleda u vaš zaslon dok skenirate ovaj kôd"
   },
   "syncWithMobileComplete": {
-    "message": "Vaši su podatci uspješno sinkronizirani. Uživajte u mobilnoj aplikaciji MetaMask!"
+    "message": "Vaši su podatci uspješno sinkronizirani. Uživajte u mobilnoj aplikaciji WanchainMask!"
   },
   "terms": {
     "message": "Odredbe uporabe"
@@ -1208,7 +1208,7 @@
     "message": "Pokušaj ponovo"
   },
   "typePassword": {
-    "message": "Upišite svoju lozinku MetaMask."
+    "message": "Upišite svoju lozinku WanchainMask."
   },
   "unapproved": {
     "message": "Neodobreno"
@@ -1274,7 +1274,7 @@
     "message": "Dobro došli natrag!"
   },
   "welcome": {
-    "message": "Dobro došli u uslugu MetaMask"
+    "message": "Dobro došli u uslugu WanchainMask"
   },
   "writePhrase": {
     "message": "Zapišite ovu rečenicu na komad papira i pohranite je na sigurnom mjestu. Ako je želite još bolje zaštititi, zapišite je na više komada papira, a zatim svaki komad pohranite na dva do tri drugačija mjesta."

@@ -1,5 +1,5 @@
 import { NETWORK_TYPES } from '../helpers/constants/common'
-import { stripHexPrefix, addHexPrefix } from 'ethereumjs-util'
+import { stripHexPrefix, addHexPrefix } from 'wanchainjs-util'
 import { createSelector } from 'reselect'
 import {
   shortenAddress,
@@ -251,14 +251,18 @@ export function getIsMainnet (state) {
 export function isEthereumNetwork (state) {
   const networkType = getNetworkIdentifier(state)
   const {
-    KOVAN,
+    // KOVAN,
+    // MAINNET,
+    // RINKEBY,
+    // ROPSTEN,
+    // GOERLI,
     MAINNET,
-    RINKEBY,
-    ROPSTEN,
-    GOERLI,
+    TESTNET,
   } = NETWORK_TYPES
 
-  return [ KOVAN, MAINNET, RINKEBY, ROPSTEN, GOERLI].includes(networkType)
+  // return [ KOVAN, MAINNET, RINKEBY, ROPSTEN, GOERLI].includes(networkType)
+
+  return [ MAINNET, TESTNET].includes(networkType)
 }
 
 export function getPreferences ({ metamask }) {

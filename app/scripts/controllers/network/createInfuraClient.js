@@ -36,22 +36,26 @@ function createNetworkAndChainIdMiddleware ({ network }) {
       netId = networkEnums.MAINNET_NETWORK_ID
       chainId = '0x01'
       break
-    case 'ropsten':
-      netId = networkEnums.ROPSTEN_NETWORK_ID
+    case 'testnet':
+      netId = networkEnums.TESTNET_NETWORK_ID
       chainId = '0x03'
       break
-    case 'rinkeby':
-      netId = networkEnums.RINKEBY_NETWORK_ID
-      chainId = '0x04'
-      break
-    case 'kovan':
-      netId = networkEnums.KOVAN_NETWORK_ID
-      chainId = networkEnums.KOVAN_CHAIN_ID
-      break
-    case 'goerli':
-      netId = networkEnums.GOERLI_NETWORK_ID
-      chainId = '0x05'
-      break
+    // case 'ropsten':
+    //   netId = networkEnums.ROPSTEN_NETWORK_ID
+    //   chainId = '0x03'
+    //   break
+    // case 'rinkeby':
+    //   netId = networkEnums.RINKEBY_NETWORK_ID
+    //   chainId = '0x04'
+    //   break
+    // case 'kovan':
+    //   netId = networkEnums.KOVAN_NETWORK_ID
+    //   chainId = networkEnums.KOVAN_CHAIN_ID
+    //   break
+    // case 'goerli':
+    //   netId = networkEnums.GOERLI_NETWORK_ID
+    //   chainId = '0x05'
+    //   break
     default:
       throw new Error(`createInfuraClient - unknown network "${network}"`)
   }

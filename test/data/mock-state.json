@@ -57,13 +57,13 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "MetaMask",
+              "value": "WanchainMask",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1536268017686
             }
           ]
         ],
-        "origin": "MetaMask"
+        "origin": "WanchainMask"
       }
     },
     "selectedAddress": "0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc",
@@ -98,9 +98,9 @@
       "0x108cf70c7d384c552f42c07c41c0e1e46d77ea0d": 0.00039345803819379796,
       "0xd8f6a2ffb0fc5952d16c9768b71cfd35b6399aa5": 0.00008189274407698049
     },
-    "ticker": "ETH",
+    "ticker": "WAN",
     "currentCurrency": "usd",
-    "nativeCurrency": "ETH",
+    "nativeCurrency": "WAN",
     "conversionRate": 556.12,
     "addressBook": {
       "4": {
@@ -179,7 +179,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "MetaMask",
+              "value": "WanchainMask",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133130667
             }
@@ -290,7 +290,7 @@
             }
           ]
         ],
-        "origin": "MetaMask",
+        "origin": "WanchainMask",
         "nonceDetails": {
           "params": {
             "highestLocallyConfirmed": 0,
@@ -359,7 +359,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "MetaMask",
+              "value": "WanchainMask",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133150013
             }
@@ -470,7 +470,7 @@
             }
           ]
         ],
-        "origin": "MetaMask",
+        "origin": "WanchainMask",
         "nonceDetails": {
           "params": {
             "highestLocallyConfirmed": 0,
@@ -539,7 +539,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "MetaMask",
+              "value": "WanchainMask",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133180722
             }
@@ -650,7 +650,7 @@
             }
           ]
         ],
-        "origin": "MetaMask",
+        "origin": "WanchainMask",
         "nonceDetails": {
           "params": {
             "highestLocallyConfirmed": 182,
@@ -906,7 +906,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "MetaMask",
+              "value": "WanchainMask",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133291486
             }
@@ -1017,7 +1017,7 @@
             }
           ]
         ],
-        "origin": "MetaMask",
+        "origin": "WanchainMask",
         "nonceDetails": {
           "params": {
             "highestLocallyConfirmed": 185,

@@ -1,6 +1,6 @@
 import EventEmitter from 'events'
 import ObservableStore from 'obs-store'
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 import { ethErrors } from 'eth-json-rpc-errors'
 import createId from './random-id'
 import { MESSAGE_TYPE } from './enums'
@@ -14,7 +14,7 @@ import { MESSAGE_TYPE } from './enums'
  * @typedef {Object} Message
  * @property {number} id An id to track and identify the message object
  * @property {Object} msgParams The parameters to pass to the eth_sign method once the signature request is approved.
- * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within MetaMask.
+ * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanchainMask.
  * @property {string} msgParams.data A hex string conversion of the raw buffer data of the signature request
  * @property {number} time The epoch time at which the this message was created
  * @property {string} status Indicates whether the signature request is 'unapproved', 'approved', 'signed' or 'rejected'
@@ -86,9 +86,9 @@ export default class MessageManager extends EventEmitter {
           case 'signed':
             return resolve(data.rawSig)
           case 'rejected':
-            return reject(ethErrors.provider.userRejectedRequest('MetaMask Message Signature: User denied message signature.'))
+            return reject(ethErrors.provider.userRejectedRequest('WanchainMask Message Signature: User denied message signature.'))
           default:
-            return reject(new Error(`MetaMask Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
+            return reject(new Error(`WanchainMask Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
         }
       })
     })
@@ -153,8 +153,8 @@ export default class MessageManager extends EventEmitter {
    * Approves a Message. Sets the message status via a call to this.setMsgStatusApproved, and returns a promise with
    * any the message params modified for proper signing.
    *
-   * @param {Object} msgParams - The msgParams to be used when eth_sign is called, plus data added by MetaMask.
-   * @param {Object} msgParams.metamaskId Added to msgParams for tracking and identification within MetaMask.
+   * @param {Object} msgParams - The msgParams to be used when eth_sign is called, plus data added by WanchainMask.
+   * @param {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanchainMask.
    * @returns {Promise<object>} - Promises the msgParams object with metamaskId removed.
    *
    */

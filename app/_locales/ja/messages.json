@@ -79,7 +79,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "WanchainMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -233,7 +233,7 @@
   },
   "getEtherFromFaucet": {
     "message": "フォーセットで $1のEtherを得ることができます。",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Wan Coin faucet"
   },
   "here": {
     "message": "ここ",
@@ -393,8 +393,8 @@
   "rinkeby": {
     "message": "Rinkebyテストネットワーク"
   },
-  "ropsten": {
-    "message": "Ropstenテストネットワーク"
+  "testnet": {
+    "message": "Testnetテストネットワーク"
   },
   "save": {
     "message": "保存"
@@ -479,7 +479,7 @@
     "message": "アカウントを見る"
   },
   "viewOnEtherscan": {
-    "message": "Etherscan で見る"
+    "message": "Wanscan で見る"
   },
   "walletSeed": {
     "message": "ウォレットのパスフレーズ"
@@ -488,7 +488,7 @@
     "message": "おかえりなさい!"
   },
   "welcome": {
-    "message": "MetaMask ベータ版へようこそ!"
+    "message": "WanchainMask ベータ版へようこそ!"
   },
   "yourSigRequested": {
     "message": "あなたの署名がリクエストされています。"

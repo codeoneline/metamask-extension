@@ -1,7 +1,11 @@
 import extension from 'extensionizer'
-import { createExplorerLink as explorerLink } from '@metamask/etherscan-link'
+// import { createExplorerLink as explorerLink } from '@metamask/etherscan-link'
 import { getEnvironmentType, checkForError } from '../lib/util'
 import { ENVIRONMENT_TYPE_BACKGROUND } from '../lib/enums'
+
+const explorerLink = function (hash, network) {
+  return `https://wanscan.org/tx/${hash}`
+}
 
 export default class ExtensionPlatform {
 
@@ -193,7 +197,7 @@ export default class ExtensionPlatform {
     const nonce = parseInt(txMeta.txParams.nonce, 16)
 
     const title = 'Confirmed transaction'
-    const message = `Transaction ${nonce} confirmed! View on Etherscan`
+    const message = `Transaction ${nonce} confirmed! View on Wanscan`
     this._showNotification(title, message, url)
   }
 

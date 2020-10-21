@@ -1,4 +1,4 @@
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 import MethodRegistry from 'eth-method-registry'
 import abi from 'human-standard-token-abi'
 import abiDecoder from 'abi-decoder'
@@ -240,5 +240,5 @@ export function getBlockExplorerUrlForTx (networkId, hash, rpcPrefs = {}) {
     return `${rpcPrefs.blockExplorerUrl.replace(/\/+$/, '')}/tx/${hash}`
   }
   const prefix = getEtherscanNetworkPrefix(networkId)
-  return `https://${prefix}etherscan.io/tx/${hash}`
+  return `https://${prefix}wanscan.org/tx/${hash}`
 }

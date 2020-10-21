@@ -30,17 +30,17 @@
     "message": "Ajoute Token Yo Sikjere W"
   },
   "addAcquiredTokens": {
-    "message": "Ajoute tokens yo ou te achte lè l sèvi avèk MetaMask"
+    "message": "Ajoute tokens yo ou te achte lè l sèvi avèk WanchainMask"
   },
   "amount": {
     "message": "Kantite lajan"
   },
   "appDescription": {
-    "message": "Ekstansyon Navigatè Ethereum",
+    "message": "Ekstansyon Navigatè Wanchain",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "WanchainMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -74,7 +74,7 @@
     "message": "Navigatè ou a pa sipòte..."
   },
   "builtInCalifornia": {
-    "message": "MetaMask fèt e bati nan California."
+    "message": "WanchainMask fèt e bati nan California."
   },
   "buyCoinSwitch": {
     "message": "Achte sou CoinSwitch"
@@ -98,7 +98,7 @@
     "message": "Fèmen"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Ou bezwen sèvi ak MetaMask sou Google Chrome yo nan lòd yo konekte sou Hardware Wallet."
+    "message": "Ou bezwen sèvi ak WanchainMask sou Google Chrome yo nan lòd yo konekte sou Hardware Wallet."
   },
   "confirm": {
     "message": "Konfime"
@@ -119,10 +119,10 @@
     "message": "Konekte nan Kovan Tès Rezo a"
   },
   "connectingToMainnet": {
-    "message": "Konekte ak Prensipal Ethereum Rezo a"
+    "message": "Konekte ak Prensipal Wanchain Rezo a"
   },
-  "connectingToRopsten": {
-    "message": "Konekte ak Ropsten Tès Rezo a"
+  "connectingToTestnet": {
+    "message": "Konekte ak Testnet Tès Rezo a"
   },
   "connectingToRinkeby": {
     "message": "Konekte nan Rinkeby Tès Rezo a"
@@ -170,22 +170,22 @@
     "message": "Presizyon desimal la"
   },
   "defaultNetwork": {
-    "message": "Dfo rezo a pou tranzaksyon Ether se Mainnet."
+    "message": "Dfo rezo a pou tranzaksyon Wan Coin se Mainnet."
   },
   "deposit": {
     "message": "Depo"
   },
   "depositEther": {
-    "message": "Depo Ether"
+    "message": "Depo Wan Coin"
   },
   "details": {
     "message": "Detay yo"
   },
   "directDepositEther": {
-    "message": "Dirèkteman Depo Ether"
+    "message": "Dirèkteman Depo Wan Coin"
   },
   "directDepositEtherExplainer": {
-    "message": "Si ou deja gen kèk Ether, fason ki pi rapid yo ka resevwa Ether nan nouvo Wallet ou pa depo dirèk."
+    "message": "Si ou deja gen kèk Wan Coin, fason ki pi rapid yo ka resevwa Wan Coin nan nouvo Wallet ou pa depo dirèk."
   },
   "done": {
     "message": "Fini"
@@ -212,7 +212,7 @@
     "message": "Mete modpas pou kontinye"
   },
   "etherscanView": {
-    "message": "Gade kont sou Etherscan"
+    "message": "Gade kont sou Wanscan"
   },
   "expandView": {
     "message": "Elaji Wè"
@@ -253,11 +253,11 @@
     "message": "Pri gaz (GWEI)"
   },
   "getEther": {
-    "message": "Jwenn Ether"
+    "message": "Jwenn Wan Coin"
   },
   "getEtherFromFaucet": {
-    "message": "Jwenn Ether nan yon tiyo pou $1 la",
-    "description": "Displays network name for Ether faucet"
+    "message": "Jwenn Wan Coin nan yon tiyo pou $1 la",
+    "description": "Displays network name for Wan Coin faucet"
   },
   "getHelp": {
     "message": "Jwenn èd."
@@ -272,7 +272,7 @@
     "message": "Materyèl Wallet konekte"
   },
   "hardwareWalletsMsg": {
-    "message": "Chwazi yon Materyèl Wallet ou ta renmen itilize ak MetaMask"
+    "message": "Chwazi yon Materyèl Wallet ou ta renmen itilize ak WanchainMask"
   },
   "havingTroubleConnecting": {
     "message": "Èske w gen pwoblèm pou konekte?"
@@ -298,7 +298,7 @@
     "message": "Pòte Kont"
   },
   "importAccountMsg": {
-    "message": " Kont pòte pa pral asosye avèk orijinal ou te kreye nan kont MetaMask seed fraz. Aprann plis sou kont enpòte "
+    "message": " Kont pòte pa pral asosye avèk orijinal ou te kreye nan kont WanchainMask seed fraz. Aprann plis sou kont enpòte "
   },
   "imported": {
     "message": "Pòte",
@@ -369,16 +369,16 @@
     "message": "Dekonekte"
   },
   "mainnet": {
-    "message": "Prensipal Ethereum Rezo a"
+    "message": "Prensipal Wanchain Rezo a"
   },
   "message": {
     "message": "Mesaje"
   },
   "metamaskDescription": {
-    "message": "MetaMask sekirize idantite pou Ethereum."
+    "message": "WanchainMask sekirize idantite pou Wanchain."
   },
   "metamaskVersion": {
-    "message": "MetaMask Vèsyon"
+    "message": "WanchainMask Vèsyon"
   },
   "myAccounts": {
     "message": "Kont mwen"
@@ -387,14 +387,14 @@
     "message": "Ou dwe chwazi omwen 1 token."
   },
   "needEtherInWallet": {
-    "message": "Pou kominike avèk aplikasyon desantralize ou dwe itilize MetaMask, ou pral bezwen Ether nan Wallet ou."
+    "message": "Pou kominike avèk aplikasyon desantralize ou dwe itilize WanchainMask, ou pral bezwen Wan Coin nan Wallet ou."
   },
   "needImportFile": {
     "message": "Ou dwe chwazi yon dosye pou enpòte.",
     "description": "User is important an account and needs to add a file to continue"
   },
-  "negativeETH": {
-    "message": "Pa ka voye kantite lajan negatif ETH."
+  "negativeWAN": {
+    "message": "Pa ka voye kantite lajan negatif WAN."
   },
   "networks": {
     "message": "Rezo"
@@ -468,7 +468,7 @@
     "message": "Lajan ou itilize pi plis la"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Chwazi ETH pou bay priyorite montre valè nan ETH. Chwazi Fiat priyorite montre valè nan lajan ou chwazi a."
+    "message": "Chwazi WAN pou bay priyorite montre valè nan WAN. Chwazi Fiat priyorite montre valè nan lajan ou chwazi a."
   },
   "privacyMsg": {
     "message": "Règleman sou enfòmasyon prive"
@@ -555,8 +555,8 @@
   "rinkeby": {
     "message": "Rinkeby Tès Rezo"
   },
-  "ropsten": {
-    "message": "Ropsten Tès Rezo"
+  "testnet": {
+    "message": "Testnet Tès Rezo"
   },
   "save": {
     "message": "Sove"
@@ -595,7 +595,7 @@
     "message": "Voye"
   },
   "sendETH": {
-    "message": "Voye ETH"
+    "message": "Voye WAN"
   },
   "sendTokens": {
     "message": "Voye Tokens"
@@ -616,7 +616,7 @@
     "message": "Chwazi yon kont"
   },
   "selectAnAccountHelp": {
-    "message": "Chwazi kont pou wè nan MetaMask"
+    "message": "Chwazi kont pou wè nan WanchainMask"
   },
   "selectHdPath": {
     "message": "Chwazi chemen HD"
@@ -676,7 +676,7 @@
     "message": "3. Kòmanse itilize dApps ak plis ankò!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Sèvi ak kont materyèl ou menm jan ou t ap fè pou kont Etherum. Ouvri sesyon an nan dApps, voye Eth, achte ak stòke ERC20 tokens ak e ki pake chanje tokens tankou CryptoKitties."
+    "message": "Sèvi ak kont materyèl ou menm jan ou t ap fè pou kont Etherum. Ouvri sesyon an nan dApps, voye Wan, achte ak stòke ERC20 tokens ak e ki pake chanje tokens tankou CryptoKitties."
   },
   "submitted": {
     "message": "Te Soumèt"
@@ -776,7 +776,7 @@
     "message": "Wè Kont"
   },
   "viewOnEtherscan": {
-    "message": "Wè sou Etherscan"
+    "message": "Wè sou Wanscan"
   },
   "visitWebSite": {
     "message": "Vizite sit entènèt nou an"
@@ -788,7 +788,7 @@
     "message": "Bon Retou!"
   },
   "welcome": {
-    "message": "Byenveni nan MetaMask"
+    "message": "Byenveni nan WanchainMask"
   },
   "yesLetsTry": {
     "message": "Wi, ann eseye"

@@ -12,7 +12,7 @@ const enLocaleMessages = require('../../app/_locales/en/messages.json')
 
 const ganacheServer = new Ganache()
 
-describe('MetaMask', function () {
+describe('WanchainMask', function () {
   let driver
   let publicAddress
 

@@ -92,7 +92,7 @@ describe('TransactionListItemDetails Component', function () {
     assert.equal(child.find(Button).length, 3)
   })
 
-  it('should disable the Copy Tx ID and View In Etherscan buttons when tx hash is missing', function () {
+  it('should disable the Copy Tx ID and View In Wanscan buttons when tx hash is missing', function () {
     const transaction = {
       history: [],
       id: 1,
@@ -133,7 +133,7 @@ describe('TransactionListItemDetails Component', function () {
     assert.strictEqual(buttons.at(1).prop('disabled'), true)
   })
 
-  it('should render functional Copy Tx ID and View In Etherscan buttons when tx hash exists', function () {
+  it('should render functional Copy Tx ID and View In Wanscan buttons when tx hash exists', function () {
     const transaction = {
       history: [],
       id: 1,

@@ -6,8 +6,8 @@
 *
 * @param {(number | string | BN)} value - The value to convert.
 * @param {Object} [options] Options to specify details of the conversion
-* @param {string} [options.fromCurrency = 'ETH' | 'USD'] The currency of the passed value
-* @param {string} [options.toCurrency = 'ETH' | 'USD'] The desired currency of the result
+* @param {string} [options.fromCurrency = 'WAN' | 'USD'] The currency of the passed value
+* @param {string} [options.toCurrency = 'WAN' | 'USD'] The desired currency of the result
 * @param {string} [options.fromNumericBase = 'hex' | 'dec' | 'BN'] The numeric basic of the passed value.
 * @param {string} [options.toNumericBase = 'hex' | 'dec' | 'BN'] The desired numeric basic of the result.
 * @param {string} [options.fromDenomination = 'WEI'] The denomination of the passed value
@@ -23,7 +23,7 @@
 
 import BigNumber from 'bignumber.js'
 
-import ethUtil, { stripHexPrefix } from 'ethereumjs-util'
+import ethUtil, { stripHexPrefix } from 'wanchainjs-util'
 
 const BN = ethUtil.BN
 
@@ -41,12 +41,12 @@ const toBigNumber = {
 const toNormalizedDenomination = {
   WEI: (bigNumber) => bigNumber.div(BIG_NUMBER_WEI_MULTIPLIER),
   GWEI: (bigNumber) => bigNumber.div(BIG_NUMBER_GWEI_MULTIPLIER),
-  ETH: (bigNumber) => bigNumber.div(BIG_NUMBER_ETH_MULTIPLIER),
+  WAN: (bigNumber) => bigNumber.div(BIG_NUMBER_ETH_MULTIPLIER),
 }
 const toSpecifiedDenomination = {
   WEI: (bigNumber) => bigNumber.times(BIG_NUMBER_WEI_MULTIPLIER).round(),
   GWEI: (bigNumber) => bigNumber.times(BIG_NUMBER_GWEI_MULTIPLIER).round(9),
-  ETH: (bigNumber) => bigNumber.times(BIG_NUMBER_ETH_MULTIPLIER).round(9),
+  WAN: (bigNumber) => bigNumber.times(BIG_NUMBER_ETH_MULTIPLIER).round(9),
 }
 const baseChange = {
   hex: (n) => n.toString(16),
@@ -61,7 +61,7 @@ const baseChange = {
 
 /**
  * Defines which type of denomination a value is in
- * @typedef {('WEI' | 'GWEI' | 'ETH')} EthDenomination
+ * @typedef {('WEI' | 'GWEI' | 'WAN')} EthDenomination
  */
 
 /**

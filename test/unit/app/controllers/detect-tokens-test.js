@@ -8,7 +8,7 @@ import BigNumber from 'bignumber.js'
 import DetectTokensController from '../../../../app/scripts/controllers/detect-tokens'
 import NetworkController from '../../../../app/scripts/controllers/network/network'
 import PreferencesController from '../../../../app/scripts/controllers/preferences'
-import { MAINNET, ROPSTEN } from '../../../../app/scripts/controllers/network/enums'
+import { MAINNET, TESTNET } from '../../../../app/scripts/controllers/network/enums'
 
 describe('DetectTokensController', function () {
   const sandbox = sinon.createSandbox()
@@ -71,7 +71,7 @@ describe('DetectTokensController', function () {
 
   it('should not check tokens while on test network', async function () {
     sandbox.useFakeTimers()
-    network.setProviderType(ROPSTEN)
+    network.setProviderType(TESTNET)
     const controller = new DetectTokensController({ preferences, network, keyringMemStore })
     controller.isOpen = true
     controller.isUnlocked = true

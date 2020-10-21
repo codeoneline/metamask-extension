@@ -145,11 +145,11 @@ describe('gas-modal-page-container container', function () {
         hideBasic: true,
         infoRowProps: {
           originalTotalFiat: '637.41',
-          originalTotalEth: '12.748189 ETH',
+          originalTotalEth: '12.748189 WAN',
           newTotalFiat: '637.41',
-          newTotalEth: '12.748189 ETH',
-          sendAmount: '0.45036 ETH',
-          transactionFee: '12.297829 ETH',
+          newTotalEth: '12.748189 WAN',
+          sendAmount: '0.45036 WAN',
+          transactionFee: '12.297829 WAN',
         },
         insufficientBalance: true,
         isSpeedUp: false,
@@ -191,7 +191,7 @@ describe('gas-modal-page-container container', function () {
               },
               provider: {
                 ...baseMockState.metamask.provider,
-                type: 'rinkeby',
+                type: 'testnet',
               },
             },
           }),
@@ -202,26 +202,6 @@ describe('gas-modal-page-container container', function () {
               ...baseExpectedResult.infoRowProps,
               newTotalFiat: '',
             },
-            isMainnet: false,
-          },
-        },
-        {
-          mockState: Object.assign({}, baseMockState, {
-            metamask: {
-              ...baseMockState.metamask,
-              preferences: {
-                ...baseMockState.metamask.preferences,
-                showFiatInTestnets: true,
-              },
-              provider: {
-                ...baseMockState.metamask.provider,
-                type: 'rinkeby',
-              },
-            },
-          }),
-          mockOwnProps: baseMockOwnProps,
-          expectedResult: {
-            ...baseExpectedResult,
             isMainnet: false,
           },
         },

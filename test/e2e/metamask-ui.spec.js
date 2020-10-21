@@ -13,7 +13,7 @@ const enLocaleMessages = require('../../app/_locales/en/messages.json')
 
 const ganacheServer = new Ganache()
 
-describe('MetaMask', function () {
+describe('WanchainMask', function () {
   let driver
   let tokenAddress
 
@@ -208,12 +208,12 @@ describe('MetaMask', function () {
 
     it('balance renders', async function () {
       const balance = await driver.findElement(By.css('[data-testid="wallet-balance"] .list-item__heading'))
-      await driver.wait(until.elementTextMatches(balance, /100\s*ETH/))
+      await driver.wait(until.elementTextMatches(balance, /100\s*WAN/))
       await driver.delay(regularDelayMs)
     })
   })
 
-  describe('Send ETH from inside MetaMask using default gas', function () {
+  describe('Send WAN from inside WanchainMask using default gas', function () {
     it('starts a send transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
       await driver.delay(regularDelayMs)
@@ -273,11 +273,11 @@ describe('MetaMask', function () {
       }, 10000)
 
       const txValues = await driver.findElement(By.css('.transaction-list-item__primary-currency'))
-      await driver.wait(until.elementTextMatches(txValues, /-1\s*ETH/), 10000)
+      await driver.wait(until.elementTextMatches(txValues, /-1\s*WAN/), 10000)
     })
   })
 
-  describe('Send ETH from inside MetaMask using fast gas option', function () {
+  describe('Send WAN from inside WanchainMask using fast gas option', function () {
     it('starts a send transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
       await driver.delay(regularDelayMs)
@@ -312,11 +312,11 @@ describe('MetaMask', function () {
       }, 10000)
 
       const txValues = await driver.findElement(By.css('.transaction-list-item__primary-currency'))
-      await driver.wait(until.elementTextMatches(txValues, /-1\s*ETH/), 10000)
+      await driver.wait(until.elementTextMatches(txValues, /-1\s*WAN/), 10000)
     })
   })
 
-  describe('Send ETH from inside MetaMask using advanced gas modal', function () {
+  describe('Send WAN from inside WanchainMask using advanced gas modal', function () {
     it('starts a send transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
       await driver.delay(regularDelayMs)
@@ -360,11 +360,11 @@ describe('MetaMask', function () {
       }, 10000)
 
       const txValues = await driver.findElement(By.css('.transaction-list-item__primary-currency'))
-      await driver.wait(until.elementTextMatches(txValues, /-1\s*ETH/), 10000)
+      await driver.wait(until.elementTextMatches(txValues, /-1\s*WAN/), 10000)
     })
   })
 
-  describe('Send ETH from dapp using advanced gas controls', function () {
+  describe('Send WAN from dapp using advanced gas controls', function () {
     let windowHandles
     let extension
     let popup
@@ -428,7 +428,7 @@ describe('MetaMask', function () {
       await driver.delay(2000)
 
       windowHandles = await driver.getAllWindowHandles()
-      await driver.switchToWindowWithTitle('MetaMask Notification', windowHandles)
+      await driver.switchToWindowWithTitle('WanchainMask Notification', windowHandles)
       await driver.delay(regularDelayMs)
 
       await driver.assertElementNotPresent(By.xpath(`//li[contains(text(), 'Data')]`))
@@ -463,7 +463,7 @@ describe('MetaMask', function () {
       }, 10000)
 
       const txValue = await driver.findClickableElement(By.css('.transaction-list-item__primary-currency'))
-      await driver.wait(until.elementTextMatches(txValue, /-3\s*ETH/), 10000)
+      await driver.wait(until.elementTextMatches(txValue, /-3\s*WAN/), 10000)
     })
 
     it('the transaction has the expected gas price', async function () {
@@ -658,7 +658,7 @@ describe('MetaMask', function () {
       await driver.delay(regularDelayMs)
     })
 
-    it('calls and confirms a contract method where ETH is sent', async function () {
+    it('calls and confirms a contract method where WAN is sent', async function () {
       await driver.switchToWindow(dapp)
       await driver.delay(regularDelayMs)
 
@@ -676,7 +676,7 @@ describe('MetaMask', function () {
 
       await driver.findElements(By.css('.transaction-list-item'))
       const txListValue = await driver.findClickableElement(By.css('.transaction-list-item__primary-currency'))
-      await driver.wait(until.elementTextMatches(txListValue, /-4\s*ETH/), 10000)
+      await driver.wait(until.elementTextMatches(txListValue, /-4\s*WAN/), 10000)
       await txListValue.click()
       await driver.delay(regularDelayMs)
 
@@ -718,10 +718,10 @@ describe('MetaMask', function () {
       }, 10000)
 
       const txValues = await driver.findElements(By.css('.transaction-list-item__primary-currency'))
-      await driver.wait(until.elementTextMatches(txValues[0], /-4\s*ETH/), 10000)
+      await driver.wait(until.elementTextMatches(txValues[0], /-4\s*WAN/), 10000)
     })
 
-    it('calls and confirms a contract method where ETH is received', async function () {
+    it('calls and confirms a contract method where WAN is received', async function () {
       await driver.switchToWindow(dapp)
       await driver.delay(regularDelayMs)
 
@@ -743,18 +743,18 @@ describe('MetaMask', function () {
       }, 10000)
 
       const txValues = await driver.findElement(By.css('.transaction-list-item__primary-currency'))
-      await driver.wait(until.elementTextMatches(txValues, /-0\s*ETH/), 10000)
+      await driver.wait(until.elementTextMatches(txValues, /-0\s*WAN/), 10000)
 
       await driver.closeAllWindowHandlesExcept([extension, dapp])
       await driver.switchToWindow(extension)
     })
 
-    it('renders the correct ETH balance', async function () {
+    it('renders the correct WAN balance', async function () {
       const balance = await driver.findElement(By.css('[data-testid="eth-overview__primary-currency"]'))
       await driver.delay(regularDelayMs)
-      await driver.wait(until.elementTextMatches(balance, /^87.*\s*ETH.*$/), 10000)
+      await driver.wait(until.elementTextMatches(balance, /^87.*\s*WAN.*$/), 10000)
       const tokenAmount = await balance.getText()
-      assert.ok(/^87.*\s*ETH.*$/.test(tokenAmount))
+      assert.ok(/^87.*\s*WAN.*$/.test(tokenAmount))
       await driver.delay(regularDelayMs)
     })
   })
@@ -837,7 +837,7 @@ describe('MetaMask', function () {
     })
   })
 
-  describe('Send token from inside MetaMask', function () {
+  describe('Send token from inside WanchainMask', function () {
     let gasModal
     it('starts to send a transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
@@ -1065,7 +1065,7 @@ describe('MetaMask', function () {
       await driver.wait(until.stalenessOf(gasModal))
 
       const gasFeeInEth = await driver.findElement(By.css('.confirm-approve-content__transaction-details-content__secondary-fee'))
-      assert.equal(await gasFeeInEth.getText(), '0.0006 ETH')
+      assert.equal(await gasFeeInEth.getText(), '0.0006 WAN')
     })
 
     it('edits the permission', async function () {

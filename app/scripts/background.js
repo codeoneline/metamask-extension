@@ -110,7 +110,7 @@ initialize().catch(log.error)
  * @property {string} currentLocale - A locale string matching the user's preferred display language.
  * @property {Object} provider - The current selected network provider.
  * @property {string} provider.rpcTarget - The address for the RPC API, if using an RPC API.
- * @property {string} provider.type - An identifier for the type of network selected, allows MetaMask to use custom provider strategies for known networks.
+ * @property {string} provider.type - An identifier for the type of network selected, allows WanchainMask to use custom provider strategies for known networks.
  * @property {string} network - A stringified number of the current network ID.
  * @property {Object} accounts - An object mapping lower-case hex addresses to objects with "balance" and "address" keys, both storing hex string values.
  * @property {hex} currentBlockGasLimit - The most recently seen block gas limit, in a lower case hex prefixed string.
@@ -136,19 +136,19 @@ initialize().catch(log.error)
 
 /**
  * @typedef VersionedData
- * @property {MetaMaskState} data - The data emitted from MetaMask controller, or used to initialize it.
+ * @property {MetaMaskState} data - The data emitted from WanchainMask controller, or used to initialize it.
  * @property {Number} version - The latest migration version that has been run.
  */
 
 /**
- * Initializes the MetaMask controller, and sets up all platform configuration.
+ * Initializes the WanchainMask controller, and sets up all platform configuration.
  * @returns {Promise} - Setup complete.
  */
 async function initialize () {
   const initState = await loadStateFromPersistence()
   const initLangCode = await getFirstPreferredLangCode()
   await setupController(initState, initLangCode)
-  log.debug('MetaMask initialization complete.')
+  log.debug('WanchainMask initialization complete.')
 }
 
 //
@@ -158,7 +158,7 @@ async function initialize () {
 /**
  * Loads any stored data, prioritizing the latest storage strategy.
  * Migrates that data schema in case it was last loaded on an older version.
- * @returns {Promise<MetaMaskState>} - Last data emitted from previous instance of MetaMask.
+ * @returns {Promise<MetaMaskState>} - Last data emitted from previous instance of WanchainMask.
  */
 async function loadStateFromPersistence () {
   // migrations
@@ -177,7 +177,7 @@ async function loadStateFromPersistence () {
   if (versionedData && !versionedData.data) {
     // unable to recover, clear state
     versionedData = migrator.generateInitialState(firstTimeState)
-    sentry.captureMessage('MetaMask - Empty vault found - unable to recover')
+    sentry.captureMessage('WanchainMask - Empty vault found - unable to recover')
   }
 
   // report migration errors to sentry
@@ -193,7 +193,7 @@ async function loadStateFromPersistence () {
   // migrate data
   versionedData = await migrator.migrateData(versionedData)
   if (!versionedData) {
-    throw new Error('MetaMask - migrator returned undefined')
+    throw new Error('WanchainMask - migrator returned undefined')
   }
 
   // write to disk
@@ -202,7 +202,7 @@ async function loadStateFromPersistence () {
   } else {
     // throw in setTimeout so as to not block boot
     setTimeout(() => {
-      throw new Error('MetaMask - Localstore not supported')
+      throw new Error('WanchainMask - Localstore not supported')
     })
   }
 
@@ -211,7 +211,7 @@ async function loadStateFromPersistence () {
 }
 
 /**
- * Initializes the MetaMask Controller with any initial state and default language.
+ * Initializes the WanchainMask Controller with any initial state and default language.
  * Configures platform-specific error reporting strategy.
  * Streams emitted state updates to platform-specific storage strategy.
  * Creates platform listeners for new Dapps/Contexts, and sets up their data connections to the controller.
@@ -222,7 +222,7 @@ async function loadStateFromPersistence () {
  */
 function setupController (initState, initLangCode) {
   //
-  // MetaMask Controller
+  // WanchainMask Controller
   //
 
   const controller = new MetamaskController({
@@ -259,7 +259,7 @@ function setupController (initState, initLangCode) {
     storeTransform(versionifyData),
     createStreamSink(persistData),
     (error) => {
-      log.error('MetaMask - Persistence pipeline failed', error)
+      log.error('WanchainMask - Persistence pipeline failed', error)
     },
   )
 
@@ -275,10 +275,10 @@ function setupController (initState, initLangCode) {
 
   async function persistData (state) {
     if (!state) {
-      throw new Error('MetaMask - updated state is missing')
+      throw new Error('WanchainMask - updated state is missing')
     }
     if (!state.data) {
-      throw new Error('MetaMask - updated state does not have data')
+      throw new Error('WanchainMask - updated state does not have data')
     }
     if (localStore.isSupported) {
       try {
@@ -318,8 +318,8 @@ function setupController (initState, initLangCode) {
    */
 
   /**
-   * Connects a Port to the MetaMask controller via a multiplexed duplex stream.
-   * This method identifies trusted (MetaMask) interfaces, and connects them differently from untrusted (web pages).
+   * Connects a Port to the WanchainMask controller via a multiplexed duplex stream.
+   * This method identifies trusted (WanchainMask) interfaces, and connects them differently from untrusted (web pages).
    * @param {Port} remotePort - The port provided by a new context.
    */
   function connectRemote (remotePort) {
@@ -458,7 +458,7 @@ async function openPopup () {
   )
 }
 
-// On first install, open a new tab with MetaMask
+// On first install, open a new tab with WanchainMask
 extension.runtime.onInstalled.addListener(({ reason }) => {
   if (reason === 'install' && !(process.env.METAMASK_DEBUG || process.env.IN_TEST)) {
     platform.openExtensionInBrowser()

@@ -13,7 +13,7 @@ const cleanContextForImports = () => {
   try {
     global.define = undefined
   } catch (_) {
-    console.warn('MetaMask - global.define could not be deleted.')
+    console.warn('WanchainMask - global.define could not be deleted.')
   }
 }
 
@@ -24,7 +24,7 @@ const restoreContextAfterImports = () => {
   try {
     global.define = __define
   } catch (_) {
-    console.warn('MetaMask - global.define could not be overwritten.')
+    console.warn('WanchainMask - global.define could not be overwritten.')
   }
 }
 
@@ -32,7 +32,7 @@ cleanContextForImports()
 
 import log from 'loglevel'
 import LocalMessageDuplexStream from 'post-message-stream'
-import { initProvider } from '@metamask/inpage-provider'
+import { initProvider } from '@wanchainmask/inpage-provider'
 
 // TODO:deprecate:2020
 import setupWeb3 from './lib/setupWeb3.js'
@@ -59,11 +59,11 @@ initProvider({
 // Setup web3
 
 
-if (typeof window.web3 !== 'undefined') {
-  throw new Error(`MetaMask detected another web3.
-     MetaMask will not work reliably with another web3 extension.
+if (typeof window.wanWeb3 !== 'undefined') {
+  throw new Error(`WanchainMask detected another web3.
+     WanchainMask will not work reliably with another web3 extension.
      This usually happens if you have two MetaMasks installed,
-     or MetaMask and another web3 extension. Please remove one
+     or WanchainMask and another web3 extension. Please remove one
      and try again.`)
 }
 

@@ -1,7 +1,7 @@
 import ObservableStore from 'obs-store'
 import log from 'loglevel'
 import { normalize as normalizeAddress } from 'eth-sig-util'
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 
 
 // By default, poll every 3 minutes
@@ -40,7 +40,7 @@ export default class TokenRatesController {
           contractExchangeRates[normalizeAddress(token.address)] = price ? price[nativeCurrency] : 0
         })
       } catch (error) {
-        log.warn(`MetaMask - TokenRatesController exchange rate fetch failed.`, error)
+        log.warn(`WanchainMask - TokenRatesController exchange rate fetch failed.`, error)
       }
     }
     this.store.putState({ contractExchangeRates })

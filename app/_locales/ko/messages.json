@@ -153,10 +153,10 @@
     "message": "메타마스크는 캘리포니아에서 디자인되고 만들어졌습니다."
   },
   "buyWithWyre": {
-    "message": "Wyre로 ETH 구매"
+    "message": "Wyre로 WAN 구매"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre는 신용 카드를 사용하여 ETH을 바로 MetaMask 계정에 입금할 수 있게 해줍니다."
+    "message": "Wyre는 신용 카드를 사용하여 ETH을 바로 WanchainMask 계정에 입금할 수 있게 해줍니다."
   },
   "buyCoinSwitch": {
     "message": "코인 스위치 구입"
@@ -233,8 +233,8 @@
   "connectingToMainnet": {
     "message": "이더리움 메인넷 접속 중"
   },
-  "connectingToRopsten": {
-    "message": "Ropsten 테스트넷 접속 중"
+  "connectingToTestnet": {
+    "message": "Testnet 테스트넷 접속 중"
   },
   "connectingToRinkeby": {
     "message": "Rinkeby 테스트넷 접속 중"
@@ -477,7 +477,7 @@
   },
   "getEtherFromFaucet": {
     "message": "파우셋에서 $1에 달하는 이더를 얻으세요.",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for Wan Coin faucet"
   },
   "getHelp": {
     "message": "도움말"
@@ -567,7 +567,7 @@
     "message": "알려진 계약 주소."
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "ETH 네트워크 아님, 소문자로 설정"
+    "message": "WAN 네트워크 아님, 소문자로 설정"
   },
   "invalidInput": {
     "message": "올바르지 않은 입력값"
@@ -664,7 +664,7 @@
     "message": "가져올 파일을 선택해주세요.",
     "description": "User is important an account and needs to add a file to continue"
   },
-  "negativeETH": {
+  "negativeWAN": {
     "message": "음수값의 이더를 보낼 수 없습니다."
   },
   "networkName": {
@@ -793,7 +793,7 @@
     "message": "주 화폐"
   },
   "primaryCurrencySettingDescription": {
-    "message": "체인의 고유 통화 값으로 우선 표기하시려면 네이티브를 선택하세요. (예: ETH) 설정하신 Fiat 통화 값으로 우선 표기하시려면 Fiat을 선택하세요."
+    "message": "체인의 고유 통화 값으로 우선 표기하시려면 네이티브를 선택하세요. (예: WAN) 설정하신 Fiat 통화 값으로 우선 표기하시려면 Fiat을 선택하세요."
   },
   "privacyMsg": {
     "message": "개인정보 보호 정책"
@@ -898,8 +898,8 @@
   "rinkeby": {
     "message": "Rinkeby 테스트넷"
   },
-  "ropsten": {
-    "message": "Ropsten 테스트넷"
+  "testnet": {
+    "message": "Testnet 테스트넷"
   },
   "goerli": {
     "message": "Goerli 테스트 네트워크"
@@ -971,7 +971,7 @@
     "message": "전송 수량"
   },
   "sendETH": {
-    "message": "ETH 보내기"
+    "message": "WAN 보내기"
   },
   "sendTokens": {
     "message": "토큰 전송"
@@ -1106,19 +1106,19 @@
     "message": "모바일과 동기화"
   },
   "syncWithMobileDesc": {
-    "message": "모바일 기기와 계정 및 정보를 동기화할 수 있습니다. MetaMask 모바일 앱을 열고, \"설정\"으로 간 다음 \"브라우저 확장 프로그램에서 동기화\"를 누르세요"
+    "message": "모바일 기기와 계정 및 정보를 동기화할 수 있습니다. WanchainMask 모바일 앱을 열고, \"설정\"으로 간 다음 \"브라우저 확장 프로그램에서 동기화\"를 누르세요"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "처음으로 MetaMask 모바일 앱을 여시는 경우, 전화에 나온 과정을 따르세요."
+    "message": "처음으로 WanchainMask 모바일 앱을 여시는 경우, 전화에 나온 과정을 따르세요."
   },
   "syncWithMobileScanThisCode": {
-    "message": "MetaMask 모바일 앱으로 이 코드를 스캔하세요"
+    "message": "WanchainMask 모바일 앱으로 이 코드를 스캔하세요"
   },
   "syncWithMobileBeCareful": {
     "message": "이 코드를 스캔할 때 귀하의 화면을 보는 사람이 없는 것을 확인하세요"
   },
   "syncWithMobileComplete": {
-    "message": "데이터가 성공적으로 동기화됐습니다. MetaMask 모바일 앱을 즐겁게 사용하세요!"
+    "message": "데이터가 성공적으로 동기화됐습니다. WanchainMask 모바일 앱을 즐겁게 사용하세요!"
   },
   "terms": {
     "message": "사용 지침"

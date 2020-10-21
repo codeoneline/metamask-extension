@@ -35,7 +35,7 @@ export default function AccountOptionsMenu ({ anchorElement, onClose }) {
     eventOpts: {
       category: 'Navigation',
       action: 'Account Options',
-      name: 'Clicked View on Etherscan',
+      name: 'Clicked View on Wanscan',
     },
   })
   const openConnectedSitesEvent = useMetricEvent({

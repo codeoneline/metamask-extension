@@ -292,7 +292,7 @@ describe('Gas Duck', function () {
       )
       assert.ok(
         window.fetch.getCall(0).args[0].startsWith('https://ethgasstation.info/json/ethgasAPI.json'),
-        'should fetch ETH Gas Station',
+        'should fetch WAN Gas Station',
       )
       assert.deepEqual(
         mockDistpatch.getCall(1).args,
@@ -381,7 +381,7 @@ describe('Gas Duck', function () {
       )
       assert.ok(
         window.fetch.getCall(0).args[0].startsWith('https://ethgasstation.info/json/ethgasAPI.json'),
-        'should fetch ETH Gas Station',
+        'should fetch WAN Gas Station',
       )
       assert.deepEqual(
         mockDistpatch.getCall(1).args,
@@ -417,7 +417,7 @@ describe('Gas Duck', function () {
         initState,
         { basicPriceAndTimeEstimatesLastRetrieved: 1000000 },
       ),
-      metamask: { provider: { type: 'ropsten' } },
+      metamask: { provider: { type: 'testnet' } },
       }))
       assert.deepEqual(
         mockDistpatch.getCall(0).args,
@@ -425,7 +425,7 @@ describe('Gas Duck', function () {
       )
       assert.ok(
         window.fetch.getCall(0).args[0].startsWith('https://ethgasstation.info/json/ethgasAPI.json'),
-        'should fetch ETH Gas Station',
+        'should fetch WAN Gas Station',
       )
 
       assert.deepEqual(
@@ -484,7 +484,7 @@ describe('Gas Duck', function () {
         initState,
         {},
       ),
-      metamask: { provider: { type: 'ropsten' } },
+      metamask: { provider: { type: 'testnet' } },
       }))
       assert.deepEqual(
         mockDistpatch.getCall(0).args,
@@ -528,7 +528,7 @@ describe('Gas Duck', function () {
         initState,
         {},
       ),
-      metamask: { provider: { type: 'ropsten' } },
+      metamask: { provider: { type: 'testnet' } },
       }))
       assert.deepEqual(
         mockDistpatch.getCall(0).args,
@@ -536,7 +536,7 @@ describe('Gas Duck', function () {
       )
       assert.ok(
         window.fetch.getCall(0).args[0].startsWith('https://ethgasstation.info/json/ethgasAPI.json'),
-        'should fetch ETH Gas Station',
+        'should fetch WAN Gas Station',
       )
 
       assert.deepEqual(
@@ -579,7 +579,7 @@ describe('Gas Duck', function () {
         initState,
         { priceAndTimeEstimatesLastRetrieved: 1000000 },
       ),
-      metamask: { provider: { type: 'ropsten' } },
+      metamask: { provider: { type: 'testnet' } },
       }))
       assert.deepEqual(
         mockDistpatch.getCall(0).args,
@@ -587,7 +587,7 @@ describe('Gas Duck', function () {
       )
       assert.ok(
         window.fetch.getCall(0).args[0].startsWith('https://ethgasstation.info/json/predictTable.json'),
-        'should fetch ETH Gas Station',
+        'should fetch WAN Gas Station',
       )
 
       assert.deepEqual(
@@ -623,7 +623,7 @@ describe('Gas Duck', function () {
           }],
         },
       ),
-      metamask: { provider: { type: 'ropsten' } },
+      metamask: { provider: { type: 'testnet' } },
       }))
       assert.deepEqual(
         mockDistpatch.getCall(0).args,

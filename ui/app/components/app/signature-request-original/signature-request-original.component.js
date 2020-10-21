@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 import classnames from 'classnames'
 import { ObjectInspector } from 'react-inspector'
 
@@ -120,7 +120,7 @@ export default class SignatureRequestOriginal extends Component {
           { `${this.context.t('balance')}:` }
         </div>
         <div className="request-signature__balance-value">
-          { `${balanceInEther} ETH` }
+          { `${balanceInEther} WAN` }
         </div>
       </div>
     )

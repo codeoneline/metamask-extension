@@ -1,9 +1,15 @@
-import Ganache from 'ganache-core'
-import nock from 'nock'
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-import log from 'loglevel'
-import { JSDOM } from 'jsdom'
+// import Ganache from 'wanache-core'
+// import nock from 'nock'
+// import Enzyme from 'enzyme'
+// import Adapter from 'enzyme-adapter-react-16'
+// import log from 'loglevel'
+// import { JSDOM } from 'jsdom'
+const Ganache = require('wanache-core')
+const nock = require('nock')
+const Enzyme = require('enzyme')
+const Adapter = require('enzyme-adapter-react-16')
+const log = require('loglevel')
+const { JSDOM } = require('jsdom')
 
 
 nock.disableNetConnect()

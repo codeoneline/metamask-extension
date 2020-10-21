@@ -1,4 +1,4 @@
-const ganache = require('ganache-core')
+const ganache = require('wanache-core')
 const { promisify } = require('util')
 
 const defaultOptions = {

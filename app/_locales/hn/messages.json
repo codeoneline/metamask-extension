@@ -28,7 +28,7 @@
     "description": "आवेदन का विवरण"
   },
   "appName": {
-    "message": "मेटामास्क/MetaMask",
+    "message": "मेटामास्क/WanchainMask",
     "description": "एप्लिकेशन का नाम"
   },
   "attemptingConnect": {
@@ -104,7 +104,7 @@
     "message": "जमा"
   },
   "depositEther": {
-    "message": "जमा - Ether"
+    "message": "जमा - Wan Coin"
   },
   "details": {
     "message": "संदेश विवरण"
@@ -258,7 +258,7 @@
     "message": "आयात करने के लिए आपको एक फ़ाइल का चयन करना होगा।",
     "description": "प्रयोक्ता महत्वपूर्ण खाता है और उसे जारी रखने के लिए एक फ़ाइल जोड़ने की आवश्यकता है"
   },
-  "negativeETH": {
+  "negativeWAN": {
     "message": "ईटीएच की नकारात्मक मात्रा नहीं भेज सकते हैं।."
   },
   "networks": {
@@ -333,7 +333,7 @@
   "rinkeby": {
     "message": "रिचीव टेस्ट नेटवर्क"
   },
-  "ropsten": {
+  "testnet": {
     "message": "रॉप्स्टेन टेस्ट नेटवर्क"
   },
   "save": {
@@ -358,7 +358,7 @@
     "message": "भेजें"
   },
   "sendETH": {
-    "message": "भेजें ETH"
+    "message": "भेजें WAN"
   },
   "sendTokens": {
     "message": "भेजें टोकन"

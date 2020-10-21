@@ -1,6 +1,6 @@
 /* eslint camelcase: 0 */
 
-import ethUtil from 'ethereumjs-util'
+import ethUtil from 'wanchainjs-util'
 
 const inDevelopment = process.env.METAMASK_DEBUG || process.env.IN_TEST
 
@@ -115,7 +115,7 @@ function composeParamAddition (paramValue, paramName) {
   * @property {string} config.accountType The account type being used at the time of the event: 'hardware', 'imported' or 'default'
   * @property {number} config.numberOfTokens The number of tokens that the user has added at the time of the event
   * @property {number} config.numberOfAccounts The number of accounts the user has added at the time of the event
-  * @property {string} config.version The current version of the MetaMask extension
+  * @property {string} config.version The current version of the WanchainMask extension
   * @property {string} config.previousPath The pathname of the URL the user was on prior to the URL they are on at the time of the event
   * @property {string} config.currentPath The pathname of the URL the user is on at the time of the event
   * @property {string} config.metaMetricsId A random id assigned to a user at the time of opting in to metametrics. A hexadecimal number
@@ -123,7 +123,7 @@ function composeParamAddition (paramValue, paramName) {
   * @property {boolean} config.excludeMetaMetricsId Whether or not the tracked event data should be associated with a metametrics id
   * @property {boolean} config.isNewVisit Whether or not the event should be tracked as a new visit/user sessions
   * @returns {string} - Returns a url to be passed to fetch to make the appropriate request to matomo.
-  *   Example: https://chromeextensionmm.innocraft.cloud/piwik.php?idsite=1&rec=1&apiv=1&e_c=Navigation&e_a=Home&e_n=Clicked%20Send:%20Eth&urlref=http%3A%2F%2Fwww.metamask.io%2Fmetametrics%2Fhome.html%23send&dimension5=3&dimension6=fullscreen&dimension7=ETH&dimension8=default&dimension9=0&dimension10=3&url=http%3A%2F%2Fwww.metamask.io%2Fmetametrics%2Fhome.html%23&_id=49c10aff19795e9a&rand=7906028754863992&pv_id=53acad&uid=49c1
+  *   Example: https://chromeextensionmm.innocraft.cloud/piwik.php?idsite=1&rec=1&apiv=1&e_c=Navigation&e_a=Home&e_n=Clicked%20Send:%20Eth&urlref=http%3A%2F%2Fwww.metamask.io%2Fmetametrics%2Fhome.html%23send&dimension5=3&dimension6=fullscreen&dimension7=WAN&dimension8=default&dimension9=0&dimension10=3&url=http%3A%2F%2Fwww.metamask.io%2Fmetametrics%2Fhome.html%23&_id=49c10aff19795e9a&rand=7906028754863992&pv_id=53acad&uid=49c1
   */
 function composeUrl (config) {
   const {

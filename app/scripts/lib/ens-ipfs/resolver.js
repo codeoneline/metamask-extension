@@ -1,4 +1,4 @@
-import namehash from 'eth-ens-namehash'
+import namehash from 'wan-wns-namehash'
 import Eth from 'ethjs-query'
 import EthContract from 'ethjs-contract'
 import registryAbi from './contracts/registry'

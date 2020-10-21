@@ -1,4 +1,4 @@
-import EthJsEns from 'ethjs-ens'
+import EthJsEns from 'wanjs-wns'
 import ensNetworkMap from 'ethereum-ens-network-map'
 
 export default class Ens {
