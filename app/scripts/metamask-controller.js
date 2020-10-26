@@ -61,6 +61,11 @@ import EthQuery from 'eth-query'
 import nanoid from 'nanoid'
 import contractMap from 'eth-contract-metadata'
 
+import sigUtil from 'eth-sig-util'
+import bip39 from 'bip39'
+
+const normalizeAddress = sigUtil.normalize
+
 import {
   AddressBookController,
   CurrencyRateController,
@@ -587,7 +592,7 @@ export default class MetamaskController extends EventEmitter {
    *
    * @returns {Object} - vault
    */
-  async createNewVaultAndKeychain (password) {
+  async createNewVaultAndKeychain (password, pathType = 'ETH') {
     const releaseLock = await this.createVaultMutex.acquire()
     try {
       let vault
@@ -595,7 +600,11 @@ export default class MetamaskController extends EventEmitter {
       if (accounts.length > 0) {
         vault = await this.keyringController.fullUpdate()
       } else {
-        vault = await this.keyringController.createNewVaultAndKeychain(password)
+        if (pathType === 'ETH') {
+          vault = await this.keyringController.createNewVaultAndKeychain(password)
+        } else {
+          vault = await this.customCreateNewVaultAndKeychain(password)
+        }
         const accounts = await this.keyringController.getAccounts()
         this.preferencesController.setAddresses(accounts)
         this.selectFirstIdentity()
@@ -608,12 +617,66 @@ export default class MetamaskController extends EventEmitter {
     }
   }
 
+  customCreateNewVaultAndKeychain (password) {
+    const self = this.keyringController
+    return self.persistAllKeyrings(password)
+      .then(this.customCreateFirstKeyTree.bind(self))
+      .then(self.persistAllKeyrings.bind(self, password))
+      .then(self.fullUpdate.bind(self))
+  }
+
+  customCreateFirstKeyTree () {
+    this.clearKeyrings()
+    return this.addNewKeyring('HD Key Tree', { numberOfAccounts: 1, hdPath: `m/44'/5718350'/0'/0` })
+    .then((keyring) => {
+      return keyring.getAccounts()
+    })
+    .then((accounts) => {
+      const firstAccount = accounts[0]
+      if (!firstAccount) throw new Error('KeyringController - No account found on keychain.')
+      const hexAccount = normalizeAddress(firstAccount)
+      this.emit('newVault', hexAccount)
+      return null
+    })
+  }
+
+  customCreateNewVaultAndRestore (password, seed) {
+    const self = this.keyringController
+    if (typeof password !== 'string') {
+      return Promise.reject('Password must be text.')
+    }
+
+    if (!bip39.validateMnemonic(seed)) {
+      return Promise.reject(new Error('Seed phrase is invalid.'))
+    }
+
+    self.clearKeyrings()
+
+    return self.persistAllKeyrings(password)
+    .then(() => {
+      return self.addNewKeyring('HD Key Tree', {
+        mnemonic: seed,
+        numberOfAccounts: 1,
+        hdPath: `m/44'/5718350'/0'/0`,
+      })
+    })
+    .then((firstKeyring) => {
+      return firstKeyring.getAccounts()
+    })
+    .then((accounts) => {
+      const firstAccount = accounts[0]
+      if (!firstAccount) throw new Error('KeyringController - First Account not found.')
+      return null
+    })
+    .then(self.persistAllKeyrings.bind(self, password))
+    .then(self.fullUpdate.bind(self))
+  }
   /**
    * Create a new Vault and restore an existent keyring.
    * @param  {} password
    * @param  {} seed
    */
-  async createNewVaultAndRestore (password, seed) {
+  async createNewVaultAndRestore (password, seed, pathType = 'ETH') {
     const releaseLock = await this.createVaultMutex.acquire()
     try {
       let accounts, lastBalance
@@ -636,7 +699,13 @@ export default class MetamaskController extends EventEmitter {
       this.txController.txStateManager.clearUnapprovedTxs()
 
       // create new vault
-      const vault = await keyringController.createNewVaultAndRestore(password, seed)
+      console.log(`createNewVaultAndRestore ${password} ${seed} ${pathType}`)
+      let vault 
+      if (pathType === 'ETH') {
+        vault = await keyringController.createNewVaultAndRestore(password, seed)
+      } else {
+        vault = await this.customCreateNewVaultAndRestore(password, seed, pathType)
+      }
 
       const ethQuery = new EthQuery(this.provider)
       accounts = await keyringController.getAccounts()
@@ -979,6 +1048,7 @@ export default class MetamaskController extends EventEmitter {
   async verifySeedPhrase () {
 
     const primaryKeyring = this.keyringController.getKeyringsByType('HD Key Tree')[0]
+    const pathType = primaryKeyring.hdPath.search('5718350') !== -1 ? 'WAN' : 'ETH'
     if (!primaryKeyring) {
       throw new Error('MetamaskController - No HD Key Tree found')
     }
@@ -992,7 +1062,7 @@ export default class MetamaskController extends EventEmitter {
     }
 
     try {
-      await seedPhraseVerifier.verifyAccounts(accounts, seedWords)
+      await seedPhraseVerifier.verifyAccounts(accounts, seedWords, pathType)
       return seedWords
     } catch (err) {
       log.error(err.message)
@@ -1482,8 +1552,8 @@ export default class MetamaskController extends EventEmitter {
     const mux = setupMultiplex(connectionStream)
 
     // messages between inpage and background
-    this.setupProviderConnection(mux.createStream('provider'), sender)
-    this.setupPublicConfig(mux.createStream('publicConfig'))
+    this.setupProviderConnection(mux.createStream('provider3'), sender)
+    this.setupPublicConfig(mux.createStream('publicConfig3'))
   }
 
   /**
@@ -1500,7 +1570,7 @@ export default class MetamaskController extends EventEmitter {
     const mux = setupMultiplex(connectionStream)
     // connect features
     this.setupControllerConnection(mux.createStream('controller'))
-    this.setupProviderConnection(mux.createStream('provider'), sender, true)
+    this.setupProviderConnection(mux.createStream('provider3'), sender, true)
   }
 
   /**
@@ -1514,7 +1584,7 @@ export default class MetamaskController extends EventEmitter {
    */
   sendPhishingWarning (connectionStream, hostname) {
     const mux = setupMultiplex(connectionStream)
-    const phishingStream = mux.createStream('phishing')
+    const phishingStream = mux.createStream('phishing3')
     phishingStream.write({ hostname })
   }
 

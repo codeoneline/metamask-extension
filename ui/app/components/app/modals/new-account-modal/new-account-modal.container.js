@@ -11,8 +11,8 @@ function mapStateToProps (state) {
 function mapDispatchToProps (dispatch) {
   return {
     hideModal: () => dispatch(actions.hideModal()),
-    createAccount: (newAccountName) => {
-      return dispatch(actions.addNewAccount())
+    createAccount: (newAccountName, pathType) => {
+      return dispatch(actions.addNewAccount(pathType))
         .then((newAccountAddress) => {
           if (newAccountName) {
             dispatch(actions.setAccountLabel(newAccountAddress, newAccountName))

@@ -10,6 +10,7 @@ import {
   INITIALIZE_SEED_PHRASE_ROUTE,
 } from '../../../helpers/constants/routes'
 
+const PATHTYPE = 'WAN'
 export default class CreatePassword extends PureComponent {
   static propTypes = {
     history: PropTypes.object,

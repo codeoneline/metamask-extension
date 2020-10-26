@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Button from '../../components/ui/button'
 
+const PATHTYPE = 'WAN'
 export default class NewAccountCreateForm extends Component {
   static defaultProps = {
     newAccountNumber: 0,
@@ -18,7 +19,7 @@ export default class NewAccountCreateForm extends Component {
     const { newAccountName, defaultAccountName } = this.state
     const { history, createAccount, mostRecentOverviewPage } = this.props
     const createClick = (_) => {
-      createAccount(newAccountName || defaultAccountName)
+      createAccount(newAccountName || defaultAccountName, PATHTYPE)
         .then(() => {
           this.context.metricsEvent({
             eventOpts: {

@@ -15,7 +15,8 @@ export function getToErrorObject (to, hasHexData = false, network) {
     if (!hasHexData) {
       toError = REQUIRED_ERROR
     }
-  } else if (!isValidAddress(to, network) && !toError) {
+  } else if (!isValidAddress(to.toLowerCase(), network) && !toError) {
+    console.log(`getToErrorObject to Error ${toError}`)
     toError = isEthNetwork(network) ? INVALID_RECIPIENT_ADDRESS_ERROR : INVALID_RECIPIENT_ADDRESS_NOT_ETH_NETWORK_ERROR
   }
 

@@ -2708,10 +2708,10 @@
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.15.0.tgz#bd9956d5044b1fb43e869a9ba9148862ff98d9fd"
   integrity sha512-TfcyNecCz8Z9/s90gBOBniyzZrTru8u2Vp0VZODq4KEBaQu8bfXvu7o/KUOecMpzjbFPUA7aqgSq628Iue5BQg==
 
-"@wanchainmask/inpage-provider@^6.4.1":
-  version "6.4.1"
-  resolved "https://registry.npmjs.org/@wanchainmask/inpage-provider/-/inpage-provider-6.4.1.tgz#10b4c598f359b5fac40fe9b98a6d5f62d29c8090"
-  integrity sha512-OPrkl1GAoXczIq0Ktw49ILUzv7e/R31oUFryDzpWrG5coprDIQx02eHNpafu+5PCek+aNLODFlzHNqZn6q92Hw==
+"@wanchainmask/inpage-provider@^6.4.2":
+  version "6.4.2"
+  resolved "https://registry.npmjs.org/@wanchainmask/inpage-provider/-/inpage-provider-6.4.2.tgz#d75d059380a8a982f6568012f1204850bab42f51"
+  integrity sha512-yTFH7E/ffBJxr6TvMVzKRDky7AW6YF4ieAtdpP5rRmzmeDPZeLjDP7WNR5kwvUOF0d1bZIehRjzDEGeRbFDJ/A==
   dependencies:
     eth-rpc-errors "^2.1.1"
     fast-deep-equal "^2.0.1"

@@ -8,6 +8,9 @@ import {
   INITIALIZE_END_OF_FLOW_ROUTE,
 } from '../../../../helpers/constants/routes'
 
+// import RadioButtons from '../../../../ui/app/components/app/radio-buttons'
+import RadioButtons from '../../../../components/app/radio-buttons'
+
 export default class ImportWithSeedPhrase extends PureComponent {
   static contextTypes = {
     t: PropTypes.func,
@@ -26,6 +29,7 @@ export default class ImportWithSeedPhrase extends PureComponent {
     seedPhrase: '',
     showSeedPhrase: false,
     password: '',
+    pathType: 'WAN',
     confirmPassword: '',
     seedPhraseError: '',
     passwordError: '',
@@ -119,11 +123,11 @@ export default class ImportWithSeedPhrase extends PureComponent {
       return
     }
 
-    const { password, seedPhrase } = this.state
+    const { password, seedPhrase, pathType } = this.state
     const { history, onSubmit, setSeedPhraseBackedUp, initializeThreeBox, completeOnboarding } = this.props
 
     try {
-      await onSubmit(password, this.parseSeedPhrase(seedPhrase))
+      await onSubmit(password, this.parseSeedPhrase(seedPhrase), pathType)
       this.context.metricsEvent({
         eventOpts: {
           category: 'Onboarding',
@@ -186,6 +190,10 @@ export default class ImportWithSeedPhrase extends PureComponent {
     this.setState(({ showSeedPhrase }) => ({
       showSeedPhrase: !showSeedPhrase,
     }))
+  }
+  
+  handleSelectPathChange (pathType) {
+    this.setState({ pathType })
   }
 
   render () {
@@ -289,6 +297,11 @@ export default class ImportWithSeedPhrase extends PureComponent {
           autoComplete="confirm-password"
           margin="normal"
           largeLabel
+        />
+        <RadioButtons
+          id="select-path"
+          value={this.state.pathType}
+          onChange={event => this.handleSelectPathChange(event.target.value)}
         />
         <div className="first-time-flow__checkbox-container" onClick={this.toggleTermsCheck}>
           <div

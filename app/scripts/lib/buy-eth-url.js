@@ -15,18 +15,10 @@ export default function getBuyEthUrl ({ network, address, service }) {
   }
 
   switch (service) {
-    case 'wyre':
-      return `https://pay.sendwyre.com/?dest=ethereum:${address}&destCurrency=WAN&accountId=AC-7AG3W4XH4N2&paymentMethod=debit-card`
-    case 'coinswitch':
-      return `https://metamask.coinswitch.co/?address=${address}&to=eth`
-    case 'metamask-faucet':
-      return 'https://faucet.metamask.io/'
-    case 'rinkeby-faucet':
-      return 'https://www.rinkeby.io/'
-    case 'kovan-faucet':
-      return 'https://github.com/kovan-testnet/faucet'
-    case 'goerli-faucet':
-      return 'https://goerli-faucet.slock.it/'
+    case 'binance':
+      return `https://www.binance.com/`
+    case 'testnet-faucet':
+      return `https://wanchain-faucet.vercel.app/`
     default:
       throw new Error(`Unknown cryptocurrency exchange or faucet: "${service}"`)
   }
@@ -35,15 +27,9 @@ export default function getBuyEthUrl ({ network, address, service }) {
 function getDefaultServiceForNetwork (network) {
   switch (network) {
     case '1':
-      return 'wyre'
+      return 'binance'
     case '3':
-      return 'metamask-faucet'
-    case '4':
-      return 'rinkeby-faucet'
-    case '42':
-      return 'kovan-faucet'
-    case '5':
-      return 'goerli-faucet'
+      return 'testnet-faucet'
     default:
       throw new Error(`No default cryptocurrency exchange or faucet for networkId: "${network}"`)
   }

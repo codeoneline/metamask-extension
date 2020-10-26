@@ -28,12 +28,12 @@ export default class TokenRatesController {
    */
   async updateExchangeRates () {
     const contractExchangeRates = {}
-    const nativeCurrency = this.currency ? this.currency.state.nativeCurrency.toLowerCase() : 'eth'
+    const nativeCurrency = this.currency ? this.currency.state.nativeCurrency.toLowerCase() : 'wan'
     const pairs = this._tokens.map((token) => token.address).join(',')
     const query = `contract_addresses=${pairs}&vs_currencies=${nativeCurrency}`
     if (this._tokens.length > 0) {
       try {
-        const response = await window.fetch(`https://api.coingecko.com/api/v3/simple/token_price/ethereum?${query}`)
+        const response = await window.fetch(`https://api.coingecko.com/api/v3/simple/token_price/wanchain?${query}`)
         const prices = await response.json()
         this._tokens.forEach((token) => {
           const price = prices[token.address.toLowerCase()] || prices[ethUtil.toChecksumAddress(token.address)]

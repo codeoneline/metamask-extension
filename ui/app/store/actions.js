@@ -79,13 +79,13 @@ export function tryUnlockMetamask (password) {
   }
 }
 
-export function createNewVaultAndRestore (password, seed) {
+export function createNewVaultAndRestore (password, seed, pathType) {
   return (dispatch) => {
     dispatch(showLoadingIndication())
     log.debug(`background.createNewVaultAndRestore`)
     let vault
     return new Promise((resolve, reject) => {
-      background.createNewVaultAndRestore(password, seed, (err, _vault) => {
+      background.createNewVaultAndRestore(password, seed, pathType, (err, _vault) => {
         if (err) {
           return reject(err)
         }

@@ -9,6 +9,7 @@ import {
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes'
 import TextField from '../../components/ui/text-field'
 import Button from '../../components/ui/button'
+import RadioButtons from '../../components/app/radio-buttons'
 
 class RestoreVaultPage extends Component {
   static contextTypes = {
@@ -27,6 +28,7 @@ class RestoreVaultPage extends Component {
   state = {
     seedPhrase: '',
     password: '',
+    pathType: 'WAN',
     confirmPassword: '',
     seedPhraseError: null,
     passwordError: null,
@@ -73,8 +75,12 @@ class RestoreVaultPage extends Component {
     this.setState({ confirmPassword, confirmPasswordError })
   }
 
+  handleSelectPathChange (pathType) {
+    this.setState({ pathType })
+  }
+
   onClick = () => {
-    const { password, seedPhrase } = this.state
+    const { password, seedPhrase, pathType } = this.state
     const {
       createNewVaultAndRestore,
       leaveImportSeedScreenState,
@@ -83,7 +89,7 @@ class RestoreVaultPage extends Component {
     } = this.props
 
     leaveImportSeedScreenState()
-    createNewVaultAndRestore(password, this.parseSeedPhrase(seedPhrase))
+    createNewVaultAndRestore(password, this.parseSeedPhrase(seedPhrase), pathType)
       .then(() => {
         this.context.metricsEvent({
           eventOpts: {
@@ -172,6 +178,11 @@ class RestoreVaultPage extends Component {
               margin="normal"
               largeLabel
             />
+            <RadioButtons
+              id="select-path"
+              value={this.state.pathType}
+              onChange={event => this.handleSelectPathChange(event.target.value)}
+            />
             <Button
               type="first-time"
               className="first-time-flow__button"
@@ -193,7 +204,7 @@ export default connect(
     leaveImportSeedScreenState: () => {
       dispatch(unMarkPasswordForgotten())
     },
-    createNewVaultAndRestore: (pw, seed) => dispatch(createNewVaultAndRestore(pw, seed)),
+    createNewVaultAndRestore: (pw, seed, pathType) => dispatch(createNewVaultAndRestore(pw, seed, pathType)),
     initializeThreeBox: () => dispatch(initializeThreeBox()),
   }),
 )(RestoreVaultPage)
