@@ -60,10 +60,10 @@ async function start () {
 async function setupStreams () {
   // the transport-specific streams for communication between inpage and background
   const pageStream = new LocalMessageDuplexStream({
-    name: 'contentscript',
-    target: 'inpage',
+    name: 'contentscript3',
+    target: 'inpage3',
   })
-  const extensionPort = extension.runtime.connect({ name: 'contentscript' })
+  const extensionPort = extension.runtime.connect({ name: 'contentscript3' })
   const extensionStream = new PortStream(extensionPort)
 
   // create and connect channel muxers

@@ -663,12 +663,14 @@ export default class MetamaskController extends EventEmitter {
     .then((firstKeyring) => {
       return firstKeyring.getAccounts()
     })
-    .then((accounts) => {
-      const firstAccount = accounts[0]
-      if (!firstAccount) throw new Error('KeyringController - First Account not found.')
+    .then(([firstAccount]) => {
+      if (!firstAccount) {
+        throw new Error('KeyringController - First Account not found.')
+      }
       return null
     })
     .then(self.persistAllKeyrings.bind(self, password))
+    .then(self.setUnlocked.bind(self))
     .then(self.fullUpdate.bind(self))
   }
   /**
@@ -699,7 +701,6 @@ export default class MetamaskController extends EventEmitter {
       this.txController.txStateManager.clearUnapprovedTxs()
 
       // create new vault
-      console.log(`createNewVaultAndRestore ${password} ${seed} ${pathType}`)
       let vault 
       if (pathType === 'ETH') {
         vault = await keyringController.createNewVaultAndRestore(password, seed)
@@ -1569,7 +1570,7 @@ export default class MetamaskController extends EventEmitter {
     // setup multiplexing
     const mux = setupMultiplex(connectionStream)
     // connect features
-    this.setupControllerConnection(mux.createStream('controller'))
+    this.setupControllerConnection(mux.createStream('controller3'))
     this.setupProviderConnection(mux.createStream('provider3'), sender, true)
   }
 
@@ -2001,9 +2002,7 @@ export default class MetamaskController extends EventEmitter {
     const frequentRpcListDetail = this.preferencesController.getFrequentRpcListDetail()
     const rpcSettings = frequentRpcListDetail.find((rpc) => rpcTarget === rpc.rpcUrl)
 
-    console.log(`setCustomRpc setting ${rpcTarget}`)
     if (rpcSettings) {
-      console.log(`setCustomRpc ${rpcSettings.rpcUrl}`)
       this.networkController.setRpcTarget(rpcSettings.rpcUrl, rpcSettings.chainId, rpcSettings.ticker, rpcSettings.nickname, rpcPrefs)
     } else {
       this.networkController.setRpcTarget(rpcTarget, chainId, ticker, nickname, rpcPrefs)

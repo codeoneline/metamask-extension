@@ -916,7 +916,7 @@ describe('MetaMaskController', function () {
       }
       const { promise, resolve } = deferredPromise()
       const streamTest = createThoughStream((chunk, _, cb) => {
-        assert.equal(chunk.name, 'controller')
+        assert.equal(chunk.name, 'controller3')
         resolve()
         cb()
       })

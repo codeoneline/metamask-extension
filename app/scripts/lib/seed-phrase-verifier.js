@@ -16,14 +16,21 @@ const seedPhraseVerifier = {
    * @returns {Promise<void>} - Promises undefined
    *
   */
-  async verifyAccounts (createdAccounts, seedWords) {
+  async verifyAccounts (createdAccounts, seedWords, pathType) {
     if (!createdAccounts || createdAccounts.length < 1) {
       throw new Error('No created accounts defined.')
     }
 
+    let hdPath
+    if (pathType === 'WAN') {
+      hdPath = `m/44'/5718350'/0'/0`
+    } else {
+      hdPath = undefined
+    }
     const keyringController = new KeyringController({})
     const Keyring = keyringController.getKeyringClassForType('HD Key Tree')
     const opts = {
+      hdPath,
       mnemonic: seedWords,
       numberOfAccounts: createdAccounts.length,
     }

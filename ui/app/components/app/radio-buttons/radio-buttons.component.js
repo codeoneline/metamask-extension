@@ -13,14 +13,14 @@ const styles = theme => ({
     fontSize: '12px',
   },
   formControl: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing(1),
   },
   formLabel: {
     color: '#5b5b5b',
     fontSize: '16px',
   },
   group: {
-    margin: `${theme.spacing.unit}px 0`,
+    margin: `${theme.spacing(1)}px 0`,
   },
 })
 
@@ -29,7 +29,7 @@ class RadioButtons extends React.Component {
     this.setState({ value: event.target.value })
   };
 
-  render () {
+  render () { 
     const { classes, onChange, value } = this.props
 
     return (

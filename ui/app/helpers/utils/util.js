@@ -61,12 +61,14 @@ export function addressSummary (address, firstSegLength = 10, lastSegLength = 4,
   return checked ? checked.slice(0, firstSegLength) + '...' + checked.slice(checked.length - lastSegLength) : '...'
 }
 
-export function isValidAddress (address) {
+export function isValidAddress (_address) {
+  const address = _address.toLowerCase()
   if (!address || address === '0x0000000000000000000000000000000000000000') {
     return false
   }
   const prefixed = address.startsWith('0X') ? address : ethUtil.addHexPrefix(address)
-  return (isAllOneCase(prefixed.slice(2)) && ethUtil.isValidAddress(prefixed)) || ethUtil.isValidChecksumAddress(prefixed)
+  // return (isAllOneCase(prefixed.slice(2)) && ethUtil.isValidAddress(prefixed)) || ethUtil.isValidChecksumAddress(prefixed)
+  return (isAllOneCase(prefixed.slice(2)) && ethUtil.isValidAddress(prefixed))
 }
 
 export function isValidDomainName (address) {

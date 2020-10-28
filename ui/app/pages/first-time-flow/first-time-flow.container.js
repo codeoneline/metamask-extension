@@ -27,9 +27,9 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    createNewAccount: (password) => dispatch(createNewVaultAndGetSeedPhrase(password)),
+    createNewAccount: (password) => dispatch(createNewVaultAndGetSeedPhrase(password, 'WAN')),
     createNewAccountFromSeed: (password, seedPhrase) => {
-      return dispatch(createNewVaultAndRestore(password, seedPhrase))
+      return dispatch(createNewVaultAndRestore(password, seedPhrase, 'WAN'))
     },
     unlockAccount: (password) => dispatch(unlockAndGetSeedPhrase(password)),
     verifySeedPhrase: () => verifySeedPhrase(),
