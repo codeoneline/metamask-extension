@@ -38,7 +38,7 @@ export default class ThreeBoxController {
         const accounts = await this.keyringController.getAccounts()
 
         if (isUnlocked && accounts[0]) {
-          const appKeyAddress = await this.keyringController.getAppKeyAddress(accounts[0], 'wallet://3box.metamask.io')
+          const appKeyAddress = await this.keyringController.getAppKeyAddress(accounts[0], 'wallet://3box.wanmask.io')
           return [appKeyAddress]
         } else {
           return []
@@ -47,7 +47,7 @@ export default class ThreeBoxController {
       processPersonalMessage: async (msgParams) => {
         const accounts = await this.keyringController.getAccounts()
         return keyringController.signPersonalMessage({ ...msgParams, from: accounts[0] }, {
-          withAppKeyOrigin: 'wallet://3box.metamask.io',
+          withAppKeyOrigin: 'wallet://3box.wanmask.io',
         })
       },
     })
@@ -117,7 +117,7 @@ export default class ThreeBoxController {
 
   async new3Box () {
     const accounts = await this.keyringController.getAccounts()
-    this.address = await this.keyringController.getAppKeyAddress(accounts[0], 'wallet://3box.metamask.io')
+    this.address = await this.keyringController.getAppKeyAddress(accounts[0], 'wallet://3box.wanmask.io')
     let backupExists
     try {
       const threeBoxConfig = await Box.getConfig(this.address)

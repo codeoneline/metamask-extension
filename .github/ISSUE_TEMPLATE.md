@@ -1,6 +1,6 @@
 <!--
 
-BEFORE SUBMITTING, please make sure your question hasn't been answered in our support center: https://support.metamask.io
+BEFORE SUBMITTING, please make sure your question hasn't been answered in our support center: https://support.wanmask.io
 Common questions such as "Where is my ether?" or "Where did my tokens go?" are answered there.
 
 Bug Reports:

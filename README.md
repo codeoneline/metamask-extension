@@ -1,14 +1,14 @@
 # WanchainMask Browser Extension
 
-You can find the latest version of WanchainMask on [our official website](https://metamask.io/). For help using WanchainMask, visit our [User Support Site](https://metamask.zendesk.com/hc/en-us).
+You can find the latest version of WanchainMask on [our official website](https://wanmask.io/). For help using WanchainMask, visit our [User Support Site](https://wanmask.zendesk.com/hc/en-us).
 
 WanchainMask supports Firefox, Google Chrome, and Chromium-based browsers. We recommend using the latest available browser version.
 
-For up to the minute news, follow our [Twitter](https://twitter.com/metamask_io) or [Medium](https://medium.com/metamask) pages.
+For up to the minute news, follow our [Twitter](https://twitter.com/metamask_io) or [Medium](https://medium.com/wanmask) pages.
 
-To learn how to develop WanchainMask-compatible applications, visit our [Developer Docs](https://metamask.github.io/metamask-docs/).
+To learn how to develop WanchainMask-compatible applications, visit our [Developer Docs](https://wanmask.github.io/wanmask-docs/).
 
-To learn how to contribute to the WanchainMask project itself, visit our [Internal Docs](https://github.com/WanchainMask/metamask-extension/tree/develop/docs).
+To learn how to contribute to the WanchainMask project itself, visit our [Internal Docs](https://github.com/WanchainMask/wanmask-extension/tree/develop/docs).
 
 ## Building locally
 

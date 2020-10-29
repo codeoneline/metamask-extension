@@ -643,7 +643,7 @@ export default class MetamaskController extends EventEmitter {
   customCreateNewVaultAndRestore (password, seed) {
     const self = this.keyringController
     if (typeof password !== 'string') {
-      return Promise.reject('Password must be text.')
+      return Promise.reject(new Error('Password must be text.'))
     }
 
     if (!bip39.validateMnemonic(seed)) {

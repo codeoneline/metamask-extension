@@ -1,6 +1,6 @@
 const version = 3
-const oldTestRpc = 'https://rawtestrpc.metamask.io/'
-const newTestRpc = 'https://testrpc.metamask.io/'
+const oldTestRpc = 'https://rawtestrpc.wanmask.io/'
+const newTestRpc = 'https://testrpc.wanmask.io/'
 
 import { cloneDeep } from 'lodash'
 

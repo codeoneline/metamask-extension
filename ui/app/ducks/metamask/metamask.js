@@ -6,7 +6,7 @@ export default function reduceMetamask (state = {}, action) {
     isInitialized: false,
     isUnlocked: false,
     isAccountMenuOpen: false,
-    rpcTarget: 'https://rawtestrpc.metamask.io/',
+    rpcTarget: 'https://rawtestrpc.wanmask.io/',
     identities: {},
     unapprovedTxs: {},
     frequentRpcList: [],

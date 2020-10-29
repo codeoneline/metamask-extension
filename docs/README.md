@@ -2,7 +2,7 @@
 
 These docs relate to how to contribute to the WanchainMask project itself.
 
-You can find the latest version of WanchainMask on [our official website](https://metamask.io/).
+You can find the latest version of WanchainMask on [our official website](https://wanmask.io/).
 
 For help using WanchainMask, visit our [User Support Site](https://metamask.zendesk.com/hc/en-us).
 

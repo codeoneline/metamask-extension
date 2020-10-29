@@ -518,7 +518,7 @@ describe('Confirm Transaction Duck', function () {
             id: 2603411941761054,
             loadingDefaults: false,
             metamaskNetworkId: '3',
-            origin: 'faucet.metamask.io',
+            origin: 'faucet.wanmask.io',
             status: 'unapproved',
             time: 1530838113716,
           },
@@ -548,7 +548,7 @@ describe('Confirm Transaction Duck', function () {
         id: 2603411941761054,
         loadingDefaults: false,
         metamaskNetworkId: '3',
-        origin: 'faucet.metamask.io',
+        origin: 'faucet.wanmask.io',
         status: 'unapproved',
         time: 1530838113716,
         txParams: {
@@ -618,7 +618,7 @@ describe('Confirm Transaction Duck', function () {
               id: 2603411941761054,
               loadingDefaults: false,
               metamaskNetworkId: '3',
-              origin: 'faucet.metamask.io',
+              origin: 'faucet.wanmask.io',
               status: 'unapproved',
               time: 1530838113716,
               txParams: {

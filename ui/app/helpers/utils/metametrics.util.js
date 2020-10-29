@@ -14,8 +14,8 @@ const METAMETRICS_REQUIRED_PARAMS = `?idsite=${projectId}&rec=1&apiv=1`
 const METAMETRICS_BASE_FULL = METAMETRICS_BASE_URL + METAMETRICS_REQUIRED_PARAMS
 
 const METAMETRICS_TRACKING_URL = inDevelopment
-  ? 'http://www.metamask.io/metametrics'
-  : 'http://www.metamask.io/metametrics-prod'
+  ? 'http://www.wanmask.io/metametrics'
+  : 'http://www.wanmask.io/metametrics-prod'
 
 /** ***************Custom variables*************** **/
 // Custom variable declarations
@@ -123,7 +123,7 @@ function composeParamAddition (paramValue, paramName) {
   * @property {boolean} config.excludeMetaMetricsId Whether or not the tracked event data should be associated with a metametrics id
   * @property {boolean} config.isNewVisit Whether or not the event should be tracked as a new visit/user sessions
   * @returns {string} - Returns a url to be passed to fetch to make the appropriate request to matomo.
-  *   Example: https://chromeextensionmm.innocraft.cloud/piwik.php?idsite=1&rec=1&apiv=1&e_c=Navigation&e_a=Home&e_n=Clicked%20Send:%20Eth&urlref=http%3A%2F%2Fwww.metamask.io%2Fmetametrics%2Fhome.html%23send&dimension5=3&dimension6=fullscreen&dimension7=WAN&dimension8=default&dimension9=0&dimension10=3&url=http%3A%2F%2Fwww.metamask.io%2Fmetametrics%2Fhome.html%23&_id=49c10aff19795e9a&rand=7906028754863992&pv_id=53acad&uid=49c1
+  *   Example: https://chromeextensionmm.innocraft.cloud/piwik.php?idsite=1&rec=1&apiv=1&e_c=Navigation&e_a=Home&e_n=Clicked%20Send:%20Eth&urlref=http%3A%2F%2Fwww.wanmask.io%2Fmetametrics%2Fhome.html%23send&dimension5=3&dimension6=fullscreen&dimension7=WAN&dimension8=default&dimension9=0&dimension10=3&url=http%3A%2F%2Fwww.wanmask.io%2Fmetametrics%2Fhome.html%23&_id=49c10aff19795e9a&rand=7906028754863992&pv_id=53acad&uid=49c1
   */
 function composeUrl (config) {
   const {

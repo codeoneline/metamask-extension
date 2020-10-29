@@ -8,8 +8,7 @@ import {
   INITIALIZE_END_OF_FLOW_ROUTE,
 } from '../../../../helpers/constants/routes'
 
-// import RadioButtons from '../../../../ui/app/components/app/radio-buttons'
-import RadioButtons from '../../../../components/app/radio-buttons'
+import RadioButtons from '../../../../components/ui/radio-buttons'
 
 export default class ImportWithSeedPhrase extends PureComponent {
   static contextTypes = {
@@ -319,7 +318,7 @@ export default class ImportWithSeedPhrase extends PureComponent {
               <a
                 onClick={(e) => e.stopPropagation()}
                 key="first-time-flow__link-text"
-                href="https://metamask.io/terms.html"
+                href="https://wanmask.io/terms.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >

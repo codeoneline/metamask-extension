@@ -155,7 +155,7 @@ export function submitPassword (password) {
 }
 
 export function createNewVault (password) {
-  return new Promise((resolve, reject) => {console.log(`createNewVault ${password} ${pathType}`)
+  return new Promise((resolve, reject) => {
     background.createNewVaultAndKeychain(password, (error) => {
       if (error) {
         return reject(error)

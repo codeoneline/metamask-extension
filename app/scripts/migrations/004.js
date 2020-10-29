@@ -13,12 +13,12 @@ export default {
         return Promise.resolve(safeVersionedData)
       }
       switch (safeVersionedData.data.config.provider.rpcTarget) {
-        case 'https://testrpc.metamask.io/':
+        case 'https://testrpc.wanmask.io/':
           safeVersionedData.data.config.provider = {
             type: 'testnet',
           }
           break
-        case 'https://rpc.metamask.io/':
+        case 'https://rpc.wanmask.io/':
           safeVersionedData.data.config.provider = {
             type: 'mainnet',
           }

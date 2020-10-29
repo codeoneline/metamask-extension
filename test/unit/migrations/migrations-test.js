@@ -16,8 +16,8 @@ import migration13 from '../../../app/scripts/migrations/013'
 
 let vault5, vault6, vault7, vault8, vault9 // vault10, vault11
 
-const oldTestRpc = 'https://rawtestrpc.metamask.io/'
-const newTestRpc = 'https://testrpc.metamask.io/'
+const oldTestRpc = 'https://rawtestrpc.wanmask.io/'
+const newTestRpc = 'https://testrpc.wanmask.io/'
 
 describe('wallet1 is migrated successfully', function () {
   it('should convert providers', function () {
@@ -27,7 +27,7 @@ describe('wallet1 is migrated successfully', function () {
       .then((secondResult) => {
         const secondData = secondResult.data
         assert.equal(secondData.config.provider.type, 'rpc', 'provider should be rpc')
-        assert.equal(secondData.config.provider.rpcTarget, 'https://rpc.metamask.io/', 'main provider should be our rpc')
+        assert.equal(secondData.config.provider.rpcTarget, 'https://rpc.wanmask.io/', 'main provider should be our rpc')
         secondResult.data.config.provider.rpcTarget = oldTestRpc
         return migration3.migrate(secondResult)
       }).then((thirdResult) => {

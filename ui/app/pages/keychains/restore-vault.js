@@ -9,7 +9,7 @@ import {
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes'
 import TextField from '../../components/ui/text-field'
 import Button from '../../components/ui/button'
-import RadioButtons from '../../components/app/radio-buttons'
+import RadioButtons from '../../components/ui/radio-buttons'
 
 class RestoreVaultPage extends Component {
   static contextTypes = {
