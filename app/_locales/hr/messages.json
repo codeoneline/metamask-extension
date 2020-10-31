@@ -378,7 +378,7 @@
     "message": "Ako trebate ponovno sigurnosno kopirati svoju početnu rečenicu, možete je pronaći unutar stavke Postavke --> Sigurnost."
   },
   "endOfFlowMessage7": {
-    "message": "Ako imate bilo kakvo pitanje ili vidite nešto što vam se čini sumnjivim, pošaljite nam elektroničku poruku na support@wanmask.io."
+    "message": "Ako imate bilo kakvo pitanje ili vidite nešto što vam se čini sumnjivim, pošaljite nam elektroničku poruku na techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "Osoblje WanchainMask ne može obnoviti vašu početnu rečenicu. Saznajte više."
@@ -454,7 +454,7 @@
     "message": "Upotrijebljeno gorivo"
   },
   "gasPrice": {
-    "message": "Cijena goriva (GWEI)"
+    "message": "Cijena goriva (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Iznimno niska cijena goriva"
@@ -713,7 +713,7 @@
     "message": "Pazite na svoju početnu rečenicu jer smo zaprimili prijave o postojanju mrežnih mjesta koja oponašaju mrežno mjesto usluge WanchainMask. Na mrežnom se mjestu WanchainMask nikada ne traži vaša početna rečenica!"
   },
   "protectYourKeysMessage2": {
-    "message": "Zaštite svoju rečenicu. Ako vam se nešto čini sumnjivim ili nemate povjerenja u mrežno mjesto, pošaljite nam elektroničku poruku na support@wanmask.io"
+    "message": "Zaštite svoju rečenicu. Ako vam se nešto čini sumnjivim ili nemate povjerenja u mrežno mjesto, pošaljite nam elektroničku poruku na techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "Novi URL RPC-a"
@@ -979,7 +979,7 @@
     "message": "Pošalji tokene"
   },
   "sentEther": {
-    "message": "pošalji ether"
+    "message": "pošalji wan"
   },
   "sentTokens": {
     "message": "pošalji tokene"

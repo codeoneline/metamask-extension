@@ -16,7 +16,7 @@ import Lock from '../lock'
 import PermissionsConnect from '../permissions-connect'
 import RestoreVaultPage from '../keychains/restore-vault'
 import RevealSeedConfirmation from '../keychains/reveal-seed'
-import MobileSyncPage from '../mobile-sync'
+// import MobileSyncPage from '../mobile-sync'
 import AddTokenPage from '../add-token'
 import ConfirmAddTokenPage from '../confirm-add-token'
 import ConfirmAddSuggestedTokenPage from '../confirm-add-suggested-token'
@@ -43,7 +43,7 @@ import {
   INITIALIZE_ROUTE,
   INITIALIZE_UNLOCK_ROUTE,
   LOCK_ROUTE,
-  MOBILE_SYNC_ROUTE,
+  // MOBILE_SYNC_ROUTE,
   NEW_ACCOUNT_ROUTE,
   RESTORE_VAULT_ROUTE,
   REVEAL_SEED_ROUTE,
@@ -118,7 +118,7 @@ export default class Routes extends Component {
         <Initialized path={UNLOCK_ROUTE} component={UnlockPage} exact />
         <Initialized path={RESTORE_VAULT_ROUTE} component={RestoreVaultPage} exact />
         <Authenticated path={REVEAL_SEED_ROUTE} component={RevealSeedConfirmation} exact />
-        <Authenticated path={MOBILE_SYNC_ROUTE} component={MobileSyncPage} exact />
+        {/* <Authenticated path={MOBILE_SYNC_ROUTE} component={MobileSyncPage} exact /> */}
         <Authenticated path={SETTINGS_ROUTE} component={Settings} />
         <Authenticated path={`${CONFIRM_TRANSACTION_ROUTE}/:id?`} component={ConfirmTransaction} />
         <Authenticated path={SEND_ROUTE} component={SendTransactionScreen} exact />

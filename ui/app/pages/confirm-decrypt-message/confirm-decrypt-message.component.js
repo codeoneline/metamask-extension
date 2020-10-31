@@ -134,7 +134,7 @@ export default class ConfirmDecryptMessage extends Component {
     const balanceInEther = conversionUtil(balance, {
       fromNumericBase: 'hex',
       toNumericBase: 'dec',
-      fromDenomination: 'WEI',
+      fromDenomination: 'WIN',
       numberOfDecimals: 6,
       conversionRate,
     })

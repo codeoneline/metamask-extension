@@ -375,7 +375,7 @@
     "message": "Ako treba ponovo da izradite rezervnu kopiju svoje početne fraze, možete je pronaći u Postavke -> Bezbednost."
   },
   "endOfFlowMessage7": {
-    "message": "Ako imate bilo kakvih pitanja ili primetite nešto sumnjivo, pošaljite e-poruku na support@wanmask.io."
+    "message": "Ako imate bilo kakvih pitanja ili primetite nešto sumnjivo, pošaljite e-poruku na techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask ne može da oporavi vašu početnu frazu. Saznajte više."
@@ -455,7 +455,7 @@
     "message": "Korišćen gas"
   },
   "gasPrice": {
-    "message": "Cena gasa (GWEI)"
+    "message": "Cena gasa (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Cena gasa izuzetno niska"
@@ -977,7 +977,7 @@
     "message": "Pošalji tokene"
   },
   "sentEther": {
-    "message": "ether je poslat"
+    "message": "wan je poslat"
   },
   "sentTokens": {
     "message": "poslati tokeni"

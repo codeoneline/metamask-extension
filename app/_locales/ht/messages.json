@@ -250,7 +250,7 @@
     "message": "Gaz yo Itilize"
   },
   "gasPrice": {
-    "message": "Pri gaz (GWEI)"
+    "message": "Pri gaz (GWIN)"
   },
   "getEther": {
     "message": "Jwenn Wan Coin"
@@ -601,7 +601,7 @@
     "message": "Voye Tokens"
   },
   "sentEther": {
-    "message": "Voye ether"
+    "message": "Voye wan"
   },
   "sentTokens": {
     "message": "tokens deja voye"

@@ -54,7 +54,7 @@ export default class InfoTab extends PureComponent {
         <hr className="info-tab__separator" />
         <div className="info-tab__link-item">
           <a
-            href="https://support.wanmask.io"
+            href="mailto:techsupport@wanchain.org"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -76,7 +76,7 @@ export default class InfoTab extends PureComponent {
         </div>
         <div className="info-tab__link-item">
           <a
-            href="https://metamask.zendesk.com/hc/en-us/requests/new"
+            href="mailto:techsupport@wanchain.org"
             target="_blank"
             rel="noopener noreferrer"
           >

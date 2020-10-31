@@ -175,30 +175,31 @@ export default class IncomingTransactionsController {
   }
 
   async _fetchTxs (address, fromBlock, networkType) {
-    let etherscanSubdomain = 'api'
-    const currentNetworkID = NETWORK_TYPE_TO_ID_MAP[networkType]?.networkId
+    return {}
+    // let etherscanSubdomain = 'api'
+    // const currentNetworkID = NETWORK_TYPE_TO_ID_MAP[networkType]?.networkId
 
-    if (!currentNetworkID) {
-      return {}
-    }
+    // if (!currentNetworkID) {
+    //   return {}
+    // }
 
-    if (networkType !== MAINNET) {
-      etherscanSubdomain = `api-${networkType}`
-    }
-    const apiUrl = `https://${etherscanSubdomain}.wanscan.org`
-    let url = `${apiUrl}/api?module=account&action=txlist&address=${address}&tag=latest&page=1`
+    // if (networkType !== MAINNET) {
+    //   etherscanSubdomain = `api-${networkType}`
+    // }
+    // const apiUrl = `https://${etherscanSubdomain}.wanscan.org`
+    // let url = `${apiUrl}/api?module=account&action=txlist&address=${address}&tag=latest&page=1`
 
-    if (fromBlock) {
-      url += `&startBlock=${parseInt(fromBlock, 10)}`
-    }
-    const response = await fetch(url)
-    const parsedResponse = await response.json()
+    // if (fromBlock) {
+    //   url += `&startBlock=${parseInt(fromBlock, 10)}`
+    // }
+    // const response = await fetch(url)
+    // const parsedResponse = await response.json()
 
-    return {
-      ...parsedResponse,
-      address,
-      currentNetworkID,
-    }
+    // return {
+    //   ...parsedResponse,
+    //   address,
+    //   currentNetworkID,
+    // }
   }
 
   _processTxFetchResponse ({ status, result = [], address, currentNetworkID }) {

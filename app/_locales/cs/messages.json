@@ -178,7 +178,7 @@
     "message": "Limit paliva musí být alespoň 21000"
   },
   "gasPrice": {
-    "message": "Cena paliva (GWEI)"
+    "message": "Cena paliva (GWIN)"
   },
   "getEther": {
     "message": "Získejte Wan Coin"
@@ -201,7 +201,7 @@
     "message": "Import účtu"
   },
   "importAccountMsg": {
-    "message": "Importované účty nebudou spojeny s vaší původní MetaMaskovou klíčovou frází. Zjistěte více o importovaných účtech "
+    "message": "Importované účty nebudou spojeny s vaší původní wanchainmaskovou klíčovou frází. Zjistěte více o importovaných účtech "
   },
   "imported": {
     "message": "Importováno",
@@ -269,7 +269,7 @@
     "message": "Musíte zvolit aspoň 1 token."
   },
   "needEtherInWallet": {
-    "message": "Potřebujete Wan Coin v peněžence, abyste mohli pomocí MetaMasku interagovat s decentralizovanými aplikacemi."
+    "message": "Potřebujete Wan Coin v peněžence, abyste mohli pomocí WanchainMasku interagovat s decentralizovanými aplikacemi."
   },
   "needImportFile": {
     "message": "Musíte zvolit soubor k importu.",

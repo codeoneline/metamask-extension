@@ -153,7 +153,7 @@
     "message": "Az ön böngészője nem támogatott..."
   },
   "builtInCalifornia": {
-    "message": "A MetaMaskot Kaliforniában tervezték és hozták létre."
+    "message": "A WanchainMaskot Kaliforniában tervezték és hozták létre."
   },
   "buyWithWyre": {
     "message": "Vásároljon WAN-t a Wyre-rel"
@@ -378,7 +378,7 @@
     "message": "Ha ismét biztonsági másolatot kell készítenie a seed mondatról, megtalálja azt a Beállítások -> Biztonság menüben."
   },
   "endOfFlowMessage7": {
-    "message": "Ha bármilyen kérdése van, vagy valami gyanús dolgot tapasztal, írjon a support@wanmask.io címre."
+    "message": "Ha bármilyen kérdése van, vagy valami gyanús dolgot tapasztal, írjon a techsupport@wanchain.org címre."
   },
   "endOfFlowMessage8": {
     "message": "A WanchainMask nem tudta helyreállítani a seed mondatot. Tudjon meg többet."
@@ -454,7 +454,7 @@
     "message": "Használt gáz"
   },
   "gasPrice": {
-    "message": "Gázár (GWEI)"
+    "message": "Gázár (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Üzemanyag ár Különösen alacsony"
@@ -657,7 +657,7 @@
     "message": "Legalább 1 tokent ki kell választania."
   },
   "needEtherInWallet": {
-    "message": "Ha a MetaMaskon keresztül szeretne interakcióba lépni decentralizált alkalmazással, ahhoz a tárcájában Ethernek kell lennie."
+    "message": "Ha a WanchainMaskon keresztül szeretne interakcióba lépni decentralizált alkalmazással, ahhoz a tárcájában Ethernek kell lennie."
   },
   "needImportFile": {
     "message": "Ki kell választania az importálni kívánt fájlt.",
@@ -713,7 +713,7 @@
     "message": "Vigyázzod a gyarapítási fázissal - olyan oldalakat jelentettek, amelyek a WanchainMask-ot utánozzák. A WanchainMask soha nem kéri el a gyarapítási fázisát."
   },
   "protectYourKeysMessage2": {
-    "message": "Őrizze biztonságos helyen a mondatot. Ha bármilyen gyanús dolgot tapasztal, vagy bizonytalan egy weboldalt illetően, írjon a support@wanmask.io címre."
+    "message": "Őrizze biztonságos helyen a mondatot. Ha bármilyen gyanús dolgot tapasztal, vagy bizonytalan egy weboldalt illetően, írjon a techsupport@wanchain.org címre."
   },
   "rpcUrl": {
     "message": "Új RPC URL"
@@ -979,7 +979,7 @@
     "message": "Token küldése"
   },
   "sentEther": {
-    "message": "elküldött ether"
+    "message": "elküldött wan"
   },
   "sentTokens": {
     "message": "elküldött érmék"
@@ -1274,7 +1274,7 @@
     "message": "Üdvözöljük újra!"
   },
   "welcome": {
-    "message": "Üdvözöljük a MetaMaskban"
+    "message": "Üdvözöljük a WanchainMaskban"
   },
   "writePhrase": {
     "message": "Írd le ezt a szókapcsolatot egy darab papírra és őrizd meg egy biztonságos helyen. Ha még nagyobb biztonságra törekszel, írd le több darab papírra, és tartsd őket 2-3 különböző helyen."

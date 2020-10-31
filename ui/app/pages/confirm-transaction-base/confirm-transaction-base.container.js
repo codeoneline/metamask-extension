@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { withRouter } from 'react-router-dom'
-import contractMap from 'eth-contract-metadata'
+import contractMap from '@wanchainmask/wan-contract-metadata'
 import ConfirmTransactionBase from './confirm-transaction-base.component'
 import {
   clearConfirmTransaction,

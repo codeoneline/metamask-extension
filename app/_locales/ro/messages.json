@@ -378,7 +378,7 @@
     "message": "Dacă trebuie să vă salvați din nou fraza seed, puteți să o găsiți în Setări -> Securitate."
   },
   "endOfFlowMessage7": {
-    "message": "Dacă aveți întrebări sau vedeți ceva suspect, trimiteți un e-mail la support@wanmask.io."
+    "message": "Dacă aveți întrebări sau vedeți ceva suspect, trimiteți un e-mail la techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask nu vă poate recupera expresia sursă. Aflați mai multe."
@@ -454,7 +454,7 @@
     "message": "Suma gaz folosită"
   },
   "gasPrice": {
-    "message": "Preț gas (GWEI)"
+    "message": "Preț gas (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Prețul gaz este foarte scăzut"
@@ -707,7 +707,7 @@
     "message": "Aveți grijă cu expresia dvs. sursă – au existat raportări despre site-uri web care încearcă să imite WanchainMask. WanchainMask nu vă va cere niciodată expresia sursă!"
   },
   "protectYourKeysMessage2": {
-    "message": "Aveți grijă de fraza dvs. Dacă vedeți ceva care este în neregulă sau aveți dubii cu privire la un site, trimiteți un mesaj la support@wanmask.io"
+    "message": "Aveți grijă de fraza dvs. Dacă vedeți ceva care este în neregulă sau aveți dubii cu privire la un site, trimiteți un mesaj la techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "URL RPC nou"
@@ -973,7 +973,7 @@
     "message": "Trimiteți indicative"
   },
   "sentEther": {
-    "message": "trimiteți ether"
+    "message": "trimiteți wan"
   },
   "sentTokens": {
     "message": "tokenuri trimise"

@@ -104,8 +104,8 @@ export function isCustomPriceSafe (state) {
     {
       value: customGasPrice,
       fromNumericBase: 'hex',
-      fromDenomination: 'WEI',
-      toDenomination: 'GWEI',
+      fromDenomination: 'WIN',
+      toDenomination: 'GWIN',
     },
     { value: safeLow, fromNumericBase: 'dec' },
   )
@@ -121,7 +121,7 @@ export function basicPriceEstimateToETHTotal (estimate, gasLimit, numberOfDecima
   return conversionUtil(calcGasTotal(gasLimit, estimate), {
     fromNumericBase: 'hex',
     toNumericBase: 'dec',
-    fromDenomination: 'GWEI',
+    fromDenomination: 'GWIN',
     numberOfDecimals,
   })
 }
@@ -181,8 +181,8 @@ export function priceEstimateToWei (priceEstimate) {
   return conversionUtil(priceEstimate, {
     fromNumericBase: 'hex',
     toNumericBase: 'hex',
-    fromDenomination: 'GWEI',
-    toDenomination: 'WEI',
+    fromDenomination: 'GWIN',
+    toDenomination: 'WIN',
     numberOfDecimals: 9,
   })
 }

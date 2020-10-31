@@ -378,7 +378,7 @@
     "message": "Jeigu reikia dar kartą padaryti jūsų atkūrimo frazės kopiją, ją galite rasti pasirinkę Nuostatos -> Sauga."
   },
   "endOfFlowMessage7": {
-    "message": "Jeigu turite klausimų arba pastebite ką nors įtartino, rašykite el. paštu support@wanmask.io."
+    "message": "Jeigu turite klausimų arba pastebite ką nors įtartino, rašykite el. paštu techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "„WanchainMask“ negali atkurti jūsų atkūrimo frazės. Sužinokite daugiau."
@@ -458,7 +458,7 @@
     "message": "Sunaudotos dujos"
   },
   "gasPrice": {
-    "message": "Dujų kaina (GWEI)"
+    "message": "Dujų kaina (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Dujų kaina ypatingai maža"
@@ -720,7 +720,7 @@
     "message": "Saugokite savo atkūrimo frazę – gavome pranešimų apie interneto svetaines, kuriomis bandoma imituoti „WanchainMask“. „WanchainMask“ niekada neprašys jūsų pateikti savo atkūrimo frazę!"
   },
   "protectYourKeysMessage2": {
-    "message": "Saugokite savo frazę. Jei pastebėjote kažką įtartino arba nesate tikri dėl svetainės, rašykite mums adresu support@wanmask.io"
+    "message": "Saugokite savo frazę. Jei pastebėjote kažką įtartino arba nesate tikri dėl svetainės, rašykite mums adresu techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "Naujas RPC URL"

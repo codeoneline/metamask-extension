@@ -369,7 +369,7 @@
     "message": "Ak potrebujete backup frázu znova zálohovať, nájdete ju v časti Nastavenia -> Zabezpečenie."
   },
   "endOfFlowMessage7": {
-    "message": "Ak budete mať nejaké otázky alebo niečo zaujímavé, pošlite email na support@wanmask.io."
+    "message": "Ak budete mať nejaké otázky alebo niečo zaujímavé, pošlite email na techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask nemôže obnoviť vašu seed frázu. Zistiť viac."
@@ -449,7 +449,7 @@
     "message": "GAS použitý"
   },
   "gasPrice": {
-    "message": "Cena paliva (GWEI)"
+    "message": "Cena paliva (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Cena za GAS je mimoriadne nízka"
@@ -514,7 +514,7 @@
     "message": "Import účtu"
   },
   "importAccountMsg": {
-    "message": "Importované účty nebudou spojeny s vaší původní MetaMaskovou klíčovou frází. Zjistěte více o importovaných účtech "
+    "message": "Importované účty nebudou spojeny s vaší původní WanchainMaskovou klíčovou frází. Zjistěte více o importovaných účtech "
   },
   "importAccountSeedPhrase": {
     "message": "Importovať účet so seed frázou"
@@ -633,7 +633,7 @@
     "message": "Musíte zvolit aspoň 1 token."
   },
   "needEtherInWallet": {
-    "message": "Potřebujete Wan Coin v peněžence, abyste mohli pomocí MetaMasku interagovat s decentralizovanými aplikacemi."
+    "message": "Potřebujete Wan Coin v peněžence, abyste mohli pomocí WanchainMasku interagovat s decentralizovanými aplikacemi."
   },
   "needImportFile": {
     "message": "Musíte zvolit soubor k importu.",
@@ -689,7 +689,7 @@
     "message": "Pri seed fráze buďte opatrní – vyskytli sa správy o webových stránkach, ktoré sa snažia napodobniť WanchainMask. WanchainMask nikdy nebude žiadať vašu seed frázu!"
   },
   "protectYourKeysMessage2": {
-    "message": "Držte svoju frázu v bezpečí. Ak zbadáte niečo podozrivé alebo si nie ste istí webom, pošlite email na adresu support@wanmask.io"
+    "message": "Držte svoju frázu v bezpečí. Ak zbadáte niečo podozrivé alebo si nie ste istí webom, pošlite email na adresu techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "Nová RPC URL"
@@ -949,7 +949,7 @@
     "message": "Odeslat tokeny"
   },
   "sentEther": {
-    "message": "poslaný ether"
+    "message": "poslaný wan"
   },
   "sentTokens": {
     "message": "poslané tokeny"

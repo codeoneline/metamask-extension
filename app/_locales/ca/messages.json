@@ -375,7 +375,7 @@
     "message": "Si necessites fer una còpia de seguretat de la teva frase de recuperació una altra vegada, la pots trobar a Configuració-> Seguretat."
   },
   "endOfFlowMessage7": {
-    "message": "Si mai tens preguntes o veus alguna cosa sospitosa, envia un correu a support@wanmask.io."
+    "message": "Si mai tens preguntes o veus alguna cosa sospitosa, envia un correu a techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask no pot recuperar la teva seedphrase. Descobreix per què."
@@ -451,7 +451,7 @@
     "message": "Gas utilitzat"
   },
   "gasPrice": {
-    "message": "Preu del Gas (GWEI)"
+    "message": "Preu del Gas (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Preu del Gas Extremadament Baix"
@@ -704,7 +704,7 @@
     "message": "Vigila amb la teva frase de recuperació  —s'han documentat casos de llocs web que intenten imitar WanchainMask. WanchainMask mai no et demanarà la frase de recuperació!"
   },
   "protectYourKeysMessage2": {
-    "message": "Mantingues segura la teva frase. Si veus alguna cosa sospitosa, o no estàs segur d'un lloc web, envia un correu a support@wanmask.io"
+    "message": "Mantingues segura la teva frase. Si veus alguna cosa sospitosa, o no estàs segur d'un lloc web, envia un correu a techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "Nova URL de RPC"
@@ -964,7 +964,7 @@
     "message": "Enviar Fitxes"
   },
   "sentEther": {
-    "message": "envia ether"
+    "message": "envia wan"
   },
   "sentTokens": {
     "message": "fitxes enviades"

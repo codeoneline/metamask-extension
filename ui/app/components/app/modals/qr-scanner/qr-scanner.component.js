@@ -145,11 +145,11 @@ export default class QrScanner extends Component {
     // For ex. EIP-681 (https://eips.ethereum.org/EIPS/eip-681)
 
 
-    // Ethereum address links - fox ex. ethereum:0x.....1111
-    if (content.split('ethereum:').length > 1) {
+    // Ethereum address links - fox ex. wanchain:0x.....1111
+    if (content.split('wanchain:').length > 1) {
 
       type = 'address'
-      values = { 'address': content.split('ethereum:')[1] }
+      values = { 'address': content.split('wanchain:')[1] }
 
     // Regular ethereum addresses - fox ex. 0x.....1111
     } else if (content.substring(0, 2).toLowerCase() === '0x') {

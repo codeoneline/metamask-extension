@@ -1,6 +1,6 @@
 {
   "chartOnlyAvailableEth": {
-    "message": "圖表僅適用於以太坊網路。"
+    "message": "圖表僅適用於萬維鏈網路。"
   },
   "contractInteraction": {
     "message": "合約互動"
@@ -375,7 +375,7 @@
     "message": "如你需要再次備份助記詞，可至設定 -> 安全。"
   },
   "endOfFlowMessage7": {
-    "message": "如你有任何問題或察覺有異，請寄信給 support@wanmask.io"
+    "message": "如你有任何問題或察覺有異，請寄信給 techsupport@wanchain.org"
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask 無法還原你的助記詞。暸解更多"
@@ -390,7 +390,7 @@
     "message": "ENS 名稱註冊錯誤"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "現有網路中找不到 ENS 名稱。嘗試轉換到主要以太坊網路。"
+    "message": "現有網路中找不到 ENS 名稱。嘗試轉換到主要萬維鏈網路。"
   },
   "enterAnAlias": {
     "message": "輸入化名"
@@ -402,7 +402,7 @@
     "message": "請輸入密碼"
   },
   "ethereumPublicAddress": {
-    "message": "以太坊公開位址"
+    "message": "萬維鏈公開位址"
   },
   "etherscanView": {
     "message": "在 Wanscan 上查看帳戶"
@@ -455,7 +455,7 @@
     "message": "Gas 用量"
   },
   "gasPrice": {
-    "message": "Gas 價格 (GWEI)"
+    "message": "Gas 價格 (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Gas 價格極低"
@@ -714,7 +714,7 @@
     "message": "小心保管你的註記詞—我們接到報告有網站嘗試模仿 WanchainMask。WanchainMask 永遠不會詢問你的助記詞！"
   },
   "protectYourKeysMessage2": {
-    "message": "安全存放你的助記詞。如你察覺有異，或你對某網站起疑，請寄信給 support@wanmask.io"
+    "message": "安全存放你的助記詞。如你察覺有異，或你對某網站起疑，請寄信給 techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "新的 RPC URL"

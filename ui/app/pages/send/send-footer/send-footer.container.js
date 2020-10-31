@@ -113,6 +113,7 @@ function mapDispatchToProps (dispatch) {
 
     addToAddressBookIfNew: (newAddress, toAccounts, nickname = '') => {
       const hexPrefixedAddress = ethUtil.addHexPrefix(newAddress)
+      console.log(`addToAddressBookIfNew ${hexPrefixedAddress} ${toAccounts}`)
       if (addressIsNew(toAccounts, hexPrefixedAddress)) {
         // TODO: nickname, i.e. addToAddressBook(recipient, nickname)
         dispatch(addToAddressBook(hexPrefixedAddress, nickname))

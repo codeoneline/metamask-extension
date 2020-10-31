@@ -24,7 +24,7 @@ const EthOverview = ({ className }) => {
     eventOpts: {
       category: 'Navigation',
       action: 'Home',
-      name: 'Clicked Send: Eth',
+      name: 'Clicked Send: Wan',
     },
   })
   const depositEvent = useMetricEvent({

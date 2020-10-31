@@ -133,7 +133,7 @@
     "message": "Hạn mức ga phải đạt tối thiểu 21000"
   },
   "gasPrice": {
-    "message": "Giá ga (GWEI)"
+    "message": "Giá ga (GWIN)"
   },
   "getEther": {
     "message": "Lấy Wan Coin"

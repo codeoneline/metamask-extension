@@ -81,7 +81,7 @@
   },
   "connectTo": {
     "message": "Connect to $1",
-    "description": "$1 is the name/origin of a web3 site/application that the user can connect to metamask"
+    "description": "$1 is the name/origin of a web3 site/application that the user can connect to WanchainMask"
   },
   "connectToAll": {
     "message": "Connect to all your $1",
@@ -557,7 +557,7 @@
     "message": "If you need to back up your seed phrase again, you can find it in Settings -> Security."
   },
   "endOfFlowMessage7": {
-    "message": "If you ever have questions or see something fishy, email support@wanmask.io."
+    "message": "If you ever have questions or see something fishy, email techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask cannot recover your seedphrase."
@@ -614,11 +614,11 @@
     "description": "Title of generic error page"
   },
   "errorPageMessage": {
-    "message": "Try again by reloading the page, or contact support at support@wanmask.io",
+    "message": "Try again by reloading the page, or contact support at techsupport@wanchain.org",
     "description": "Message displayed on generic error page in the fullscreen or notification UI"
   },
   "errorPagePopupMessage": {
-    "message": "Try again by closing and reopening the popup, or contact support at support@wanmask.io",
+    "message": "Try again by closing and reopening the popup, or contact support at techsupport@wanchain.org",
     "description": "Message displayed on generic error page in the popup UI"
   },
   "errorStack": {
@@ -692,7 +692,7 @@
     "message": "Gas Used"
   },
   "gasPrice": {
-    "message": "Gas Price (GWEI)"
+    "message": "Gas Price (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Gas Price Extremely Low"
@@ -999,7 +999,7 @@
     "message": "Be careful with your seed phrase — there have been reports of websites that attempt to imitate WanchainMask. WanchainMask will never ask for your seed phrase!"
   },
   "protectYourKeysMessage2": {
-    "message": "Keep your phrase safe. If you see something fishy, or you’re uncertain about a website, email support@wanmask.io"
+    "message": "Keep your phrase safe. If you see something fishy, or you’re uncertain about a website, email techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "New RPC URL"
@@ -1322,7 +1322,7 @@
     "message": "Send Tokens"
   },
   "sentEther": {
-    "message": "sent ether"
+    "message": "sent wan"
   },
   "sentTokens": {
     "message": "sent tokens"

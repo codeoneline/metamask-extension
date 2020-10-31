@@ -1,6 +1,6 @@
 export const WAN = 'WAN'
-export const GWEI = 'GWEI'
-export const WEI = 'WEI'
+export const GWIN = 'GWIN'
+export const WIN = 'WIN'
 
 export const PRIMARY = 'PRIMARY'
 export const SECONDARY = 'SECONDARY'

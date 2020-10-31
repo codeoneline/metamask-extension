@@ -378,7 +378,7 @@
     "message": "Če morate ponovno varnostno kopirati vaše geslo seed phrase, ga najdete v Nastavitve -> Varnost."
   },
   "endOfFlowMessage7": {
-    "message": "Če imate kakršna koli vprašanja ali opazite kaj sumljivega, nam pišite na support@wanmask.io."
+    "message": "Če imate kakršna koli vprašanja ali opazite kaj sumljivega, nam pišite na techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask ne more obnoviti vašega gesla seed phrase. Več informacij."
@@ -455,7 +455,7 @@
     "message": "Uporabljen gas"
   },
   "gasPrice": {
-    "message": "Gas price (GWEI)"
+    "message": "Gas price (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Gas Price zelo nizkek"
@@ -643,7 +643,7 @@
     "message": "Moji računi Denarnice"
   },
   "myWalletAccountsDescription": {
-    "message": "Vsi vaši računi, ustvarjeni v MetaMasku, bodo samodejno dodani v ta razdelek."
+    "message": "Vsi vaši računi, ustvarjeni v WanchainMasku, bodo samodejno dodani v ta razdelek."
   },
   "mustSelectOne": {
     "message": "Izbran mora biti vsaj 1 žeton."
@@ -705,7 +705,7 @@
     "message": "Bodite previdni  in svoj seed phrase skrbno varujte - obstajajo poročila o spletnih mestih, ki poskušajo posnemati WanchainMask. WanchainMask nikoli ne bo zahteval vašega gesla seed phrase!"
   },
   "protectYourKeysMessage2": {
-    "message": "Hranite svoj seed phrase. Če opazite sumljivo delovanje ali niste prepričani ali je določeno spletno mesto varno, nam pišite na support@wanmask.io"
+    "message": "Hranite svoj seed phrase. Če opazite sumljivo delovanje ali niste prepričani ali je določeno spletno mesto varno, nam pišite na techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "Nov URL RPC"
@@ -968,7 +968,7 @@
     "message": "Pošlji žetone"
   },
   "sentEther": {
-    "message": "poslani ether"
+    "message": "poslani wan"
   },
   "sentTokens": {
     "message": "poslani žetoni"

@@ -373,7 +373,7 @@
     "message": "Gas usado"
   },
   "gasPrice": {
-    "message": "Precio del Gas (GWEI)"
+    "message": "Precio del Gas (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Precio de Gas excesivamente bajo"
@@ -781,7 +781,7 @@
     "message": "Enviar tokens"
   },
   "sentEther": {
-    "message": "se mandó ether"
+    "message": "se mandó wan"
   },
   "sentTokens": {
     "message": "se mandaron tokens"

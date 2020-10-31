@@ -166,7 +166,8 @@ export function getAddressBook (state) {
 
 export function getAddressBookEntry (state, address) {
   const addressBook = getAddressBook(state)
-  const entry = addressBook.find((contact) => contact.address === checksumAddress(address))
+  // const entry = addressBook.find((contact) => contact.address === checksumAddress(address))
+  const entry = addressBook.find((contact) => contact.address.toLowerCase() === address.toLowerCase())
   return entry
 }
 

@@ -372,7 +372,7 @@
     "message": "Om du behöver säkerhetskopiera din nyckelfras igen, kan du hitta den i Inställningar -> Säkerhet"
   },
   "endOfFlowMessage7": {
-    "message": "Om du har frågor eller ser något misstänksamt, skicka ett e-postmeddelande till support@wanmask.io."
+    "message": "Om du har frågor eller ser något misstänksamt, skicka ett e-postmeddelande till techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask kan inte återställa din seedphrase. Läs mer."
@@ -448,7 +448,7 @@
     "message": "Gas använd"
   },
   "gasPrice": {
-    "message": "Gas-pris (GWEI)"
+    "message": "Gas-pris (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Gaspris extremt lågt"
@@ -704,7 +704,7 @@
     "message": "Var försiktig med din seedfras — det har rapporterats om hemsidor som försöker imitera WanchainMask. WanchainMask kommer aldrig fråga efter din seedfras!"
   },
   "protectYourKeysMessage2": {
-    "message": "Håll din fras i säkert förvar. Om du ser något misstänksamt eller om du är osäker på en hemsida, skicka ett e-postmeddelande till support@wanmask.io."
+    "message": "Håll din fras i säkert förvar. Om du ser något misstänksamt eller om du är osäker på en hemsida, skicka ett e-postmeddelande till techsupport@wanchain.org."
   },
   "rpcUrl": {
     "message": "Ny RPC-URL"
@@ -970,7 +970,7 @@
     "message": "Skicka tokens"
   },
   "sentEther": {
-    "message": "skickat ether"
+    "message": "skickat wan"
   },
   "sentTokens": {
     "message": "skickade tokens"
@@ -1096,7 +1096,7 @@
     "message": "Synka med mobil"
   },
   "syncWithMobileDesc": {
-    "message": "Du kan nu synka dina konton och din information med din mobil-enhet. Öppna MetaMasks mobil-app, gå till \"Inställningar\" och tryck på \"Synka från webbläsartillägg\""
+    "message": "Du kan nu synka dina konton och din information med din mobil-enhet. Öppna WanchainMasks mobil-app, gå till \"Inställningar\" och tryck på \"Synka från webbläsartillägg\""
   },
   "syncWithMobileDescNewUsers": {
     "message": "Om du öppnar WanchainMask mobilapplikation för första gången behöver du bara följa stegen som visas i telefonen."
@@ -1108,7 +1108,7 @@
     "message": "Försäkra dig om att ingen tittar på din skärm när du skannar denna kod"
   },
   "syncWithMobileComplete": {
-    "message": "Din data har nu synkats. Ha det så kul med MetaMasks mobil-app!"
+    "message": "Din data har nu synkats. Ha det så kul med WanchainMasks mobil-app!"
   },
   "terms": {
     "message": "Användarvillkor"

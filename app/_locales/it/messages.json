@@ -81,7 +81,7 @@
   },
   "connectTo": {
     "message": "Connettiti a $1",
-    "description": "$1 is the name/origin of a site/dapp that the user can connect to metamask"
+    "description": "$1 is the name/origin of a site/dapp that the user can connect to WanchainMask"
   },
   "connectToAll": {
     "message": "Connettiti a tutti i tuoi $1",
@@ -550,7 +550,7 @@
     "message": "Se vorrai fare nuovamente un backup della frase, la puoi trovare in Impostazioni -> Sicurezza & Privacy."
   },
   "endOfFlowMessage7": {
-    "message": "Se hai delle domande o vedi delle attività sospette, manda una mail a support@wanmask.io."
+    "message": "Se hai delle domande o vedi delle attività sospette, manda una mail a techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask non può recuperare la tua frase seed. Impara di più."
@@ -607,11 +607,11 @@
     "description": "Title of generic error page"
   },
   "errorPageMessage": {
-    "message": "Prova di nuovo ricaricando la pagina, o contatta il supporto a support@wanmask.io (inglese)",
+    "message": "Prova di nuovo ricaricando la pagina, o contatta il supporto a techsupport@wanchain.org (inglese)",
     "description": "Message displayed on generic error page in the fullscreen or notification UI"
   },
   "errorPagePopupMessage": {
-    "message": "Prova a chiudere e riaprire il popup, o contatta il supporto a support@wanmask.io (inglese)",
+    "message": "Prova a chiudere e riaprire il popup, o contatta il supporto a techsupport@wanchain.org (inglese)",
     "description": "Message displayed on generic error page in the popup UI"
   },
   "errorStack": {
@@ -685,7 +685,7 @@
     "message": "Gas Utilizzato"
   },
   "gasPrice": {
-    "message": "Prezzo del Gas (GWEI)"
+    "message": "Prezzo del Gas (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Prezzo del gas troppo basso"
@@ -992,7 +992,7 @@
     "message": "Stai attento con la tua frase seed - ci sono stati report di siti web che hanno tentato di imitare WanchainMask. WanchainMask non ti chiederà mai la tua frase seed!"
   },
   "protectYourKeysMessage2": {
-    "message": "Tieni la tua frase al sicuro. Se vedi qualcosa di sospetto, o non sei sicuro di un sito web, manda una mail a support@wanmask.io"
+    "message": "Tieni la tua frase al sicuro. Se vedi qualcosa di sospetto, o non sei sicuro di un sito web, manda una mail a techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "Nuovo URL RPC"
@@ -1315,7 +1315,7 @@
     "message": "Invia Tokens"
   },
   "sentEther": {
-    "message": "ether inviati"
+    "message": "wan inviati"
   },
   "sentTokens": {
     "message": "tokens inviati"

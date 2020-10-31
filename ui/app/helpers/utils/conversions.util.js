@@ -1,5 +1,5 @@
 import ethUtil from 'wanchainjs-util'
-import { WAN, GWEI, WEI } from '../constants/common'
+import { WAN, GWIN, WIN } from '../constants/common'
 import { conversionUtil, addCurrencies, subtractCurrencies } from './conversion-util'
 
 export function bnToHex (inputBn) {
@@ -21,7 +21,7 @@ export function decimalToHex (decimal) {
 }
 
 export function getEthConversionFromWeiHex ({ value, fromCurrency = WAN, conversionRate, numberOfDecimals = 6 }) {
-  const denominations = [fromCurrency, GWEI, WEI]
+  const denominations = [fromCurrency, GWIN, WIN]
 
   let nonZeroDenomination
 
@@ -58,7 +58,7 @@ export function getValueFromWeiHex ({
     fromCurrency,
     toCurrency,
     numberOfDecimals,
-    fromDenomination: WEI,
+    fromDenomination: WIN,
     toDenomination,
     conversionRate,
   })
@@ -79,7 +79,7 @@ export function getWeiHexFromDecimalValue ({
     conversionRate,
     invertConversionRate,
     fromDenomination,
-    toDenomination: WEI,
+    toDenomination: WIN,
   })
 }
 
@@ -87,7 +87,7 @@ export function addHexWEIsToDec (aHexWEI, bHexWEI) {
   return addCurrencies(aHexWEI, bHexWEI, {
     aBase: 16,
     bBase: 16,
-    fromDenomination: 'WEI',
+    fromDenomination: 'WIN',
     numberOfDecimals: 6,
   })
 }
@@ -96,7 +96,7 @@ export function subtractHexWEIsToDec (aHexWEI, bHexWEI) {
   return subtractCurrencies(aHexWEI, bHexWEI, {
     aBase: 16,
     bBase: 16,
-    fromDenomination: 'WEI',
+    fromDenomination: 'WIN',
     numberOfDecimals: 6,
   })
 }
@@ -116,8 +116,8 @@ export function decGWEIToHexWEI (decGWEI) {
   return conversionUtil(decGWEI, {
     fromNumericBase: 'dec',
     toNumericBase: 'hex',
-    fromDenomination: 'GWEI',
-    toDenomination: 'WEI',
+    fromDenomination: 'GWIN',
+    toDenomination: 'WIN',
   })
 }
 
@@ -125,7 +125,7 @@ export function hexWEIToDecGWEI (decGWEI) {
   return conversionUtil(decGWEI, {
     fromNumericBase: 'hex',
     toNumericBase: 'dec',
-    fromDenomination: 'WEI',
-    toDenomination: 'GWEI',
+    fromDenomination: 'WIN',
+    toDenomination: 'GWIN',
   })
 }

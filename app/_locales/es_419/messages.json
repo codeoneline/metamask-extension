@@ -375,7 +375,7 @@
     "message": "Si necesitas otra copia de seguridad de tu frase de inicialización, puedes encontrarla en Configuración -> Seguridad."
   },
   "endOfFlowMessage7": {
-    "message": "Si tienes preguntas o ves algo sospechoso, envía un correo electrónico a support@wanmask.io."
+    "message": "Si tienes preguntas o ves algo sospechoso, envía un correo electrónico a techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask no puede recuperar tu frase de inicialización. Obtén más información."
@@ -455,7 +455,7 @@
     "message": "Gas usado"
   },
   "gasPrice": {
-    "message": "Precio del gas (GWEI)"
+    "message": "Precio del gas (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "El precio del gas es extremadamente bajo"
@@ -705,7 +705,7 @@
     "message": "Ten cuidado con tu frase de inicialización: hay informes sobre sitios web que intentan hacerse pasar por WanchainMask. ¡WanchainMask no te pedirá nunca tu frase de inicialización!"
   },
   "protectYourKeysMessage2": {
-    "message": "Mantén tu frase segura. Si notas algo raro o si no está seguro sobre si usar algún sitio web en específico, envíanos un correo electrónico a support@wanmask.io"
+    "message": "Mantén tu frase segura. Si notas algo raro o si no está seguro sobre si usar algún sitio web en específico, envíanos un correo electrónico a techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "Nueva URL de RPC"

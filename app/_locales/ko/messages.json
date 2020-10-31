@@ -110,7 +110,7 @@
     "message": "자동 로그아웃 타이머 (분)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "MetaMask가 자동으로 로그아웃되기 전 유휴 시간을 분 단위로 설정하세요"
+    "message": "WanchainMask가 자동으로 로그아웃되기 전 유휴 시간을 분 단위로 설정하세요"
   },
   "average": {
     "message": "평균"
@@ -125,7 +125,7 @@
     "message": "비밀 복구 코드를 백업하여 월렛과 자금을 안전하게 유지하세요."
   },
   "backupApprovalInfo": {
-    "message": "이 비밀 코드는 기기를 분실해서 월렛을 복구해야 하거나, 비밀번호를 잊어버리거나, MetaMask를 재설치해야 하거나, 다른 기기에서 월렛에 접속하고 싶은 경우에  필요합니다."
+    "message": "이 비밀 코드는 기기를 분실해서 월렛을 복구해야 하거나, 비밀번호를 잊어버리거나, WanchainMask를 재설치해야 하거나, 다른 기기에서 월렛에 접속하고 싶은 경우에  필요합니다."
   },
   "backupNow": {
     "message": "지금 백업하기"
@@ -375,7 +375,7 @@
     "message": "만약 시드 구문을 다시 백업해야한다면, 설정 -> 보안에서 확인할 수 있습니다. "
   },
   "endOfFlowMessage7": {
-    "message": "만약 질문이 있거나 피싱을 목격했다면 support@wanmask.io으로 메일을 보내주세요."
+    "message": "만약 질문이 있거나 피싱을 목격했다면 techsupport@wanchain.org으로 메일을 보내주세요."
   },
   "endOfFlowMessage8": {
     "message": "메타마스크는 당신의 시드 구문을 복원해줄 수 없습니다. 더 알아보기."
@@ -455,7 +455,7 @@
     "message": "사용된 가스"
   },
   "gasPrice": {
-    "message": "가스 가격 (GWEI)"
+    "message": "가스 가격 (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "가스 가격 매우 낮음"
@@ -652,7 +652,7 @@
     "message": "나의 월렛 계정"
   },
   "myWalletAccountsDescription": {
-    "message": "MetaMask가 생성한 모든 계정이 이 섹션에 자동으로 추가됩니다."
+    "message": "WanchainMask가 생성한 모든 계정이 이 섹션에 자동으로 추가됩니다."
   },
   "mustSelectOne": {
     "message": "적어도 하나의 토큰을 선택하세요."
@@ -711,10 +711,10 @@
     "message": "키를 보호하세요!"
   },
   "protectYourKeysMessage1": {
-    "message": "시드 문구에 주의하세요 - MetaMask를 모방하려고 한 웹사이트들이 신고됐습니다. MetaMask는 절대로 시드 문구를 묻지 않습니다!"
+    "message": "시드 문구에 주의하세요 - WanchainMask를 모방하려고 한 웹사이트들이 신고됐습니다. WanchainMask는 절대로 시드 문구를 묻지 않습니다!"
   },
   "protectYourKeysMessage2": {
-    "message": "시드 문구를 안전하게 유지하세요. 수상한 점을 발견하거나, 웹사이트에 확신이 들지 않으면 support@wanmask.io로 이메일을 보내 주세요"
+    "message": "시드 문구를 안전하게 유지하세요. 수상한 점을 발견하거나, 웹사이트에 확신이 들지 않으면 techsupport@wanchain.org로 이메일을 보내 주세요"
   },
   "rpcUrl": {
     "message": "새로운 RPC URL"

@@ -200,13 +200,13 @@ export default class Home extends PureComponent {
         }}
         footer={(
           <>
-            <a
+            {/* <a
               href={LEARN_MORE_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
               { t('learnMore') }
-            </a>
+            </a> */}
             <Button
               type="primary"
               onClick={setConnectedStatusPopoverHasBeenShown}

@@ -18,7 +18,7 @@ function mapStateToProps (state) {
 
 function QrCodeView (props) {
   const { message, data } = props.Qr
-  const address = `${isHexPrefixed(data) ? 'ethereum:' : ''}${checksumAddress(data)}`
+  const address = `${isHexPrefixed(data) ? 'wanchain:' : ''}${checksumAddress(data)}`
   const qrImage = qrCode(4, 'M')
   qrImage.addData(address)
   qrImage.make()

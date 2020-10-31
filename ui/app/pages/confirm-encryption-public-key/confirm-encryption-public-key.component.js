@@ -114,7 +114,7 @@ export default class ConfirmEncryptionPublicKey extends Component {
     const balanceInEther = conversionUtil(balance, {
       fromNumericBase: 'hex',
       toNumericBase: 'dec',
-      fromDenomination: 'WEI',
+      fromDenomination: 'WIN',
       numberOfDecimals: 6,
       conversionRate,
     })

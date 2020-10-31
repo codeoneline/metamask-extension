@@ -378,7 +378,7 @@
     "message": "Hvis du får brug for at lave en backup af din seedfrase igen, kan du finde det under Indstillinger -> Sikkerhed."
   },
   "endOfFlowMessage7": {
-    "message": "Hvis du har spørgsmål eller bemærker noget mistænkeligt, send en mail til support@wanmask.io."
+    "message": "Hvis du har spørgsmål eller bemærker noget mistænkeligt, send en mail til techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask kan ikke gendanne din seed-sætning. Få mere at vide."
@@ -454,7 +454,7 @@
     "message": "Gas brugt"
   },
   "gasPrice": {
-    "message": "Brændstofpris (GWEI)"
+    "message": "Brændstofpris (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Ekstremt Lav Brændstofspris"
@@ -704,7 +704,7 @@
     "message": "Vær forsigtig med din backupsætning - der har været rapporter om websteder, der forsøger at efterligne WanchainMask. WanchainMask vil aldrig bede om din backupsætning!"
   },
   "protectYourKeysMessage2": {
-    "message": "Opbevar din frase et sikkert sted. Hvis du ser noget mistænkeligt, eller du er usikker på hjemmesiden, skriv en email til support@wanmask.io"
+    "message": "Opbevar din frase et sikkert sted. Hvis du ser noget mistænkeligt, eller du er usikker på hjemmesiden, skriv en email til techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "Ny RPC-URL"
@@ -964,7 +964,7 @@
     "message": "Send tokens"
   },
   "sentEther": {
-    "message": "sendte ether"
+    "message": "sendte wan"
   },
   "sentTokens": {
     "message": "afsendte tokens"

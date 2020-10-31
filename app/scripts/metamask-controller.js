@@ -59,7 +59,7 @@ import TrezorKeyring from 'eth-trezor-keyring'
 import LedgerBridgeKeyring from '@metamask/eth-ledger-bridge-keyring'
 import EthQuery from 'eth-query'
 import nanoid from 'nanoid'
-import contractMap from 'eth-contract-metadata'
+import contractMap from '@wanchainmask/wan-contract-metadata'
 
 import sigUtil from 'eth-sig-util'
 import bip39 from 'bip39'
@@ -70,7 +70,7 @@ import {
   AddressBookController,
   CurrencyRateController,
   PhishingController,
-} from '@metamask/controllers'
+} from '@wanchainmask/controllers'
 
 import backgroundMetaMetricsEvent from './lib/background-metametrics'
 

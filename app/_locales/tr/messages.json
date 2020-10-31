@@ -181,7 +181,7 @@
     "message": "Gas limiti en az 21000 olmalıdır"
   },
   "gasPrice": {
-    "message": "Gas Fiyatı (GWEI)"
+    "message": "Gas Fiyatı (GWIN)"
   },
   "getEther": {
     "message": "Wan Coin Al"

@@ -1,7 +1,7 @@
 let iconFactory
 import { isValidAddress } from 'wanchainjs-util'
 import { checksumAddress } from '../app/helpers/utils/util'
-import contractMap from 'eth-contract-metadata'
+import contractMap from '@wanchainmask/wan-contract-metadata'
 
 export default function iconFactoryGenerator (jazzicon) {
   if (!iconFactory) {

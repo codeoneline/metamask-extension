@@ -109,7 +109,7 @@ export default class SignatureRequestOriginal extends Component {
     const balanceInEther = conversionUtil(balance, {
       fromNumericBase: 'hex',
       toNumericBase: 'dec',
-      fromDenomination: 'WEI',
+      fromDenomination: 'WIN',
       numberOfDecimals: 6,
       conversionRate,
     })
@@ -229,18 +229,7 @@ export default class SignatureRequestOriginal extends Component {
           { notice }
           {
             type === MESSAGE_TYPE.ETH_SIGN
-              ? (
-                <span
-                  className="request-signature__help-link"
-                  onClick={() => {
-                    global.platform.openTab({
-                      url: 'https://metamask.zendesk.com/hc/en-us/articles/360015488751',
-                    })
-                  }}
-                >
-                  { this.context.t('learnMore') }
-                </span>
-              )
+              ? null
               : null
           }
         </div>

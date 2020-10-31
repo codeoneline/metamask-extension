@@ -7,8 +7,8 @@ const MIN_GAS_LIMIT_DEC = '21000'
 const MIN_GAS_LIMIT_HEX = (parseInt(MIN_GAS_LIMIT_DEC)).toString(16)
 
 const MIN_GAS_PRICE_GWEI = ethUtil.addHexPrefix(conversionUtil(MIN_GAS_PRICE_HEX, {
-  fromDenomination: 'WEI',
-  toDenomination: 'GWEI',
+  fromDenomination: 'WIN',
+  toDenomination: 'GWIN',
   fromNumericBase: 'hex',
   toNumericBase: 'hex',
   numberOfDecimals: 1,

@@ -366,7 +366,7 @@
     "message": "Jika anda perlu membuat sandaran ungkapan benih anda sekali lagi, anda boleh lakukannya melalui Tetapan -> Keselamatan."
   },
   "endOfFlowMessage7": {
-    "message": "JIka anda mempunyai soalan atau melihat sesuatu yang mencurigakan, hantarkan e-mel ke support@wanmask.io."
+    "message": "JIka anda mempunyai soalan atau melihat sesuatu yang mencurigakan, hantarkan e-mel ke techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
     "message": "WanchainMask tidak dapat memulihkan ungkapan benih anda. Ketahui lebih lanjut."
@@ -442,7 +442,7 @@
     "message": "Gas Digunakan"
   },
   "gasPrice": {
-    "message": "Harga Gas (GWEI)"
+    "message": "Harga Gas (GWIN)"
   },
   "gasPriceExtremelyLow": {
     "message": "Harga Gas Teramat Rendah"
@@ -694,7 +694,7 @@
     "message": "Berhati-hati dengan ungkapan benih anda — terdapat laporan ada tapak web yang cuba meniru WanchainMask. WanchainMask tidak sekali-kali akan meminta ungkapan benih anda!"
   },
   "protectYourKeysMessage2": {
-    "message": "Pastikan ungkapan anda selamat. Jika anda melihterlihat at sesuatu yang mencurigakan, atau anda tidak pasti mengenai tapak web tertentu, e-mel kepada support@wanmask.io"
+    "message": "Pastikan ungkapan anda selamat. Jika anda melihterlihat at sesuatu yang mencurigakan, atau anda tidak pasti mengenai tapak web tertentu, e-mel kepada techsupport@wanchain.org"
   },
   "rpcUrl": {
     "message": "URL RPC baru"
@@ -960,7 +960,7 @@
     "message": "Hantar Token"
   },
   "sentEther": {
-    "message": "menghantar ether"
+    "message": "menghantar wan"
   },
   "sentTokens": {
     "message": "token dihantar"

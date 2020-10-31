@@ -154,7 +154,7 @@
     "message": "Limite de Gas deve ser no mínimo 21000"
   },
   "gasPrice": {
-    "message": "Preço Gas (GWEI)"
+    "message": "Preço Gas (GWIN)"
   },
   "getEther": {
     "message": "Obter Wan Coin"

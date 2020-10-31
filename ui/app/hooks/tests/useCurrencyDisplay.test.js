@@ -58,7 +58,7 @@ const tests = [
     input: {
       value: '0x3b9aca00',
       currency: 'WAN',
-      denomination: 'GWEI',
+      denomination: 'GWIN',
       hideLabel: true,
     },
     result: {
@@ -71,7 +71,7 @@ const tests = [
     input: {
       value: '0x3b9aca00',
       currency: 'WAN',
-      denomination: 'WEI',
+      denomination: 'WIN',
       hideLabel: true,
     },
     result: {
