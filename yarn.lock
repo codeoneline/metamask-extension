@@ -2736,6 +2736,18 @@
   resolved "https://registry.npmjs.org/@wanchainmask/wan-contract-metadata/-/wan-contract-metadata-1.17.0.tgz#1fbfb28e84f29eeb21fe6e798bd825ac58c4db31"
   integrity sha512-6p10qRCLdlN+79bdABFQ4Gy+wq4Tttg8WtFB8b9y7uMfLin8m9bWz3B5DhwHfJ5RRjunLQziw/rBYPomXwr/4A==
 
+"@wanchainmask/wan-trezor-keyring@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/@wanchainmask/wan-trezor-keyring/-/wan-trezor-keyring-0.4.0.tgz#254e1e721b75762c4d740b0541031d01104ff16f"
+  integrity sha512-a76GbdVR3p7/q7rzjIp4lhKzJE1EvhNpf24yKcFDFEWkcJRNFuMwfOIPfbCxGSj/o20yl+yCAtD+zAOBkE0bOQ==
+  dependencies:
+    eth-sig-util "^1.4.2"
+    events "^2.0.0"
+    hdkey "0.8.0"
+    trezor-connect "^7.0.1"
+    wanchainjs-tx "^1.3.4"
+    wanchainjs-util "^5.1.5"
+
 "@wanchainmask/wanchainjs-util@^5.2.2":
   version "5.2.2"
   resolved "https://registry.npmjs.org/@wanchainmask/wanchainjs-util/-/wanchainjs-util-5.2.2.tgz#29091268625b970e0c7e21de1b4ccbee0cb3b1b1"
@@ -10283,18 +10295,6 @@ eth-simple-keyring@^3.5.0:
     ethereumjs-wallet "^0.6.0"
     events "^1.1.1"
     xtend "^4.0.1"
-
-eth-trezor-keyring@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/eth-trezor-keyring/-/eth-trezor-keyring-0.4.0.tgz#f59c210f95aaf3d7321ae69d2b87a3b8db96a828"
-  integrity sha512-7F+C1ztxZStLzmG6r/2/MxjSuxw0aU9T26unJ03fQslktKG9izP+dU2IAJUnWxnyej2ZkfcgcH9M1t32LFbK2A==
-  dependencies:
-    eth-sig-util "^1.4.2"
-    ethereumjs-tx "^1.3.4"
-    ethereumjs-util "^5.1.5"
-    events "^2.0.0"
-    hdkey "0.8.0"
-    trezor-connect "^7.0.1"
 
 eth-tx-summary@^3.1.2:
   version "3.2.4"
@@ -26064,9 +26064,9 @@ tree-kill@^1.1.0, tree-kill@^1.2.2:
   integrity sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==
 
 trezor-connect@^7.0.1:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/trezor-connect/-/trezor-connect-7.0.3.tgz#70c4bc26c0966e794fc280a12c1acc9fef88864f"
-  integrity sha512-1Y1ajCDF8dC5d2yrCUmVkNqXeOlucamQ6j6Ko7kaqNdge3g9KZ+O48jUwP/eGzei8oUvPZUHd7o4OhDHTlpLCw==
+  version "7.0.5"
+  resolved "https://registry.npmjs.org/trezor-connect/-/trezor-connect-7.0.5.tgz#00ebc0abd302177042b6ff9ba71e7bc491e4b360"
+  integrity sha512-cGHcNuO/kGVF6b1mp5VB/RwXcXwqZJDPLp3opx7vM+BQ8xB4oDAUdL+T8aCKRbDv6HwP/wvGwoaok/+9kYOPfA==
   dependencies:
     "@babel/runtime" "^7.3.1"
     events "^3.0.0"
@@ -27157,7 +27157,7 @@ wanchain-wns-network-map@^1.0.4:
   resolved "https://registry.npmjs.org/wanchain-wns-network-map/-/wanchain-wns-network-map-1.0.4.tgz#4dd22403a03fde9a0503a5fc7a54ecabdd6d362e"
   integrity sha512-4GvZ7P1dAQHBJyfsRhu8xfuKjOyPH77M07tKC6e5w8TD20cqbDO1CJG2vsQNW0r7othwqztf4L+9QBng863EfA==
 
-wanchainjs-tx@1.5.0, wanchainjs-tx@^1.5.0:
+wanchainjs-tx@1.5.0, wanchainjs-tx@^1.3.4, wanchainjs-tx@^1.5.0:
   version "1.5.0"
   resolved "https://registry.npmjs.org/wanchainjs-tx/-/wanchainjs-tx-1.5.0.tgz#5cc69bd4d0bcf4ce796674b4f1f6965ff588c6ab"
   integrity sha512-gIpJzKWmqueqXK+Zm5XBY15bRo5r20S4mWTusFJU1myqv6oNl0Nl89mnxvkyphWa/y1bQtlNAW6IY9HztxqU2Q==
@@ -27165,7 +27165,7 @@ wanchainjs-tx@1.5.0, wanchainjs-tx@^1.5.0:
     wanchain-common "^0.3.0"
     wanchainjs-util "^5.2.1"
 
-wanchainjs-util@^5.2.1:
+wanchainjs-util@^5.1.5, wanchainjs-util@^5.2.1:
   version "5.2.1"
   resolved "https://registry.npmjs.org/wanchainjs-util/-/wanchainjs-util-5.2.1.tgz#f58ab0f6cce08b6a8cb0503f9a6a6228519be025"
   integrity sha512-2UDi24H5IsvEtsNYgIxMwLHPEf6r6dVfWXwRicr7FTajtSgZg5Yq+xE6EJ8eNcd3N3MsXB1t2nTv3oLzrgsdlw==
@@ -27722,12 +27722,7 @@ whatwg-fetch@>=0.10.0:
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
   integrity sha1-nITsLc9oGH/wC8ZOEnS0QhduHIQ=
 
-whatwg-fetch@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
-  integrity sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
-
-whatwg-fetch@^3.4.1:
+whatwg-fetch@^3.0.0, whatwg-fetch@^3.4.1:
   version "3.4.1"
   resolved "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-3.4.1.tgz#e5f871572d6879663fa5674c8f833f15a8425ab3"
   integrity sha512-sofZVzE1wKwO+EYPbWfiwzaKovWiZXf4coEzjGP9b2GBVgQRLQUZ2QcuPpQExGDAW5GItpEm6Tl4OU5mywnAoQ==

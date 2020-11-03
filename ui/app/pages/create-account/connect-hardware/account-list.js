@@ -40,10 +40,10 @@ class AccountList extends Component {
         label: `Trezor MyWanWallet`,
         value: `m/44'/5718350'/0'/0`,
       },
-      {
-        label: `Trezor Legacy`,
-        value: `m/44'/60'/0'/0`,
-      },
+      // {
+      //   label: `Trezor Legacy`,
+      //   value: `m/44'/60'/0'/0`,
+      // },
     ]
   }
 
@@ -127,7 +127,7 @@ class AccountList extends Component {
           <h3 className="hw-connect__unlock-title">
             {`${this.context.t('unlock')} ${this.capitalizeDevice(device)}`}
           </h3>
-          {device.toLowerCase() === 'ledger' ? this.renderHdPathSelector() : this.renderTrezorHdPathSelector()}
+          {device.toLowerCase() === 'ledger' ? this.renderHdPathSelector() : null}
           <h3 className="hw-connect__hdPath__title">
             {this.context.t('selectAnAccount')}
           </h3>

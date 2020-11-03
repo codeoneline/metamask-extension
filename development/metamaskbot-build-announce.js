@@ -34,7 +34,7 @@ async function start () {
   // links to extension builds
   const platforms = ['chrome', 'firefox', 'opera']
   const buildLinks = platforms.map((platform) => {
-    const url = `${BUILD_LINK_BASE}/builds/metamask-${platform}-${VERSION}.zip`
+    const url = `${BUILD_LINK_BASE}/builds/wanmask-${platform}-${VERSION}.zip`
     return `<a href="${url}">${platform}</a>`
   }).join(', ')
 
@@ -50,7 +50,7 @@ async function start () {
   const depVizLink = `<a href="${depVizUrl}">background</a>`
 
   // link to artifacts
-  const allArtifactsUrl = `https://circleci.com/gh/WanchainMask/metamask-extension/${CIRCLE_BUILD_NUM}#artifacts/containers/0`
+  const allArtifactsUrl = `https://circleci.com/gh/WanchainMask/wanmask-extension/${CIRCLE_BUILD_NUM}#artifacts/containers/0`
 
   const contentRows = [
     `builds: ${buildLinks}`,
@@ -150,7 +150,7 @@ async function start () {
   }
 
   const JSON_PAYLOAD = JSON.stringify({ body: commentBody })
-  const POST_COMMENT_URI = `https://api.github.com/repos/metamask/metamask-extension/issues/${CIRCLE_PR_NUMBER}/comments`
+  const POST_COMMENT_URI = `https://api.github.com/repos/wanchain/wanmask-extension/issues/${CIRCLE_PR_NUMBER}/comments`
   console.log(`Announcement:\n${commentBody}`)
   console.log(`Posting to: ${POST_COMMENT_URI}`)
 

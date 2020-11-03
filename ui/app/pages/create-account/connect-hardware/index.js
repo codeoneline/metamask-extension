@@ -75,6 +75,7 @@ class ConnectHardwareForm extends Component {
   }
 
   getPage = (device, page, hdPath) => {
+    // console.log(`device=${device} page=${page} hdPath=${hdPath}`)
     this.props
       .connectHardware(device, page, hdPath)
       .then((accounts) => {

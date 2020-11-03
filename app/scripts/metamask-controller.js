@@ -55,7 +55,7 @@ import ethUtil from 'wanchainjs-util'
 
 import seedPhraseVerifier from './lib/seed-phrase-verifier'
 import log from 'loglevel'
-import TrezorKeyring from 'eth-trezor-keyring'
+import TrezorKeyring from '@wanchainmask/wan-trezor-keyring'
 import LedgerBridgeKeyring from '@metamask/eth-ledger-bridge-keyring'
 import EthQuery from 'eth-query'
 import nanoid from 'nanoid'
