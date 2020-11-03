@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { createRef, Component } from 'react'
-import metamaskLogo from 'metamask-logo'
+import metamaskLogo from '@wanchainmask/logo'
 import { debounce } from 'lodash'
 
 export default class Mascot extends Component {

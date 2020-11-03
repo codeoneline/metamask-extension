@@ -34,6 +34,19 @@ class AccountList extends Component {
     ]
   }
 
+  getTrezorHdPaths () {
+    return [
+      {
+        label: `Trezor MyWanWallet`,
+        value: `m/44'/5718350'/0'/0`,
+      },
+      {
+        label: `Trezor Legacy`,
+        value: `m/44'/60'/0'/0`,
+      },
+    ]
+  }
+
     goToNextPage = () => {
       // If we have < 5 accounts, it's restricted by BIP-44
       if (this.props.accounts.length === 5) {
@@ -74,6 +87,34 @@ class AccountList extends Component {
         </div>
       )
     }
+    renderTrezorHdPathSelector () {
+      const { onPathChange, selectedPath } = this.props
+
+      // const options = this.getTrezorHdPaths()
+      const options = this.getHdPaths()
+      return (
+        <div>
+          <h3 className="hw-connect__hdPath__title">
+            {this.context.t('selectHdPath')}
+          </h3>
+          <p className="hw-connect__msg">
+            {this.context.t('selectPathHelp')}
+          </p>
+          <div className="hw-connect__hdPath">
+            <Select
+              className="hw-connect__hdPath__select"
+              name="hd-path-select"
+              clearable={false}
+              value={selectedPath}
+              options={options}
+              onChange={(opt) => {
+                onPathChange(opt.value)
+              }}
+            />
+          </div>
+        </div>
+      )
+    }
 
     capitalizeDevice (device) {
       return device.slice(0, 1).toUpperCase() + device.slice(1)
@@ -86,7 +127,7 @@ class AccountList extends Component {
           <h3 className="hw-connect__unlock-title">
             {`${this.context.t('unlock')} ${this.capitalizeDevice(device)}`}
           </h3>
-          {device.toLowerCase() === 'ledger' ? this.renderHdPathSelector() : null}
+          {device.toLowerCase() === 'ledger' ? this.renderHdPathSelector() : this.renderTrezorHdPathSelector()}
           <h3 className="hw-connect__hdPath__title">
             {this.context.t('selectAnAccount')}
           </h3>
