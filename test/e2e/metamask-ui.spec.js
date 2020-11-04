@@ -13,7 +13,7 @@ const enLocaleMessages = require('../../app/_locales/en/messages.json')
 
 const ganacheServer = new Ganache()
 
-describe('WanchainMask', function () {
+describe('WanMask', function () {
   let driver
   let tokenAddress
 
@@ -213,7 +213,7 @@ describe('WanchainMask', function () {
     })
   })
 
-  describe('Send WAN from inside WanchainMask using default gas', function () {
+  describe('Send WAN from inside WanMask using default gas', function () {
     it('starts a send transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
       await driver.delay(regularDelayMs)
@@ -277,7 +277,7 @@ describe('WanchainMask', function () {
     })
   })
 
-  describe('Send WAN from inside WanchainMask using fast gas option', function () {
+  describe('Send WAN from inside WanMask using fast gas option', function () {
     it('starts a send transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
       await driver.delay(regularDelayMs)
@@ -316,7 +316,7 @@ describe('WanchainMask', function () {
     })
   })
 
-  describe('Send WAN from inside WanchainMask using advanced gas modal', function () {
+  describe('Send WAN from inside WanMask using advanced gas modal', function () {
     it('starts a send transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
       await driver.delay(regularDelayMs)
@@ -428,7 +428,7 @@ describe('WanchainMask', function () {
       await driver.delay(2000)
 
       windowHandles = await driver.getAllWindowHandles()
-      await driver.switchToWindowWithTitle('WanchainMask Notification', windowHandles)
+      await driver.switchToWindowWithTitle('WanMask Notification', windowHandles)
       await driver.delay(regularDelayMs)
 
       await driver.assertElementNotPresent(By.xpath(`//li[contains(text(), 'Data')]`))
@@ -837,7 +837,7 @@ describe('WanchainMask', function () {
     })
   })
 
-  describe('Send token from inside WanchainMask', function () {
+  describe('Send token from inside WanMask', function () {
     let gasModal
     it('starts to send a transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))

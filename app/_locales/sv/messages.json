@@ -6,7 +6,7 @@
     "message": "Kontraktinteraktion"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "reject": {
@@ -76,7 +76,7 @@
     "message": "Lägg till föreslagna tokens"
   },
   "addAcquiredTokens": {
-    "message": "Lägg till de tokens du har skaffat med WanchainMask"
+    "message": "Lägg till de tokens du har skaffat med WanMask"
   },
   "amount": {
     "message": "Belopp"
@@ -110,7 +110,7 @@
     "message": "Timer för automatisk utloggning (minuter)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Ställ in efter hur lång tids inaktivitet som WanchainMask automatiskt loggar ut"
+    "message": "Ställ in efter hur lång tids inaktivitet som WanMask automatiskt loggar ut"
   },
   "average": {
     "message": "Genomsnitt"
@@ -125,7 +125,7 @@
     "message": "Säkerhetskopiera din hemliga återställningskod för att se till att din plånbok och dina tillgångar är säkra."
   },
   "backupApprovalInfo": {
-    "message": "Den hemliga koden krävs för att komma åt din plånbok ifall du tappar bort din enhet, glömmer ditt lösenord, behöver installera om WanchainMask eller om du vill komma åt din plånbok på en annan enhet."
+    "message": "Den hemliga koden krävs för att komma åt din plånbok ifall du tappar bort din enhet, glömmer ditt lösenord, behöver installera om WanMask eller om du vill komma åt din plånbok på en annan enhet."
   },
   "backupNow": {
     "message": "Säkerhetskopiera nu"
@@ -153,13 +153,13 @@
     "message": "Din webbläsare stöds inte..."
   },
   "builtInCalifornia": {
-    "message": "WanchainMask är skapat och utformat i Kalifornien."
+    "message": "WanMask är skapat och utformat i Kalifornien."
   },
   "buyWithWyre": {
     "message": "Köp WAN med Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre låter dig använda ett kreditkort för att sätta in WAN direkt på ditt WanchainMask-konto."
+    "message": "Wyre låter dig använda ett kreditkort för att sätta in WAN direkt på ditt WanMask-konto."
   },
   "buyCoinSwitch": {
     "message": "Köp på CoinSwitch"
@@ -198,7 +198,7 @@
     "message": "Stäng"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Du måste använda WanchainMask på Google Chrome för att ansluta till din hårdvaruplånbok."
+    "message": "Du måste använda WanMask på Google Chrome för att ansluta till din hårdvaruplånbok."
   },
   "confirm": {
     "message": "Bekräfta"
@@ -366,7 +366,7 @@
     "message": "Dela aldrig frasen med någon."
   },
   "endOfFlowMessage5": {
-    "message": "Se upp för nätfiske! WanchainMask kommer aldrig att oväntat fråga om din seed phrase."
+    "message": "Se upp för nätfiske! WanMask kommer aldrig att oväntat fråga om din seed phrase."
   },
   "endOfFlowMessage6": {
     "message": "Om du behöver säkerhetskopiera din nyckelfras igen, kan du hitta den i Inställningar -> Säkerhet"
@@ -375,7 +375,7 @@
     "message": "Om du har frågor eller ser något misstänksamt, skicka ett e-postmeddelande till techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
-    "message": "WanchainMask kan inte återställa din seedphrase. Läs mer."
+    "message": "WanMask kan inte återställa din seedphrase. Läs mer."
   },
   "endOfFlowMessage9": {
     "message": "Lär dig mer."
@@ -491,7 +491,7 @@
     "message": "Anslut en hårdvaruplånbok"
   },
   "hardwareWalletsMsg": {
-    "message": "Välj en hårdvaruplånbok som du vill använda med WanchainMask"
+    "message": "Välj en hårdvaruplånbok som du vill använda med WanMask"
   },
   "havingTroubleConnecting": {
     "message": "Har du problem att ansluta?"
@@ -520,7 +520,7 @@
     "message": "Importera konto"
   },
   "importAccountMsg": {
-    "message": "Importerade konton kommer inte att kopplas till din ursprungligen skapade seedphrase för ditt WanchainMask-konto. Läs mer om importerade konton"
+    "message": "Importerade konton kommer inte att kopplas till din ursprungligen skapade seedphrase för ditt WanMask-konto. Läs mer om importerade konton"
   },
   "importAccountSeedPhrase": {
     "message": "Importera konto med"
@@ -630,7 +630,7 @@
     "message": "Ansluter dig mot Wanchain och den decentraliserade webben."
   },
   "metamaskVersion": {
-    "message": "WanchainMask-version"
+    "message": "WanMask-version"
   },
   "mobileSyncText": {
     "message": "Var vänlig ange ditt lösenord för att bekräfta att det är du!"
@@ -642,13 +642,13 @@
     "message": "Mina plånbokskonton"
   },
   "myWalletAccountsDescription": {
-    "message": "Alla dina WanchainMask-skapade konton läggs automatiskt till i denna avdelning."
+    "message": "Alla dina WanMask-skapade konton läggs automatiskt till i denna avdelning."
   },
   "mustSelectOne": {
     "message": "Minst 1 token måste väljas."
   },
   "needEtherInWallet": {
-    "message": "För att interagera med decentraliserade applikationer med WanchainMask behöver du Wan Coin i din plånbok."
+    "message": "För att interagera med decentraliserade applikationer med WanMask behöver du Wan Coin i din plånbok."
   },
   "needImportFile": {
     "message": "Du måste välja en fil att importera.",
@@ -692,7 +692,7 @@
     "message": "Nytt nätverk"
   },
   "newToMetaMask": {
-    "message": "Ny på WanchainMask?"
+    "message": "Ny på WanMask?"
   },
   "noAlreadyHaveSeed": {
     "message": "Nej, jag har redan en seed phrase"
@@ -701,7 +701,7 @@
     "message": "Skydda dina nycklar!"
   },
   "protectYourKeysMessage1": {
-    "message": "Var försiktig med din seedfras — det har rapporterats om hemsidor som försöker imitera WanchainMask. WanchainMask kommer aldrig fråga efter din seedfras!"
+    "message": "Var försiktig med din seedfras — det har rapporterats om hemsidor som försöker imitera WanMask. WanMask kommer aldrig fråga efter din seedfras!"
   },
   "protectYourKeysMessage2": {
     "message": "Håll din fras i säkert förvar. Om du ser något misstänksamt eller om du är osäker på en hemsida, skicka ett e-postmeddelande till techsupport@wanchain.org."
@@ -758,7 +758,7 @@
     "message": "Delta i MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Delta i MetaMetrics för att hjälpa oss göra WanchainMask bättre"
+    "message": "Delta i MetaMetrics för att hjälpa oss göra WanMask bättre"
   },
   "password": {
     "message": "Lösenord"
@@ -985,7 +985,7 @@
     "message": "Välj ett konto"
   },
   "selectAnAccountHelp": {
-    "message": "Välj konto att visa i WanchainMask"
+    "message": "Välj konto att visa i WanMask"
   },
   "selectAHigherGasFee": {
     "message": "Välj en högre bränsleavgift för att accelerera transaktionsprocessen.*"
@@ -1096,19 +1096,19 @@
     "message": "Synka med mobil"
   },
   "syncWithMobileDesc": {
-    "message": "Du kan nu synka dina konton och din information med din mobil-enhet. Öppna WanchainMasks mobil-app, gå till \"Inställningar\" och tryck på \"Synka från webbläsartillägg\""
+    "message": "Du kan nu synka dina konton och din information med din mobil-enhet. Öppna s mobil-app, gå till \"Inställningar\" och tryck på \"Synka från webbläsartillägg\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Om du öppnar WanchainMask mobilapplikation för första gången behöver du bara följa stegen som visas i telefonen."
+    "message": "Om du öppnar WanMask mobilapplikation för första gången behöver du bara följa stegen som visas i telefonen."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Skanna den här koden med din WanchainMask mobilapplikation"
+    "message": "Skanna den här koden med din WanMask mobilapplikation"
   },
   "syncWithMobileBeCareful": {
     "message": "Försäkra dig om att ingen tittar på din skärm när du skannar denna kod"
   },
   "syncWithMobileComplete": {
-    "message": "Din data har nu synkats. Ha det så kul med WanchainMasks mobil-app!"
+    "message": "Din data har nu synkats. Ha det så kul med s mobil-app!"
   },
   "terms": {
     "message": "Användarvillkor"
@@ -1193,7 +1193,7 @@
     "message": "Försök igen"
   },
   "typePassword": {
-    "message": "Ange ditt WanchainMask-lösenord"
+    "message": "Ange ditt WanMask-lösenord"
   },
   "unapproved": {
     "message": "Inte godkänd"
@@ -1259,7 +1259,7 @@
     "message": "Välkommen tillbaka!"
   },
   "welcome": {
-    "message": "Välkommen till WanchainMask"
+    "message": "Välkommen till WanMask"
   },
   "writePhrase": {
     "message": "Skriv ner den här frasen på ett papper och förvara den på en säker plats. Om du vill ha större säkerhet skriver du ner den på flera papperslappar och förvarar dem på två eller tre olika platser."

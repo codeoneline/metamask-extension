@@ -17,7 +17,7 @@ export default class NotificationManager {
   }
 
   /**
-   * Either brings an existing WanchainMask notification window into focus, or creates a new notification window. New
+   * Either brings an existing WanMask notification window into focus, or creates a new notification window. New
    * notification windows are given a 'popup' type.
    *
    */
@@ -64,7 +64,7 @@ export default class NotificationManager {
   }
 
   /**
-   * Checks all open WanchainMask windows, and returns the first one it finds that is a notification window (i.e. has the
+   * Checks all open WanMask windows, and returns the first one it finds that is a notification window (i.e. has the
    * type 'popup')
    *
    * @private
@@ -77,10 +77,10 @@ export default class NotificationManager {
   }
 
   /**
-   * Given an array of windows, returns the 'popup' that has been opened by WanchainMask, or null if no such window exists.
+   * Given an array of windows, returns the 'popup' that has been opened by WanMask, or null if no such window exists.
    *
    * @private
-   * @param {array} windows - An array of objects containing data about the open WanchainMask extension windows.
+   * @param {array} windows - An array of objects containing data about the open WanMask extension windows.
    *
    */
   _getPopupIn (windows) {

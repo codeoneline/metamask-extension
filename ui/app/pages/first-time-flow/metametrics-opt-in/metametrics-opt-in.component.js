@@ -34,14 +34,14 @@ export default class MetaMetricsOptIn extends Component {
           <div className="metametrics-opt-in__body-graphic">
             <img src="images/metrics-chart.svg" />
           </div>
-          <div className="metametrics-opt-in__title">Help Us Improve WanchainMask</div>
+          <div className="metametrics-opt-in__title">Help Us Improve WanMask</div>
           <div className="metametrics-opt-in__body">
             <div className="metametrics-opt-in__description">
-             WanchainMask would like to gather usage data to better understand how our users interact with the extension. This data
+             WanMask would like to gather usage data to better understand how our users interact with the extension. This data
              will be used to continually improve the usability and user experience of our product and the Wanchain ecosystem.
             </div>
             <div className="metametrics-opt-in__description">
-             WanchainMask will..
+             WanMask will..
             </div>
 
             <div className="metametrics-opt-in__committments">

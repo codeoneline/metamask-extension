@@ -13,7 +13,7 @@ const enLocaleMessages = require('../../app/_locales/en/messages.json')
 
 const ganacheServer = new Ganache()
 
-describe('WanchainMask', function () {
+describe('WanMask', function () {
   let driver
   let publicAddress
 
@@ -130,7 +130,7 @@ describe('WanchainMask', function () {
       await driver.wait(until.elementTextMatches(txStatus, /Success/), 15000)
     })
 
-    it('switches back to WanchainMask', async function () {
+    it('switches back to WanMask', async function () {
       await driver.switchToWindow(extension)
     })
 

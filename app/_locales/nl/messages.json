@@ -22,7 +22,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -44,7 +44,7 @@
     "message": "Gebruik Blockies Identicon"
   },
   "builtInCalifornia": {
-    "message": "WanchainMask is ontworpen en gebouwd in Californië."
+    "message": "WanMask is ontworpen en gebouwd in Californië."
   },
   "buyCoinSwitch": {
     "message": "Koop op CoinSwitch"
@@ -175,7 +175,7 @@
     "message": "Account importeren"
   },
   "importAccountMsg": {
-    "message": " Geïmporteerde accounts worden niet gekoppeld aan de seedphrase van uw oorspronkelijk gemaakte WanchainMask-account. Meer informatie over geïmporteerde accounts"
+    "message": " Geïmporteerde accounts worden niet gekoppeld aan de seedphrase van uw oorspronkelijk gemaakte WanMask-account. Meer informatie over geïmporteerde accounts"
   },
   "imported": {
     "message": "geïmporteerde",
@@ -234,7 +234,7 @@
     "message": "Bericht"
   },
   "metamaskDescription": {
-    "message": "WanchainMask is een veilige identiteitskluis voor Wanchain."
+    "message": "WanMask is een veilige identiteitskluis voor Wanchain."
   },
   "myAccounts": {
     "message": "Mijn accounts"
@@ -243,7 +243,7 @@
     "message": "Moet ten minste één token selecteren."
   },
   "needEtherInWallet": {
-    "message": "Om te communiceren met gedecentraliseerde applicaties met WanchainMask, heb je Wan Coin nodig in je portemonnee."
+    "message": "Om te communiceren met gedecentraliseerde applicaties met WanMask, heb je Wan Coin nodig in je portemonnee."
   },
   "needImportFile": {
     "message": "U moet een bestand selecteren om te importeren.",
@@ -421,7 +421,7 @@
     "message": "Bezoek onze website"
   },
   "welcome": {
-    "message": "Welkom bij WanchainMask"
+    "message": "Welkom bij WanMask"
   },
   "yourSigRequested": {
     "message": "Uw handtekening wordt aangevraagd"

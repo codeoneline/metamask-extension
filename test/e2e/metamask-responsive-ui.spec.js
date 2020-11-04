@@ -13,7 +13,7 @@ const enLocaleMessages = require('../../app/_locales/en/messages.json')
 
 const ganacheServer = new Ganache()
 
-describe('WanchainMask', function () {
+describe('WanMask', function () {
   let driver
 
   const testSeedPhrase = 'phrase upgrade clock rough situate wedding elder clever doctor stamp excess tent'
@@ -172,7 +172,7 @@ describe('WanchainMask', function () {
     })
   })
 
-  describe('Send WAN from inside WanchainMask', function () {
+  describe('Send WAN from inside WanMask', function () {
     it('starts to send a transaction', async function () {
       await driver.clickElement(By.xpath(`//button[contains(text(), 'Send')]`))
       await driver.delay(regularDelayMs)

@@ -47,7 +47,7 @@ export default class DetectTokensController {
     try {
       result = await this._getTokenBalances(tokensToDetect)
     } catch (error) {
-      warn(`WanchainMask - DetectTokensController single call balance fetch failed`, error)
+      warn(`WanMask - DetectTokensController single call balance fetch failed`, error)
       return
     }
 

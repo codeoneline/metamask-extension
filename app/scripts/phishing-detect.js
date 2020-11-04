@@ -20,7 +20,7 @@ function start () {
   const extensionPort = extension.runtime.connect({ name: getEnvironmentType() })
   const connectionStream = new PortStream(extensionPort)
   const mx = setupMultiplex(connectionStream)
-  setupControllerConnection(mx.createStream('controller3'), (err, metaMaskController) => {
+  setupControllerConnection(mx.createStream('controller2'), (err, metaMaskController) => {
     if (err) {
       return
     }

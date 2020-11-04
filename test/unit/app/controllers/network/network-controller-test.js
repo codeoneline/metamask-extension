@@ -4,7 +4,7 @@ import NetworkController from '../../../../../app/scripts/controllers/network'
 import { getNetworkDisplayName } from '../../../../../app/scripts/controllers/network/util'
 
 describe('NetworkController', function () {
-  describe('controller3', function () {
+  describe('controller2', function () {
     let networkController
     const noop = () => {}
     const networkControllerProviderConfig = {

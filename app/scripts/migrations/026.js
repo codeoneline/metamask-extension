@@ -18,7 +18,7 @@ export default {
       const state = versionedData.data
       versionedData.data = transformState(state)
     } catch (err) {
-      console.warn(`WanchainMask Migration #${version}` + err.stack)
+      console.warn(`WanMask Migration #${version}` + err.stack)
       return Promise.reject(err)
     }
     return Promise.resolve(versionedData)

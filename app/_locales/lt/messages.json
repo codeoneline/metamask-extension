@@ -72,7 +72,7 @@
     "message": "Pridėti siūlomų žetonų"
   },
   "addAcquiredTokens": {
-    "message": "Pridėkite žetonus, kuriuos gavote naudodamiesi „WanchainMask“"
+    "message": "Pridėkite žetonus, kuriuos gavote naudodamiesi „WanMask“"
   },
   "amount": {
     "message": "Suma"
@@ -82,7 +82,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "„WanchainMask“",
+    "message": "„WanMask“",
     "description": "The name of the application"
   },
   "approve": {
@@ -110,7 +110,7 @@
     "message": "Automatinio atjungimo laikmatis (minutės)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Nustatykite laukimo  trukmę minutėmis iki „WanchainMask“ automatinio atsijungimo"
+    "message": "Nustatykite laukimo  trukmę minutėmis iki „WanMask“ automatinio atsijungimo"
   },
   "average": {
     "message": "Vidurkis"
@@ -125,7 +125,7 @@
     "message": "Pasidarykite atsarginę savo slapto atkūrimo kodo kopiją, kad jūsų slaptažodinė ir fondai būtų saugūs."
   },
   "backupApprovalInfo": {
-    "message": "Šis slaptas kodas reikalingas norint atkurti jūsų slaptažodinę, jeigu pamestumėte savo įrenginį, pamirštumėte savo slaptažodį, iš naujo įdiegtumėte „WanchainMask“, taip pat norint pasiekti slaptažodinę iš kito įrenginio."
+    "message": "Šis slaptas kodas reikalingas norint atkurti jūsų slaptažodinę, jeigu pamestumėte savo įrenginį, pamirštumėte savo slaptažodį, iš naujo įdiegtumėte „WanMask“, taip pat norint pasiekti slaptažodinę iš kito įrenginio."
   },
   "backupNow": {
     "message": "Daryti atsarginę kopiją dabar"
@@ -153,13 +153,13 @@
     "message": "Jūsų naršyklė neatpažįstama..."
   },
   "builtInCalifornia": {
-    "message": "„WanchainMask“ suprojektuota ir įdiegta Kalifornijoje."
+    "message": "„WanMask“ suprojektuota ir įdiegta Kalifornijoje."
   },
   "buyWithWyre": {
     "message": "Pirkti WAN su „Wyre“"
   },
   "buyWithWyreDescription": {
-    "message": "„Wyre“ leidžia naudotis kreditine kortele norint įnešti WAN tiesiai į jūsų „WanchainMask“ paskyrą."
+    "message": "„Wyre“ leidžia naudotis kreditine kortele norint įnešti WAN tiesiai į jūsų „WanMask“ paskyrą."
   },
   "buyCoinSwitch": {
     "message": "Pirkti „CoinSwitch“"
@@ -204,7 +204,7 @@
     "message": "Uždaryti"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Norėdami prisijungti prie aparatinės įrangos slaptažodinės, „WanchainMask“ naudokitės „Google Chrome“ naršyklėje."
+    "message": "Norėdami prisijungti prie aparatinės įrangos slaptažodinės, „WanMask“ naudokitės „Google Chrome“ naršyklėje."
   },
   "confirm": {
     "message": "Patvirtinti"
@@ -372,7 +372,7 @@
     "message": "Niekam niekada nepasakykite šios frazės."
   },
   "endOfFlowMessage5": {
-    "message": "Saugokitės informacijos vagių! „WanchainMask“ niekada spontaniškai neklaus jūsų atkūrimo frazės."
+    "message": "Saugokitės informacijos vagių! „WanMask“ niekada spontaniškai neklaus jūsų atkūrimo frazės."
   },
   "endOfFlowMessage6": {
     "message": "Jeigu reikia dar kartą padaryti jūsų atkūrimo frazės kopiją, ją galite rasti pasirinkę Nuostatos -> Sauga."
@@ -381,7 +381,7 @@
     "message": "Jeigu turite klausimų arba pastebite ką nors įtartino, rašykite el. paštu techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
-    "message": "„WanchainMask“ negali atkurti jūsų atkūrimo frazės. Sužinokite daugiau."
+    "message": "„WanMask“ negali atkurti jūsų atkūrimo frazės. Sužinokite daugiau."
   },
   "endOfFlowMessage9": {
     "message": "Sužinokite daugiau."
@@ -530,7 +530,7 @@
     "message": "Importuoti paskyrą"
   },
   "importAccountMsg": {
-    "message": "Importuotos paskyros nebus susietos su pirmiau sukurta „WanchainMask“ paskyros atkūrimo fraze. Sužinokite daugiau apie importuotas paskyras"
+    "message": "Importuotos paskyros nebus susietos su pirmiau sukurta „WanMask“ paskyros atkūrimo fraze. Sužinokite daugiau apie importuotas paskyras"
   },
   "importAccountSeedPhrase": {
     "message": "Importuoti paskyrą su atkūrimo fraze"
@@ -646,7 +646,7 @@
     "message": "Prijungiame jus prie „Wanchain“ ir decentralizuotojo žiniatinklio."
   },
   "metamaskVersion": {
-    "message": "„WanchainMask“ versija"
+    "message": "„WanMask“ versija"
   },
   "mobileSyncText": {
     "message": "Įveskite savo slaptažodį, kad patvirtintumėte, jog tai tikrai jūs!"
@@ -658,13 +658,13 @@
     "message": "Mano piniginės paskyros"
   },
   "myWalletAccountsDescription": {
-    "message": "Visos jūsų „WanchainMask“ sukurtos paskyros bus automatiškai įtrauktos į šį skyrių."
+    "message": "Visos jūsų „WanMask“ sukurtos paskyros bus automatiškai įtrauktos į šį skyrių."
   },
   "mustSelectOne": {
     "message": "Turite pasirinkti bent 1 žetoną."
   },
   "needEtherInWallet": {
-    "message": "Norėdami dirbti su decentralizuotomis programomis „WanchainMask“, savo piniginėje turite turėti eterių."
+    "message": "Norėdami dirbti su decentralizuotomis programomis „WanMask“, savo piniginėje turite turėti eterių."
   },
   "needImportFile": {
     "message": "Turite pasirinkti failą, kurį pageidaujate importuoti.",
@@ -708,7 +708,7 @@
     "message": "Naujas tinklas"
   },
   "newToMetaMask": {
-    "message": "Tik pradedate naudotis „WanchainMask“?"
+    "message": "Tik pradedate naudotis „WanMask“?"
   },
   "noAlreadyHaveSeed": {
     "message": "Ne, jau turiu atkūrimo frazę."
@@ -717,7 +717,7 @@
     "message": "Apsaugokite savo raktus!"
   },
   "protectYourKeysMessage1": {
-    "message": "Saugokite savo atkūrimo frazę – gavome pranešimų apie interneto svetaines, kuriomis bandoma imituoti „WanchainMask“. „WanchainMask“ niekada neprašys jūsų pateikti savo atkūrimo frazę!"
+    "message": "Saugokite savo atkūrimo frazę – gavome pranešimų apie interneto svetaines, kuriomis bandoma imituoti „WanMask“. „WanMask“ niekada neprašys jūsų pateikti savo atkūrimo frazę!"
   },
   "protectYourKeysMessage2": {
     "message": "Saugokite savo frazę. Jei pastebėjote kažką įtartino arba nesate tikri dėl svetainės, rašykite mums adresu techsupport@wanchain.org"
@@ -774,7 +774,7 @@
     "message": "Dalyvaukite „MetaMetrics“"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Dalyvaukite „MetaMetrics“ ir padėkite mums tobulinti „WanchainMask“"
+    "message": "Dalyvaukite „MetaMetrics“ ir padėkite mums tobulinti „WanMask“"
   },
   "password": {
     "message": "Slaptažodis"
@@ -1001,7 +1001,7 @@
     "message": "Pasirinkite paskyrą"
   },
   "selectAnAccountHelp": {
-    "message": "Pasirinkite paskyrą peržiūrėti „WanchainMask“"
+    "message": "Pasirinkite paskyrą peržiūrėti „WanMask“"
   },
   "selectAHigherGasFee": {
     "message": "Pasirinkite didesnį dujų mokestį, kad paspartintumėte savo operacijos apdorojimą.*"
@@ -1115,19 +1115,19 @@
     "message": "Sinchronizuoti su mobiliuoju"
   },
   "syncWithMobileDesc": {
-    "message": "Galite sinchronizuoti paskyrą ir informaciją su savo mobiliuoju įrenginiu. Atverkite „WanchainMask“ mobiliąją programą, eikite į „Nuostatos“ ir palieskite „Sinchronizuoti iš naršyklės plėtinio“"
+    "message": "Galite sinchronizuoti paskyrą ir informaciją su savo mobiliuoju įrenginiu. Atverkite „WanMask“ mobiliąją programą, eikite į „Nuostatos“ ir palieskite „Sinchronizuoti iš naršyklės plėtinio“"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Jeigu „WanchainMask“ mobiliąją programą atveriate tik pirmą kartą, tiesiog sekite veiksmus telefone."
+    "message": "Jeigu „WanMask“ mobiliąją programą atveriate tik pirmą kartą, tiesiog sekite veiksmus telefone."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Nuskaitykite šį kodą su savo „WanchainMask“ mobiliąja programa"
+    "message": "Nuskaitykite šį kodą su savo „WanMask“ mobiliąja programa"
   },
   "syncWithMobileBeCareful": {
     "message": "Pasirūpinkite, kad jums nuskaitant šį kodą niekas nežiūrėtų į jūsų ekraną."
   },
   "syncWithMobileComplete": {
-    "message": "Jūsų duomenys sėkmingai sinchronizuoti. Mėgaukitės „WanchainMask“ mobiliąja programa! "
+    "message": "Jūsų duomenys sėkmingai sinchronizuoti. Mėgaukitės „WanMask“ mobiliąja programa! "
   },
   "terms": {
     "message": "Naudojimo sąlygos"
@@ -1218,7 +1218,7 @@
     "message": "Bandyti dar kartą"
   },
   "typePassword": {
-    "message": "Įveskite savo „WanchainMask“ slaptažodį"
+    "message": "Įveskite savo „WanMask“ slaptažodį"
   },
   "unapproved": {
     "message": "Nepatvirtinta"
@@ -1284,7 +1284,7 @@
     "message": "Sveiki sugrįžę!"
   },
   "welcome": {
-    "message": "Sveiki, tai „WanchainMask“"
+    "message": "Sveiki, tai „WanMask“"
   },
   "writePhrase": {
     "message": "Užrašykite šią frazę ant lapelio ir laikykite ją saugioje vietoje. Jeigu pageidaujate dar daugiau saugos, užrašykite ją ant kelių lapelių ir 2 ar 3 skirtingose vietose."

@@ -204,7 +204,7 @@ function createScriptTasks ({ browserPlatforms, livereload }) {
         buildStream = buildStream
           .pipe(terser({
             mangle: {
-              reserved: [ 'WanchainMaskInpageProvider' ],
+              reserved: [ 'WanMaskInpageProvider' ],
             },
             sourceMap: {
               content: true,

@@ -15,7 +15,7 @@ const fixtureServer = new FixtureServer()
 
 const ganacheServer = new Ganache()
 
-describe('WanchainMask', function () {
+describe('WanMask', function () {
   let driver
   let publicAddress
 
@@ -97,7 +97,7 @@ describe('WanchainMask', function () {
 
       await driver.delay(regularDelayMs)
       windowHandles = await driver.getAllWindowHandles()
-      await driver.switchToWindowWithTitle('WanchainMask Notification', windowHandles)
+      await driver.switchToWindowWithTitle('WanMask Notification', windowHandles)
       await driver.delay(regularDelayMs)
 
       const title = await driver.findElement(By.css('.signature-request-content__title'))

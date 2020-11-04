@@ -72,7 +72,7 @@
     "message": "Adăugați indicativele sugerate"
   },
   "addAcquiredTokens": {
-    "message": "Adăugați token-urile pe care le-ați achiziționat folosind WanchainMask"
+    "message": "Adăugați token-urile pe care le-ați achiziționat folosind WanMask"
   },
   "amount": {
     "message": "Sumă"
@@ -82,7 +82,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -110,7 +110,7 @@
     "message": "Temporizator deconectare automată (minute)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Setați perioada de inactivitate în minute înainte ca WanchainMask să se deconecteze automat"
+    "message": "Setați perioada de inactivitate în minute înainte ca WanMask să se deconecteze automat"
   },
   "average": {
     "message": "Mediu"
@@ -125,7 +125,7 @@
     "message": "Creați o copie de rezervă a codului de recuperare secret pentru a vă menține portofelul și fondurile în siguranță."
   },
   "backupApprovalInfo": {
-    "message": "Acest cod secret este necesar pentru recuperarea portofelului în cazul în care pierdeți dispozitivul, uitați parola, trebuie să reinstalați WanchainMask sau vreți să accesați portofelul de pe alt dispozitiv."
+    "message": "Acest cod secret este necesar pentru recuperarea portofelului în cazul în care pierdeți dispozitivul, uitați parola, trebuie să reinstalați WanMask sau vreți să accesați portofelul de pe alt dispozitiv."
   },
   "backupNow": {
     "message": "Creați o copie de rezervă acum"
@@ -153,13 +153,13 @@
     "message": "Browserul dvs. nu este compatibil..."
   },
   "builtInCalifornia": {
-    "message": "WanchainMask este concepută și creată în California."
+    "message": "WanMask este concepută și creată în California."
   },
   "buyWithWyre": {
     "message": "Cumpărați WAN cu Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vă permite să folosiți un card de credit pentru a depune WAN direct în contul dvs. WanchainMask."
+    "message": "Wyre vă permite să folosiți un card de credit pentru a depune WAN direct în contul dvs. WanMask."
   },
   "buyCoinSwitch": {
     "message": "Cumpărați pe CoinSwitch"
@@ -204,7 +204,7 @@
     "message": "Închide"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Trebuie să folosiți WanchainMask în Google Chrome pentru a vă conecta la portofelul hardware."
+    "message": "Trebuie să folosiți WanMask în Google Chrome pentru a vă conecta la portofelul hardware."
   },
   "confirm": {
     "message": "Confirmați"
@@ -372,7 +372,7 @@
     "message": "Nu comunicați niciodată fraza cuiva."
   },
   "endOfFlowMessage5": {
-    "message": "Aveți grijă la phishing! WanchainMask nu vă va cere niciodată în mod spontan expresia sursă."
+    "message": "Aveți grijă la phishing! WanMask nu vă va cere niciodată în mod spontan expresia sursă."
   },
   "endOfFlowMessage6": {
     "message": "Dacă trebuie să vă salvați din nou fraza seed, puteți să o găsiți în Setări -> Securitate."
@@ -381,7 +381,7 @@
     "message": "Dacă aveți întrebări sau vedeți ceva suspect, trimiteți un e-mail la techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
-    "message": "WanchainMask nu vă poate recupera expresia sursă. Aflați mai multe."
+    "message": "WanMask nu vă poate recupera expresia sursă. Aflați mai multe."
   },
   "endOfFlowMessage9": {
     "message": "Aflați mai multe."
@@ -491,7 +491,7 @@
     "message": "Conectați un portofel hardware"
   },
   "hardwareWalletsMsg": {
-    "message": "Selectați un portofel hardware pe care doriți să îl folosiți cu WanchainMask"
+    "message": "Selectați un portofel hardware pe care doriți să îl folosiți cu WanMask"
   },
   "havingTroubleConnecting": {
     "message": "Aveți probleme cu conectarea?"
@@ -520,7 +520,7 @@
     "message": "Importare cont"
   },
   "importAccountMsg": {
-    "message": "Conturile importate nu vor fi asociate cu seedphrase-ul contului dumneavoastră WanchainMask creat inițial. Aflați mai multe despre conturile importate"
+    "message": "Conturile importate nu vor fi asociate cu seedphrase-ul contului dumneavoastră WanMask creat inițial. Aflați mai multe despre conturile importate"
   },
   "importAccountSeedPhrase": {
     "message": "Importați un cont cu fraza seed"
@@ -633,7 +633,7 @@
     "message": "Vă conectăm la Wanchain și la Internetul descentralizat."
   },
   "metamaskVersion": {
-    "message": "Versiune WanchainMask"
+    "message": "Versiune WanMask"
   },
   "mobileSyncText": {
     "message": "Vă rugăm introduceți parola pentru a vă confirma identitatea!"
@@ -645,13 +645,13 @@
     "message": "Conturi My Wallet"
   },
   "myWalletAccountsDescription": {
-    "message": "Toate conturile dvs. create pe WanchainMask vor fi adăugate automat la această secțiune."
+    "message": "Toate conturile dvs. create pe WanMask vor fi adăugate automat la această secțiune."
   },
   "mustSelectOne": {
     "message": "Trebuie să selectați cel puțin 1 simbol."
   },
   "needEtherInWallet": {
-    "message": "Pentru a interacționa cu aplicațiile descentralizate prin intermediul WanchainMask, trebuie să aveți Wan Coin în portofel."
+    "message": "Pentru a interacționa cu aplicațiile descentralizate prin intermediul WanMask, trebuie să aveți Wan Coin în portofel."
   },
   "needImportFile": {
     "message": "Trebuie să selectați un fișier pentru importare.",
@@ -695,7 +695,7 @@
     "message": "Rețea nouă"
   },
   "newToMetaMask": {
-    "message": "Nefamiliarizat cu WanchainMask?"
+    "message": "Nefamiliarizat cu WanMask?"
   },
   "noAlreadyHaveSeed": {
     "message": "Nu, am deja o expresie sursă"
@@ -704,7 +704,7 @@
     "message": "Protejați-vă cheile!"
   },
   "protectYourKeysMessage1": {
-    "message": "Aveți grijă cu expresia dvs. sursă – au existat raportări despre site-uri web care încearcă să imite WanchainMask. WanchainMask nu vă va cere niciodată expresia sursă!"
+    "message": "Aveți grijă cu expresia dvs. sursă – au existat raportări despre site-uri web care încearcă să imite WanMask. WanMask nu vă va cere niciodată expresia sursă!"
   },
   "protectYourKeysMessage2": {
     "message": "Aveți grijă de fraza dvs. Dacă vedeți ceva care este în neregulă sau aveți dubii cu privire la un site, trimiteți un mesaj la techsupport@wanchain.org"
@@ -761,7 +761,7 @@
     "message": "Participați la MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Alăturați-vă MetaMetrics pentru a ne ajuta să îmbunătățim WanchainMask."
+    "message": "Alăturați-vă MetaMetrics pentru a ne ajuta să îmbunătățim WanMask."
   },
   "password": {
     "message": "Parolă"
@@ -988,7 +988,7 @@
     "message": "Selectați un cont"
   },
   "selectAnAccountHelp": {
-    "message": "Selectați contul de vizualizat în WanchainMask"
+    "message": "Selectați contul de vizualizat în WanMask"
   },
   "selectAHigherGasFee": {
     "message": "Selectați o taxă gas mai mare pentru a accelera procesarea tranzacției.*"
@@ -1102,19 +1102,19 @@
     "message": "Sincronizați cu mobilul"
   },
   "syncWithMobileDesc": {
-    "message": "Vă puteți sincroniza conturile și informațiile cu dispozitivul dvs. mobil. Deschideți aplicația mobilă WanchainMask, mergeți la „Setări” și atingeți „Sincronizare de la extensia de browser”"
+    "message": "Vă puteți sincroniza conturile și informațiile cu dispozitivul dvs. mobil. Deschideți aplicația mobilă WanMask, mergeți la „Setări” și atingeți „Sincronizare de la extensia de browser”"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Dacă deschideți aplicația pentru mobil WanchainMask pentru prima oară, urmați pașii afișați pe telefonul dvs."
+    "message": "Dacă deschideți aplicația pentru mobil WanMask pentru prima oară, urmați pașii afișați pe telefonul dvs."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Scanați acest cod folosind aplicația dvs. mobilă WanchainMask"
+    "message": "Scanați acest cod folosind aplicația dvs. mobilă WanMask"
   },
   "syncWithMobileBeCareful": {
     "message": "Asigurați-vă că nimeni altcineva nu poate vedea ecranul dvs. când scanați acest cod"
   },
   "syncWithMobileComplete": {
-    "message": "Datele dvs. au fost sincronizate cu succes. Bucurați-vă de aplicația mobilă WanchainMask!"
+    "message": "Datele dvs. au fost sincronizate cu succes. Bucurați-vă de aplicația mobilă WanMask!"
   },
   "terms": {
     "message": "Termeni și condiții"
@@ -1199,7 +1199,7 @@
     "message": "Încearcă din nou"
   },
   "typePassword": {
-    "message": "Scrieți parola dvs. pentru WanchainMask"
+    "message": "Scrieți parola dvs. pentru WanMask"
   },
   "unapproved": {
     "message": "Neaprobat"
@@ -1265,7 +1265,7 @@
     "message": "Bine ai revenit!"
   },
   "welcome": {
-    "message": "Bun venit la WanchainMask"
+    "message": "Bun venit la WanMask"
   },
   "writePhrase": {
     "message": "Scrieți această expresie pe o bucată de hârtie și păstrați-o într-un loc sigur. Dacă vreți și mai multă securitate, notați-o pe mai multe bucăți de hârtie și păstrați-le în 2 - 3 locuri diferite."

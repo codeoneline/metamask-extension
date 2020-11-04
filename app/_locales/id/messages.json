@@ -6,7 +6,7 @@
     "message": "Interaksi Kontrak"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "reject": {
@@ -76,7 +76,7 @@
     "message": "Tambah Token yang Disarankan"
   },
   "addAcquiredTokens": {
-    "message": "Tambahkan token yang sudah Anda peroleh menggunakan WanchainMask"
+    "message": "Tambahkan token yang sudah Anda peroleh menggunakan WanMask"
   },
   "amount": {
     "message": "Jumlah"
@@ -110,7 +110,7 @@
     "message": "Jangka Waktu Keluar-Otomatis (menit)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Atur waktu diam dalam menit sebelum WanchainMask mengeluarkan Anda secara otomatis"
+    "message": "Atur waktu diam dalam menit sebelum WanMask mengeluarkan Anda secara otomatis"
   },
   "average": {
     "message": "Rata-rata"
@@ -125,7 +125,7 @@
     "message": "Cadangkan kode Pemulihan Rahasia guna mengamankan dompet dan dana Anda."
   },
   "backupApprovalInfo": {
-    "message": "Kode rahasia Anda diperlukan untuk memulihkan dompet jika perangkat hilang, lupa sandi, harus menginstal ulang WanchainMask, atau ingin mengakses dompet Anda di perangkat lain."
+    "message": "Kode rahasia Anda diperlukan untuk memulihkan dompet jika perangkat hilang, lupa sandi, harus menginstal ulang WanMask, atau ingin mengakses dompet Anda di perangkat lain."
   },
   "backupNow": {
     "message": "Cadangkan sekarang"
@@ -153,13 +153,13 @@
     "message": "Peramban Anda tidak didukung..."
   },
   "builtInCalifornia": {
-    "message": "WanchainMask dirancang dan dibangun di California."
+    "message": "WanMask dirancang dan dibangun di California."
   },
   "buyWithWyre": {
     "message": "Membeli WAN dengan Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre mengizinkan Anda menggunakan kartu kredit untuk mendepositkan WAN langsung ke akun  WanchainMask."
+    "message": "Wyre mengizinkan Anda menggunakan kartu kredit untuk mendepositkan WAN langsung ke akun  WanMask."
   },
   "buyCoinSwitch": {
     "message": "Beli di CoinSwitch"
@@ -204,7 +204,7 @@
     "message": "Tutup"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Anda harus menggunakan WanchainMask di Google Chrome untuk menyambung ke dompet Perangkat Keras Anda."
+    "message": "Anda harus menggunakan WanMask di Google Chrome untuk menyambung ke dompet Perangkat Keras Anda."
   },
   "confirm": {
     "message": "Konfirmasi"
@@ -363,7 +363,7 @@
     "message": "Jangan pernah bagikan frasa dengan siapa pun."
   },
   "endOfFlowMessage5": {
-    "message": "Hati-hati terhadap phishing! WanchainMask tidak akan pernah meminta frasa benih Anda secara spontan."
+    "message": "Hati-hati terhadap phishing! WanMask tidak akan pernah meminta frasa benih Anda secara spontan."
   },
   "endOfFlowMessage6": {
     "message": "Jika Anda perlu mencadangkan frase seed lagi, Anda dapat menemukannya dalam Pengaturan -> Keamanan."
@@ -372,7 +372,7 @@
     "message": "Jika Anda punya pertanyaan atau melihat sesuatu yang ganjil, kirimkan email ke techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
-    "message": "WanchainMask tidak dapat memulihkan frasa seed Anda. Pelajari lebih lanjut."
+    "message": "WanMask tidak dapat memulihkan frasa seed Anda. Pelajari lebih lanjut."
   },
   "endOfFlowMessage9": {
     "message": "Pelajari lebih lanjut."
@@ -488,7 +488,7 @@
     "message": "Hubungkan dompet peranti keras"
   },
   "hardwareWalletsMsg": {
-    "message": "Pilih dompet hardware yang ingin Anda pakai dengan WanchainMask"
+    "message": "Pilih dompet hardware yang ingin Anda pakai dengan WanMask"
   },
   "havingTroubleConnecting": {
     "message": "Kesulitan menghubungkan?"
@@ -517,7 +517,7 @@
     "message": "Impor Akun"
   },
   "importAccountMsg": {
-    "message": "Akun impor tidak akan dihubungkan dengan frasa benih akun WanchainMask yang diciptakan pertama kali. Pelajari lebih lanjut tentang akun impor"
+    "message": "Akun impor tidak akan dihubungkan dengan frasa benih akun WanMask yang diciptakan pertama kali. Pelajari lebih lanjut tentang akun impor"
   },
   "importAccountSeedPhrase": {
     "message": "Impor Akun dengan Frasa Benih"
@@ -627,7 +627,7 @@
     "message": "Menghubungkan Anda ke Wanchain dan Web Terdesentralisasi."
   },
   "metamaskVersion": {
-    "message": "Versi WanchainMask"
+    "message": "Versi WanMask"
   },
   "mobileSyncText": {
     "message": "Harap masukkan sandi untuk mengonfirmasi ini memang Anda!"
@@ -639,13 +639,13 @@
     "message": "Akun Dompet Saya"
   },
   "myWalletAccountsDescription": {
-    "message": "Semua akun Anda yang dibuat oleh WanchainMask otomatis akan ditambahkan ke bagian ini."
+    "message": "Semua akun Anda yang dibuat oleh WanMask otomatis akan ditambahkan ke bagian ini."
   },
   "mustSelectOne": {
     "message": "Harus memilih setidaknya 1 token."
   },
   "needEtherInWallet": {
-    "message": "Untuk berinteraksi dengan aplikasi terdesentralisasi menggunakan WanchainMask, Anda memerlukan adanya Wan Coin di dompet Anda."
+    "message": "Untuk berinteraksi dengan aplikasi terdesentralisasi menggunakan WanMask, Anda memerlukan adanya Wan Coin di dompet Anda."
   },
   "needImportFile": {
     "message": "Anda harus memilih berkas untuk diimpor.",
@@ -689,7 +689,7 @@
     "message": "Jaringan Baru"
   },
   "newToMetaMask": {
-    "message": "Baru di WanchainMask?"
+    "message": "Baru di WanMask?"
   },
   "noAlreadyHaveSeed": {
     "message": "Tidak, saya sudah memiliki frasa seed"
@@ -698,7 +698,7 @@
     "message": "Lindungi Kunci Anda!"
   },
   "protectYourKeysMessage1": {
-    "message": "Berhati-hatilah dengan frasa seed Anda — terdapat laporan tentang website yang coba mengimitasi WanchainMask. WanchainMask tidak akan pernah meminta frasa seed Anda!"
+    "message": "Berhati-hatilah dengan frasa seed Anda — terdapat laporan tentang website yang coba mengimitasi WanMask. WanMask tidak akan pernah meminta frasa seed Anda!"
   },
   "protectYourKeysMessage2": {
     "message": "Jaga keamanan frasa Anda. Jika Anda menemukan sesuatu yang mencurigakan, atau ragu dengan sebuah situs web, kirim surel ke techsupport@wanchain.org"
@@ -755,7 +755,7 @@
     "message": "Berpartisipasilah di MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Berpartisipasilah dalam MetaMetrics guna membantu kami menjadikan WanchainMask lebih baik"
+    "message": "Berpartisipasilah dalam MetaMetrics guna membantu kami menjadikan WanMask lebih baik"
   },
   "password": {
     "message": "Sandi"
@@ -982,7 +982,7 @@
     "message": "Pilih Akun"
   },
   "selectAnAccountHelp": {
-    "message": "Pilih akun untuk dilihat di WanchainMask"
+    "message": "Pilih akun untuk dilihat di WanMask"
   },
   "selectAHigherGasFee": {
     "message": "Pilih biaya gas yang lebih tinggi untuk mempercepat proses transaksi Anda.*"
@@ -1096,19 +1096,19 @@
     "message": "Sinkronkan dengan seluler"
   },
   "syncWithMobileDesc": {
-    "message": "Anda dapat menyinkronkan akun dan informasi Anda dengan perangkat seluler. Buka aplikasi seluler WanchainMask, pilih \"Pengaturan\" lalu ketuk \"Sinkronkan dari Ekstensi Peramban\""
+    "message": "Anda dapat menyinkronkan akun dan informasi Anda dengan perangkat seluler. Buka aplikasi seluler WanMask, pilih \"Pengaturan\" lalu ketuk \"Sinkronkan dari Ekstensi Peramban\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Jika Anda baru saja membuka aplikasi WanchainMask Mobile untuk pertama kali, ikuti langkah-langkah pada ponsel Anda."
+    "message": "Jika Anda baru saja membuka aplikasi WanMask Mobile untuk pertama kali, ikuti langkah-langkah pada ponsel Anda."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Pindai kode ini dengan aplikasi ponsel WanchainMask "
+    "message": "Pindai kode ini dengan aplikasi ponsel WanMask "
   },
   "syncWithMobileBeCareful": {
     "message": "Pastikan tidak ada yang melihat ke layar ketika kode ini Anda pindai"
   },
   "syncWithMobileComplete": {
-    "message": "Data Anda telah berhasil disinkronkan. Nikmati aplikasi mobile WanchainMask!"
+    "message": "Data Anda telah berhasil disinkronkan. Nikmati aplikasi mobile WanMask!"
   },
   "terms": {
     "message": "Syarat Penggunaan"
@@ -1190,7 +1190,7 @@
     "message": "Coba lagi"
   },
   "typePassword": {
-    "message": "Ketik kata sandi WanchainMask Anda"
+    "message": "Ketik kata sandi WanMask Anda"
   },
   "unapproved": {
     "message": "Tak disetujui"
@@ -1256,7 +1256,7 @@
     "message": "Selamat Datang Kembali!"
   },
   "welcome": {
-    "message": "Selamat Datang di WanchainMask"
+    "message": "Selamat Datang di WanMask"
   },
   "writePhrase": {
     "message": "Tuliskan frasa ini di selembar kertas dan simpan di tempat aman. Jika ingin lebih aman, tulislah di beberapa lembar kertas dan simpan masing-masing kertas di 2 - 3 lokasi berbeda."

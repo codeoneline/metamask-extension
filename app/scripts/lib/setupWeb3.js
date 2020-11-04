@@ -20,9 +20,9 @@ export default function setupWeb3 (log) {
 
   const web3 = new Web3(window.wanchain)
   web3.setProvider = function () {
-    log.debug('WanchainMask - overrode web3.setProvider')
+    log.debug('WanMask - overrode web3.setProvider')
   }
-  log.debug('WanchainMask - injected web3')
+  log.debug('WanMask - injected web3')
 
   Object.defineProperty(window.wanchain, '_web3Ref', {
     enumerable: false,
@@ -39,7 +39,7 @@ export default function setupWeb3 (log) {
 
       // show warning once on web3 access
       if (!hasBeenWarned) {
-        console.warn(`WanchainMask: We will stop injecting web3 in Q4 2020.\nPlease see this article for more information: https://medium.com/metamask/no-longer-injecting-web3-js-4a899ad6e59e`)
+        console.warn(`WanMask: We will stop injecting web3 in Q4 2020.\nPlease see this article for more information: https://medium.com/metamask/no-longer-injecting-web3-js-4a899ad6e59e`)
         hasBeenWarned = true
       }
 
@@ -74,6 +74,7 @@ export default function setupWeb3 (log) {
     configurable: true,
     value: web3Proxy,
   })
+  window.wan3 = window.wanWeb3
 
   window.wanchain._publicConfigStore.subscribe((state) => {
     // if the auto refresh on network change is false do not

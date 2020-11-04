@@ -143,7 +143,7 @@ export default class SelectHardware extends Component {
   renderLearnMore () {
     return (
       <p className="hw-connect__learn-more" onClick={this.scrollToTutorial}>
-        {this.context.t('learnMore')}
+        {/* {this.context.t('learnMore')} */}
         <img className="hw-connect__learn-more__arrow" src="images/caret-right.svg" alt="" />
       </p>
     )

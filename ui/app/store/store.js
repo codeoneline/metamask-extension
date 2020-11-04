@@ -5,7 +5,7 @@ import rootReducer from '../ducks'
 
 export default function configureStore (initialState) {
   const composeEnhancers = composeWithDevTools({
-    name: 'WanchainMask',
+    name: 'WanMask',
     hostname: 'localhost',
     port: 8000,
     realtime: Boolean(process.env.METAMASK_DEBUG),

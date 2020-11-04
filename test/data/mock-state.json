@@ -57,13 +57,13 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "WanchainMask",
+              "value": "WanMask",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1536268017686
             }
           ]
         ],
-        "origin": "WanchainMask"
+        "origin": "WanMask"
       }
     },
     "selectedAddress": "0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc",
@@ -179,7 +179,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "WanchainMask",
+              "value": "WanMask",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133130667
             }
@@ -290,7 +290,7 @@
             }
           ]
         ],
-        "origin": "WanchainMask",
+        "origin": "WanMask",
         "nonceDetails": {
           "params": {
             "highestLocallyConfirmed": 0,
@@ -359,7 +359,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "WanchainMask",
+              "value": "WanMask",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133150013
             }
@@ -470,7 +470,7 @@
             }
           ]
         ],
-        "origin": "WanchainMask",
+        "origin": "WanMask",
         "nonceDetails": {
           "params": {
             "highestLocallyConfirmed": 0,
@@ -539,7 +539,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "WanchainMask",
+              "value": "WanMask",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133180722
             }
@@ -650,7 +650,7 @@
             }
           ]
         ],
-        "origin": "WanchainMask",
+        "origin": "WanMask",
         "nonceDetails": {
           "params": {
             "highestLocallyConfirmed": 182,
@@ -906,7 +906,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "WanchainMask",
+              "value": "WanMask",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133291486
             }
@@ -1017,7 +1017,7 @@
             }
           ]
         ],
-        "origin": "WanchainMask",
+        "origin": "WanMask",
         "nonceDetails": {
           "params": {
             "highestLocallyConfirmed": 185,

@@ -40,7 +40,7 @@ export default class TokenRatesController {
           contractExchangeRates[normalizeAddress(token.address)] = price ? price[nativeCurrency] : 0
         })
       } catch (error) {
-        log.warn(`WanchainMask - TokenRatesController exchange rate fetch failed.`, error)
+        log.warn(`WanMask - TokenRatesController exchange rate fetch failed.`, error)
       }
     }
     this.store.putState({ contractExchangeRates })

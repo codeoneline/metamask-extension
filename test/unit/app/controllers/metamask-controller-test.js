@@ -766,7 +766,7 @@ describe('MetaMaskController', function () {
         await metamaskController.newUnsignedPersonalMessage(msgParams)
         assert.fail('should have thrown')
       } catch (error) {
-        assert.equal(error.message, 'WanchainMask Message Signature: from field is required.')
+        assert.equal(error.message, 'WanMask Message Signature: from field is required.')
       }
     })
 
@@ -819,7 +819,7 @@ describe('MetaMaskController', function () {
 
       const { promise, resolve } = deferredPromise()
       const streamTest = createThoughStream((chunk, _, cb) => {
-        if (chunk.name !== 'phishing3') {
+        if (chunk.name !== 'phishing2') {
           return cb()
         }
         assert.equal(chunk.data.hostname, (new URL(phishingMessageSender.url)).hostname)
@@ -854,7 +854,7 @@ describe('MetaMaskController', function () {
         method: 'eth_sendTransaction',
       }
       streamTest.write({
-        name: 'provider3',
+        name: 'provider2',
         data: message,
       }, null, () => {
         setTimeout(() => {
@@ -892,7 +892,7 @@ describe('MetaMaskController', function () {
         method: 'eth_sendTransaction',
       }
       streamTest.write({
-        name: 'provider3',
+        name: 'provider2',
         data: message,
       }, null, () => {
         setTimeout(() => {
@@ -917,7 +917,7 @@ describe('MetaMaskController', function () {
       }
       const { promise, resolve } = deferredPromise()
       const streamTest = createThoughStream((chunk, _, cb) => {
-        assert.equal(chunk.name, 'controller3')
+        assert.equal(chunk.name, 'controller2')
         resolve()
         cb()
       })

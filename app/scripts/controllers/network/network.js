@@ -15,8 +15,8 @@ import { createSwappableProxy, createEventEmitterProxy } from 'swappable-obj-pro
 const networks = { networkList: {} }
 
 const WANCHAIN_RPC_URL = 'https://gwan-ssl.wandevs.org:56891'
-// const WANCHAIN_TESTNET_RPC_URL = 'https://gwan-ssl.wandevs.org:46891'
-const WANCHAIN_TESTNET_RPC_URL = 'https://demodex.wandevs.org:48545'
+const WANCHAIN_TESTNET_RPC_URL = 'https://gwan-ssl.wandevs.org:46891'
+// const WANCHAIN_TESTNET_RPC_URL = 'https://demodex.wandevs.org:48545'
 
 import {
   // RINKEBY,

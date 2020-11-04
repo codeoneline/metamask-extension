@@ -1,6 +1,6 @@
 /**
  * @file      The central metamask controller. Aggregates other controllers and exports an api.
- * @copyright Copyright (c) 2018 WanchainMask
+ * @copyright Copyright (c) 2018 WanMask
  * @license   MIT
  */
 
@@ -344,7 +344,7 @@ export default class MetamaskController extends EventEmitter {
     const providerOpts = {
       static: {
         eth_syncing: false,
-        web3_clientVersion: `WanchainMask/v${version}`,
+        web3_clientVersion: `WanMask/v${version}`,
       },
       version,
       // account mgmt
@@ -1470,7 +1470,7 @@ export default class MetamaskController extends EventEmitter {
    * transaction.
    * @param {number} originalTxId - the id of the txMeta that you want to attempt to cancel
    * @param {string} [customGasPrice] - the hex value to use for the cancel transaction
-   * @returns {Object} - WanchainMask state
+   * @returns {Object} - WanMask state
    */
   async createCancelTransaction (originalTxId, customGasPrice) {
     try {
@@ -1545,7 +1545,7 @@ export default class MetamaskController extends EventEmitter {
     const hostname = (new URL(sender.url)).hostname
     // Check if new connection is blocked if phishing detection is on
     if (usePhishDetect && this.phishingController.test(hostname)) {
-      log.debug('WanchainMask - sending phishing warning for', hostname)
+      log.debug('WanMask - sending phishing warning for', hostname)
       this.sendPhishingWarning(connectionStream, hostname)
       return
     }
@@ -1554,8 +1554,8 @@ export default class MetamaskController extends EventEmitter {
     const mux = setupMultiplex(connectionStream)
 
     // messages between inpage and background
-    this.setupProviderConnection(mux.createStream('provider3'), sender)
-    this.setupPublicConfig(mux.createStream('publicConfig3'))
+    this.setupProviderConnection(mux.createStream('provider2'), sender)
+    this.setupPublicConfig(mux.createStream('publicConfig2'))
   }
 
   /**
@@ -1571,8 +1571,8 @@ export default class MetamaskController extends EventEmitter {
     // setup multiplexing
     const mux = setupMultiplex(connectionStream)
     // connect features
-    this.setupControllerConnection(mux.createStream('controller3'))
-    this.setupProviderConnection(mux.createStream('provider3'), sender, true)
+    this.setupControllerConnection(mux.createStream('controller2'))
+    this.setupProviderConnection(mux.createStream('provider2'), sender, true)
   }
 
   /**
@@ -1586,7 +1586,7 @@ export default class MetamaskController extends EventEmitter {
    */
   sendPhishingWarning (connectionStream, hostname) {
     const mux = setupMultiplex(connectionStream)
-    const phishingStream = mux.createStream('phishing3')
+    const phishingStream = mux.createStream('phishing2')
     phishingStream.write({ hostname })
   }
 
@@ -1861,7 +1861,7 @@ export default class MetamaskController extends EventEmitter {
   // misc
 
   /**
-   * A method for emitting the full WanchainMask state to all registered listeners.
+   * A method for emitting the full WanMask state to all registered listeners.
    * @private
    */
   privateSendUpdate () {
@@ -2164,7 +2164,7 @@ export default class MetamaskController extends EventEmitter {
 
   // TODO: Replace isClientOpen methods with `controllerConnectionChanged` events.
   /**
-   * A method for recording whether the WanchainMask user interface is open or not.
+   * A method for recording whether the WanMask user interface is open or not.
    * @private
    * @param {boolean} open
    */
@@ -2191,7 +2191,7 @@ export default class MetamaskController extends EventEmitter {
   }
 
   /**
-   * Locks WanchainMask
+   * Locks WanMask
    */
   setLocked () {
     return this.keyringController.setLocked()

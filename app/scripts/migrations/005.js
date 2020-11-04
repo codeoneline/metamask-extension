@@ -20,7 +20,7 @@ export default {
       const newState = selectSubstateForKeyringController(state)
       versionedData.data = newState
     } catch (err) {
-      console.warn('WanchainMask Migration #5' + err.stack)
+      console.warn('WanMask Migration #5' + err.stack)
     }
     return Promise.resolve(versionedData)
   },

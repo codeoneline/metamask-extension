@@ -17,7 +17,7 @@ import { MESSAGE_TYPE } from './enums'
  * @property {number} id An id to track and identify the message object
  * @property {Object} msgParams The parameters to pass to the eth_signTypedData method once the signature request is
  * approved.
- * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanchainMask.
+ * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanMask.
  * @property {Object} msgParams.from The address that is making the signature request.
  * @property {string} msgParams.data A hex string conversion of the raw buffer data of the signature request
  * @property {number} time The epoch time at which the this message was created
@@ -83,11 +83,11 @@ export default class TypedMessageManager extends EventEmitter {
           case 'signed':
             return resolve(data.rawSig)
           case 'rejected':
-            return reject(ethErrors.provider.userRejectedRequest('WanchainMask Message Signature: User denied message signature.'))
+            return reject(ethErrors.provider.userRejectedRequest('WanMask Message Signature: User denied message signature.'))
           case 'errored':
-            return reject(new Error(`WanchainMask Message Signature: ${data.error}`))
+            return reject(new Error(`WanMask Message Signature: ${data.error}`))
           default:
-            return reject(new Error(`WanchainMask Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
+            return reject(new Error(`WanMask Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
         }
       })
     })
@@ -200,8 +200,8 @@ export default class TypedMessageManager extends EventEmitter {
    * Approves a TypedMessage. Sets the message status via a call to this.setMsgStatusApproved, and returns a promise
    * with any the message params modified for proper signing.
    *
-   * @param {Object} msgParams - The msgParams to be used when eth_sign is called, plus data added by WanchainMask.
-   * @param {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanchainMask.
+   * @param {Object} msgParams - The msgParams to be used when eth_sign is called, plus data added by WanMask.
+   * @param {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanMask.
    * @returns {Promise<object>} - Promises the msgParams object with metamaskId removed.
    *
    */

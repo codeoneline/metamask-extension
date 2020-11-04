@@ -72,7 +72,7 @@
     "message": "הוסף/י אסימונים מוצעים"
   },
   "addAcquiredTokens": {
-    "message": "הוספת הטוקנים שהשגת באמצעות WanchainMask"
+    "message": "הוספת הטוקנים שהשגת באמצעות WanMask"
   },
   "amount": {
     "message": "כמות"
@@ -82,7 +82,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -110,7 +110,7 @@
     "message": "טיימר התנתקות אוטומטית (דקות)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "הגדר/י את זמן היעדר הפעילות בדקות לפני ש-WanchainMask יתנתק אוטומטית."
+    "message": "הגדר/י את זמן היעדר הפעילות בדקות לפני ש-WanMask יתנתק אוטומטית."
   },
   "average": {
     "message": "ממוצע"
@@ -125,7 +125,7 @@
     "message": "גבה/י את קוד השחזור הסודי שלך כדי לשמור את בטיחות הארנק והכספים שלך."
   },
   "backupApprovalInfo": {
-    "message": "קוד סודי זה נדרש כדי לשחזר את הארנק שלך במקרה שתאבד/י את מכשירך, תשכח/י את הססמה, תצטרכ/י להתקין מחדש את WanchainMask או שתרצה/י לגשת לארנק שלך במכשיר אחר."
+    "message": "קוד סודי זה נדרש כדי לשחזר את הארנק שלך במקרה שתאבד/י את מכשירך, תשכח/י את הססמה, תצטרכ/י להתקין מחדש את WanMask או שתרצה/י לגשת לארנק שלך במכשיר אחר."
   },
   "backupNow": {
     "message": "צור גיבוי כעת"
@@ -153,13 +153,13 @@
     "message": "הדפדפן שלך אינו נתמך..."
   },
   "builtInCalifornia": {
-    "message": "WanchainMask תוכנן ונבנה בקליפורניה."
+    "message": "WanMask תוכנן ונבנה בקליפורניה."
   },
   "buyWithWyre": {
     "message": "רכישת את'ר עם Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre מאפשרת לך להשתמש בכרטיס אשראי כדי להפקיד WAN ישירות בחשבון ה-WanchainMask שלך."
+    "message": "Wyre מאפשרת לך להשתמש בכרטיס אשראי כדי להפקיד WAN ישירות בחשבון ה-WanMask שלך."
   },
   "buyCoinSwitch": {
     "message": "רכישה ב-CoinSwitch"
@@ -204,7 +204,7 @@
     "message": "סגירה"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "עליך להשתמש ב-WanchainMask בגוגל כרום כדי להתחבר לארנק החומרה שלך."
+    "message": "עליך להשתמש ב-WanMask בגוגל כרום כדי להתחבר לארנק החומרה שלך."
   },
   "confirm": {
     "message": "אישור"
@@ -372,7 +372,7 @@
     "message": "לעולם אל תשתפ/י את הצירוף עם אף אחד."
   },
   "endOfFlowMessage5": {
-    "message": "היזהר/י מהתחזות! WanchainMask לעולם לא יבקש באופן ספונטני את צירוף הגרעין שלך."
+    "message": "היזהר/י מהתחזות! WanMask לעולם לא יבקש באופן ספונטני את צירוף הגרעין שלך."
   },
   "endOfFlowMessage6": {
     "message": "אם עליך לגבות את צירוף הגרעין שלך שוב, תוכל/י למצוא זאת בהגדרות -> אבטחה."
@@ -381,7 +381,7 @@
     "message": "אם יש לך שאלות או שנתקלת במשהו חשוד, שלח/י מייל ל- techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
-    "message": "WanchainMask לא הצליח לשחזר את ה-seedphrase שלך. למד/י עוד."
+    "message": "WanMask לא הצליח לשחזר את ה-seedphrase שלך. למד/י עוד."
   },
   "endOfFlowMessage9": {
     "message": "למד עוד."
@@ -501,7 +501,7 @@
     "message": "חבר ארנק חומרה"
   },
   "hardwareWalletsMsg": {
-    "message": "בחר/י ארנק חומרה שבו תרצה להשתמש עם WanchainMask"
+    "message": "בחר/י ארנק חומרה שבו תרצה להשתמש עם WanMask"
   },
   "havingTroubleConnecting": {
     "message": "חווה קשיים בהתחברות?"
@@ -530,7 +530,7 @@
     "message": "יבא חשבון"
   },
   "importAccountMsg": {
-    "message": "חשבונות מיובאים לא ישויכו לצירוף הגרעין (seed) שנוצר במקור עבור חשבון ה-WanchainMask שלך. למד/י עוד על חשבונות מיובאים"
+    "message": "חשבונות מיובאים לא ישויכו לצירוף הגרעין (seed) שנוצר במקור עבור חשבון ה-WanMask שלך. למד/י עוד על חשבונות מיובאים"
   },
   "importAccountSeedPhrase": {
     "message": "יבא חשבון באמצעות Seed Phrase"
@@ -643,7 +643,7 @@
     "message": "מחבר אותך לאתריום ולרשת המבוזרת."
   },
   "metamaskVersion": {
-    "message": "גרסת WanchainMask"
+    "message": "גרסת WanMask"
   },
   "mobileSyncText": {
     "message": "נא להזין את הססמה שלך כדי לאשר שזה/זו אכן את/ה!"
@@ -655,13 +655,13 @@
     "message": "חשבונות הארנק שלי"
   },
   "myWalletAccountsDescription": {
-    "message": "כל חשבונותיך שנוצרו ב-WanchainMask יתווספו אוטומטית לחלק זה."
+    "message": "כל חשבונותיך שנוצרו ב-WanMask יתווספו אוטומטית לחלק זה."
   },
   "mustSelectOne": {
     "message": "חובה לבחור לפחות אסימון אחד."
   },
   "needEtherInWallet": {
-    "message": "כדי לתקשר עם אפליקציות מבוזרות באמצעות WanchainMask, צריך להיות לך את'ר בארנק."
+    "message": "כדי לתקשר עם אפליקציות מבוזרות באמצעות WanMask, צריך להיות לך את'ר בארנק."
   },
   "needImportFile": {
     "message": "יש לבחור קובץ לייצוא.",
@@ -705,7 +705,7 @@
     "message": "רשת חדשה"
   },
   "newToMetaMask": {
-    "message": "חדש/ה ב- WanchainMask?"
+    "message": "חדש/ה ב- WanMask?"
   },
   "noAlreadyHaveSeed": {
     "message": "לא, כבר יש לי צירוף גרעין"
@@ -714,7 +714,7 @@
     "message": "הגנ/י על המפתחות שלך!"
   },
   "protectYourKeysMessage1": {
-    "message": "יש לנקוט זהירות בנוגע לצירוף הגרעין שלך - היו דיווחים על אתרים שמנסים להתחזות ל-WanchainMask .WanchainMask לעולם לא תבקש את צירוף הגרעין שלך!"
+    "message": "יש לנקוט זהירות בנוגע לצירוף הגרעין שלך - היו דיווחים על אתרים שמנסים להתחזות ל-WanMask .WanMask לעולם לא תבקש את צירוף הגרעין שלך!"
   },
   "protectYourKeysMessage2": {
     "message": "יש לשמור את ה-seedphrase שלך במקום בטוח. אם את/ה רואה משהו חשוד, או שאינך בטוח/ה בנוע לאתר, שלח/י אימייל לכתובת techsupport@wanchain.org"
@@ -771,7 +771,7 @@
     "message": "קח/י חלק ב- MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "קח/י חלק ב-MetaMetrics כדי לעזור לנו לשפר את WanchainMask"
+    "message": "קח/י חלק ב-MetaMetrics כדי לעזור לנו לשפר את WanMask"
   },
   "password": {
     "message": "סיסמה"
@@ -995,7 +995,7 @@
     "message": "בחר חשבון"
   },
   "selectAnAccountHelp": {
-    "message": "בחר את החשבון לצפייה ב- WanchainMask"
+    "message": "בחר את החשבון לצפייה ב- WanMask"
   },
   "selectAHigherGasFee": {
     "message": "בחר/י בעמלת דלק גבוהה יותר כדי להאיץ את עיבוד העסקה שלך. *"
@@ -1109,19 +1109,19 @@
     "message": "סנכרן עם הנייד"
   },
   "syncWithMobileDesc": {
-    "message": "באפשרותך לסנכרן את החשבונות והמידע שלך עם המכשיר הנייד שלך. יש לפתוח את האפליקציה לנייד של WanchainMask, לעבור אל \"הגדרות\" וללחוץ על \"סנכרון מהרחבה לדפדפן\""
+    "message": "באפשרותך לסנכרן את החשבונות והמידע שלך עם המכשיר הנייד שלך. יש לפתוח את האפליקציה לנייד של WanMask, לעבור אל \"הגדרות\" וללחוץ על \"סנכרון מהרחבה לדפדפן\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "אם את/ה פותח/ת  את אפליקציית WanchainMask Mobile בפעם הראשונה, פשוט בצע/י את השלבים בטלפון שלך."
+    "message": "אם את/ה פותח/ת  את אפליקציית WanMask Mobile בפעם הראשונה, פשוט בצע/י את השלבים בטלפון שלך."
   },
   "syncWithMobileScanThisCode": {
-    "message": "יש לסרוק קוד QR זה באמצעות אפליקציית WanchainMask לטלפון נייד"
+    "message": "יש לסרוק קוד QR זה באמצעות אפליקציית WanMask לטלפון נייד"
   },
   "syncWithMobileBeCareful": {
     "message": "ודא/י כי איש אינו מסתכל על המסך שלך בזמן סריקת קוד זה"
   },
   "syncWithMobileComplete": {
-    "message": "הנתונים שלך סונכרנו בהצלחה. תיהנה/י מאפליקציית WanchainMask לטלפונים ניידים! "
+    "message": "הנתונים שלך סונכרנו בהצלחה. תיהנה/י מאפליקציית WanMask לטלפונים ניידים! "
   },
   "terms": {
     "message": "תנאי שימוש"
@@ -1212,7 +1212,7 @@
     "message": "ניסיון חוזר"
   },
   "typePassword": {
-    "message": "נא להקליד את סיסמת WanchainMask שלך"
+    "message": "נא להקליד את סיסמת WanMask שלך"
   },
   "unapproved": {
     "message": "לא אושר"
@@ -1278,7 +1278,7 @@
     "message": "ברוך שובך!"
   },
   "welcome": {
-    "message": "ברוכים הבאים ל- WanchainMask"
+    "message": "ברוכים הבאים ל- WanMask"
   },
   "writePhrase": {
     "message": "יש לכתוב צירוף זה על פיסת נייר ולשמור במקום מאובטח. אם הנך מעוניינ/ת ביותר אבטחה, רשמ/י אותו על גבי מספר פיסות נייר ואחסני כל אחת מהן ב- 2-3 מקומות שונים."

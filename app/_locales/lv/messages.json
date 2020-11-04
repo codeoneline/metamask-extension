@@ -6,7 +6,7 @@
     "message": "Līguma mijiedarbības"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "reject": {
@@ -76,7 +76,7 @@
     "message": "Pievienot ieteiktos marķierus"
   },
   "addAcquiredTokens": {
-    "message": "Pievienojiet marķierus, ko ieguvāt, izmantojot WanchainMask"
+    "message": "Pievienojiet marķierus, ko ieguvāt, izmantojot WanMask"
   },
   "amount": {
     "message": "Apjoms"
@@ -110,7 +110,7 @@
     "message": "Automātiskās izrakstīšanās taimeris (minūtes)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Iestatiet bezdarbības laiku minūtēs, pēc kura WanchainMask veiks automātisku izrakstīšanu"
+    "message": "Iestatiet bezdarbības laiku minūtēs, pēc kura WanMask veiks automātisku izrakstīšanu"
   },
   "average": {
     "message": "Vidēji"
@@ -125,7 +125,7 @@
     "message": "Dublējiet savu slepeno atgūšanas kodu, lai maks un līdzekļi atrastos drošībā."
   },
   "backupApprovalInfo": {
-    "message": "Šis slepenais kods ir nepieciešams, lai atjaunotu jūsu maku, ja pazaudējat ierīci, aizmirstat paroli, jāpārinstalē WanchainMask vai vēlaties piekļūt makam no citas ierīces."
+    "message": "Šis slepenais kods ir nepieciešams, lai atjaunotu jūsu maku, ja pazaudējat ierīci, aizmirstat paroli, jāpārinstalē WanMask vai vēlaties piekļūt makam no citas ierīces."
   },
   "backupNow": {
     "message": "Dublēt tagad"
@@ -153,13 +153,13 @@
     "message": "Jūsu pārlūkprogramma netiek atbalstīta..."
   },
   "builtInCalifornia": {
-    "message": "WanchainMask ir izstrādāta un izveidota Kalifornijā."
+    "message": "WanMask ir izstrādāta un izveidota Kalifornijā."
   },
   "buyWithWyre": {
     "message": "Pirkt WAN ar Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre ļauj noguldīt WAN tieši jūsu WanchainMask kontā, izmantojot kredītkarti."
+    "message": "Wyre ļauj noguldīt WAN tieši jūsu WanMask kontā, izmantojot kredītkarti."
   },
   "buyCoinSwitch": {
     "message": "Pirkt CoinSwitch"
@@ -204,7 +204,7 @@
     "message": "Aizvērt"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "WanchainMask ir jāpalaiž pārlūkprogrammā Google Chrome, lai varētu pievienot aparatūras maku."
+    "message": "WanMask ir jāpalaiž pārlūkprogrammā Google Chrome, lai varētu pievienot aparatūras maku."
   },
   "confirm": {
     "message": "Apstiprināt"
@@ -372,7 +372,7 @@
     "message": "Nekad neizpaudiet šo frāzi citiem cilvēkiem."
   },
   "endOfFlowMessage5": {
-    "message": "Uzmanieties no pikšķerēšanas! WanchainMask nekad pēkšņi nelūgs norādīt atkopšanas frāzi."
+    "message": "Uzmanieties no pikšķerēšanas! WanMask nekad pēkšņi nelūgs norādīt atkopšanas frāzi."
   },
   "endOfFlowMessage6": {
     "message": "Ja nepieciešams atkārtoti dublēt atkopšanas frāzi, varat to atrast, dodoties uz Iestatījumi -> Drošība."
@@ -381,7 +381,7 @@
     "message": "Ja jums rodas kādi jautājumi vai pamanāt ko aizdomīgu, rakstiet uz techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
-    "message": "WanchainMask nevar atjaunot jūsu atkopšanas frāzi. Uzzināt vairāk."
+    "message": "WanMask nevar atjaunot jūsu atkopšanas frāzi. Uzzināt vairāk."
   },
   "endOfFlowMessage9": {
     "message": "Uzzināt vairāk."
@@ -497,7 +497,7 @@
     "message": "Pieslēdziet aparatūras maku"
   },
   "hardwareWalletsMsg": {
-    "message": "Atlasiet aparatūras maku lietošanai ar WanchainMask"
+    "message": "Atlasiet aparatūras maku lietošanai ar WanMask"
   },
   "havingTroubleConnecting": {
     "message": "Neizdodas pieslēgties?"
@@ -526,7 +526,7 @@
     "message": "Importēt kontu"
   },
   "importAccountMsg": {
-    "message": "Importētie konti netiks piesaistīti sākotnēji izveidotā WanchainMask konta atkopšanas frāzei. Uzziniet vairāk par importētajiem kontiem"
+    "message": "Importētie konti netiks piesaistīti sākotnēji izveidotā WanMask konta atkopšanas frāzei. Uzziniet vairāk par importētajiem kontiem"
   },
   "importAccountSeedPhrase": {
     "message": "Importēt kontu ar atkopšanas frāzi"
@@ -642,7 +642,7 @@
     "message": "Veido savienojumu ar Wanchain un decentralizēto tīmekli."
   },
   "metamaskVersion": {
-    "message": "WanchainMask versija"
+    "message": "WanMask versija"
   },
   "mobileSyncText": {
     "message": "Lūdzu, ievadiet paroli, lai apstiprinātu, ka tas esat jūs."
@@ -654,13 +654,13 @@
     "message": "Mana maka konti"
   },
   "myWalletAccountsDescription": {
-    "message": "Visi jūsu izveidotie WanchainMask konti tiks automātiski pievienoti šajā sadaļā."
+    "message": "Visi jūsu izveidotie WanMask konti tiks automātiski pievienoti šajā sadaļā."
   },
   "mustSelectOne": {
     "message": "Jāatlasa vismaz 1 marķieris."
   },
   "needEtherInWallet": {
-    "message": "Lai izmantotu decentralizētas lietotnes ar WanchainMask, jūsu makā jābūt Wan Coin."
+    "message": "Lai izmantotu decentralizētas lietotnes ar WanMask, jūsu makā jābūt Wan Coin."
   },
   "needImportFile": {
     "message": "Jums jāatlasa fails, ko importēt",
@@ -704,7 +704,7 @@
     "message": "Jauns tīkls"
   },
   "newToMetaMask": {
-    "message": "Nepazīstat WanchainMask?"
+    "message": "Nepazīstat WanMask?"
   },
   "noAlreadyHaveSeed": {
     "message": "Nē, man jau ir atkopšanas frāze"
@@ -713,7 +713,7 @@
     "message": "Sargājiet savas atslēgas!"
   },
   "protectYourKeysMessage1": {
-    "message": "Rīkojieties uzmanīgi ar sēklas frāzi — saņemti ziņojumi par tīmekļa vietnēm, kas mēģina imitēt WanchainMask. WanchainMask nekad nelūgs norādīt sēklas frāzi."
+    "message": "Rīkojieties uzmanīgi ar sēklas frāzi — saņemti ziņojumi par tīmekļa vietnēm, kas mēģina imitēt WanMask. WanMask nekad nelūgs norādīt sēklas frāzi."
   },
   "protectYourKeysMessage2": {
     "message": "Glabājiet frāzi drošībā. Ja kaut kas šķiet aizdomīgs vai neesat pārliecināti par tīmekļa vietni, rakstiet e-pastu uz techsupport@wanchain.org"
@@ -997,7 +997,7 @@
     "message": "Atlasiet kontu"
   },
   "selectAnAccountHelp": {
-    "message": "Atlasiet kontu, ko skatīt WanchainMask"
+    "message": "Atlasiet kontu, ko skatīt WanMask"
   },
   "selectAHigherGasFee": {
     "message": "Atlasiet lielāku maksu par Gas, lai paātrinātu darījuma apstrādi.*"
@@ -1111,19 +1111,19 @@
     "message": "Sinhronizēt ar tālruni"
   },
   "syncWithMobileDesc": {
-    "message": "Jūs varat sinhronizēt savus kontus un informāciju ar mobilo ierīci. Atveriet WanchainMask mobilo lietotni, ejiet uz \"Iestatījumi\" un pieskarieties pie \"Sinhronizēt no pārlūka paplašinājuma\""
+    "message": "Jūs varat sinhronizēt savus kontus un informāciju ar mobilo ierīci. Atveriet WanMask mobilo lietotni, ejiet uz \"Iestatījumi\" un pieskarieties pie \"Sinhronizēt no pārlūka paplašinājuma\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Ja esat pirmoreiz atvēris WanchainMask mobilo lietotni, vienkārši sekojiet norādēm tālrunī."
+    "message": "Ja esat pirmoreiz atvēris WanMask mobilo lietotni, vienkārši sekojiet norādēm tālrunī."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Noskenējiet šo kodu ar WanchainMask mobilo lietotni"
+    "message": "Noskenējiet šo kodu ar WanMask mobilo lietotni"
   },
   "syncWithMobileBeCareful": {
     "message": "Pārliecinieties, ka neviens cits neskatās jūsu ekrānā, kad skenējat šo kodu."
   },
   "syncWithMobileComplete": {
-    "message": "Jūsu dati sekmīgi sinhronizēti. Patīkamu WanchainMask mobilās lietotnes lietošanu!"
+    "message": "Jūsu dati sekmīgi sinhronizēti. Patīkamu WanMask mobilās lietotnes lietošanu!"
   },
   "terms": {
     "message": "Lietošanas noteikumi"
@@ -1214,7 +1214,7 @@
     "message": "Mēģināt vēlreiz"
   },
   "typePassword": {
-    "message": "Ievadiet savu WanchainMask paroli"
+    "message": "Ievadiet savu WanMask paroli"
   },
   "unapproved": {
     "message": "Nav apstiprināts"
@@ -1280,7 +1280,7 @@
     "message": "Ar atgriešanos!"
   },
   "welcome": {
-    "message": "Laipni lūgti WanchainMask"
+    "message": "Laipni lūgti WanMask"
   },
   "writePhrase": {
     "message": "Pierakstiet šo frāzi uz lapiņas, un noglabājiet to drošā vietā! Ja vēlaties stiprināt drošību, pierakstiet to uz vairākām lapiņām un glabājiet tās 2–3 dažādās vietās."

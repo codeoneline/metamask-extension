@@ -4,7 +4,7 @@ set -e
 set -u
 set -o pipefail
 
-readonly URL='https://github.com/WanchainMask/metamask-extension'
+readonly URL='https://github.com/WanMask/metamask-extension'
 
 git fetch --tags
 

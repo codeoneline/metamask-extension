@@ -72,7 +72,7 @@
     "message": "Dodajte sugerisane tokene"
   },
   "addAcquiredTokens": {
-    "message": "Dodajte stečene tokene koristeći WanchainMask."
+    "message": "Dodajte stečene tokene koristeći WanMask."
   },
   "amount": {
     "message": "Iznos"
@@ -82,7 +82,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -110,7 +110,7 @@
     "message": "Tajmer za automatsko odjavljivanje (u minutama)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Podesite vreme mirovanja u minutima pre nego što se WanchainMask automatski odjavi. "
+    "message": "Podesite vreme mirovanja u minutima pre nego što se WanMask automatski odjavi. "
   },
   "average": {
     "message": "Prosečno"
@@ -125,7 +125,7 @@
     "message": "Napravite rezervnu kopiju tajnog kôda za oporavak da bi vaš novčanik i sredstva bili bezbedni."
   },
   "backupApprovalInfo": {
-    "message": "Potreban je tajni kôd za oporavak vašeg novčanika u slučaju da izgubite uređaj, zaboravite lozinku, morate ponovo da instalirate WanchainMask ili želite da pristupite novčaniku sa drugog uređaja."
+    "message": "Potreban je tajni kôd za oporavak vašeg novčanika u slučaju da izgubite uređaj, zaboravite lozinku, morate ponovo da instalirate WanMask ili želite da pristupite novčaniku sa drugog uređaja."
   },
   "backupNow": {
     "message": "Napravite rezervu sad"
@@ -153,13 +153,13 @@
     "message": "Vaš pregledač nije podržan..."
   },
   "builtInCalifornia": {
-    "message": "WanchainMask je dizajniran i izgrađen u Kaliforniji."
+    "message": "WanMask je dizajniran i izgrađen u Kaliforniji."
   },
   "buyWithWyre": {
     "message": "Kupite WAN preko servisa Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vam dozvoljava da koristite kreditnu karticu kako biste deponovali WAN pravo na vaš WanchainMask nalog."
+    "message": "Wyre vam dozvoljava da koristite kreditnu karticu kako biste deponovali WAN pravo na vaš WanMask nalog."
   },
   "buyCoinSwitch": {
     "message": "Kupujte na CoinSwitch"
@@ -201,7 +201,7 @@
     "message": "Затвори"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Da biste se povezali sa Vašim hardverskim novčanikom morate da koristite WanchainMask na Google Chrome-u."
+    "message": "Da biste se povezali sa Vašim hardverskim novčanikom morate da koristite WanMask na Google Chrome-u."
   },
   "confirm": {
     "message": "Потврди"
@@ -369,7 +369,7 @@
     "message": "Nikada ne delite frazu ni sa kim."
   },
   "endOfFlowMessage5": {
-    "message": "Čuvajte se pecanja (krađe podataka)! WanchainMask nikad neće spontano tražiti vašu šifru za oporavak naloga (seed phrase)."
+    "message": "Čuvajte se pecanja (krađe podataka)! WanMask nikad neće spontano tražiti vašu šifru za oporavak naloga (seed phrase)."
   },
   "endOfFlowMessage6": {
     "message": "Ako treba ponovo da izradite rezervnu kopiju svoje početne fraze, možete je pronaći u Postavke -> Bezbednost."
@@ -378,7 +378,7 @@
     "message": "Ako imate bilo kakvih pitanja ili primetite nešto sumnjivo, pošaljite e-poruku na techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
-    "message": "WanchainMask ne može da oporavi vašu početnu frazu. Saznajte više."
+    "message": "WanMask ne može da oporavi vašu početnu frazu. Saznajte više."
   },
   "endOfFlowMessage9": {
     "message": "Saznajte više."
@@ -498,7 +498,7 @@
     "message": "Povežite hardverski novčanik"
   },
   "hardwareWalletsMsg": {
-    "message": "Izaberite hardverski novčanik koji biste voleli da koristite sa WanchainMask-om"
+    "message": "Izaberite hardverski novčanik koji biste voleli da koristite sa WanMask-om"
   },
   "havingTroubleConnecting": {
     "message": "Da li imate problem sa povezivanjem?"
@@ -527,7 +527,7 @@
     "message": "Uvezite nalog"
   },
   "importAccountMsg": {
-    "message": "Uvezeni nalozi neće biti povezani sa početnom frazom koju ste prvobitno kreirali za WanchainMask nalog. Saznajte više o uvezenim nalozima."
+    "message": "Uvezeni nalozi neće biti povezani sa početnom frazom koju ste prvobitno kreirali za WanMask nalog. Saznajte više o uvezenim nalozima."
   },
   "importAccountSeedPhrase": {
     "message": "Uvezi račun sa frazom početnih vrednosti"
@@ -637,7 +637,7 @@
     "message": "Povezivanje na Wanchain i decentralizovani veb."
   },
   "metamaskVersion": {
-    "message": "WanchainMask verzija"
+    "message": "WanMask verzija"
   },
   "mobileSyncText": {
     "message": "Molimo vas unesite šifru kako biste potvrdili da ste to vi!"
@@ -649,13 +649,13 @@
     "message": "Moji nalozi novčanika"
   },
   "myWalletAccountsDescription": {
-    "message": "Svi vaši nalozi kreirani u aplikaciji WanchainMask biće automatski dodati u ovaj deo."
+    "message": "Svi vaši nalozi kreirani u aplikaciji WanMask biće automatski dodati u ovaj deo."
   },
   "mustSelectOne": {
     "message": "Morate izabrati najmanje 1 token."
   },
   "needEtherInWallet": {
-    "message": "Da biste stupili u interakciju sa decentralizovanim aplikacijama koristeći WanchainMask, biće vam potreban Wan Coin u vašem novčaniku."
+    "message": "Da biste stupili u interakciju sa decentralizovanim aplikacijama koristeći WanMask, biće vam potreban Wan Coin u vašem novčaniku."
   },
   "needImportFile": {
     "message": "Morate izabrati fajl koji ćete uvesti.",
@@ -699,7 +699,7 @@
     "message": "Nova mreža"
   },
   "newToMetaMask": {
-    "message": "Novi ste u WanchainMask-u?"
+    "message": "Novi ste u WanMask-u?"
   },
   "noAlreadyHaveSeed": {
     "message": "Ne, već imam frazu početnih vrednosti"
@@ -708,7 +708,7 @@
     "message": "Zaštitite svoje ključeve!"
   },
   "protectYourKeysMessage1": {
-    "message": "Budite pažljivi sa vašom seed frazom - bilo je izveštaja o veb lokacijama koje pokušavaju da imitiraju WanchainMask. WanchainMask nikada neće tražiti vašu seed frazu!"
+    "message": "Budite pažljivi sa vašom seed frazom - bilo je izveštaja o veb lokacijama koje pokušavaju da imitiraju WanMask. WanMask nikada neće tražiti vašu seed frazu!"
   },
   "protectYourKeysMessage2": {
     "message": "Čuvajte svoju frazu. Ako primetite nešto sumnjivo, ili niste sigurni u vezi veb lokacije, pošaljite e-poruku na upport@wanmask.io"
@@ -765,7 +765,7 @@
     "message": "Učestvujte u MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Učestvujte u MetaMetrics da biste nam pomogli da poboljšamo WanchainMask."
+    "message": "Učestvujte u MetaMetrics da biste nam pomogli da poboljšamo WanMask."
   },
   "password": {
     "message": "Лозинка"
@@ -992,7 +992,7 @@
     "message": "Izaberite nalog"
   },
   "selectAnAccountHelp": {
-    "message": "Izaberite nalog za prikaz u WanchainMask-u"
+    "message": "Izaberite nalog za prikaz u WanMask-u"
   },
   "selectAHigherGasFee": {
     "message": "Izaberite veću vrednost gas naknade da biste ubrzali procesuiranje vaše transakcije.*"
@@ -1106,19 +1106,19 @@
     "message": "Sinhronizujte sa mobilnim uređajem"
   },
   "syncWithMobileDesc": {
-    "message": "Možete sinhronizovati vaše naloge i informacije sa svojim mobilnim uređajem. Otvorite mobilnu aplikaciju WanchainMask, idite na \"Podešavanja\" i pritisnite \"Sinhronizuj iz ekstenzije za pregledač\""
+    "message": "Možete sinhronizovati vaše naloge i informacije sa svojim mobilnim uređajem. Otvorite mobilnu aplikaciju WanMask, idite na \"Podešavanja\" i pritisnite \"Sinhronizuj iz ekstenzije za pregledač\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Ako prvi put otvorite aplikaciju WanchainMask Mobile, samo sledite korake u svom telefonu."
+    "message": "Ako prvi put otvorite aplikaciju WanMask Mobile, samo sledite korake u svom telefonu."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Skenirajte ovaj kod uz pomoć svoje WanchainMask mobilne aplikacije"
+    "message": "Skenirajte ovaj kod uz pomoć svoje WanMask mobilne aplikacije"
   },
   "syncWithMobileBeCareful": {
     "message": "Obratite pažnju da niko drugi ne gleda u vaš ekran kad skenirate ovaj kod"
   },
   "syncWithMobileComplete": {
-    "message": "Vaši podaci su uspešno sinhronizovani. Uživajte u mobilnoj aplikaciji WanchainMask!"
+    "message": "Vaši podaci su uspešno sinhronizovani. Uživajte u mobilnoj aplikaciji WanMask!"
   },
   "terms": {
     "message": "Uslovi korišćenja"
@@ -1203,7 +1203,7 @@
     "message": "Пробај поново"
   },
   "typePassword": {
-    "message": "Ukucajte svoju WanchainMask šifru"
+    "message": "Ukucajte svoju WanMask šifru"
   },
   "unapproved": {
     "message": "Neodobren"
@@ -1269,7 +1269,7 @@
     "message": "Dobro došli nazad!"
   },
   "welcome": {
-    "message": "Dobro došli na WanchainMask"
+    "message": "Dobro došli na WanMask"
   },
   "writePhrase": {
     "message": "Napišite ovaj izraz na parčetu papira i stavite ga na bezbedno mesto. Ukoliko želite još više sigurnosti, zapišite ga na više komada papira i svaki stavite na 2-3 različita mesta."

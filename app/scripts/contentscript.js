@@ -18,7 +18,7 @@ const inpageBundle = inpageContent + inpageSuffix
 //
 // But for now that is only Firefox
 // If we create a FireFox-only code path using that API,
-// WanchainMask will be much faster loading and performant on Firefox.
+// WanMask will be much faster loading and performant on Firefox.
 
 if (shouldInjectProvider()) {
   injectScript(inpageBundle)
@@ -39,7 +39,7 @@ function injectScript (content) {
     container.insertBefore(scriptTag, container.children[0])
     container.removeChild(scriptTag)
   } catch (e) {
-    console.error('WanchainMask provider injection failed.', e)
+    console.error('WanMask provider injection failed.', e)
   }
 }
 
@@ -60,10 +60,10 @@ async function start () {
 async function setupStreams () {
   // the transport-specific streams for communication between inpage and background
   const pageStream = new LocalMessageDuplexStream({
-    name: 'contentscript3',
-    target: 'inpage3',
+    name: 'contentscript2',
+    target: 'inpage2',
   })
-  const extensionPort = extension.runtime.connect({ name: 'contentscript3' })
+  const extensionPort = extension.runtime.connect({ name: 'contentscript2' })
   const extensionStream = new PortStream(extensionPort)
 
   // create and connect channel muxers
@@ -77,21 +77,21 @@ async function setupStreams () {
     pageMux,
     pageStream,
     pageMux,
-    (err) => logStreamDisconnectWarning('WanchainMask Inpage Multiplex', err),
+    (err) => logStreamDisconnectWarning('WanMask Inpage Multiplex', err),
   )
   pump(
     extensionMux,
     extensionStream,
     extensionMux,
-    (err) => logStreamDisconnectWarning('WanchainMask Background Multiplex', err),
+    (err) => logStreamDisconnectWarning('WanMask Background Multiplex', err),
   )
 
   // forward communication across inpage-background for these channels only
-  forwardTrafficBetweenMuxers('provider3', pageMux, extensionMux)
-  forwardTrafficBetweenMuxers('publicConfig3', pageMux, extensionMux)
+  forwardTrafficBetweenMuxers('provider2', pageMux, extensionMux)
+  forwardTrafficBetweenMuxers('publicConfig2', pageMux, extensionMux)
 
   // connect "phishing" channel to warning system
-  const phishingStream = extensionMux.createStream('phishing3')
+  const phishingStream = extensionMux.createStream('phishing2')
   phishingStream.once('data', redirectToPhishingWarning)
 }
 
@@ -102,7 +102,7 @@ function forwardTrafficBetweenMuxers (channelName, muxA, muxB) {
     channelA,
     channelB,
     channelA,
-    (err) => logStreamDisconnectWarning(`WanchainMask muxed traffic for channel "${channelName}" failed.`, err),
+    (err) => logStreamDisconnectWarning(`WanMask muxed traffic for channel "${channelName}" failed.`, err),
   )
 }
 
@@ -214,7 +214,6 @@ function blockedDomainCheck () {
  * Redirects the current page to a phishing information page
  */
 function redirectToPhishingWarning () {
-  console.log('WanchainMask - routing to Phishing Warning component')
   const extensionURL = extension.runtime.getURL('phishing.html')
   window.location.href = `${extensionURL}#${querystring.stringify({
     hostname: window.location.hostname,

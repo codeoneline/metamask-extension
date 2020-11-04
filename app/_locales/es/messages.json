@@ -69,7 +69,7 @@
     "message": "Agregar tokens propuestos"
   },
   "addAcquiredTokens": {
-    "message": "Agregar los tokens que has adquirido usando WanchainMask"
+    "message": "Agregar los tokens que has adquirido usando WanMask"
   },
   "amount": {
     "message": "Cantidad"
@@ -79,7 +79,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -107,7 +107,7 @@
     "message": "Temporizador Auto-Cierre (minutos)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Establece el tiempo de inactividad en minutos antes de que WanchainMask cierre la sesión automáticamente."
+    "message": "Establece el tiempo de inactividad en minutos antes de que WanMask cierre la sesión automáticamente."
   },
   "average": {
     "message": "Promedio"
@@ -134,7 +134,7 @@
     "message": "Tu navegador no está admitido..."
   },
   "builtInCalifornia": {
-    "message": "WanchainMask fue diseñado y construido en California"
+    "message": "WanMask fue diseñado y construido en California"
   },
   "buyCoinSwitch": {
     "message": "Comprar en CoinSwitch"
@@ -164,7 +164,7 @@
     "message": "Cerrar"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Hay que usar WanchainMask en Google Chrome para poder conectarse con tu Monedero Físico."
+    "message": "Hay que usar WanMask en Google Chrome para poder conectarse con tu Monedero Físico."
   },
   "confirm": {
     "message": "Confirmar"
@@ -314,7 +314,7 @@
     "message": "Editar Contacto"
   },
   "endOfFlowMessage8": {
-    "message": "WanchainMask no puede recuperar tu seedphrase. Saber más."
+    "message": "WanMask no puede recuperar tu seedphrase. Saber más."
   },
   "endOfFlowMessage9": {
     "message": "Saber más."
@@ -401,7 +401,7 @@
     "message": "Conectarle un monedero físico"
   },
   "hardwareWalletsMsg": {
-    "message": "Seleccionar un monedero físico que quieres usar con WanchainMask"
+    "message": "Seleccionar un monedero físico que quieres usar con WanMask"
   },
   "havingTroubleConnecting": {
     "message": "¿Tienes problemas para hacer la conexión?"
@@ -430,7 +430,7 @@
     "message": "Importar cuenta"
   },
   "importAccountMsg": {
-    "message": "Las cuentas importadas no serán asociadas con tu cuenta original creada con tu WanchainMask. Aprende más acerca de importar cuentas."
+    "message": "Las cuentas importadas no serán asociadas con tu cuenta original creada con tu WanMask. Aprende más acerca de importar cuentas."
   },
   "importWallet": {
     "message": "Importar Wallet"
@@ -519,10 +519,10 @@
     "message": "Mensaje"
   },
   "metamaskDescription": {
-    "message": "WanchainMask es una identidad segura en Wanchain"
+    "message": "WanMask es una identidad segura en Wanchain"
   },
   "metamaskVersion": {
-    "message": "Versión de WanchainMask"
+    "message": "Versión de WanMask"
   },
   "myAccounts": {
     "message": "Mis cuentas"
@@ -531,7 +531,7 @@
     "message": "Debe seleccionar al menos un (1) token"
   },
   "needEtherInWallet": {
-    "message": "Para interactuar con una aplicación descentralizada usando WanchainMask, necesitas tener Wan Coin en tu billetera"
+    "message": "Para interactuar con una aplicación descentralizada usando WanMask, necesitas tener Wan Coin en tu billetera"
   },
   "needImportFile": {
     "message": "Debes seleccionar un archivo para importar",
@@ -796,7 +796,7 @@
     "message": "Seleccionar una Cuenta"
   },
   "selectAnAccountHelp": {
-    "message": "Seleccionar la cuenta que quiere ver en WanchainMask"
+    "message": "Seleccionar la cuenta que quiere ver en WanMask"
   },
   "selectAHigherGasFee": {
     "message": "Seleccione una comisión de gas más elevada para agilizar el procesamiento de tu transacción.*"
@@ -1016,7 +1016,7 @@
     "message": "¡Bienvenido de nuevo!"
   },
   "welcome": {
-    "message": "Bienvenido a WanchainMask"
+    "message": "Bienvenido a WanMask"
   },
   "yesLetsTry": {
     "message": "Sí, probemos"

@@ -45,7 +45,7 @@ export default class TransactionStateManager extends EventEmitter {
   generateTxMeta (opts) {
     const netId = this.getNetwork()
     if (netId === 'loading') {
-      throw new Error('WanchainMask is having trouble connecting to the network')
+      throw new Error('WanMask is having trouble connecting to the network')
     }
     return Object.assign({
       id: createId(),

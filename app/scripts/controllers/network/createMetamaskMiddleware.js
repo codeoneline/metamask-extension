@@ -21,7 +21,7 @@ export default function createMetamaskMiddleware ({
     createScaffoldMiddleware({
       // staticSubprovider
       eth_syncing: false,
-      web3_clientVersion: `WanchainMask/v${version}`,
+      web3_clientVersion: `WanMask/v${version}`,
     }),
     createWalletSubprovider({
       getAccounts,

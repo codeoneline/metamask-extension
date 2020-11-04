@@ -25,7 +25,7 @@ import {
   CONNECTED_ACCOUNTS_ROUTE,
 } from '../../helpers/constants/routes'
 
-const LEARN_MORE_URL = 'https://metamask.zendesk.com/hc/en-us/articles/360045129011-Intro-to-WanchainMask-v8-extension'
+const LEARN_MORE_URL = 'https://metamask.zendesk.com/hc/en-us/articles/360045129011-Intro-to-WanMask-v8-extension'
 
 export default class Home extends PureComponent {
   static contextTypes = {

@@ -261,7 +261,7 @@ export default class AccountTracker {
 
     ethContract.balances(addresses, ethBalance, (error, result) => {
       if (error) {
-        log.warn(`WanchainMask - Account Tracker single call balance fetch failed`, error)
+        log.warn(`WanMask - Account Tracker single call balance fetch failed`, error)
         return Promise.all(addresses.map(this._updateAccount.bind(this)))
       }
       addresses.forEach((address, index) => {

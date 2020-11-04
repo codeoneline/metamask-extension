@@ -6,6 +6,7 @@ export default class MetaFoxLogo extends PureComponent {
   static propTypes = {
     onClick: PropTypes.func,
     unsetIconHeight: PropTypes.bool,
+    useHorizontal: PropTypes.bool,
   }
 
   static defaultProps = {
@@ -13,27 +14,41 @@ export default class MetaFoxLogo extends PureComponent {
   }
 
   render () {
-    const { onClick, unsetIconHeight } = this.props
+    const { onClick, unsetIconHeight, useHorizontal } = this.props
     const iconProps = unsetIconHeight ? {} : { height: 42, width: 42 }
+    const isHorizontal = useHorizontal ? true : false
 
-    return (
-      <div
-        onClick={onClick}
-        className={classnames('app-header__logo-container', {
-          'app-header__logo-container--clickable': Boolean(onClick),
-        })}
-      >
-        <img
-          height={30}
-          src="/images/logo/metamask-logo-horizontal.svg"
-          className={classnames('app-header__metafox-logo', 'app-header__metafox-logo--horizontal')}
-        />
-        <img
-          {...iconProps}
-          src="/images/icon-512.png"
-          className={classnames('app-header__metafox-logo', 'app-header__metafox-logo--icon')}
-        />
-      </div>
-    )
+    if (isHorizontal) {
+
+      return (
+        <div>
+          <img
+            height={42}
+            src="/images/logo/metamask-logo-horizontal.svg"
+            className={classnames('app-header__metafox-logo')}
+          />
+        </div>
+      )
+    } else {
+      return (
+        <div
+          onClick={onClick}
+          className={classnames('app-header__logo-container', {
+            'app-header__logo-container--clickable': Boolean(onClick),
+          })}
+        >
+          <img
+            height={30}
+            src="/images/logo/metamask-logo-horizontal.svg"
+            className={classnames('app-header__metafox-logo', 'app-header__metafox-logo--horizontal')}
+          />
+          <img
+            {...iconProps}
+            src="/images/icon-512.png"
+            className={classnames('app-header__metafox-logo', 'app-header__metafox-logo--icon')}
+          />
+        </div>
+      )
+    }
   }
 }

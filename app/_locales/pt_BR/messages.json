@@ -6,7 +6,7 @@
     "message": "Interação do Contrato"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "reject": {
@@ -76,7 +76,7 @@
     "message": "Adicionar Tokens Sugeridos"
   },
   "addAcquiredTokens": {
-    "message": "Adicione os tokens que você adquiriu usando o WanchainMask"
+    "message": "Adicione os tokens que você adquiriu usando o WanMask"
   },
   "amount": {
     "message": "Valor"
@@ -110,7 +110,7 @@
     "message": "Temporizador de Logout Automático (minutos)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Defina o tempo de inatividade em minutos antes de o WanchainMask fazer logout automaticamente"
+    "message": "Defina o tempo de inatividade em minutos antes de o WanMask fazer logout automaticamente"
   },
   "average": {
     "message": "Média"
@@ -125,7 +125,7 @@
     "message": "Faça backup de seu Código Secreto de Recuperação para manter sua carteira e seus fundos em segurança."
   },
   "backupApprovalInfo": {
-    "message": "Esse código secreto é necessário para recuperar sua carteira, caso você perca seu dispositivo, esqueça sua senha, precise reinstalar o WanchainMask ou queira acessar sua carteira em outro dispositivo."
+    "message": "Esse código secreto é necessário para recuperar sua carteira, caso você perca seu dispositivo, esqueça sua senha, precise reinstalar o WanMask ou queira acessar sua carteira em outro dispositivo."
   },
   "backupNow": {
     "message": "Fazer backup agora"
@@ -150,13 +150,13 @@
     "message": "Seu navegador não é compatível..."
   },
   "builtInCalifornia": {
-    "message": "O WanchainMask foi projetado e desenvolvido na Califórnia."
+    "message": "O WanMask foi projetado e desenvolvido na Califórnia."
   },
   "buyWithWyre": {
     "message": "Comprar WAN com Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "O Wyre permite que você utilize um cartão de crédito para depositar WAN direto na sua conta do WanchainMask."
+    "message": "O Wyre permite que você utilize um cartão de crédito para depositar WAN direto na sua conta do WanMask."
   },
   "buyCoinSwitch": {
     "message": "Compre no CoinSwitch"
@@ -198,7 +198,7 @@
     "message": "Fechar"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Você precisa usar o WanchainMask no Google Chrome para se conectar à sua Carteira de Hardware."
+    "message": "Você precisa usar o WanMask no Google Chrome para se conectar à sua Carteira de Hardware."
   },
   "confirm": {
     "message": "Confirmar"
@@ -366,7 +366,7 @@
     "message": "Nunca compartilhe a frase com ninguém."
   },
   "endOfFlowMessage5": {
-    "message": "Cuidado com o phishing! O WanchainMask nunca solicitará espontaneamente sua frase semente."
+    "message": "Cuidado com o phishing! O WanMask nunca solicitará espontaneamente sua frase semente."
   },
   "endOfFlowMessage6": {
     "message": "Se precisar fazer backup de sua frase-semente de novo, acesse Configurações -> Segurança."
@@ -375,7 +375,7 @@
     "message": "Caso você tenha alguma dúvida ou veja algo suspeito, envie um e-mail para techsupport@wanchain.org."
   },
   "endOfFlowMessage8": {
-    "message": "O WanchainMask não pode recuperar sua frase semente. Saiba mais."
+    "message": "O WanMask não pode recuperar sua frase semente. Saiba mais."
   },
   "endOfFlowMessage9": {
     "message": "Saiba mais."
@@ -495,7 +495,7 @@
     "message": "Conecte uma carteira física"
   },
   "hardwareWalletsMsg": {
-    "message": "Selecione um hardware que gostaria de utilizar com o WanchainMask"
+    "message": "Selecione um hardware que gostaria de utilizar com o WanMask"
   },
   "havingTroubleConnecting": {
     "message": "Está tendo dificuldade para se conectar?"
@@ -524,7 +524,7 @@
     "message": "Importar Conta"
   },
   "importAccountMsg": {
-    "message": "As contas importadas não serão associadas à sua frase-semente da conta WanchainMask criada originalmente. Saiba mais sobre contas importadas"
+    "message": "As contas importadas não serão associadas à sua frase-semente da conta WanMask criada originalmente. Saiba mais sobre contas importadas"
   },
   "importAccountSeedPhrase": {
     "message": "Importar uma Conta com Frase-semente"
@@ -634,7 +634,7 @@
     "message": "Conectando você ao Wanchain e à Web Descentralizada."
   },
   "metamaskVersion": {
-    "message": "Versão do WanchainMask"
+    "message": "Versão do WanMask"
   },
   "mobileSyncText": {
     "message": "Insira sua senha para confirmar que é você!"
@@ -646,13 +646,13 @@
     "message": "Contas da Minha Carteira"
   },
   "myWalletAccountsDescription": {
-    "message": "Todas as suas contas criadas no WanchainMask serão automaticamente adicionadas a esta seção."
+    "message": "Todas as suas contas criadas no WanMask serão automaticamente adicionadas a esta seção."
   },
   "mustSelectOne": {
     "message": "É preciso selecionar pelo menos 1 token."
   },
   "needEtherInWallet": {
-    "message": "Para interagir com aplicações descentralizadas usando o WanchainMask, você precisará de Wan Coin na sua carteira."
+    "message": "Para interagir com aplicações descentralizadas usando o WanMask, você precisará de Wan Coin na sua carteira."
   },
   "needImportFile": {
     "message": "Você deve selecionar um arquivo para importar.",
@@ -696,7 +696,7 @@
     "message": "Nova Rede"
   },
   "newToMetaMask": {
-    "message": "Novo no WanchainMask?"
+    "message": "Novo no WanMask?"
   },
   "noAlreadyHaveSeed": {
     "message": "Não, eu já tenho uma frase semente"
@@ -705,7 +705,7 @@
     "message": "Proteja as suas chaves!"
   },
   "protectYourKeysMessage1": {
-    "message": "Tome cuidado com sua frase semente — houve relatos de sites que tentam imitar o WanchainMask. O WanchainMask nunca pedirá sua frase semente!"
+    "message": "Tome cuidado com sua frase semente — houve relatos de sites que tentam imitar o WanMask. O WanMask nunca pedirá sua frase semente!"
   },
   "protectYourKeysMessage2": {
     "message": "Mantenha a sua frase segura. Se você vir algo esquisito ou está inseguro quanto a um site, envie um e-mail para techsupport@wanchain.org"
@@ -762,7 +762,7 @@
     "message": "Participar do MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Participe do MetaMetrics para nos ajudar a tornar o WanchainMask melhor"
+    "message": "Participe do MetaMetrics para nos ajudar a tornar o WanMask melhor"
   },
   "password": {
     "message": "Senha"
@@ -989,7 +989,7 @@
     "message": "Selecione uma Conta"
   },
   "selectAnAccountHelp": {
-    "message": "Selecione a conta para ver no WanchainMask"
+    "message": "Selecione a conta para ver no WanMask"
   },
   "selectAHigherGasFee": {
     "message": "Selecione uma taxa de gás mais alta para acelerar o processamento de sua transação.*"
@@ -1103,19 +1103,19 @@
     "message": "Sincronizar com o celular"
   },
   "syncWithMobileDesc": {
-    "message": "Você pode sincronizar suas contas e informações com seu dispositivo móvel. Abra o aplicativo móvel WanchainMask, vá em \"Configurações\" e toque em \"Sincronizar da Extensão do Navegador\""
+    "message": "Você pode sincronizar suas contas e informações com seu dispositivo móvel. Abra o aplicativo móvel WanMask, vá em \"Configurações\" e toque em \"Sincronizar da Extensão do Navegador\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Se você acabou de abrir o aplicativo WanchainMask Mobile pela primeira vez, basta seguir os passos no seu telefone."
+    "message": "Se você acabou de abrir o aplicativo WanMask Mobile pela primeira vez, basta seguir os passos no seu telefone."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Digitalize este código com o seu app móvel do WanchainMask"
+    "message": "Digitalize este código com o seu app móvel do WanMask"
   },
   "syncWithMobileBeCareful": {
     "message": "Certifique-se de que ninguém mais esteja olhando para sua tela ao digitalizar esse código"
   },
   "syncWithMobileComplete": {
-    "message": "Seus dados foram sincronizados com sucesso. Aproveite o aplicativo WanchainMask!"
+    "message": "Seus dados foram sincronizados com sucesso. Aproveite o aplicativo WanMask!"
   },
   "terms": {
     "message": "Termos de Uso"
@@ -1200,7 +1200,7 @@
     "message": "Tentar novamente"
   },
   "typePassword": {
-    "message": "Digite sua senha do WanchainMask"
+    "message": "Digite sua senha do WanMask"
   },
   "unapproved": {
     "message": "Desaprovado"
@@ -1266,7 +1266,7 @@
     "message": "Bem-vindo de volta!"
   },
   "welcome": {
-    "message": "Bem-vindo ao WanchainMask"
+    "message": "Bem-vindo ao WanMask"
   },
   "writePhrase": {
     "message": "Escreva esta frase em um papel e guarde-o em um lugar seguro. Se quiser ainda mais segurança, anote-a em vários papéis diferentes e guarde-os em 2 ou 3 lugares diferentes."

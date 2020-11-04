@@ -30,7 +30,7 @@
     "message": "Ajoute Token Yo Sikjere W"
   },
   "addAcquiredTokens": {
-    "message": "Ajoute tokens yo ou te achte lè l sèvi avèk WanchainMask"
+    "message": "Ajoute tokens yo ou te achte lè l sèvi avèk WanMask"
   },
   "amount": {
     "message": "Kantite lajan"
@@ -40,7 +40,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -74,7 +74,7 @@
     "message": "Navigatè ou a pa sipòte..."
   },
   "builtInCalifornia": {
-    "message": "WanchainMask fèt e bati nan California."
+    "message": "WanMask fèt e bati nan California."
   },
   "buyCoinSwitch": {
     "message": "Achte sou CoinSwitch"
@@ -98,7 +98,7 @@
     "message": "Fèmen"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Ou bezwen sèvi ak WanchainMask sou Google Chrome yo nan lòd yo konekte sou Hardware Wallet."
+    "message": "Ou bezwen sèvi ak WanMask sou Google Chrome yo nan lòd yo konekte sou Hardware Wallet."
   },
   "confirm": {
     "message": "Konfime"
@@ -272,7 +272,7 @@
     "message": "Materyèl Wallet konekte"
   },
   "hardwareWalletsMsg": {
-    "message": "Chwazi yon Materyèl Wallet ou ta renmen itilize ak WanchainMask"
+    "message": "Chwazi yon Materyèl Wallet ou ta renmen itilize ak WanMask"
   },
   "havingTroubleConnecting": {
     "message": "Èske w gen pwoblèm pou konekte?"
@@ -298,7 +298,7 @@
     "message": "Pòte Kont"
   },
   "importAccountMsg": {
-    "message": " Kont pòte pa pral asosye avèk orijinal ou te kreye nan kont WanchainMask seed fraz. Aprann plis sou kont enpòte "
+    "message": " Kont pòte pa pral asosye avèk orijinal ou te kreye nan kont WanMask seed fraz. Aprann plis sou kont enpòte "
   },
   "imported": {
     "message": "Pòte",
@@ -375,10 +375,10 @@
     "message": "Mesaje"
   },
   "metamaskDescription": {
-    "message": "WanchainMask sekirize idantite pou Wanchain."
+    "message": "WanMask sekirize idantite pou Wanchain."
   },
   "metamaskVersion": {
-    "message": "WanchainMask Vèsyon"
+    "message": "WanMask Vèsyon"
   },
   "myAccounts": {
     "message": "Kont mwen"
@@ -387,7 +387,7 @@
     "message": "Ou dwe chwazi omwen 1 token."
   },
   "needEtherInWallet": {
-    "message": "Pou kominike avèk aplikasyon desantralize ou dwe itilize WanchainMask, ou pral bezwen Wan Coin nan Wallet ou."
+    "message": "Pou kominike avèk aplikasyon desantralize ou dwe itilize WanMask, ou pral bezwen Wan Coin nan Wallet ou."
   },
   "needImportFile": {
     "message": "Ou dwe chwazi yon dosye pou enpòte.",
@@ -616,7 +616,7 @@
     "message": "Chwazi yon kont"
   },
   "selectAnAccountHelp": {
-    "message": "Chwazi kont pou wè nan WanchainMask"
+    "message": "Chwazi kont pou wè nan WanMask"
   },
   "selectHdPath": {
     "message": "Chwazi chemen HD"
@@ -788,7 +788,7 @@
     "message": "Bon Retou!"
   },
   "welcome": {
-    "message": "Byenveni nan WanchainMask"
+    "message": "Byenveni nan WanMask"
   },
   "yesLetsTry": {
     "message": "Wi, ann eseye"

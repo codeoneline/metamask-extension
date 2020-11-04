@@ -52,7 +52,7 @@ async function start () {
   initializeUiWithTab(activeTab)
 
   function displayCriticalError (container, err) {
-    container.innerHTML = '<div class="critical-error">The WanchainMask app failed to load: please open and close WanchainMask again to restart.</div>'
+    container.innerHTML = '<div class="critical-error">The WanMask app failed to load: please open and close WanMask again to restart.</div>'
     container.style.height = '80px'
     log.error(err.stack)
     throw err
@@ -121,8 +121,8 @@ function initializeUi (activeTab, container, connectionStream, cb) {
  */
 function connectToAccountManager (connectionStream, cb) {
   const mx = setupMultiplex(connectionStream)
-  setupControllerConnection(mx.createStream('controller3'), cb)
-  setupWeb3Connection(mx.createStream('provider3'))
+  setupControllerConnection(mx.createStream('controller2'), cb)
+  setupWeb3Connection(mx.createStream('provider2'))
 }
 
 /**

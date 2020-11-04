@@ -18,7 +18,7 @@ import log from 'loglevel'
  * @property {number} id An id to track and identify the message object
  * @property {Object} msgParams The parameters to pass to the personal_sign method once the signature request is
  * approved.
- * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanchainMask.
+ * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanMask.
  * @property {string} msgParams.data A hex string conversion of the raw buffer data of the signature request
  * @property {number} time The epoch time at which the this message was created
  * @property {string} status Indicates whether the signature request is 'unapproved', 'approved', 'signed' or 'rejected'
@@ -85,7 +85,7 @@ export default class PersonalMessageManager extends EventEmitter {
   addUnapprovedMessageAsync (msgParams, req) {
     return new Promise((resolve, reject) => {
       if (!msgParams.from) {
-        return reject(new Error('WanchainMask Message Signature: from field is required.'))
+        return reject(new Error('WanMask Message Signature: from field is required.'))
       }
       const msgId = this.addUnapprovedMessage(msgParams, req)
       this.once(`${msgId}:finished`, (data) => {
@@ -93,9 +93,9 @@ export default class PersonalMessageManager extends EventEmitter {
           case 'signed':
             return resolve(data.rawSig)
           case 'rejected':
-            return reject(ethErrors.provider.userRejectedRequest('WanchainMask Message Signature: User denied message signature.'))
+            return reject(ethErrors.provider.userRejectedRequest('WanMask Message Signature: User denied message signature.'))
           default:
-            return reject(new Error(`WanchainMask Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
+            return reject(new Error(`WanMask Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
         }
       })
     })
@@ -163,8 +163,8 @@ export default class PersonalMessageManager extends EventEmitter {
    * Approves a PersonalMessage. Sets the message status via a call to this.setMsgStatusApproved, and returns a promise
    * with any the message params modified for proper signing.
    *
-   * @param {Object} msgParams - The msgParams to be used when eth_sign is called, plus data added by WanchainMask.
-   * @param {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanchainMask.
+   * @param {Object} msgParams - The msgParams to be used when eth_sign is called, plus data added by WanMask.
+   * @param {Object} msgParams.metamaskId Added to msgParams for tracking and identification within WanMask.
    * @returns {Promise<object>} - Promises the msgParams object with metamaskId removed.
    *
    */

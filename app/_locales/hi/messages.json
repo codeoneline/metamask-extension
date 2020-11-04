@@ -72,7 +72,7 @@
     "message": "सुझाए गए टोकन जोड़ें"
   },
   "addAcquiredTokens": {
-    "message": "WanchainMask का उपयोग करके आपके द्वारा अर्जित किए गए टोकन जोड़ें"
+    "message": "WanMask का उपयोग करके आपके द्वारा अर्जित किए गए टोकन जोड़ें"
   },
   "amount": {
     "message": "राशि "
@@ -82,7 +82,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "WanchainMask",
+    "message": "WanMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -159,7 +159,7 @@
     "message": "Wyre से WAN खरीदें"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre आपको क्रेडिट कार्ड का उपयोग करके WAN को सीधे आपके WanchainMask खाते में जमा करने देता है।"
+    "message": "Wyre आपको क्रेडिट कार्ड का उपयोग करके WAN को सीधे आपके WanMask खाते में जमा करने देता है।"
   },
   "buyCoinSwitch": {
     "message": "CoinSwitch पर खरीदें"
@@ -204,7 +204,7 @@
     "message": "बंद करें"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "अपने हार्डवेयर वॉलेट से कनेक्ट करने के लिए आपको Google Chrome में WanchainMask का उपयोग करना ज़रूरी है।"
+    "message": "अपने हार्डवेयर वॉलेट से कनेक्ट करने के लिए आपको Google Chrome में WanMask का उपयोग करना ज़रूरी है।"
   },
   "confirm": {
     "message": "दुबारा पूछें"
@@ -501,7 +501,7 @@
     "message": "हार्डवेयर वॉलेट जोड़े"
   },
   "hardwareWalletsMsg": {
-    "message": "एक हार्डवेयर वॉलेट चुनें जिसका उपयोग आप WanchainMask के साथ करना चाहते हैं"
+    "message": "एक हार्डवेयर वॉलेट चुनें जिसका उपयोग आप WanMask के साथ करना चाहते हैं"
   },
   "havingTroubleConnecting": {
     "message": "कनेक्ट करने में परेशानी हो रही है?"
@@ -530,7 +530,7 @@
     "message": "खाता आयात करें"
   },
   "importAccountMsg": {
-    "message": "आयात किए गए खाते आपके मुख्य रूप से बनाए गए WanchainMask खाते के सीडफ़्रेज़ से संबंधित नहीं होंगे। आयात किए गए खातों के बारे में अधिक जानें"
+    "message": "आयात किए गए खाते आपके मुख्य रूप से बनाए गए WanMask खाते के सीडफ़्रेज़ से संबंधित नहीं होंगे। आयात किए गए खातों के बारे में अधिक जानें"
   },
   "importAccountSeedPhrase": {
     "message": "बीज वाक्यांश के साथ एक खाता आयात करें"
@@ -643,7 +643,7 @@
     "message": "आपको Wanchain और विकेंद्रीकृत वेब से कनेक्ट कर रहे हैं।"
   },
   "metamaskVersion": {
-    "message": "WanchainMask का संस्करण"
+    "message": "WanMask का संस्करण"
   },
   "mobileSyncText": {
     "message": "यह आप ही हैं इसकी पुष्टि करने के लिए कृपया अपना पासवर्ड दर्ज करें!"
@@ -705,7 +705,7 @@
     "message": "नया नेटवर्क"
   },
   "newToMetaMask": {
-    "message": "WanchainMask में नए है?"
+    "message": "WanMask में नए है?"
   },
   "noAlreadyHaveSeed": {
     "message": "जी नहीं, मेरे पास पहले से ही एक बीज वाक्यांश है"
@@ -714,7 +714,7 @@
     "message": "अपनी कुंजी को सुरक्षित रखें!"
   },
   "protectYourKeysMessage1": {
-    "message": "अपने सीड फ़्रेज़ के बारे में सावधान रहें — ऐसी वेबसाइटों की रिपोर्टें आई हैं जो WanchainMask की नकल करने का प्रयास करती हैं। WanchainMask आपके सीड फ़्रेज़ के बारे में कभी नहीं पूछेगा!"
+    "message": "अपने सीड फ़्रेज़ के बारे में सावधान रहें — ऐसी वेबसाइटों की रिपोर्टें आई हैं जो WanMask की नकल करने का प्रयास करती हैं। WanMask आपके सीड फ़्रेज़ के बारे में कभी नहीं पूछेगा!"
   },
   "protectYourKeysMessage2": {
     "message": "अपने वाक्यांश को सुरक्षित रखें। यदि आपको कुछ गड़बड़ दिखती है, या आप किसी वेबसाइट के बारे में अनिश्चित हैं तो techsupport@wanchain.org को ई मेल करें\n"
@@ -771,7 +771,7 @@
     "message": "मेटामेट्रिक्स में भाग लें"
   },
   "participateInMetaMetricsDescription": {
-    "message": "WanchainMask को बेहतर बनाने में हमारी मदद के लिए MetaMetrics में भाग लें"
+    "message": "WanMask को बेहतर बनाने में हमारी मदद के लिए MetaMetrics में भाग लें"
   },
   "password": {
     "message": "पासवर्ड"
@@ -1278,7 +1278,7 @@
     "message": "वापस आने पर स्वागत है!"
   },
   "welcome": {
-    "message": "WanchainMask में आपका स्वागत है"
+    "message": "WanMask में आपका स्वागत है"
   },
   "writePhrase": {
     "message": "इस वाक्यांश को कागज के टुकड़े पर लिखें और एक सुरक्षित स्थान पर संग्रहीत करें। यदि आप और भी अधिक सुरक्षा चाहते हैं, तो इसे कागज के कई टुकड़ों पर लिखें और प्रत्येक को 2 - 3 विभिन्न स्थानों में संग्रहीत करें।"

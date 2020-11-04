@@ -1,10 +1,10 @@
 # Publishing Guide
 
-When publishing a new version of WanchainMask, we follow this procedure:
+When publishing a new version of WanMask, we follow this procedure:
 
 ## Overview
 
-The below diagram outlines our process for design, development, and release. Building WanchainMask is a community affair, and many steps of the process invite participation from external contributors as indicated. All QA, code review, and release of new versions is done by members of the core WanchainMask team.
+The below diagram outlines our process for design, development, and release. Building WanMask is a community affair, and many steps of the process invite participation from external contributors as indicated. All QA, code review, and release of new versions is done by members of the core WanMask team.
 
 <img width="664" alt="mm-dev-process" src="https://user-images.githubusercontent.com/1016190/56308059-36906000-60fb-11e9-8e61-6655bca0c54f.png">
 
@@ -40,7 +40,7 @@ With each pull request, the @MetaMaskBot will comment with a build of that new p
 2. Visit [the chrome developer dashboard](https://chrome.google.com/webstore/developer/dashboard?authuser=2).
 3. Publish to [firefox addon marketplace](http://addons.mozilla.org/en-us/firefox/addon/ether-metamask).
 4. Publish to [Opera store](https://addons.opera.com/en/extensions/details/metamask/).
-5. Post on [Github releases](https://github.com/WanchainMask/metamask-extension/releases) page.
+5. Post on [Github releases](https://github.com/WanMask/metamask-extension/releases) page.
 6. Run the `yarn announce` script, and post that announcement in our public places.
 
 ## Hotfix Differences

@@ -2708,10 +2708,10 @@
     web3 "^0.20.7"
     web3-provider-engine "^16.0.1"
 
-"@wanchainmask/inpage-provider@^6.4.2":
-  version "6.4.2"
-  resolved "https://registry.npmjs.org/@wanchainmask/inpage-provider/-/inpage-provider-6.4.2.tgz#d75d059380a8a982f6568012f1204850bab42f51"
-  integrity sha512-yTFH7E/ffBJxr6TvMVzKRDky7AW6YF4ieAtdpP5rRmzmeDPZeLjDP7WNR5kwvUOF0d1bZIehRjzDEGeRbFDJ/A==
+"@wanchainmask/inpage-provider@^6.4.4":
+  version "6.4.4"
+  resolved "https://registry.npmjs.org/@wanchainmask/inpage-provider/-/inpage-provider-6.4.4.tgz#dc2a081fd0d32d4922320192c7ece4f7761ce0d9"
+  integrity sha512-XuWakZ1UVO3YYKVuoWjfVWS37NNWsa12YigsE1wk+JlUNOU/2s+ztUbp4kmtMVeTvRb38NP7kd3j7ykQ7XBOTA==
   dependencies:
     eth-rpc-errors "^2.1.1"
     fast-deep-equal "^2.0.1"
