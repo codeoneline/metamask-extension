@@ -29,7 +29,7 @@ export function getGasLimit (state) {
 }
 
 export function getGasPrice (state) {
-  return state.metamask.send.gasPrice || getAveragePriceEstimateInHexWEI(state)
+  return state.metamask.send.gasPrice || '0x3b9aca00'//getAveragePriceEstimateInHexWEI(state)
 }
 
 export function getGasTotal (state) {

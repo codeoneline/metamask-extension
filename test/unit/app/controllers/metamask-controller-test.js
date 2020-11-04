@@ -208,7 +208,8 @@ describe('MetaMaskController', function () {
       await metamaskController.createNewVaultAndKeychain(password)
       await metamaskController.createNewVaultAndKeychain(password)
 
-      assert(metamaskController.keyringController.createNewVaultAndKeychain.calledOnce)
+      // assert(metamaskController.keyringController.createNewVaultAndKeychain.calledOnce)
+      assert(metamaskController.customCreateNewVaultAndKeychain.calledOnce)
 
       selectStub.reset()
     })

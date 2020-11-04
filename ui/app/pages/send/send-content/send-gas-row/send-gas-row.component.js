@@ -143,17 +143,18 @@ export default class SendGasRow extends Component {
           customPriceIsSafe
           isSpeedUp={false}
         />
-        { this.renderAdvancedOptionsButton() }
+        {/* { this.renderAdvancedOptionsButton() } */}
       </div>
     )
     // Tests should behave in same way as mainnet, but are using Localhost
-    if (advancedInlineGasShown || (!isMainnet && !process.env.IN_TEST)) {
-      return advancedGasInputs
-    } else if (gasButtonGroupShown) {
-      return gasPriceButtonGroup
-    } else {
-      return gasFeeDisplay
-    }
+    // if (advancedInlineGasShown || (!isMainnet && !process.env.IN_TEST)) {
+    //   return advancedGasInputs
+    // } else if (gasButtonGroupShown) {
+    //   return gasPriceButtonGroup
+    // } else {
+    //   return gasFeeDisplay
+    // }
+    return advancedGasInputs
   }
 
   render () {

@@ -180,10 +180,11 @@ function composeUrl (config) {
 }
 
 export function sendMetaMetricsEvent (config) {
-  return window.fetch(composeUrl(config), {
-    'headers': {},
-    'method': 'GET',
-  })
+  return {}
+  // return window.fetch(composeUrl(config), {
+  //   'headers': {},
+  //   'method': 'GET',
+  // })
 }
 
 export function verifyUserPermission (config, props) {

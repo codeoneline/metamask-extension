@@ -592,7 +592,7 @@ export default class MetamaskController extends EventEmitter {
    *
    * @returns {Object} - vault
    */
-  async createNewVaultAndKeychain (password, pathType = 'ETH') {
+  async createNewVaultAndKeychain (password, pathType = 'WAN') {
     const releaseLock = await this.createVaultMutex.acquire()
     try {
       let vault
@@ -622,6 +622,7 @@ export default class MetamaskController extends EventEmitter {
     return self.persistAllKeyrings(password)
       .then(this.customCreateFirstKeyTree.bind(self))
       .then(self.persistAllKeyrings.bind(self, password))
+      .then(self.setUnlocked.bind(self))
       .then(self.fullUpdate.bind(self))
   }
 
@@ -678,7 +679,7 @@ export default class MetamaskController extends EventEmitter {
    * @param  {} password
    * @param  {} seed
    */
-  async createNewVaultAndRestore (password, seed, pathType = 'ETH') {
+  async createNewVaultAndRestore (password, seed, pathType = 'WAN') {
     const releaseLock = await this.createVaultMutex.acquire()
     try {
       let accounts, lastBalance

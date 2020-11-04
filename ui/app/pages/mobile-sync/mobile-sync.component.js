@@ -353,7 +353,7 @@ export default class MobileSyncPage extends Component {
 
   renderRevealSeedContent () {
     const qrImage = qrCode(0, 'M')
-    qrImage.addData(`metamask-sync:${this.state.channelName}|@|${this.state.cipherKey}`)
+    qrImage.addData(`wanmask-sync:${this.state.channelName}|@|${this.state.cipherKey}`)
     qrImage.make()
 
     const { t } = this.context
