@@ -5,7 +5,7 @@ import extractEthjsErrorMessage from './extractEthjsErrorMessage'
 
 const METAMASK_DEBUG = process.env.METAMASK_DEBUG
 const METAMASK_ENVIRONMENT = process.env.METAMASK_ENVIRONMENT
-const SENTRY_DSN_DEV = 'https://f59f3dd640d2429d9d0e2445a87ea8e1@sentry.io/273496'
+const SENTRY_DSN_DEV = 'https://549f1092e9064431ae4973748e03ae89@sentry.io/5505505'
 
 // This describes the subset of Redux state attached to errors sent to Sentry
 // These properties have some potential to be useful for debugging, and they do

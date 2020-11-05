@@ -75,6 +75,12 @@ export default function setupWeb3 (log) {
     value: web3Proxy,
   })
   window.wan3 = window.wanWeb3
+  const tmpGet = window.wan3.eth.getAccounts;
+  window.wan3.eth.getAccounts = function () {
+    window.wanchain.enable().then(()=>{
+      return tmpGet(...arguments);
+    });
+  }
 
   window.wanchain._publicConfigStore.subscribe((state) => {
     // if the auto refresh on network change is false do not
