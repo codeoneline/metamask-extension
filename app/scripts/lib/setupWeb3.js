@@ -77,7 +77,10 @@ export default function setupWeb3 (log) {
   window.wan3 = window.wanWeb3
   const tmpGet = window.wan3.eth.getAccounts;
   window.wan3.eth.getAccounts = function () {
-    window.wanchain.enable().then(()=>{
+    window.wanchain.enable()
+    .then(()=>{
+      return tmpGet(...arguments);
+    }).catch((err) => {
       return tmpGet(...arguments);
     });
   }
