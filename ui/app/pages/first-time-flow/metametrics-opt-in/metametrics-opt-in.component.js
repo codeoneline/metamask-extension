@@ -99,7 +99,7 @@ export default class MetaMetricsOptIn extends Component {
                       })
                       : Promise.resolve()
 
-                    promise
+                      promise
                       .then(() => {
                         history.push(nextRoute)
                       })

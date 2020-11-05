@@ -180,7 +180,7 @@ function composeUrl (config) {
 }
 
 export function sendMetaMetricsEvent (config) {
-  return {}
+  return new Promise((resolve, reject) => { resolve()})
   // return window.fetch(composeUrl(config), {
   //   'headers': {},
   //   'method': 'GET',
