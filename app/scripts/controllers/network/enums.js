@@ -1,10 +1,10 @@
 // export const ROPSTEN = 'ropsten'
 // export const RINKEBY = 'rinkeby'
 // export const KOVAN = 'kovan'
-export const MAINNET = 'mainnet'
+export const MAINNET = 'wanchain'
 // export const GOERLI = 'goerli'
 export const LOCALHOST = 'localhost'
-export const TESTNET = 'testnet'
+export const TESTNET = 'wanchaintestnet'
 
 export const MAINNET_NETWORK_ID = '1'
 export const TESTNET_NETWORK_ID = '3'

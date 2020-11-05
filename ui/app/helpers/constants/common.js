@@ -1,3 +1,4 @@
+import {MAINNET, TESTNET} from '../../../../app/scripts/controllers/network/enums'
 export const WAN = 'WAN'
 export const GWIN = 'GWIN'
 export const WIN = 'WIN'
@@ -11,8 +12,8 @@ export const NETWORK_TYPES = {
   // RINKEBY: 'rinkeby',
   // ROPSTEN: 'ropsten',
   // GOERLI: 'goerli',
-  MAINNET: 'mainnet',
-  TESTNET: 'testnet',
+  MAINNET: MAINNET,
+  TESTNET: TESTNET,
 }
 
 export const GAS_ESTIMATE_TYPES = {

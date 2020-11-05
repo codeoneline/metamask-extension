@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import Spinner from '../../ui/spinner'
 import Button from '../../ui/button'
+import { MAINNET, TESTNET } from '../../../../../app/scripts/controllers/network/enums'
 
 export default class LoadingNetworkScreen extends PureComponent {
   state = {
@@ -37,9 +38,9 @@ export default class LoadingNetworkScreen extends PureComponent {
 
     let name
 
-    if (providerName === 'mainnet') {
+    if (providerName === MAINNET) {
       name = this.context.t('connectingToMainnet')
-    } else if (providerName === 'testnet') {
+    } else if (providerName === TESTNET) {
       name = this.context.t('connectingToTestnet')
     // } else if (providerName === 'kovan') {
     //   name = this.context.t('connectingToKovan')

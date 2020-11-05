@@ -7,6 +7,7 @@ import * as actions from '../../../store/actions'
 import { Dropdown, DropdownMenuItem } from './components/dropdown'
 import NetworkDropdownIcon from './components/network-dropdown-icon'
 import { NETWORKS_ROUTE } from '../../../helpers/constants/routes'
+import { MAINNET, TESTNET } from '../../../../../app/scripts/controllers/network/enums'
 
 // classes from nodes of the toggle element.
 const notToggleElementClassnames = [
@@ -183,9 +184,9 @@ class NetworkDropdown extends Component {
 
     let name
 
-    if (providerName === 'mainnet') {
+    if (providerName === MAINNET) {
       name = this.context.t('mainnet')
-    } else if (providerName === 'testnet') {
+    } else if (providerName === TESTNET) {
       name = this.context.t('testnet')
     // } else if (providerName === 'kovan') {
     //   name = this.context.t('kovan')
@@ -248,19 +249,19 @@ class NetworkDropdown extends Component {
         <DropdownMenuItem
           key="main"
           closeMenu={() => this.props.hideNetworkDropdown()}
-          onClick={() => this.handleClick('mainnet')}
+          onClick={() => this.handleClick(MAINNET)}
           style={{ ...dropdownMenuItemStyle, borderColor: '#038789' }}
         >
           {
-            providerType === 'mainnet'
+            providerType === MAINNET
               ? <i className="fa fa-check" />
               : <div className="network-check__transparent">✓</div>
           }
-          <NetworkDropdownIcon backgroundColor="#29B6AF" isSelected={providerType === 'mainnet'} />
+          <NetworkDropdownIcon backgroundColor="#29B6AF" isSelected={providerType === MAINNET} />
           <span
             className="network-name-item"
             style={{
-              color: providerType === 'mainnet'
+              color: providerType === MAINNET
                 ? '#ffffff'
                 : '#9b9b9b',
             }}
@@ -271,19 +272,19 @@ class NetworkDropdown extends Component {
         <DropdownMenuItem
           key="testnet"
           closeMenu={() => this.props.hideNetworkDropdown()}
-          onClick={() => this.handleClick('testnet')}
+          onClick={() => this.handleClick(TESTNET)}
           style={dropdownMenuItemStyle}
         >
           {
-            providerType === 'testnet'
+            providerType === TESTNET
               ? <i className="fa fa-check" />
               : <div className="network-check__transparent">✓</div>
           }
-          <NetworkDropdownIcon backgroundColor="#ff4a8d" isSelected={providerType === 'testnet'} />
+          <NetworkDropdownIcon backgroundColor="#ff4a8d" isSelected={providerType === TESTNET} />
           <span
             className="network-name-item"
             style={{
-              color: providerType === 'testnet'
+              color: providerType === TESTNET
                 ? '#ffffff'
                 : '#9b9b9b',
             }}

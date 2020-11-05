@@ -73,6 +73,7 @@ import {
 } from '@wanchainmask/controllers'
 
 import backgroundMetaMetricsEvent from './lib/background-metametrics'
+import { MAINNET } from './controllers/network/enums'
 
 export default class MetamaskController extends EventEmitter {
 
@@ -786,7 +787,7 @@ export default class MetamaskController extends EventEmitter {
       const checksummedAddress = ethUtil.toChecksumAddress(address)
       filteredAccountTokens[checksummedAddress] = {}
       Object.keys(accountTokens[address]).forEach(
-        (networkType) => (filteredAccountTokens[checksummedAddress][networkType] = networkType !== 'mainnet' ?
+        (networkType) => (filteredAccountTokens[checksummedAddress][networkType] = networkType !== MAINNET ?
           accountTokens[address][networkType] :
           accountTokens[address][networkType].filter(({ address }) => {
             const tokenAddress = ethUtil.toChecksumAddress(address)

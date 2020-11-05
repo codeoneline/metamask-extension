@@ -179,9 +179,9 @@ export default class NetworkController extends EventEmitter {
     const { type, rpcTarget, chainId, ticker, nickname } = opts
     // infura type-based endpoints
     // const isInfura = INFURA_PROVIDER_TYPES.includes(type)
-    if (type === 'mainnet') {
+    if (type === MAINNET) {
       this._configureStandardProvider({ rpcUrl: WANCHAIN_RPC_URL })
-    } else if (type === 'testnet') {
+    } else if (type === TESTNET) {
       this._configureStandardProvider({ rpcUrl: WANCHAIN_TESTNET_RPC_URL })
     } else if (type === LOCALHOST) {
       this._configureLocalhostProvider()

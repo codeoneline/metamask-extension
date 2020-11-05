@@ -2,14 +2,15 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import classnames from 'classnames'
 import NetworkDropdownIcon from './dropdowns/components/network-dropdown-icon'
+import * as networkEnums from '../../../../app/scripts/controllers/network/enums'
 
 function NetworkIndicator ({ disabled, children, hoverText, onClick, providerName }) {
   return (
     <div
       className={classnames('network-component pointer', {
         'network-component--disabled': disabled,
-        'wanchain-network': providerName === 'mainnet',
-        'testnet-network': providerName === 'testnet',
+        'wanchain-network': providerName === networkEnums.MAINNET,
+        'testnet-network': providerName === networkEnums.TESTNET,
         // 'kovan-test-network': providerName === 'kovan',
         // 'rinkeby-test-network': providerName === 'rinkeby',
         // 'goerli-test-network': providerName === 'goerli',
@@ -73,7 +74,7 @@ export default class Network extends Component {
     }
 
     switch (providerName) {
-      case 'mainnet':
+      case networkEnums.MAINNET:
         return (
           <NetworkIndicator disabled={disabled} hoverText={t('mainnet')} onClick={onClick} providerName={providerName}>
             <NetworkDropdownIcon
@@ -85,7 +86,7 @@ export default class Network extends Component {
           </NetworkIndicator>
         )
 
-      case 'testnet':
+      case networkEnums.TESTNET:
         return (
           <NetworkIndicator disabled={disabled} hoverText={t('testnet')} onClick={onClick} providerName={providerName}>
             <NetworkDropdownIcon

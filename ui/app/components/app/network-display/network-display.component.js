@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
+import { MAINNET, TESTNET } from '../../../../../app/scripts/controllers/network/enums'
 import {
   MAINNET_NETWORK_ID,
   TESTNET_NETWORK_ID,
@@ -11,8 +12,8 @@ import {
 } from '../../../../../app/scripts/controllers/network/enums'
 
 const networkIdToTypeMap = {
-  [MAINNET_NETWORK_ID]: 'mainnet',
-  [TESTNET_NETWORK_ID]: 'testnet',
+  [MAINNET_NETWORK_ID]: MAINNET,
+  [TESTNET_NETWORK_ID]: TESTNET,
   // [ROPSTEN_NETWORK_ID]: 'ropsten',
   // [RINKEBY_NETWORK_ID]: 'rinkeby',
   // [GOERLI_NETWORK_ID]: 'goerli',

@@ -31,6 +31,7 @@ import AppHeader from '../../components/app/app-header'
 import UnlockPage from '../unlock-page'
 import Alerts from '../../components/app/alerts'
 import Asset from '../asset'
+import {MAINNET, TESTNET} from '../../../../app/scripts/controllers/network/enums'
 
 import {
   ADD_TOKEN_ROUTE,
@@ -285,9 +286,9 @@ export default class Routes extends Component {
     const { provider, providerId } = this.props
 
     switch (provider.type) {
-      case 'mainnet':
+      case MAINNET:
         return this.context.t('connectingToMainnet')
-      case 'testnet':
+      case TESTNET:
         return this.context.t('connectingToTestnet')
       // case 'kovan':
       //   return this.context.t('connectingToKovan')
@@ -304,9 +305,9 @@ export default class Routes extends Component {
 
   getNetworkName () {
     switch (this.props.provider.type) {
-      case 'mainnet':
+      case MAINNET:
         return this.context.t('mainnet')
-      case 'testnet':
+      case TESTNET:
         return this.context.t('testnet')
       // case 'kovan':
       //   return this.context.t('kovan')

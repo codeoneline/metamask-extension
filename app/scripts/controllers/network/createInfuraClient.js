@@ -32,11 +32,11 @@ function createNetworkAndChainIdMiddleware ({ network }) {
   let netId
 
   switch (network) {
-    case 'mainnet':
+    case networkEnums.MAINNET:
       netId = networkEnums.MAINNET_NETWORK_ID
       chainId = '0x01'
       break
-    case 'testnet':
+    case networkEnums.TESTNET:
       netId = networkEnums.TESTNET_NETWORK_ID
       chainId = '0x03'
       break
