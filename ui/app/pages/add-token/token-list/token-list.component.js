@@ -28,7 +28,7 @@ export default class InfoBox extends Component {
           </div>
           <div className="token-list__tokens-container">
             {
-              Array(6).fill(undefined)
+              Array(60).fill(undefined)
                 .map((_, i) => {
                   const { logo, symbol, name, address } = results[i] || {}
                   const tokenAlreadyAdded = checkExistingAddresses(address, tokens)
