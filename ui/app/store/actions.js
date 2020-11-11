@@ -257,11 +257,13 @@ export function resetAccount () {
 }
 
 export function removeAccount (address) {
+  log.warn(`actions removeAccount ${address}`)
   return async (dispatch) => {
     dispatch(showLoadingIndication())
 
     try {
       await new Promise((resolve, reject) => {
+        log.warn(`background removeAccount ${address}`)
         background.removeAccount(address, (error, account) => {
           if (error) {
             return reject(error)

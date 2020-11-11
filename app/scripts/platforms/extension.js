@@ -4,7 +4,7 @@ import { getEnvironmentType, checkForError } from '../lib/util'
 import { ENVIRONMENT_TYPE_BACKGROUND } from '../lib/enums'
 
 const explorerLink = function (hash, network) {
-  return `https://wanscan.org/tx/${hash}`
+  return `https://www.wanscan.org/tx/${hash}`
 }
 
 export default class ExtensionPlatform {

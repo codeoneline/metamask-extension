@@ -164,6 +164,7 @@ export default class MetamaskController extends EventEmitter {
       provider: this.provider,
       blockTracker: this.blockTracker,
       network: this.networkController,
+      mmc: this,
     })
 
     // start and stop polling for balances based on activeControllerConnections
@@ -986,12 +987,18 @@ export default class MetamaskController extends EventEmitter {
    * @returns {} keyState
    */
   async unlockHardwareWalletAccount (index, deviceName, hdPath) {
+    log.warn(`unlockHardwareWalletAccount ${index} ${deviceName} ${hdPath}`)
     const keyring = await this.getKeyringForDevice(deviceName, hdPath)
+    log.warn(`unlockHardwareWalletAccount keyring=${JSON.stringify(keyring)}`)
 
     keyring.setAccountToUnlock(index)
+    log.warn(`unlockHardwareWalletAccount setAccountToUnlock`)
     const oldAccounts = await this.keyringController.getAccounts()
+    log.warn(`unlockHardwareWalletAccount oldAccounts`)
     const keyState = await this.keyringController.addNewAccount(keyring)
+    log.warn(`unlockHardwareWalletAccount keyState`)
     const newAccounts = await this.keyringController.getAccounts()
+    log.warn(`unlockHardwareWalletAccount oldAccounts=${oldAccounts} newAccounts=${newAccounts}`)
     this.preferencesController.setAddresses(newAccounts)
     newAccounts.forEach((address) => {
       if (!oldAccounts.includes(address)) {
@@ -1095,6 +1102,7 @@ export default class MetamaskController extends EventEmitter {
    *
    */
   async removeAccount (address) {
+    log.warn(`removeAccount ${address}`)
     // Remove all associated permissions
     await this.permissionsController.removeAllAccountPermissions(address)
     // Remove account from the preferences controller
@@ -1849,7 +1857,7 @@ export default class MetamaskController extends EventEmitter {
   async _onKeyringControllerUpdate (state) {
     const { keyrings } = state
     const addresses = keyrings.reduce((acc, { accounts }) => acc.concat(accounts), [])
-
+    log.warn(`_onKeyringControllerUpdate ${JSON.stringify(addresses)}`)
     if (!addresses.length) {
       return
     }

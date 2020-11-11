@@ -59,6 +59,7 @@ class ConnectHardwareForm extends Component {
   }
 
   onAccountChange = (account) => {
+    console.log(`onAccountChange ${account.toString()}`)
     this.setState({ selectedAccount: account.toString(), error: null })
   }
 

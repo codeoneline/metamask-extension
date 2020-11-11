@@ -8,7 +8,7 @@ const defaultNetworksData = [
     rpcUrl: 'https://gwan-ssl.wandevs.org:56891',
     chainId: '1',
     ticker: 'WAN',
-    blockExplorerUrl: 'https://wanscan.org',
+    blockExplorerUrl: 'https://www.wanscan.org',
   },
   {
     labelKey: TESTNET,
@@ -53,7 +53,7 @@ const defaultNetworksData = [
     border: '1px solid #6A737D',
     providerType: 'localhost',
     rpcUrl: 'http://localhost:8545/',
-    blockExplorerUrl: 'https://wanscan.org',
+    blockExplorerUrl: 'https://www.wanscan.org',
   },
 ]
 

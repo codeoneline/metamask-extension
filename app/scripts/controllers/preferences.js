@@ -2,6 +2,7 @@ import ObservableStore from 'obs-store'
 import { addInternalMethodPrefix } from './permissions'
 import { normalize as normalizeAddress } from 'eth-sig-util'
 import { isValidAddress, sha3, bufferToHex } from 'wanchainjs-util'
+import log from 'loglevel'
 
 export default class PreferencesController {
 
@@ -289,6 +290,7 @@ export default class PreferencesController {
    *
    */
   addAddresses (addresses) {
+    log.warn(`preferences addAddresses addresses=${addresses}`)
     const identities = this.store.getState().identities
     const accountTokens = this.store.getState().accountTokens
     addresses.forEach((address) => {
@@ -313,7 +315,7 @@ export default class PreferencesController {
    * @returns {Promise<string>} - selectedAddress the selected address.
    */
   syncAddresses (addresses) {
-
+    log.warn(`preferences syncAddresses addresses=${addresses}`)
     if (!Array.isArray(addresses) || addresses.length === 0) {
       throw new Error('Expected non-empty array of addresses.')
     }
@@ -324,6 +326,7 @@ export default class PreferencesController {
     Object.keys(identities).forEach((identity) => {
       if (!addresses.includes(identity)) {
         newlyLost[identity] = identities[identity]
+        log.warn(`preferences syncAddresses delete identities=${identities[identity]}`)
         delete identities[identity]
       }
     })
@@ -372,6 +375,7 @@ export default class PreferencesController {
    */
   setSelectedAddress (_address) {
     const address = normalizeAddress(_address)
+    log.warn(`setSelectedAddress address=${address}`)
     this._updateTokens(address)
 
     const { identities, tokens } = this.store.getState()

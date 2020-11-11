@@ -18,6 +18,7 @@ export default class ConfirmRemoveAccount extends Component {
   }
 
   handleRemove = () => {
+    console.log(`handleRemove ${this.props.identity.address}`)
     this.props.removeAccount(this.props.identity.address)
       .then(() => this.props.hideModal())
   }

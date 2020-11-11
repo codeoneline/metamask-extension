@@ -124,6 +124,8 @@ export const getMetaMaskAccountsOrdered = createSelector(
 )
 
 export function isBalanceCached (state) {
+  console.log(`isBalanceCached ${getSelectedAddress(state)}`)
+  console.log(`account ${JSON.stringify(state.metamask.accounts[getSelectedAddress(state)])}`)
   const selectedAccountBalance = state.metamask.accounts[getSelectedAddress(state)].balance
   const cachedBalance = getSelectedAccountCachedBalance(state)
 

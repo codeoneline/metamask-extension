@@ -30,6 +30,7 @@ export default class ExtensionStore {
     if (isEmpty(result)) {
       return undefined
     } else {
+      console.log(`local store ${JSON.stringify(result)}`)
       return result
     }
   }

@@ -60,6 +60,7 @@ const AssetListItem = ({
     : null
 
   const sendTokenButton = useMemo(() => {
+    console.log(`sendTokenButton ${tokenAddress}`)
     if (tokenAddress == null) {
       return null
     }
