@@ -2,7 +2,7 @@
 import {MAINNET, TESTNET} from '../../../../../app/scripts/controllers/network/enums'
 const defaultNetworksData = [
   {
-    labelKey: MAINNET,
+    labelKey: 'mainnet',
     iconColor: '#29B6AF',
     providerType: MAINNET,
     rpcUrl: 'https://gwan-ssl.wandevs.org:56891',
@@ -11,7 +11,7 @@ const defaultNetworksData = [
     blockExplorerUrl: 'https://www.wanscan.org',
   },
   {
-    labelKey: TESTNET,
+    labelKey: 'testnet',
     iconColor: '#FF4A8D',
     providerType: TESTNET,
     rpcUrl: 'https://gwan-ssl.wandevs.org:46891',

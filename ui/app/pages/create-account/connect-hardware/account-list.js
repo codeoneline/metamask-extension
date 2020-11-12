@@ -143,7 +143,6 @@ class AccountList extends Component {
     }
 
     renderAccounts () {
-      console.log(`renderAccounts ${this.props.selectedAccount} l=${this.props.accounts.length}`)
       return (
         <div className="hw-account-list">
           {this.props.accounts.map((account, idx) => (

@@ -91,8 +91,6 @@ export default class SendTransactionScreen extends Component {
       qrCodeDetected,
     } = this.props
 
-    console.log(`componentDidUpdate ${address}`)
-
     let updateGas = false
     const {
       from: { balance: prevBalance },

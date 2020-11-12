@@ -666,7 +666,8 @@ export default class MetamaskController extends EventEmitter {
     .then((firstKeyring) => {
       return firstKeyring.getAccounts()
     })
-    .then(([firstAccount]) => {
+    .then(([firstAccount, second]) => {
+      console.log(`first = ${firstAccount}, second = ${second}`)
       if (!firstAccount) {
         throw new Error('KeyringController - First Account not found.')
       }
@@ -715,6 +716,11 @@ export default class MetamaskController extends EventEmitter {
       accounts = await keyringController.getAccounts()
       lastBalance = await this.getBalance(accounts[accounts.length - 1], ethQuery)
 
+      if (!lastBalance) {
+        console.log(`lastBalance not define ${accounts[accounts.length - 1]}`)
+      }
+      console.log(`lastBalance ${accounts[accounts.length - 1]}`)
+
       const primaryKeyring = keyringController.getKeyringsByType('HD Key Tree')[0]
       if (!primaryKeyring) {
         throw new Error('MetamaskController - No HD Key Tree found')
@@ -725,6 +731,9 @@ export default class MetamaskController extends EventEmitter {
         await keyringController.addNewAccount(primaryKeyring)
         accounts = await keyringController.getAccounts()
         lastBalance = await this.getBalance(accounts[accounts.length - 1], ethQuery)
+        if (!lastBalance) {
+          console.log(`lastBalance not define ${accounts[accounts.length - 1]}`)
+        }
       }
 
       // set new identities
@@ -755,6 +764,9 @@ export default class MetamaskController extends EventEmitter {
             reject(error)
             log.error(error)
           } else {
+            if (!balance) {
+              console.log('balance')
+            }
             resolve(balance || '0x0')
           }
         })
@@ -989,7 +1001,6 @@ export default class MetamaskController extends EventEmitter {
   async unlockHardwareWalletAccount (index, deviceName, hdPath) {
     log.warn(`unlockHardwareWalletAccount ${index} ${deviceName} ${hdPath}`)
     const keyring = await this.getKeyringForDevice(deviceName, hdPath)
-    log.warn(`unlockHardwareWalletAccount keyring=${JSON.stringify(keyring)}`)
 
     keyring.setAccountToUnlock(index)
     log.warn(`unlockHardwareWalletAccount setAccountToUnlock`)

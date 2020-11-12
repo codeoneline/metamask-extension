@@ -13,7 +13,6 @@ export const I18nProvider = (props) => {
   const en = useSelector(getEnLocaleMessages)
 
   const t = useMemo(() => {
-    console.log(`useMemo I18n`)
     return (key, ...args) => (
       getMessage(currentLocale, current, key, ...args) ||
       getMessage(currentLocale, en, key, ...args)
