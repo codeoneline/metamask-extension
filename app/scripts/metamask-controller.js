@@ -934,6 +934,7 @@ export default class MetamaskController extends EventEmitter {
     if (!keyring) {
       keyring = await this.keyringController.addNewKeyring(keyringName)
     }
+    log.warn(`getKeyringForDevice ${deviceName} ${hdPath} ${keyring.setHdPath}`)
     if (hdPath && keyring.setHdPath) {
       keyring.setHdPath(hdPath)
     }

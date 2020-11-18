@@ -69,6 +69,7 @@ const DEFAULT_LABEL = 'Account 1'
 const DEFAULT_LABEL_2 = 'Account 2'
 const TEST_SEED = 'debris dizzy just program just float decrease vacant alarm reduce speak stadium'
 const TEST_ADDRESS = '0xb35991fdc8300270d7fa9dcc8823d9be93273906'
+// private = a5aeebe80384c3ff293b9bc309151a0fb42f3fc8039995c153d93f7c65b0c63d
 const TEST_ADDRESS_2 = '0x9173d357432d9dccfe995a9db558e48121ee9ed5'
 const TEST_ADDRESS_3 = '0xee8d05e25130247431ee4f52413c64a521fde8c6'
 const TEST_SEED_ALT = 'setup olympic issue mobile velvet surge alcohol burger horse view reopen gentle'
