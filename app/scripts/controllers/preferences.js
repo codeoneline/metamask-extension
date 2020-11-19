@@ -326,7 +326,7 @@ export default class PreferencesController {
     Object.keys(identities).forEach((identity) => {
       if (!addresses.includes(identity)) {
         newlyLost[identity] = identities[identity]
-        log.warn(`preferences syncAddresses delete identities=${identities[identity]}`)
+        log.warn(`preferences syncAddresses delete identities=${JSON.stringify(identities[identity])}`)
         delete identities[identity]
       }
     })
