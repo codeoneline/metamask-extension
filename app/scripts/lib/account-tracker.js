@@ -63,7 +63,7 @@ export default class AccountTracker {
     // bind function for easier listener syntax
     this._updateForBlock = this._updateForBlock.bind(this)
     this.network = opts.network
-    this.mmc = opts.mmc
+    // this.mmc = opts.mmc
 
     this.web3 = new Web3(this._provider)
   }
@@ -106,16 +106,16 @@ export default class AccountTracker {
       }
     })
 
-    const selectedAccount = this.mmc.preferencesController.getSelectedAddress()
+    // const selectedAccount = this.mmc.preferencesController.getSelectedAddress()
     const accountsToRemove = []
     locals.forEach((local) => {
       if (!addresses.includes(local)) {
-        if (!selectedAccount || selectedAccount.toLowerCase() !== local.toLowerCase()) {
-          accountsToRemove.push(local)
-          log.warn(`accountsToRemove ${local}`)
-        }
-        // accountsToRemove.push(local)
-        // log.warn(`accountsToRemove ${local}`)
+        // if (!selectedAccount || selectedAccount.toLowerCase() !== local.toLowerCase()) {
+        //   accountsToRemove.push(local)
+        //   log.warn(`accountsToRemove ${local}`)
+        // }
+        accountsToRemove.push(local)
+        log.warn(`accountsToRemove ${local}`)
       }
     })
 
