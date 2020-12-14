@@ -196,6 +196,8 @@ class ConnectHardwareForm extends Component {
       )
     }
 
+    console.log(`this.state.selectedAccount = ${this.state.selectedAccount}`)
+
     return (
       <AccountList
         onPathChange={this.onPathChange}
