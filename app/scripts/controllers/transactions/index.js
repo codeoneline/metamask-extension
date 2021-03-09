@@ -497,6 +497,7 @@ export default class TransactionController extends EventEmitter {
     const Txtype = 1
     const chainId = this.getChainId()
     const txParams = Object.assign({}, txMeta.txParams, { chainId, Txtype })
+    log.warn(`txId = ${txId}, txParam = ${JSON.stringify(txParams)}`)
     // sign tx
     const fromAddress = txParams.from
     const ethTx = new Transaction(txParams)

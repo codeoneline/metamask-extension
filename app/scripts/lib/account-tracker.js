@@ -119,8 +119,8 @@ export default class AccountTracker {
       }
     })
 
-    this.removeAccount(accountsToRemove)
     this.addAccounts(accountsToAdd)
+    this.removeAccount(accountsToRemove)
   }
 
   /**

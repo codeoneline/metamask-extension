@@ -37,14 +37,14 @@ const EthOverview = ({ className }) => {
   const history = useHistory()
   const balanceIsCached = useSelector(isBalanceCached)
   const showFiat = useSelector(getShouldShowFiat)
-  // const selectedAccount = useSelector(getSelectedAccount)
-  // const { balance } = selectedAccount
-  const address = useSelector(getSelectedAddress)
-  let selectedAccount = useSelector(getSelectedAccount)
-  if (!selectedAccount) {
-    selectedAccount = {address: address, balance: '0x0'}
-  }
+  const selectedAccount = useSelector(getSelectedAccount)
   const { balance } = selectedAccount
+  // const address = useSelector(getSelectedAddress)
+  // let selectedAccount = useSelector(getSelectedAccount)
+  // if (!selectedAccount) {
+  //   selectedAccount = {address: address, balance: '0x0'}
+  // }
+  // const { balance } = selectedAccount
 
   return (
     <WalletOverview

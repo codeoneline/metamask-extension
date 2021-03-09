@@ -488,6 +488,7 @@ export default class ConfirmTransactionBase extends Component {
       setMetaMetricsSendCount(metaMetricsSendCount + 1)
         .then(() => {
           if (onSubmit) {
+            console.log("****onSubmit:"+ JSON.stringify(txData))
             Promise.resolve(onSubmit(txData))
               .then(() => {
                 this.setState({
@@ -496,6 +497,7 @@ export default class ConfirmTransactionBase extends Component {
                 updateCustomNonce('')
               })
           } else {
+            console.log("****sendTransaction:"+ JSON.stringify(txData))
             sendTransaction(txData)
               .then(() => {
                 clearConfirmTransaction()
