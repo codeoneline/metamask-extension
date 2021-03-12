@@ -495,7 +495,9 @@ export default class TransactionController extends EventEmitter {
     const txMeta = this.txStateManager.getTx(txId)
     // add network/chain id
     const Txtype = 1
-    const chainId = this.getChainId()
+    let chainId = this.getChainId()
+    if (chainId === 888) chainId = 1
+    if (chainId === 999) chainId = 3
     const txParams = Object.assign({}, txMeta.txParams, { chainId, Txtype })
     log.warn(`txId = ${txId}, txParam = ${JSON.stringify(txParams)}`)
     // sign tx
