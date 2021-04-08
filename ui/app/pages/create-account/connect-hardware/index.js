@@ -16,12 +16,12 @@ const WAN_LEGACY_MEW_PATH = `m/44'/60'/0'`
 const WAN_LEGACY_TREZOR_PATH = `m/44'/60'/0'/0`
 
 const HD_PATHS = [
-  { name: 'Ledger Live', value: LEDGER_LIVE_PATH },
-  { name: 'Legacy MyWanWallet', value: MEW_PATH },
-  { name: 'Trezor MyWanWallet', value: TREZOR_PATH },
-  { name: 'WAN Legacy Ledger Live', value: WAN_LEGACY_PATH },
-  { name: 'WAN Legacy MEW / MyCrypto', value: WAN_LEGACY_MEW_PATH },
-  { name: 'WAN Legacy Trezor', value: WAN_LEGACY_TREZOR_PATH },
+  { label: 'Ledger Live', value: LEDGER_LIVE_PATH },
+  { label: 'Legacy MyWanWallet', value: MEW_PATH },
+  { label: 'Trezor MyWanWallet', value: TREZOR_PATH },
+  { label: 'WAN Legacy Ledger Live', value: WAN_LEGACY_PATH },
+  { label: 'WAN Legacy MEW / MyCrypto', value: WAN_LEGACY_MEW_PATH },
+  { label: 'WAN Legacy Trezor', value: WAN_LEGACY_TREZOR_PATH },
 ];
 
 class ConnectHardwareForm extends Component {
