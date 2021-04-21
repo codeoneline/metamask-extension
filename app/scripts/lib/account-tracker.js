@@ -92,7 +92,6 @@ export default class AccountTracker {
    *
    */
   syncWithAddresses (addresses) {
-    log.warn(`syncWithAddresses ${addresses}`)
     const accounts = this.store.getState().accounts
     const locals = Object.keys(accounts)
 
@@ -100,7 +99,6 @@ export default class AccountTracker {
     addresses.forEach((upstream) => {
       if (!locals.includes(upstream)) {
         accountsToAdd.push(upstream)
-        log.warn(`accountsToAdd ${upstream}`)
       }
     })
 
@@ -108,7 +106,6 @@ export default class AccountTracker {
     locals.forEach((local) => {
       if (!addresses.includes(local)) {
         accountsToRemove.push(local)
-        log.warn(`accountsToRemove ${local}`)
       }
     })
 
@@ -198,7 +195,6 @@ export default class AccountTracker {
    */
   async _updateAccounts () {
     const accounts = this.store.getState().accounts
-    log.warn(`_updateAccounts ${JSON.stringify(accounts)}`)
     const addresses = Object.keys(accounts)
     // const currentNetwork = this.network.getNetworkState()
 
@@ -238,7 +234,6 @@ export default class AccountTracker {
    *
    */
   async _updateAccount (address) {
-    log.warn(`_updateAccount 111 ${address}`)
     // query balance
     const balance = await this._query.getBalance(address)
     const result = { address, balance }
