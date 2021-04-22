@@ -1883,7 +1883,6 @@ export default class MetamaskController extends EventEmitter {
     }
 
     // Ensure preferences + identities controller know about all addresses
-    this.preferencesController.syncAddresses(addresses)
     this.accountTracker.syncWithAddresses(addresses)
   }
 
