@@ -57,6 +57,7 @@ export default class ExtensionStore {
         if (err) {
           reject(err)
         } else {
+          console.log(JSON.stringify(result))
           resolve(result)
         }
       })
