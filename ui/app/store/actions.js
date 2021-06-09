@@ -2427,3 +2427,11 @@ export function getCurrentWindowTab () {
     dispatch(setCurrentWindowTab(currentWindowTab))
   }
 }
+
+export function setLedgerLivePreference(value) {
+  return async (dispatch) => {
+    dispatch(showLoadingIndication());
+    await promisifiedBackground.setLedgerLivePreference(value);
+    dispatch(hideLoadingIndication());
+  };
+}
