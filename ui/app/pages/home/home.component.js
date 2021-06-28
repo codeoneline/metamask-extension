@@ -13,6 +13,7 @@ import ConnectedSites from '../connected-sites'
 import ConnectedAccounts from '../connected-accounts'
 import { Tabs, Tab } from '../../components/ui/tabs'
 import { EthOverview } from '../../components/app/wallet-overview'
+// import WhatsNewPopup from '../../components/app/whats-new-popup'
 
 import {
   ASSET_ROUTE,

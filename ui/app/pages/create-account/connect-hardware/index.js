@@ -8,6 +8,8 @@ import AccountList from './account-list'
 import { formatBalance } from '../../../helpers/utils/util'
 import { getMostRecentOverviewPage } from '../../../ducks/history/history'
 
+const U2F_ERROR = 'U2F'
+
 const LEDGER_LIVE_PATH = `m/44'/5718350'/0'/0/0`
 const MEW_PATH = `m/44'/5718350'/0'`
 const TREZOR_PATH = `m/44'/5718350'/0'/0`
@@ -130,7 +132,7 @@ class ConnectHardwareForm extends Component {
         if (errorMessage === 'Window blocked') {
           this.setState({ browserSupported: false, error: null })
         } else if (errorMessage.includes(U2F_ERROR)) {
-          this.setState({ error: U2F_ERROR });
+          this.setState({ error: U2F_ERROR })
         } else if (
           errorMessage === 'LEDGER_LOCKED' ||
           errorMessage === 'LEDGER_WRONG_APP'
@@ -207,16 +209,28 @@ class ConnectHardwareForm extends Component {
   }
 
   renderError () {
-    return this.state.error
-      ? (
-        <span
-          className="error"
-          style={{ margin: '20px 20px 10px', display: 'block', textAlign: 'center' }}
-        >
-          {this.state.error}
-        </span>
+    if (this.state.error === U2F_ERROR) {
+      return (
+        <p className="hw-connect__error">
+          {this.context.t('troubleConnectingToWallet', [
+            this.state.device,
+            // eslint-disable-next-line react/jsx-key
+            <a
+              href="https://metamask.zendesk.com/hc/en-us/articles/360020394612-How-to-connect-a-Trezor-or-Ledger-Hardware-Wallet"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hw-connect__link"
+              style={{ marginLeft: '5px', marginRight: '5px' }}
+            >
+              {this.context.t('walletConnectionGuide')}
+            </a>,
+          ])}
+        </p>
       )
-      : null
+    }
+    return this.state.error ? (
+      <span className="hw-connect__error">{this.state.error}</span>
+    ) : null
   }
 
   renderContent () {

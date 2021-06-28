@@ -919,7 +919,7 @@ export default class MetamaskController extends EventEmitter {
     // Ledger Keyring GitHub downtime
     this.setLedgerLivePreference(
       this.preferencesController.getLedgerLivePreference(),
-    );
+    )
 
     return this.keyringController.fullUpdate()
   }
@@ -2157,21 +2157,21 @@ export default class MetamaskController extends EventEmitter {
    * Sets the Ledger Live preference to use for Ledger hardware wallet support
    * @param {bool} bool - the value representing if the users wants to use Ledger Live
    */
-    async setLedgerLivePreference(bool) {
-    const currentValue = this.preferencesController.getLedgerLivePreference();
-    this.preferencesController.setLedgerLivePreference(bool);
+  async setLedgerLivePreference(bool) {
+    const currentValue = this.preferencesController.getLedgerLivePreference()
+    this.preferencesController.setLedgerLivePreference(bool)
 
-    const keyring = await this.getKeyringForDevice('ledger');
+    const keyring = await this.getKeyringForDevice('ledger')
     if (keyring?.updateTransportMethod) {
       return keyring.updateTransportMethod(bool).catch((e) => {
         // If there was an error updating the transport, we should
         // fall back to the original value
-        this.preferencesController.setLedgerLivePreference(currentValue);
-        throw e;
-      });
+        this.preferencesController.setLedgerLivePreference(currentValue)
+        throw e
+      })
     }
 
-    return undefined;
+    return undefined
   }
 
   /**
