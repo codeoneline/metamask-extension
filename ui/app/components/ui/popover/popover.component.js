@@ -16,6 +16,7 @@ const Popover = ({
   contentClassName,
   showArrow,
   CustomBackground,
+  centerTitle,
 }) => {
   const t = useI18nContext()
   return (
@@ -27,7 +28,12 @@ const Popover = ({
       <section className={classnames('popover-wrap', className)}>
         { showArrow ? <div className="popover-arrow" /> : null}
         <header className="popover-header">
-          <div className="popover-header__title">
+          <div
+            className={classnames(
+              'popover-header__title',
+              centerTitle ? 'center' : '',
+            )}
+          >
             <h2 title={title}>
               {
                 onBack
@@ -42,11 +48,14 @@ const Popover = ({
               }
               {title}
             </h2>
-            <button
-              className="fas fa-times popover-header__button"
-              title={t('close')}
-              onClick={onClose}
-            />
+            {onClose ? (
+              <button
+                className="fas fa-times popover-header__button"
+                title={t('close')}
+                data-testid="popover-close"
+                onClick={onClose}
+              />
+            ) : null}
           </div>
           { subtitle ? <p className="popover-header__subtitle">{subtitle}</p> : null }
         </header>
@@ -85,6 +94,7 @@ Popover.propTypes = {
   contentClassName: PropTypes.string,
   className: PropTypes.string,
   showArrow: PropTypes.bool,
+  centerTitle: PropTypes.bool,
 }
 
 export default class PopoverPortal extends PureComponent {

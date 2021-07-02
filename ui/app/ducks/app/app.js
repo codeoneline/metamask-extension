@@ -365,3 +365,9 @@ export function setThreeBoxLastUpdated (lastUpdated) {
     value: lastUpdated,
   }
 }
+
+export function hideWhatsNewPopup () {
+  return {
+    type: actionConstants.HIDE_WHATS_NEW_POPUP,
+  }
+}

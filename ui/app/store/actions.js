@@ -2433,5 +2433,25 @@ export function setLedgerLivePreference(value) {
     dispatch(showLoadingIndication())
     await promisifiedBackground.setLedgerLivePreference(value)
     dispatch(hideLoadingIndication())
+  }
+}
+
+export function setRecoveryPhraseReminderHasBeenShown() {
+  return () => {
+    background.setRecoveryPhraseReminderHasBeenShown((err) => {
+      if (err) {
+        throw new Error(err.message);
+      }
+    });
   };
+}
+
+export function setRecoveryPhraseReminderLastShown(lastShown) {
+  return () => {
+    background.setRecoveryPhraseReminderLastShown(lastShown, (err) => {
+      if (err) {
+        throw new Error(err.message);
+      }
+    })
+  }
 }

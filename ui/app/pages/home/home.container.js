@@ -7,6 +7,9 @@ import {
   getCurrentEthBalance,
   getFirstPermissionRequest,
   getTotalUnapprovedCount,
+  getShowRecoveryPhraseReminder,
+  getShowWhatsNewPopup,
+  getSortedNotificationsToShow,
 } from '../../selectors'
 
 import {
@@ -16,8 +19,10 @@ import {
   setShowRestorePromptToFalse,
   setConnectedStatusPopoverHasBeenShown,
   setDefaultHomeActiveTabName,
+  setRecoveryPhraseReminderHasBeenShown,
+  setRecoveryPhraseReminderLastShown,
 } from '../../store/actions'
-import { setThreeBoxLastUpdated } from '../../ducks/app/app'
+import { setThreeBoxLastUpdated, hideWhatsNewPopup } from '../../ducks/app/app'
 import { getEnvironmentType } from '../../../../app/scripts/lib/util'
 import {
   ENVIRONMENT_TYPE_NOTIFICATION,
@@ -64,6 +69,10 @@ const mapStateToProps = (state) => {
     totalUnapprovedCount,
     connectedStatusPopoverHasBeenShown,
     defaultHomeActiveTabName,
+    notificationsToShow: getSortedNotificationsToShow(state).length > 0,
+    showWhatsNewPopup: getShowWhatsNewPopup(state),
+    showRecoveryPhraseReminder: getShowRecoveryPhraseReminder(state),
+    seedPhraseBackedUp,
   }
 }
 
@@ -84,6 +93,11 @@ const mapDispatchToProps = (dispatch) => ({
   setShowRestorePromptToFalse: () => dispatch(setShowRestorePromptToFalse()),
   setConnectedStatusPopoverHasBeenShown: () => dispatch(setConnectedStatusPopoverHasBeenShown()),
   onTabClick: (name) => dispatch(setDefaultHomeActiveTabName(name)),
+  hideWhatsNewPopup: () => dispatch(hideWhatsNewPopup()),
+  setRecoveryPhraseReminderHasBeenShown: () =>
+    dispatch(setRecoveryPhraseReminderHasBeenShown()),
+  setRecoveryPhraseReminderLastShown: (lastShown) =>
+    dispatch(setRecoveryPhraseReminderLastShown(lastShown)),
 })
 
 export default compose(

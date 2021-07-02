@@ -338,3 +338,16 @@ export function getOriginOfCurrentTab (state) {
 export function getIpfsGateway (state) {
   return state.metamask.ipfsGateway
 }
+
+const DAY = 1000 * 60 * 60 * 24
+export function getShowRecoveryPhraseReminder (state) {
+  const {
+    recoveryPhraseReminderLastShown,
+    recoveryPhraseReminderHasBeenShown,
+  } = state.metamask
+
+  const currentTime = new Date().getTime()
+  const frequency = recoveryPhraseReminderHasBeenShown ? DAY * 90 : DAY * 2
+
+  return currentTime - recoveryPhraseReminderLastShown >= frequency
+}

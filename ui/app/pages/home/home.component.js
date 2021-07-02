@@ -13,7 +13,8 @@ import ConnectedSites from '../connected-sites'
 import ConnectedAccounts from '../connected-accounts'
 import { Tabs, Tab } from '../../components/ui/tabs'
 import { EthOverview } from '../../components/app/wallet-overview'
-// import WhatsNewPopup from '../../components/app/whats-new-popup'
+import WhatsNewPopup from '../../components/app/whats-new-popup'
+import RecoveryPhraseReminder from '../../components/app/recovery-phrase-reminder';
 
 import {
   ASSET_ROUTE,
@@ -55,6 +56,13 @@ export default class Home extends PureComponent {
     connectedStatusPopoverHasBeenShown: PropTypes.bool,
     defaultHomeActiveTabName: PropTypes.string,
     onTabClick: PropTypes.func.isRequired,
+    showWhatsNewPopup: PropTypes.bool.isRequired,
+    hideWhatsNewPopup: PropTypes.func.isRequired,
+    notificationsToShow: PropTypes.bool.isRequired,
+    showRecoveryPhraseReminder: PropTypes.bool.isRequired,
+    setRecoveryPhraseReminderHasBeenShown: PropTypes.func.isRequired,
+    setRecoveryPhraseReminderLastShown: PropTypes.func.isRequired,
+    seedPhraseBackedUp: PropTypes.bool.isRequired,
   }
 
   state = {
@@ -119,6 +127,15 @@ export default class Home extends PureComponent {
       setupThreeBox()
     }
   }
+
+  onRecoveryPhraseReminderClose = () => {
+    const {
+      setRecoveryPhraseReminderHasBeenShown,
+      setRecoveryPhraseReminderLastShown,
+    } = this.props;
+    setRecoveryPhraseReminderHasBeenShown(true);
+    setRecoveryPhraseReminderLastShown(new Date().getTime());
+  };
 
   renderNotifications () {
     const { t } = this.context
@@ -235,6 +252,11 @@ export default class Home extends PureComponent {
       history,
       connectedStatusPopoverHasBeenShown,
       isPopup,
+      showWhatsNewPopup,
+      hideWhatsNewPopup,
+      notificationsToShow,
+      seedPhraseBackedUp,
+      showRecoveryPhraseReminder,
     } = this.props
 
     if (forgottenPassword) {
@@ -243,11 +265,20 @@ export default class Home extends PureComponent {
       return null
     }
 
+    const showWhatsNew = notificationsToShow && showWhatsNewPopup
+
     return (
       <div className="main-container">
         <Route path={CONNECTED_ROUTE} component={ConnectedSites} exact />
         <Route path={CONNECTED_ACCOUNTS_ROUTE} component={ConnectedAccounts} exact />
         <div className="home__container">
+          {showWhatsNew ? <WhatsNewPopup onClose={hideWhatsNewPopup} /> : null}
+          {!showWhatsNew && showRecoveryPhraseReminder ? (
+            <RecoveryPhraseReminder
+              hasBackedUp={seedPhraseBackedUp}
+              onConfirm={this.onRecoveryPhraseReminderClose}
+            />
+          ) : null}
           { isPopup && !connectedStatusPopoverHasBeenShown ? this.renderPopover() : null }
           <div className="home__main-view">
             <MenuBar />

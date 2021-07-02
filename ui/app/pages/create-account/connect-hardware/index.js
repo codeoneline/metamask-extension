@@ -128,7 +128,7 @@ class ConnectHardwareForm extends Component {
         }
       })
       .catch((e) => {
-        const errorMessage = e.message
+        const errorMessage = typeof e === 'string' ? e : e.message;
         if (errorMessage === 'Window blocked') {
           this.setState({ browserSupported: false, error: null })
         } else if (errorMessage.includes(U2F_ERROR)) {
